@@ -1,0 +1,23 @@
+{
+  "failures": [
+    "NameError: name 'math' is not defined"
+  ],
+  "finished_unix": 1785364658.443093,
+  "height_mm": 50,
+  "method": "B",
+  "method_name": "without_com",
+  "run_dir": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_without_com\\training\\method-B-v18_seed-11_stage-50mm_smoke_attempt001",
+  "schema": "resume_validation.residual_ppo_training.v1",
+  "seed": 11,
+  "started_unix": 1785364658.3895283,
+  "status": "FAILED",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\train_residual_ppo.py\", line 311, in main\n    or residual_activation_threshold != math.exp(-4.0)\n                                        ^^^^\nNameError: name 'math' is not defined\n",
+  "training_budget": {
+    "cumulative_timesteps_requested": 64,
+    "cumulative_transitions_requested": 64,
+    "local_timesteps_requested": 64,
+    "local_transitions_requested": 64,
+    "parallel_environments": 1,
+    "resume_offset_timesteps": 0
+  }
+}
