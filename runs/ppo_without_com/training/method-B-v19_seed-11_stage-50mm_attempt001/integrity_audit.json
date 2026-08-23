@@ -1,0 +1,94 @@
+{
+  "schema": "resume_validation.training_integrity_audit.v1",
+  "audited_at_local": "2026-07-29T23:01:33-04:00",
+  "disposition": "COMPLETED_INTEGRITY_PASS",
+  "performance_claim": null,
+  "run_name": "method-B-v19_seed-11_stage-50mm_attempt001",
+  "method": "B",
+  "seed": 11,
+  "height_mm": 50,
+  "status": "COMPLETED",
+  "process_exit": {
+    "environment_python_pid": 51172,
+    "wrapper_pid": 98620,
+    "environment_python_alive_after_completion": false,
+    "wrapper_alive_after_completion": false
+  },
+  "budget": {
+    "local_timesteps_requested": 76800,
+    "local_timesteps_completed": 76800,
+    "cumulative_timesteps_completed": 76800,
+    "local_transitions_requested": 4915200,
+    "local_transitions_completed": 4915200,
+    "cumulative_transitions_completed": 4915200,
+    "parallel_environments": 64
+  },
+  "checkpoint_audit": {
+    "checkpoint_file_count": 50,
+    "periodic_checkpoint_count": 48,
+    "float_tensor_count_across_files": 3850,
+    "float_value_count_across_files": 39254650,
+    "nonfinite_tensor_count": 0,
+    "final_checkpoint_sha256": "86cf826ee471afc67c65d538013a5f11c4a3600c405bab49193733be95ea242f",
+    "agent_76800_sha256": "674931a59058ed69de88a7ba4cbda22bfd50161a2a8e630e011a27aad692a79e",
+    "best_agent_sha256": "442d8c445eab27c9fdd5302b803e12cec713c6b20ee2214dcf9269f4c24692b1",
+    "final_and_agent_76800_tensor_keys": 77,
+    "final_and_agent_76800_mismatched_tensor_count": 0,
+    "best_and_agent_8000_tensor_keys": 77,
+    "best_and_agent_8000_mismatched_tensor_count": 0,
+    "selection_note": "The registered next evaluation uses final_agent.pt. best_agent.pt is not used for retrospective checkpoint selection."
+  },
+  "tensorboard_audit": {
+    "event_file_count": 1,
+    "scalar_tag_count": 16,
+    "scalar_point_count": 14232,
+    "nonfinite_scalar_count": 0,
+    "core_update_count": 1200,
+    "core_first_step": 64,
+    "core_last_step": 76800,
+    "episode_window_count": 372,
+    "episode_window_length_min": 3822,
+    "episode_window_length_max": 8999,
+    "policy_standard_deviation_first": 0.018313810229301453,
+    "policy_standard_deviation_last": 0.017948031425476074,
+    "policy_standard_deviation_min": 0.017948031425476074,
+    "policy_standard_deviation_max": 0.018313810229301453
+  },
+  "preflight": {
+    "actor_observation_shape": [
+      64,
+      96
+    ],
+    "critic_state_shape": [
+      64,
+      146
+    ],
+    "policy_action_shape": [
+      64,
+      12
+    ],
+    "policy_action_finite": true,
+    "critic_value_finite": true,
+    "contact_force_finite": true,
+    "reward_terms_finite": true,
+    "zero_residual_exact": true,
+    "episode_tracker_env0_preserved_when_other_envs_done": true
+  },
+  "artifact_sha256": {
+    "training_result.json": "a801dbd03f37686b6d31e6092f2bc139f89087c376f72cd78f707bc9f26f14fc",
+    "events.out.tfevents.1785370151.Allenzjx.51172.0": "33f0ade0b2f531e83400d119ba96b8db37f7523e38bbdc5822266305510804fa",
+    "stdout": "04527f94b056159d1d52f00c3f7c95e884eb00cf06aebe017f9713086ab6d89d",
+    "stderr": "69b88143604bcb1c3325db0bf8c4c3359be2d7084fd61fd13186a9ab533c76d2"
+  },
+  "frozen_provenance_sha256": {
+    "ppo_common.yaml": "f115a3a4e435c70721ffdc44468e0352e71ca66f8187610f6ecd3cda112a8f93",
+    "ppo_common_canonical": "3ffba6ff7e809a4244ebcee93e38b359a080ab7f594c87c73bd6e22f39ea31bf",
+    "residual_safety.py": "8209dec556979c0e6db32b3c5825262672ad57aac4896e95bf65882c7302ddc5",
+    "residual_rl_env.py": "fcadaca601955127673c3b44bd5d4f841f1003e37a77f4c5fafc95031ceef572",
+    "train_residual_ppo.py": "bd3282ec2431a4d775bc400fa56ddb9e73575c33d695229e62f461fea79de73d",
+    "evaluate_controller.py": "c87a4ed88420bf1d12a474f51bb6509cc30db0f2e23ff1503b587c578974ca64",
+    "fsm.yaml": "3e4b65ee87a260723d06b7c5ed6e470884917efb2ec6cb4654993e669883e4e9",
+    "metrics.yaml": "6a02b1c09c23245d7ce5b44a6781557f8c578ed56ac11b9d1ef1149c413b30ab",
+    "asset": "98103315e8ad456881a28a9b3dc77f7aaa8bc9a5200e40c435bea8002c4f81dd"
+  }
+}
