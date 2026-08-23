@@ -1,0 +1,21 @@
+{
+  "checkpoint_sha256": "",
+  "child_pid": 95952,
+  "command": "C:\\Users\\kskzz\\miniconda3\\Scripts\\conda.exe run --no-capture-output -n env_isaaclab C:\\robotics_sim\\IsaacLab\\isaaclab.bat -p C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\evaluate_controller.py --controller fsm --manifest C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\data\\scenario_manifests\\development_v2.json --height_mm 50 --output_dir C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\results\\fsm_h050_success_development-h050-0000\\sim_attempt_002 --scenario_id development-h050-0000 --record_stride 3 --video_path C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\results\\fsm_h050_success_development-h050-0000\\sim_attempt_002\\raw.mp4 --video_frames_dir C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\results\\fsm_h050_success_development-h050-0000\\sim_attempt_002\\frames --video_stride 3 --video_fps 20 --video_width 1280 --video_height 720 --video_category development-visualization --video_outcome_label success --video_seed -1 --video_checkpoint_label none --heartbeat_path C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\results\\fsm_h050_success_development-h050-0000\\sim_attempt_002\\heartbeat.json --enable_cameras --headless",
+  "descendant_pids": [
+    131008,
+    115988,
+    133608
+  ],
+  "duration_s": 732.6766185760498,
+  "ended_at": 1785551568.760942,
+  "exit_code": 4294967295,
+  "forced_shutdown_after_result": false,
+  "kit_log_path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\logs\\fsm_h050_success_development-h050-0000_attempt002_kit_20260731_222038.log",
+  "owned_pids_stopped": [],
+  "parent_pid": 94732,
+  "started_at": 1785550836.0843234,
+  "stderr_path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\logs\\fsm_h050_success_development-h050-0000_attempt002.stderr.log",
+  "stdout_path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\logs\\fsm_h050_success_development-h050-0000_attempt002.stdout.log",
+  "working_directory": "C:\\robotics_sim\\IsaacLab"
+}

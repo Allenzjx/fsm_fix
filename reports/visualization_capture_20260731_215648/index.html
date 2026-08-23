@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FSM / Residual PPO Development Visualization</title>
+<style>
+:root { color-scheme: dark; font-family: Inter, Segoe UI, sans-serif; background:#09101d; color:#edf3ff; }
+body { margin:0; padding:28px; } h1 { margin:0 0 8px; } .note { color:#aebbd1; margin-bottom:24px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(420px,1fr)); gap:20px; }
+.card { background:#111b2d; border:1px solid #273653; border-radius:14px; padding:16px; box-shadow:0 12px 28px #0007; }
+.card h2 { font-size:18px; margin:0 0 12px; } video { width:100%; border-radius:9px; background:#000; }
+dl { display:grid; grid-template-columns:140px 1fr; gap:6px 12px; } dt { color:#8fa1bd; } dd { margin:0; overflow-wrap:anywhere; }
+a { color:#72b7ff; } .wide { grid-column:1/-1; } .highlight { border-color:#9b7731; }
+</style></head><body>
+<h1>Existing FSM / PPO development behavior</h1>
+<p class="note">Development-scenario deterministic replays only. These are not locked-test results and no training was run.</p>
+<h1>Primary cases</h1><section class="grid">
+<article class="card">
+  <h2>Frozen FSM · 50 mm · failure</h2>
+  <video controls preload="metadata" poster="thumbnails/fsm_h050_failure_development-h050-0003.jpg"><source src="videos/primary/fsm_h050_failure_development-h050-0003.mp4" type="video/mp4"></video>
+  <dl>
+    <dt>Scenario</dt><dd>development-h050-0003</dd>
+    <dt>Actual outcome</dt><dd>FAILURE</dd>
+    <dt>Failure reason</dt><dd>BODY_OR_LINK_COLLISION</dd>
+    <dt>Checkpoint</dt><dd>none</dd>
+    <dt>Validation</dt><dd>PASSED</dd>
+  </dl>
+  <p><a href="results/fsm_h050_failure_development-h050-0003.json">result JSON</a> · <a href="telemetry/fsm_h050_failure_development-h050-0003.csv">telemetry CSV</a></p>
+</article>
+<article class="card">
+  <h2>Frozen FSM · 50 mm · success</h2>
+  <video controls preload="metadata" poster="thumbnails/fsm_h050_success_development-h050-0000.jpg"><source src="videos/primary/fsm_h050_success_development-h050-0000.mp4" type="video/mp4"></video>
+  <dl>
+    <dt>Scenario</dt><dd>development-h050-0000</dd>
+    <dt>Actual outcome</dt><dd>SUCCESS</dd>
+    <dt>Failure reason</dt><dd>none</dd>
+    <dt>Checkpoint</dt><dd>none</dd>
+    <dt>Validation</dt><dd>PASSED</dd>
+  </dl>
+  <p><a href="results/fsm_h050_success_development-h050-0000.json">result JSON</a> · <a href="telemetry/fsm_h050_success_development-h050-0000.csv">telemetry CSV</a></p>
+</article>
+<article class="card">
+  <h2>Frozen FSM · 75 mm · failure</h2>
+  <video controls preload="metadata" poster="thumbnails/fsm_h075_failure_development-h075-0000.jpg"><source src="videos/primary/full_fsm_h075_failure_development-h075-0000.mp4" type="video/mp4"></video>
+  <dl>
+    <dt>Scenario</dt><dd>development-h075-0000</dd>
+    <dt>Actual outcome</dt><dd>FAILURE</dd>
+    <dt>Failure reason</dt><dd>TIMEOUT</dd>
+    <dt>Checkpoint</dt><dd>none</dd>
+    <dt>Validation</dt><dd>PASSED</dd>
+  </dl>
+  <p><a href="results/fsm_h075_failure_development-h075-0000.json">result JSON</a> · <a href="telemetry/fsm_h075_failure_development-h075-0000.csv">telemetry CSV</a></p>
+</article>
+<article class="card highlight">
+  <h2>TIMEOUT highlight · Frozen FSM · 75 mm</h2>
+  <video controls preload="metadata"><source src="videos/primary/highlight_fsm_h075_failure_development-h075-0000.mp4" type="video/mp4"></video>
+  <p>Full TIMEOUT video is retained in the primary card above.</p>
+</article>
+<article class="card">
+  <h2>Frozen FSM · 75 mm · success</h2>
+  <video controls preload="metadata" poster="thumbnails/fsm_h075_success_development-h075-0001.jpg"><source src="videos/primary/full_fsm_h075_success_development-h075-0001.mp4" type="video/mp4"></video>
+  <dl>
+    <dt>Scenario</dt><dd>development-h075-0001</dd>
+    <dt>Actual outcome</dt><dd>FAILURE</dd>
+    <dt>Failure reason</dt><dd>TIMEOUT</dd>
+    <dt>Checkpoint</dt><dd>none</dd>
+    <dt>Validation</dt><dd>PASSED</dd>
+  </dl>
+  <p><a href="results/fsm_h075_success_development-h075-0001.json">result JSON</a> · <a href="telemetry/fsm_h075_success_development-h075-0001.csv">telemetry CSV</a></p>
+</article>
+<article class="card highlight">
+  <h2>TIMEOUT highlight · Frozen FSM · 75 mm</h2>
+  <video controls preload="metadata"><source src="videos/primary/highlight_fsm_h075_success_development-h075-0001.mp4" type="video/mp4"></video>
+  <p>Full TIMEOUT video is retained in the primary card above.</p>
+</article>
+<article class="card">
+  <h2>Frozen FSM · 100 mm · failure</h2>
+  <video controls preload="metadata" poster="thumbnails/fsm_h100_failure_development-h100-0001.jpg"><source src="videos/primary/fsm_h100_failure_development-h100-0001.mp4" type="video/mp4"></video>
+  <dl>
+    <dt>Scenario</dt><dd>development-h100-0001</dd>
+    <dt>Actual outcome</dt><dd>SUCCESS</dd>
+    <dt>Failure reason</dt><dd>none</dd>
+    <dt>Checkpoint</dt><dd>none</dd>
+    <dt>Validation</dt><dd>PASSED</dd>
+  </dl>
+  <p><a href="results/fsm_h100_failure_development-h100-0001.json">result JSON</a> · <a href="telemetry/fsm_h100_failure_development-h100-0001.csv">telemetry CSV</a></p>
+</article>
+<article class="card">
+  <h2>Frozen FSM · 100 mm · success</h2>
+  <video controls preload="metadata" poster="thumbnails/fsm_h100_success_development-h100-0000.jpg"><source src="videos/primary/fsm_h100_success_development-h100-0000.mp4" type="video/mp4"></video>
+  <dl>
+    <dt>Scenario</dt><dd>development-h100-0000</dd>
+    <dt>Actual outcome</dt><dd>SUCCESS</dd>
+    <dt>Failure reason</dt><dd>none</dd>
+    <dt>Checkpoint</dt><dd>none</dd>
+    <dt>Validation</dt><dd>PASSED</dd>
+  </dl>
+  <p><a href="results/fsm_h100_success_development-h100-0000.json">result JSON</a> · <a href="telemetry/fsm_h100_success_development-h100-0000.csv">telemetry CSV</a></p>
+</article>
+<article class="card">
+  <h2>Method B · 50 mm · failure</h2>
+  <video controls preload="metadata" poster="thumbnails/method_B_seed29_final_h050_failure_development-h050-0003.jpg"><source src="videos/primary/method_B_seed29_final_h050_failure_development-h050-0003.mp4" type="video/mp4"></video>
+  <dl>
+    <dt>Scenario</dt><dd>development-h050-0003</dd>
+    <dt>Actual outcome</dt><dd>FAILURE</dd>
+    <dt>Failure reason</dt><dd>BODY_OR_LINK_COLLISION</dd>
+    <dt>Checkpoint</dt><dd>final_agent.pt</dd>
+    <dt>Validation</dt><dd>PASSED</dd>
+  </dl>
+  <p><a href="results/method_B_seed29_final_h050_failure_development-h050-0003.json">result JSON</a> · <a href="telemetry/method_B_seed29_final_h050_failure_development-h050-0003.csv">telemetry CSV</a></p>
+</article>
+<article class="card">
+  <h2>Method B · 50 mm · success</h2>
+  <video controls preload="metadata" poster="thumbnails/method_B_seed29_final_h050_success_development-h050-0000.jpg"><source src="videos/primary/method_B_seed29_final_h050_success_development-h050-0000.mp4" type="video/mp4"></video>
+  <dl>
+    <dt>Scenario</dt><dd>development-h050-0000</dd>
+    <dt>Actual outcome</dt><dd>SUCCESS</dd>
+    <dt>Failure reason</dt><dd>none</dd>
+    <dt>Checkpoint</dt><dd>final_agent.pt</dd>
+    <dt>Validation</dt><dd>PASSED</dd>
+  </dl>
+  <p><a href="results/method_B_seed29_final_h050_success_development-h050-0000.json">result JSON</a> · <a href="telemetry/method_B_seed29_final_h050_success_development-h050-0000.csv">telemetry CSV</a></p>
+</article>
+<article class="card">
+  <h2>Method B · 75 mm · failure</h2>
+  <video controls preload="metadata" poster="thumbnails/method_B_seed29_final_h075_failure_development-h075-0000.jpg"><source src="videos/primary/full_method_B_seed29_final_h075_failure_development-h075-0000.mp4" type="video/mp4"></video>
+  <dl>
+    <dt>Scenario</dt><dd>development-h075-0000</dd>
+    <dt>Actual outcome</dt><dd>FAILURE</dd>
+    <dt>Failure reason</dt><dd>TIMEOUT</dd>
+    <dt>Checkpoint</dt><dd>final_agent.pt</dd>
+    <dt>Validation</dt><dd>PASSED</dd>
+  </dl>
+  <p><a href="results/method_B_seed29_final_h075_failure_development-h075-0000.json">result JSON</a> · <a href="telemetry/method_B_seed29_final_h075_failure_development-h075-0000.csv">telemetry CSV</a></p>
+</article>
+<article class="card highlight">
+  <h2>TIMEOUT highlight · Method B · 75 mm</h2>
+  <video controls preload="metadata"><source src="videos/primary/highlight_method_B_seed29_final_h075_failure_development-h075-0000.mp4" type="video/mp4"></video>
+  <p>Full TIMEOUT video is retained in the primary card above.</p>
+</article>
+<article class="card">
+  <h2>Method B · 75 mm · success</h2>
+  <video controls preload="metadata" poster="thumbnails/method_B_seed29_final_h075_success_development-h075-0001.jpg"><source src="videos/primary/full_method_B_seed29_final_h075_success_development-h075-0001.mp4" type="video/mp4"></video>
+  <dl>
+    <dt>Scenario</dt><dd>development-h075-0001</dd>
+    <dt>Actual outcome</dt><dd>FAILURE</dd>
+    <dt>Failure reason</dt><dd>TIMEOUT</dd>
+    <dt>Checkpoint</dt><dd>final_agent.pt</dd>
+    <dt>Validation</dt><dd>PASSED</dd>
+  </dl>
+  <p><a href="results/method_B_seed29_final_h075_success_development-h075-0001.json">result JSON</a> · <a href="telemetry/method_B_seed29_final_h075_success_development-h075-0001.csv">telemetry CSV</a></p>
+</article>
+<article class="card highlight">
+  <h2>TIMEOUT highlight · Method B · 75 mm</h2>
+  <video controls preload="metadata"><source src="videos/primary/highlight_method_B_seed29_final_h075_success_development-h075-0001.mp4" type="video/mp4"></video>
+  <p>Full TIMEOUT video is retained in the primary card above.</p>
+</article>
+<article class="card">
+  <h2>Method B · 100 mm · failure</h2>
+  <video controls preload="metadata" poster="thumbnails/method_B_seed29_final_h100_failure_development-h100-0001.jpg"><source src="videos/primary/method_B_seed29_final_h100_failure_development-h100-0001.mp4" type="video/mp4"></video>
+  <dl>
+    <dt>Scenario</dt><dd>development-h100-0001</dd>
+    <dt>Actual outcome</dt><dd>SUCCESS</dd>
+    <dt>Failure reason</dt><dd>none</dd>
+    <dt>Checkpoint</dt><dd>final_agent.pt</dd>
+    <dt>Validation</dt><dd>PASSED</dd>
+  </dl>
+  <p><a href="results/method_B_seed29_final_h100_failure_development-h100-0001.json">result JSON</a> · <a href="telemetry/method_B_seed29_final_h100_failure_development-h100-0001.csv">telemetry CSV</a></p>
+</article>
+<article class="card">
+  <h2>Method B · 100 mm · success</h2>
+  <video controls preload="metadata" poster="thumbnails/method_B_seed29_final_h100_success_development-h100-0000.jpg"><source src="videos/primary/method_B_seed29_final_h100_success_development-h100-0000.mp4" type="video/mp4"></video>
+  <dl>
+    <dt>Scenario</dt><dd>development-h100-0000</dd>
+    <dt>Actual outcome</dt><dd>SUCCESS</dd>
+    <dt>Failure reason</dt><dd>none</dd>
+    <dt>Checkpoint</dt><dd>final_agent.pt</dd>
+    <dt>Validation</dt><dd>PASSED</dd>
+  </dl>
+  <p><a href="results/method_B_seed29_final_h100_success_development-h100-0000.json">result JSON</a> · <a href="telemetry/method_B_seed29_final_h100_success_development-h100-0000.csv">telemetry CSV</a></p>
+</article>
+<article class="card">
+  <h2>Method C · 50 mm · failure</h2>
+  <video controls preload="metadata" poster="thumbnails/method_C_seed11_final_h050_failure_development-h050-0003.jpg"><source src="videos/primary/method_C_seed11_final_h050_failure_development-h050-0003.mp4" type="video/mp4"></video>
+  <dl>
+    <dt>Scenario</dt><dd>development-h050-0003</dd>
+    <dt>Actual outcome</dt><dd>FAILURE</dd>
+    <dt>Failure reason</dt><dd>BODY_OR_LINK_COLLISION</dd>
+    <dt>Checkpoint</dt><dd>final_agent.pt</dd>
+    <dt>Validation</dt><dd>PASSED</dd>
+  </dl>
+  <p><a href="results/method_C_seed11_final_h050_failure_development-h050-0003.json">result JSON</a> · <a href="telemetry/method_C_seed11_final_h050_failure_development-h050-0003.csv">telemetry CSV</a></p>
+</article>
+<article class="card">
+  <h2>Method C · 50 mm · success</h2>
+  <video controls preload="metadata" poster="thumbnails/method_C_seed11_final_h050_success_development-h050-0000.jpg"><source src="videos/primary/method_C_seed11_final_h050_success_development-h050-0000.mp4" type="video/mp4"></video>
+  <dl>
+    <dt>Scenario</dt><dd>development-h050-0000</dd>
+    <dt>Actual outcome</dt><dd>SUCCESS</dd>
+    <dt>Failure reason</dt><dd>none</dd>
+    <dt>Checkpoint</dt><dd>final_agent.pt</dd>
+    <dt>Validation</dt><dd>PASSED</dd>
+  </dl>
+  <p><a href="results/method_C_seed11_final_h050_success_development-h050-0000.json">result JSON</a> · <a href="telemetry/method_C_seed11_final_h050_success_development-h050-0000.csv">telemetry CSV</a></p>
+</article></section>
+<h1 style="margin-top:32px">Same-scenario comparisons</h1><section class="grid">
+<article class="card wide">
+  <h2>fsm_vs_B_h050_development-h050-0000</h2>
+  <video controls preload="metadata" poster="thumbnails/fsm_vs_B_h050_development-h050-0000.jpg">
+    <source src="videos/comparisons/fsm_vs_B_h050_development-h050-0000.mp4" type="video/mp4">
+  </video>
+  <p>LEFT: Frozen FSM · RIGHT: Method B seed 29 final</p>
+  <p>Scenario: development-h050-0000; alignment: simulation time.</p>
+</article>
+<article class="card wide">
+  <h2>fsm_vs_B_h075_development-h075-0000</h2>
+  <video controls preload="metadata" poster="thumbnails/fsm_vs_B_h075_development-h075-0000.jpg">
+    <source src="videos/comparisons/fsm_vs_B_h075_development-h075-0000.mp4" type="video/mp4">
+  </video>
+  <p>LEFT: Frozen FSM · RIGHT: Method B seed 29 final</p>
+  <p>Scenario: development-h075-0000; alignment: simulation time.</p>
+</article>
+<article class="card wide">
+  <h2>fsm_vs_B_h100_development-h100-0001</h2>
+  <video controls preload="metadata" poster="thumbnails/fsm_vs_B_h100_development-h100-0001.jpg">
+    <source src="videos/comparisons/fsm_vs_B_h100_development-h100-0001.mp4" type="video/mp4">
+  </video>
+  <p>LEFT: Frozen FSM · RIGHT: Method B seed 29 final</p>
+  <p>Scenario: development-h100-0001; alignment: simulation time.</p>
+</article>
+<article class="card wide">
+  <h2>fsm_vs_C_h050_development-h050-0000</h2>
+  <video controls preload="metadata" poster="thumbnails/fsm_vs_C_h050_development-h050-0000.jpg">
+    <source src="videos/comparisons/fsm_vs_C_h050_development-h050-0000.mp4" type="video/mp4">
+  </video>
+  <p>LEFT: Frozen FSM · RIGHT: Method C seed 11 final</p>
+  <p>Scenario: development-h050-0000; alignment: simulation time.</p>
+</article></section>
+</body></html>

@@ -1,0 +1,348 @@
+{
+  "actual_outcome": "failure",
+  "blank_delivery_frames_replaced": 0,
+  "case": {
+    "case_id": "fsm_h075_failure_development-h075-0000",
+    "checkpoint": null,
+    "checkpoint_label": "none",
+    "controller": "fsm",
+    "evidence_episodes": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\development_75mm_formal_full_attempt042\\episodes.jsonl",
+    "evidence_failure_reason": "TIMEOUT",
+    "evidence_outcome": "failure",
+    "height_mm": 75,
+    "method": "Frozen FSM",
+    "output_filename": "fsm_h075_failure_development-h075-0000.mp4",
+    "requested_outcome": "failure",
+    "scenario_id": "development-h075-0000",
+    "seed": null,
+    "video_category": "primary"
+  },
+  "episodes": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\results\\fsm_h075_failure_development-h075-0000_episodes.jsonl",
+  "failure_reason": "TIMEOUT",
+  "final_phase": 10,
+  "highlight": {
+    "frame_count": 1136,
+    "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\videos\\primary\\highlight_fsm_h075_failure_development-h075-0000.mp4",
+    "probe": {
+      "duration_s": 56.8,
+      "failures": [],
+      "file_size": 6138981,
+      "first_middle_mean_absolute_change": 70.23004913330078,
+      "fps": 20.0,
+      "frame_count": 1136,
+      "height": 720,
+      "key_frame_means": [
+        200.94536385995372,
+        131.60761610243057,
+        131.1365067997685
+      ],
+      "key_frame_scene_means": [
+        200.8496703455688,
+        123.91483031580688,
+        123.25854001322752
+      ],
+      "key_frame_scene_stds": [
+        19.15525368650259,
+        53.33297669858961,
+        51.94563929119
+      ],
+      "passed": true,
+      "sha256": "61fb0b4221f617fdb0803878945595cbd9d1296a80954c3bf8c88d5443cceb85",
+      "width": 1280
+    },
+    "ranges_s": [
+      [
+        0.0,
+        10.0
+      ],
+      [
+        13.0,
+        27.8
+      ],
+      [
+        48.45,
+        51.45
+      ],
+      [
+        69.05,
+        72.05
+      ],
+      [
+        82.6,
+        85.6
+      ],
+      [
+        109.85,
+        112.85
+      ],
+      [
+        129.95,
+        149.95
+      ]
+    ]
+  },
+  "kit_log": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\logs\\fsm_h075_failure_development-h075-0000_attempt003_kit_20260801_010121.log",
+  "notes": "Requested outcome reproduced.",
+  "process": {
+    "checkpoint_sha256": "",
+    "child_pid": 140356,
+    "command": "C:\\Users\\kskzz\\miniconda3\\Scripts\\conda.exe run --no-capture-output -n env_isaaclab C:\\robotics_sim\\IsaacLab\\isaaclab.bat -p C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\tools\\visualization\\launch_existing_evaluator.py --controller fsm --manifest C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\data\\scenario_manifests\\development_v2.json --height_mm 75 --output_dir C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\results\\fsm_h075_failure_development-h075-0000\\sim_attempt_003 --scenario_id development-h075-0000 --record_stride 3 --video_path C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\results\\fsm_h075_failure_development-h075-0000\\sim_attempt_003\\raw.avi --video_stride 30 --video_fps 2 --video_width 1280 --video_height 720 --video_category development-visualization --video_outcome_label failure --video_seed -1 --video_checkpoint_label none --video_codec mjpeg --no-video_follow_camera --heartbeat_path C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\results\\fsm_h075_failure_development-h075-0000\\sim_attempt_003\\heartbeat.json --enable_cameras --headless",
+    "descendant_pids": [
+      161052,
+      123700,
+      163420
+    ],
+    "duration_s": 1510.5931446552277,
+    "ended_at": 1785561989.8101556,
+    "exit_code": 0,
+    "forced_shutdown_after_result": false,
+    "kit_log_path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\logs\\fsm_h075_failure_development-h075-0000_attempt003_kit_20260801_010121.log",
+    "owned_pids_stopped": [],
+    "parent_pid": 109464,
+    "started_at": 1785560479.217011,
+    "stderr_path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\logs\\fsm_h075_failure_development-h075-0000_attempt003.stderr.log",
+    "stdout_path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\logs\\fsm_h075_failure_development-h075-0000_attempt003.stdout.log",
+    "working_directory": "C:\\robotics_sim\\IsaacLab"
+  },
+  "provenance": {
+    "asset": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\assets\\converted\\wlr_robot_validation.usd",
+    "asset_sha256": "98103315e8ad456881a28a9b3dc77f7aaa8bc9a5200e40c435bea8002c4f81dd",
+    "checkpoint": null,
+    "checkpoint_sha256": null,
+    "cuda": "12.8",
+    "effective_post_transfer_forward_speed_rad_s": 0.075,
+    "effective_post_transfer_offset_start_progress": [
+      0.4,
+      0.4,
+      0.4,
+      0.4
+    ],
+    "effective_post_transfer_wheel_center_offsets_m": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.009249999999999998
+      ],
+      [
+        0.0,
+        0.005624999999999999
+      ],
+      [
+        0.0,
+        0.007499999999999998
+      ]
+    ],
+    "effective_rear_transfer_wheel_speed_rad_s": [
+      0.0,
+      0.0,
+      0.3,
+      0.3
+    ],
+    "effective_residual_action_mask": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "effective_residual_activation_threshold": 0.0,
+    "effective_residual_applied_action_hard_clip": 1.0,
+    "effective_residual_bounds": {
+      "wheel_center_x_m": 0.0075,
+      "wheel_center_z_m": 0.01,
+      "wheel_speed_rad_s": 0.1
+    },
+    "effective_residual_corrective_minimum_shared_magnitude": 0.1,
+    "effective_residual_corrective_wheel_center_z_scales": [
+      0.0,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "effective_residual_corrective_wheel_speed_minimum_shared_magnitudes": [
+      0.25
+    ],
+    "effective_residual_corrective_wheel_speed_phases": [
+      9
+    ],
+    "effective_residual_corrective_wheel_speed_scales": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "effective_residual_corrective_wheel_speed_signs": [
+      -1,
+      1,
+      -1,
+      1
+    ],
+    "effective_residual_executed_wheel_center_z_signs": [
+      0,
+      -1,
+      -1,
+      0
+    ],
+    "effective_residual_execution_phase_gains": [
+      3.0,
+      4.0,
+      3.0
+    ],
+    "effective_residual_execution_phase_window": [
+      8,
+      10
+    ],
+    "effective_residual_projection_type": "wheel_center_z_deficient_diagonal_downward_support_phase9_counter_yaw_emergency_gate",
+    "effective_residual_state_gate_corrective_latch": true,
+    "effective_residual_state_gate_early_pitch_rate_rad_s": 0.35,
+    "effective_residual_state_gate_early_roll_rad": 0.06,
+    "effective_residual_state_gate_min_pitch_rad": 0.09,
+    "effective_residual_state_gate_min_roll_rad": 0.1,
+    "effective_residual_state_gate_type": "phase_aware_roll_imu_emergency",
+    "effective_residual_wheel_center_z_signs": [
+      -1,
+      -1,
+      1,
+      1
+    ],
+    "effective_reward_weights": {
+      "action_rate": -0.1,
+      "body_collision": -200.0,
+      "com_margin": 0.0,
+      "contact_impact": -0.01,
+      "excessive_tilt": -1.0,
+      "fall": -200.0,
+      "joint_acceleration": -0.0001,
+      "joint_limit": -200.0,
+      "numerical": -200.0,
+      "phase_progress": 2.0,
+      "phase_timeout": -200.0,
+      "pitch_rate_sq": -0.25,
+      "progress": 8.0,
+      "recovery": 2.0,
+      "residual_left_right_asymmetry": -180.0,
+      "residual_magnitude": -120.0,
+      "slip": -0.2,
+      "stuck": -6.0,
+      "success": 200.0,
+      "time": -0.005,
+      "top_contact": 1.0,
+      "wheel_speed_saturation": -0.1
+    },
+    "effective_support_unload": {
+      "high_force_n": 8.0,
+      "low_force_n": 4.0,
+      "maximum_m": 0.002,
+      "rate_m_s": 0.00075
+    },
+    "evaluation_command_variation_metric": "mean per-active-step L2 change of the physically executed normalized residual action",
+    "evaluation_slip_metric": "per control step, for wheels carrying at least the frozen minimum 2 N upward force, integrate the mean absolute difference between measured wheel surface speed (physical joint velocity times estimated radius) and measured body-frame base forward speed; slip ratio uses max(abs(wheel surface speed), 0.10 m/s) as denominator",
+    "fsm_config": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\fsm.yaml",
+    "fsm_config_sha256": "3e4b65ee87a260723d06b7c5ed6e470884917efb2ec6cb4654993e669883e4e9",
+    "isaaclab": "0.54.3",
+    "isaacsim": "5.1.0.0",
+    "manifest": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\data\\scenario_manifests\\development_v2.json",
+    "manifest_metadata": {
+      "episodes_per_height": 20,
+      "generator_version": "v2_reference_replay_geometry",
+      "initial_distance_policy": "reference settled distance +/- 0.025 m",
+      "obstacle_position_policy": "fixed translationally-equivalent reference front",
+      "protocol_version": "1.0.0",
+      "seed": 20260727,
+      "split": "development",
+      "training_code_must_not_read_locked_results": false
+    },
+    "manifest_sha256": "f3d10d7340c06f78c200c44119bb2e17c81e587bd314b342ac90b49019ea2cdc",
+    "method_config": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\ppo_without_com.yaml",
+    "method_config_sha256": "d27d84488d692a4af2764859ae55cf913803b0e9645a4abf2796a2cd65a2e8b1",
+    "metrics_config": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\metrics.yaml",
+    "metrics_config_sha256": "6a02b1c09c23245d7ce5b44a6781557f8c578ed56ac11b9d1ef1149c413b30ab",
+    "ppo_common_config": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\ppo_common.yaml",
+    "ppo_common_config_sha256": "dcf500751263661930a30cffff3f029e45d081894019cdef594e3d0c01836066",
+    "reward_baseline_regularization_timebase": "residual magnitude/asymmetry are integrated by control step_dt and weighted -120/-180 per second, exactly preserving the prior -2/-3 per-step strength at 60 Hz",
+    "reward_occupancy_integration": "top_contact, recovery, and stuck raw terms are multiplied by control step_dt",
+    "reward_rate_integration": "pitch_rate_sq, excessive_tilt, slip, residual_magnitude, residual_left_right_asymmetry, joint_acceleration, and wheel_speed_saturation raw terms are multiplied by control step_dt",
+    "reward_reset_initialization": "randomized root pose uses cached settled standing root-to-wheel geometry plus registered scenario values; no current terminal root/body pose cache is read",
+    "reward_terminal_safety": "fall, body_collision, numerical, phase_timeout, and joint_limit carry explicit one-shot -200 terms",
+    "source_files": {
+      "evaluate_controller.py": {
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\evaluate_controller.py",
+        "sha256": "793c3b71a9f04f86543ce59a89f3a330282d1169089ff983843fa6f0678f917f"
+      },
+      "ppo_models.py": {
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\ppo_models.py",
+        "sha256": "97e7f1974ef79b71250d9ea5e215b0ffd86495304901da8f384ca21b36e0f14e"
+      },
+      "residual_rl_env.py": {
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\residual_rl_env.py",
+        "sha256": "217f660c2d7b8ea5183edb7ab9b3bf703a1beb25dafa265b457b31e62664cc23"
+      },
+      "residual_safety.py": {
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\residual_safety.py",
+        "sha256": "32d50e9b4c5487411f259b485b1afa5e9f58a9d9f76d8308ef7cd0f642cfbe02"
+      },
+      "reward.py": {
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\reward.py",
+        "sha256": "6dc9e7a98f21862bc9d334db46b28e2c9343368951844eefb62f52a798ae4036"
+      },
+      "training_randomization.py": {
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\training_randomization.py",
+        "sha256": "bb5cc2c4bca4a89ad79d9f5a2b142ae85685845d8b071b10e2cf87878278ad84"
+      }
+    },
+    "torch": "2.7.0+cu128"
+  },
+  "result": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\results\\fsm_h075_failure_development-h075-0000.json",
+  "schema": "resume_validation.visualization_case.v1",
+  "screenshots": {
+    "first": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\screenshots\\fsm_h075_failure_development-h075-0000_first.png",
+    "last": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\screenshots\\fsm_h075_failure_development-h075-0000_last.png",
+    "middle": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\screenshots\\fsm_h075_failure_development-h075-0000_middle.png",
+    "thumbnail": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\thumbnails\\fsm_h075_failure_development-h075-0000.jpg"
+  },
+  "simulation_duration_s": 149.95,
+  "status": "COMPLETED",
+  "stderr": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\logs\\fsm_h075_failure_development-h075-0000_attempt003.stderr.log",
+  "stdout": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\logs\\fsm_h075_failure_development-h075-0000_attempt003.stdout.log",
+  "telemetry": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\telemetry\\fsm_h075_failure_development-h075-0000.csv",
+  "validation_status": "PASSED",
+  "video": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\videos\\primary\\full_fsm_h075_failure_development-h075-0000.mp4",
+  "video_probe": {
+    "duration_s": 152.5,
+    "failures": [],
+    "file_size": 11878552,
+    "first_middle_mean_absolute_change": 69.98347473144531,
+    "fps": 20.0,
+    "frame_count": 3050,
+    "height": 720,
+    "key_frame_means": [
+      201.84058195891203,
+      132.83399269386575,
+      38.390667317708335
+    ],
+    "key_frame_scene_means": [
+      201.71360160383597,
+      125.10281394675926,
+      37.945395688657406
+    ],
+    "key_frame_scene_stds": [
+      18.462436139739673,
+      52.853649730799994,
+      34.159137938953364
+    ],
+    "passed": true,
+    "sha256": "1b4779cd7d206bcd5decdc81d7fa2047be9e4f99f2163b93e42699faa047a2db",
+    "width": 1280
+  },
+  "video_sha256": "1b4779cd7d206bcd5decdc81d7fa2047be9e4f99f2163b93e42699faa047a2db"
+}

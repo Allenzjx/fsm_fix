@@ -1,0 +1,49 @@
+[INFO] Using python from: C:\Users\kskzz\miniconda3\envs\env_isaaclab\python.exe
+Loading user config located at: 'c:/users/kskzz/miniconda3/envs/env_isaaclab/lib/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: c:/users/kskzz/miniconda3/envs/env_isaaclab/lib/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20260801_001543.log
+2026-08-01T04:15:47Z [3,675ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) RaptorLake-S Mobile Graphics Controller
+2026-08-01T04:15:47Z [3,675ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) RaptorLake-S Mobile Graphics Controller
+2026-08-01T04:15:47Z [3,675ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) RaptorLake-S Mobile Graphics Controller
+2026-08-01T04:15:47Z [3,676ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) RaptorLake-S Mobile Graphics Controller
+2026-08-01T04:15:47Z [3,676ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) RaptorLake-S Mobile Graphics Controller
+2026-08-01T04:15:47Z [3,676ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) RaptorLake-S Mobile Graphics Controller
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 581.29        | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 4080 Laptop.. | Yes: 0 |     | 11997   MB | 10de      | efad0100.. |
+|     |                                  |        |     |            | 27e0      | 36780613.. |
+|     |                                  |        |     |            | 1         |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | Intel(R) RaptorLake-S Mobile G.. |        |     | 16228   MB | 8086      | fba90100.. |
+|     |                                  |        |     |            | a788      | 868088a7.. |
+|     |                                  |        |     |            | N/A       |            |
+|---------------------------------------------------------------------------------------------|
+| 2   | Intel(R) RaptorLake-S Mobile G.. |        |     | 16228   MB | 8086      | d14f0200.. |
+|     |                                  |        |     |            | a788      | 868088a7.. |
+|     |                                  |        |     |            | N/A       |            |
+|---------------------------------------------------------------------------------------------|
+| 3   | Intel(R) RaptorLake-S Mobile G.. |        |     | 16228   MB | 8086      | 6a4b0200.. |
+|     |                                  |        |     |            | a788      | 868088a7.. |
+|     |                                  |        |     |            | N/A       |            |
+|=============================================================================================|
+| OS: Windows 11 Home, Version: 10.0 (25H2), Build: 26200, Kernel: 10.0.26100.8875
+| Processor: 13th Gen Intel(R) Core(TM) i9-13900HX
+| Cores: 24 | Logical Cores: 32
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 32456 | Free Memory: 9620
+| Total Page/Swap (MB): 95876 | Free Page/Swap: 13541
+|---------------------------------------------------------------------------------------------|
+2026-08-01T04:15:47Z [3,894ms] [Warning] [gpu.foundation.plugin] PCIe link width current (8) and maximum (16) for device 0 don't match.
+2026-08-01T04:15:48Z [4,321ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [o[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: C:\robotics_sim\IsaacLab\apps\isaaclab.python.headless.rendering.kit
+
+[36m===================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: C:\Users\kskzz\AppData\Local\Temp\isaaclab\logs\isaaclab_2026-08-01_00-15-58.log[0m
+[36m===================================================================================================================[0m
+
+[33m00:15:58 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m

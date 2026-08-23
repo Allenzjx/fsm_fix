@@ -1,0 +1,51 @@
+{
+  "alignment": "simulation_time_at_20_fps; shorter source holds its final frame",
+  "case_id": "fsm_vs_B_h075_development-h075-0000",
+  "height_mm": 75,
+  "left": [
+    "fsm",
+    null
+  ],
+  "left_label": "LEFT: Frozen FSM",
+  "left_outcome": "failure",
+  "left_source": "fsm_h075_failure_development-h075-0000",
+  "right": [
+    "B",
+    29
+  ],
+  "right_label": "RIGHT: Method B seed 29 final",
+  "right_outcome": "failure",
+  "right_source": "method_B_seed29_final_h075_failure_development-h075-0000",
+  "scenario_id": "development-h075-0000",
+  "schema": "resume_validation.visualization_comparison.v1",
+  "thumbnail": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\thumbnails\\fsm_vs_B_h075_development-h075-0000.jpg",
+  "validation_status": "PASSED",
+  "video": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\videos\\comparisons\\fsm_vs_B_h075_development-h075-0000.mp4",
+  "video_probe": {
+    "duration_s": 152.5,
+    "failures": [],
+    "file_size": 25365468,
+    "first_middle_mean_absolute_change": 65.84612274169922,
+    "fps": 20.0,
+    "frame_count": 3050,
+    "height": 540,
+    "key_frame_means": [
+      183.9320637217078,
+      118.93407053755143,
+      36.52269129372428
+    ],
+    "key_frame_scene_means": [
+      201.18392994929454,
+      124.54530331422693,
+      37.78740860155791
+    ],
+    "key_frame_scene_stds": [
+      18.663814969073865,
+      53.33954883181978,
+      36.04962634608411
+    ],
+    "passed": true,
+    "sha256": "76be26d009af9a032edbaed85bd8f8ef6d219fc313245bd72ffba853e0102b33",
+    "width": 1920
+  }
+}

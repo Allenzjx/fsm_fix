@@ -1,0 +1,61 @@
+[INFO] Using python from: C:\Users\kskzz\miniconda3\envs\env_isaaclab\python.exe
+Loading user config located at: 'c:/users/kskzz/miniconda3/envs/env_isaaclab/lib/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: c:/users/kskzz/miniconda3/envs/env_isaaclab/lib/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20260801_022404.log
+2026-08-01T06:24:07Z [3,551ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) RaptorLake-S Mobile Graphics Controller
+2026-08-01T06:24:07Z [3,551ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) RaptorLake-S Mobile Graphics Controller
+2026-08-01T06:24:07Z [3,551ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) RaptorLake-S Mobile Graphics Controller
+2026-08-01T06:24:07Z [3,552ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) RaptorLake-S Mobile Graphics Controller
+2026-08-01T06:24:07Z [3,552ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) RaptorLake-S Mobile Graphics Controller
+2026-08-01T06:24:07Z [3,552ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) RaptorLake-S Mobile Graphics Controller
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 581.29        | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 4080 Laptop.. | Yes: 0 |     | 11997   MB | 10de      | efad0100.. |
+|     |                                  |        |     |            | 27e0      | 36780613.. |
+|     |                                  |        |     |            | 1         |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | Intel(R) RaptorLake-S Mobile G.. |        |     | 16228   MB | 8086      | fba90100.. |
+|     |                                  |        |     |            | a788      | 868088a7.. |
+|     |                                  |        |     |            | N/A       |            |
+|---------------------------------------------------------------------------------------------|
+| 2   | Intel(R) RaptorLake-S Mobile G.. |        |     | 16228   MB | 8086      | d14f0200.. |
+|     |                                  |        |     |            | a788      | 868088a7.. |
+|     |                                  |        |     |            | N/A       |            |
+|---------------------------------------------------------------------------------------------|
+| 3   | Intel(R) RaptorLake-S Mobile G.. |        |     | 16228   MB | 8086      | 6a4b0200.. |
+|     |                                  |        |     |            | a788      | 868088a7.. |
+|     |                                  |        |     |            | N/A       |            |
+|=============================================================================================|
+| OS: Windows 11 Home, Version: 10.0 (25H2), Build: 26200, Kernel: 10.0.26100.8875
+| Processor: 13th Gen Intel(R) Core(TM) i9-13900HX
+| Cores: 24 | Logical Cores: 32
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 32456 | Free Memory: 13080
+| Total Page/Swap (MB): 99282 | Free Page/Swap: 17171
+|---------------------------------------------------------------------------------------------|
+2026-08-01T06:24:07Z [3,812ms] [Warning] [gpu.foundation.plugin] PCIe link width current (8) and maximum (16) for device 0 don't match.
+2026-08-01T06:24:08Z [4,205ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: C:\robotics_sim\IsaacLab\apps\isaaclab.python.headless.rendering.kit
+
+[36m===================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: C:\Users\kskzz\AppData\Local\Temp\isaaclab\logs\isaaclab_2026-08-01_02-24-21.log[0m
+[36m===================================================================================================================[0m
+
+[33m02:24:21 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-08-01T06:24:08Z [4,224ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-08-01T06:24:11Z [7,385ms] [Warning] [pxr.Semantics] pxr.Semantics is deprecated - please use Semantics instead
+2026-08-01T06:24:11Z [7,547ms] [Warning] [omni.graph.core.plugin] Found duplicate of category 'Replicator' - was 'Annotators', adding 'Fabric Reader'
+2026-08-01T06:24:11Z [7,547ms] [Warning] [omni.graph.core.plugin] Category 'Replicator' not accepted on node type 'omni.replicator.core.FabricReader' in extension 'omni.replicator.core'
+2026-08-01T06:24:11Z [7,549ms] [Warning] [omni.replicator.core.scripts.extension] No material configuration file, adding configuration to material settings directly.
+2026-08-01T06:24:19Z [15,390ms] [Warning] [omni.fabric.plugin] Warning: attribute overrideClipRange not found for bucket id 7
+
+2026-08-01T06:24:27Z [23,816ms] [Warning] [omni.fabric.plugin] getAttributeCount called on non-existent path /World/envs/env_0/Robot/rear_right_wheel/visuals/rear_right_wheel/node_STL_BINARY_
+2026-08-01T06:24:27Z [23,816ms] [Warning] [omni.fabric.plugin] getTypes called on non-existent path /World/envs/env_0/Robot/rear_right_wheel/visuals/rear_right_wheel/node_STL_BINARY_
+2026-08-01T06:24:29Z [25,113ms] [Warning] [omni.syntheticdata.plugin] OgnSdPostRenderVarToHost : rendervar copy from texture directly to host buffer is counter-performant. Please use copy from texture to device buffer first.
+2026-08-01T06:34:42Z [638,196ms] [Warning] [carb] Client gpu.foundation.plugin has acquired [gpu::unstable::IMemoryBudgetManagerFactory v0.1] 100 times. Consider accessing this interface with carb::getCachedInterface() (Performance warning)
