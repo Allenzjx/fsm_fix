@@ -1,0 +1,68 @@
+{
+  "schema": "resume_validation.runtime_counterfactual_audit.v1",
+  "created_at_local": "2026-07-30T05:42:00-04:00",
+  "runtime": "runtime-v26-asymmetric-diagonal-ik-margin-emergency",
+  "attempt": "method-B-v26-v19checkpoint_seed-11_stage-50mm_development_counterfactual_attempt001",
+  "result_sha256": "1a51083dd038e4f78ef8f05476b14607b5b226d716606affee1531e8dc7d1efb",
+  "episodes_sha256": "3fdd448c371036402c9c4e3cb5641fafd3bde30cfa223b4e88e19dd3b5ef5c31",
+  "telemetry_sha256": "c541ac57894e9fd42f6745da26a68efe1d4863ee9a10c05f596b81789dc8d263",
+  "telemetry_shape": [50362, 122],
+  "nonfinite_by_column": {
+    "margin_m": 5854
+  },
+  "success_count": 13,
+  "episode_count": 20,
+  "success_scenario_indices": [0, 1, 2, 4, 7, 9, 10, 11, 12, 14, 15, 16, 18],
+  "failure_scenario_indices": [3, 5, 6, 8, 13, 17, 19],
+  "failure_counts": {
+    "BODY_OR_LINK_COLLISION": 7
+  },
+  "terminal_failure_pattern_fl_fr_rl_rr": [true, false, false, true],
+  "terminal_failure_pattern_count": 7,
+  "terminal_collision_body": "front_right_bot",
+  "terminal_collision_body_count": 7,
+  "nonzero_execution_rows": 146,
+  "asymmetric_emergency_rows": 133,
+  "historical_climb_rows": 13,
+  "other_nonzero_structure_rows": 0,
+  "nonzero_phase_counts": {
+    "8": 133,
+    "10": 13
+  },
+  "emergency_rows_by_scenario_index": {
+    "3": 13,
+    "5": 4,
+    "6": 3,
+    "8": 26,
+    "13": 78,
+    "17": 5,
+    "19": 4
+  },
+  "historical_climb_rows_by_scenario_index": {
+    "9": 2,
+    "13": 10,
+    "17": 1
+  },
+  "emergency_action_z_fl_fr_rl_rr": [
+    0.0,
+    -0.3000000119209289,
+    0.2400000095367431,
+    0.0
+  ],
+  "inactive_action_max_abs": 0.0,
+  "emergency_scale_relation_max_abs_error": 2.7755575615628914e-17,
+  "scaled_physical_residual_max_abs_error_m": 9.313228920698746e-11,
+  "wheel_speed_residual_max_abs_rad_s": 0.0,
+  "maximum_final_to_requested_target_error_m": 4.4703483595420757e-08,
+  "rollback_rows_above_1e-7_m": 0,
+  "unauthorized_nonzero_rows": 0,
+  "maximum_action_abs": 0.3000000119209289,
+  "maximum_wheel_center_x_residual_m": 0.0,
+  "maximum_wheel_center_z_residual_m": 0.003000000026077,
+  "success_history_rows": 34800,
+  "success_history_columns": 122,
+  "success_history_exact_v25": true,
+  "success_history_exact_v24": true,
+  "gate_passed": false,
+  "gate_reason": "13/20 is below the frozen 16/20 training threshold; no new scenario was rescued"
+}

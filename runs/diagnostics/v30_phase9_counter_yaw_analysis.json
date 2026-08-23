@@ -1,0 +1,78 @@
+{
+  "schema": "resume_validation.pre_code_candidate_analysis.v1",
+  "created_at_local": "2026-07-30T07:55:00-04:00",
+  "candidate_runtime": "runtime-v30-phase9-counter-yaw-skid-steer-emergency",
+  "source_attempt": "method-B-v29-v19checkpoint_seed-11_stage-50mm_development_counterfactual_attempt001",
+  "source_hashes": {
+    "result_sha256": "ef79b219269c11645c912a8864f042a3644fae0f6a613ad07ae612af42c10023",
+    "telemetry_sha256": "337f274f230048d57fe74e8bd0e7644c48a9e64bf02d6f3f501c8b1938e23dc3"
+  },
+  "v29_outcome": {
+    "success_count": 13,
+    "collision_count": 3,
+    "phase_timeout_count": 4,
+    "changed_phase9_rows_vs_v27": 2524,
+    "physically_realized_changed_rows": 2524,
+    "new_rollback_rows": 0
+  },
+  "formal_geometry": {
+    "obstacle_width_m": 0.882200685486094,
+    "full_wheel_predicate": "wheel_on_top and x within radius-plus-footprint inset and abs(y) within half-width minus half of radius-plus-footprint margin",
+    "timeout_terminal_contact_state_fl_fr_rl_rr": ["TOP", "TOP", "AIR", "TOP"],
+    "timeout_terminal_full_wheel_on_top_fl_fr_rl_rr": [true, false, false, true],
+    "timeout_terminal_front_right_y_m_range": [-0.5325133800506592, -0.49687695503234863],
+    "timeout_terminal_rear_left_z_m_range": [0.1686337888240814, 0.1732345074415207],
+    "timeout_phase9_start_axle_midpoint_yaw_rad_range": [-0.2775828643498801, -0.22862989822824167],
+    "success_phase9_start_axle_midpoint_yaw_rad_range": [-0.11875768526601914, -0.06521138931180778],
+    "yaw_estimator": "atan2(front_axle_midpoint_y - rear_axle_midpoint_y, front_axle_midpoint_x - rear_axle_midpoint_x)"
+  },
+  "candidate": {
+    "wheel_center_floor_physical_z_m_by_phase_fr_rl": {
+      "phase_8": [-0.003, -0.003],
+      "phase_9": [-0.004, -0.004],
+      "phase_10": [-0.003, -0.003]
+    },
+    "counter_yaw_phase": 9,
+    "counter_yaw_physical_forward_wheel_speed_signs_fl_fr_rl_rr": [-1, 1, -1, 1],
+    "counter_yaw_floor_normalized_fl_fr_rl_rr": [-0.4, 0.4, -0.4, 0.4],
+    "counter_yaw_floor_physical_rad_s_fl_fr_rl_rr": [-0.04, 0.04, -0.04, 0.04],
+    "wheel_speed_residual_hard_bound_rad_s": 0.1,
+    "margin_to_wheel_speed_residual_bound_rad_s": 0.06,
+    "authorization": "Only corrective rows selected by the existing actor-observable phase-aware roll-IMU emergency gate, and only while fsm_phase equals 9.",
+    "direction_reason": "With +x forward and +y left, slower/reverse left wheels and faster/forward right wheels generate positive counter-clockwise yaw, opposing the measured negative yaw."
+  },
+  "ideal_no_slip_sanity_estimate": {
+    "assumed_wheel_radius_m": 0.05,
+    "approximate_track_width_m": 0.4,
+    "left_right_linear_speed_difference_m_s": 0.004,
+    "yaw_rate_rad_s": 0.01,
+    "phase9_observed_duration_s": 31.5,
+    "integrated_yaw_authority_rad": 0.315,
+    "interpretation": "This is an upper-bound directional sanity estimate, not a measured outcome. It exceeds the approximately 0.110 rad separation between the least-negative timeout and most-negative successful phase-9 starting yaw."
+  },
+  "safety_and_isolation": {
+    "v29_phase9_corrective_environment_ids": [5, 8, 13, 17],
+    "v29_phase9_corrective_rows_per_environment": 631,
+    "wheel_speed_change_has_no_kinematic_ik_target_effect": true,
+    "existing_v29_all_leg_ik_valid_changed_rows": 2524,
+    "existing_v29_new_rollback_rows": 0,
+    "phase8_and_phase10_wheel_speed_residual": "exact zero",
+    "successful_histories_expected_unchanged": "The existing state gate emitted no corrective phase-9 row for any of the 13 v29 successes."
+  },
+  "candidate_reason": "V29 proves that exact, rollback-free vertical authority does not resolve the formal failure. The failure is instead a diagonally yawed footprint: front-right is laterally outside full support while rear-left is airborne. A bounded phase-9-only physical-forward differential wheel-speed residual directly controls skid-steer yaw, is isolated by the already validated real-IMU failure gate, preserves the exact v29 phase-8 trajectory, and cannot alter wheel-center IK validity.",
+  "unchanged_controls": [
+    "development manifest",
+    "v19 final checkpoint",
+    "phase-aware roll IMU thresholds and corrective latch",
+    "wheel-center signs/scales/floor and phase gains [3,4,3]",
+    "positive actor z-drive half-space used to compute shared magnitude",
+    "wheel-center and wheel-speed hard residual bounds",
+    "architecture, rewards, optimizer, randomization, curriculum, and budget",
+    "locked-test non-access"
+  ],
+  "required_pre_counterfactual_gates": [
+    "compile and unit tests",
+    "real-Isaac exact phase isolation, physical-forward sign, bound, wheel-target, IK, and zero-preservation smoke",
+    "exact v19 checkpoint restore smoke"
+  ]
+}

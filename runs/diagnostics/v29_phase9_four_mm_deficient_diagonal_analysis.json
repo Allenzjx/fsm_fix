@@ -1,0 +1,94 @@
+{
+  "schema": "resume_validation.pre_code_candidate_analysis.v1",
+  "created_at_local": "2026-07-30T07:03:00-04:00",
+  "candidate_runtime": "runtime-v29-phase9-four-mm-deficient-diagonal-downward-support-emergency",
+  "source_attempts": {
+    "trajectory_source": "method-B-v27-v19checkpoint_seed-11_stage-50mm_development_counterfactual_attempt001",
+    "negative_authority_source": "method-B-v28-v19checkpoint_seed-11_stage-50mm_development_counterfactual_attempt001"
+  },
+  "source_hashes": {
+    "v27_result_sha256": "e19c8042e8405c8f6d6efb38acf37c0fd2d03cb5b537fbbdeb8b8ff137f902af",
+    "v27_telemetry_sha256": "0da7d251c98acc5b4e9eb6ff318b216fad9aa6f4317890f7089ba7d982c8df53",
+    "v28_result_sha256": "66189d2cb98a955fc20f95397a32635c86ee7ec05534aa774de6d69ad43c8b03",
+    "v28_telemetry_sha256": "950b222f5777093f020c52d749173ac5e4abe05e0e99a8be8d9ce95e18a556b2"
+  },
+  "observed_results": {
+    "v27_success_count": 13,
+    "v27_collision_count": 3,
+    "v27_phase_timeout_count": 4,
+    "v28_success_count": 13,
+    "v28_collision_count": 7,
+    "v28_phase_timeout_count": 0,
+    "exact_preserved_success_ids": [
+      "development-h050-0000",
+      "development-h050-0001",
+      "development-h050-0002",
+      "development-h050-0004",
+      "development-h050-0007",
+      "development-h050-0009",
+      "development-h050-0010",
+      "development-h050-0011",
+      "development-h050-0012",
+      "development-h050-0014",
+      "development-h050-0015",
+      "development-h050-0016",
+      "development-h050-0018"
+    ],
+    "v27_phase9_timeout_ids": [
+      "development-h050-0005",
+      "development-h050-0008",
+      "development-h050-0013",
+      "development-h050-0017"
+    ],
+    "v28_converted_collision_times_s": {
+      "development-h050-0005": 107.5,
+      "development-h050-0008": 108.85,
+      "development-h050-0013": 112.6,
+      "development-h050-0017": 122.45
+    }
+  },
+  "candidate_execution_phase_gains_8_9_10": [3.0, 4.0, 3.0],
+  "candidate_corrective_minimum_shared_magnitude": 0.1,
+  "candidate_floor_normalized_z_by_phase_fr_rl": {
+    "phase_8": [-0.3, -0.3],
+    "phase_9": [-0.4, -0.4],
+    "phase_10": [-0.3, -0.3]
+  },
+  "candidate_floor_physical_z_m_by_phase_fr_rl": {
+    "phase_8": [-0.003, -0.003],
+    "phase_9": [-0.004, -0.004],
+    "phase_10": [-0.003, -0.003]
+  },
+  "candidate_hard_z_bound_m": 0.01,
+  "phase9_margin_to_hard_z_bound_m": 0.006,
+  "offline_phase9_reconstruction": {
+    "changed_v27_emergency_rows": 2524,
+    "changed_rows_by_environment": {
+      "5": 631,
+      "8": 631,
+      "13": 631,
+      "17": 631
+    },
+    "all_leg_ik_valid_rows": 2524,
+    "total_rows": 2524,
+    "front_right_minimum_safe_joint_margin_rad": 0.14197533091017323,
+    "rear_left_minimum_safe_joint_margin_rad": 0.0687878538966823,
+    "method": "Reconstruct the unchanged calibrated four-leg IK and safe-limit branch selection from every exact v27 phase-9 emergency telemetry row, then lower front-right and rear-left requested wheel-center z by one additional millimeter."
+  },
+  "candidate_reason": "V27 proves that 3 mm in phase 8 preserves four trajectories through phase 9, while v28 proves that 6 mm in phase 8 makes three of those trajectories collide before phase 9. V29 therefore restores the v27 3 mm floor in phases 8 and 10 and changes only phase 9 to a conservative 4 mm floor. This is the smallest registered phase-selective increase allowed by the existing gain representation, affects only the four v27 timeout environments in the observed source trace, and is all-leg IK-valid on all 2524 reconstructed phase-9 rows.",
+  "unchanged_controls": [
+    "development manifest",
+    "v19 final checkpoint",
+    "phase-aware roll IMU gates and corrective latch",
+    "executed signs [0,-1,-1,0] and scales [0,1,1,0]",
+    "positive actor drive half-space used to compute shared magnitude",
+    "10 mm per-channel hard z bound",
+    "architecture, rewards, optimizer, randomization, curriculum, and budget",
+    "locked-test non-access"
+  ],
+  "required_pre_counterfactual_gates": [
+    "compile and unit tests",
+    "real-Isaac phase-selective 3/4/3 mm action and realization smoke",
+    "exact v19 checkpoint restore smoke"
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "dashboard": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\diagnostics\\replay_50mm_attempt001\\20260727_023038_obstacle-05cm_5cm-accepted-steps\\dashboard.html",
+  "data_quality": {
+    "dynamic_consistency": {
+      "dynamic_margin_mean_m": null,
+      "dynamic_margin_std_m": null,
+      "equilibrium_margin_mean_m": null,
+      "equilibrium_margin_std_m": null,
+      "finite_contact_rows": 0,
+      "finite_torque_rows": 0,
+      "max_contact_normal_force_n": null,
+      "max_torque_utilization": null
+    },
+    "overall_verdict": "INSUFFICIENT",
+    "schema": "telemetry.data_quality.v1",
+    "sources": {
+      "contacts": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\diagnostics\\replay_50mm_attempt001\\20260727_023038_obstacle-05cm_5cm-accepted-steps\\contacts.csv",
+      "joints": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\diagnostics\\replay_50mm_attempt001\\20260727_023038_obstacle-05cm_5cm-accepted-steps\\joint_timeseries.csv",
+      "telemetry_samples": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\diagnostics\\replay_50mm_attempt001\\20260727_023038_obstacle-05cm_5cm-accepted-steps\\telemetry_samples.csv"
+    },
+    "stability_conclusion": "Insufficient valid data for stability conclusion",
+    "static_baseline": {
+      "com_jitter_xy_m": NaN,
+      "com_z_range_m": NaN,
+      "duration_s": 0.0,
+      "sample_count": 0,
+      "static_margin_mean_m": null,
+      "static_margin_std_m": null,
+      "support_area_mean_m2": null,
+      "support_area_std_m2": null
+    },
+    "warnings": [
+      "not enough telemetry samples",
+      "static stability margin unavailable",
+      "dynamic stability margin unavailable",
+      "equilibrium stability margin unavailable",
+      "contact normal forces unavailable",
+      "joint torque utilization unavailable"
+    ]
+  },
+  "figures": [],
+  "html_path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\diagnostics\\replay_50mm_attempt001\\20260727_023038_obstacle-05cm_5cm-accepted-steps\\session_dashboard.html",
+  "ok": true,
+  "physical_success": {
+    "checks": [
+      {
+        "actual": 0,
+        "expected": ">= 20",
+        "name": "telemetry_samples_present",
+        "passed": false
+      },
+      {
+        "actual": "INSUFFICIENT",
+        "expected": "PASS or WARN",
+        "name": "data_quality_not_insufficient",
+        "passed": false
+      },
+      {
+        "actual": false,
+        "expected": true,
+        "name": "replay_started",
+        "passed": false
+      },
+      {
+        "actual": "",
+        "expected": "Replay complete",
+        "name": "replay_finished_success",
+        "passed": false
+      },
+      {
+        "actual": NaN,
+        "expected": ">= 0.246m",
+        "name": "front_of_robot_reached_obstacle",
+        "passed": false
+      },
+      {
+        "actual": NaN,
+        "expected": ">= 0.017m",
+        "name": "base_height_indicates_climb",
+        "passed": false
+      },
+      {
+        "actual": NaN,
+        "expected": "<= 0.85rad",
+        "name": "not_flipped_roll_pitch",
+        "passed": false
+      },
+      {
+        "actual": {
+          "final": NaN,
+          "min": NaN
+        },
+        "expected": "no sustained collapse",
+        "name": "base_height_reasonable",
+        "passed": false
+      },
+      {
+        "actual": {
+          "contact_data_unavailable": true,
+          "final": NaN,
+          "max": NaN,
+          "recent_max": NaN
+        },
+        "expected": ">= 2 contacts observed, or contact telemetry unavailable",
+        "name": "contact_support_observed_or_unavailable",
+        "passed": true
+      },
+      {
+        "actual": 0,
+        "expected": "> 0",
+        "name": "static_margin_finite",
+        "passed": false
+      }
+    ],
+    "data_quality": {
+      "contact_data_unavailable": true,
+      "overall_verdict": "INSUFFICIENT",
+      "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\diagnostics\\replay_50mm_attempt001\\20260727_023038_obstacle-05cm_5cm-accepted-steps\\data_quality.json",
+      "warnings": [
+        "not enough telemetry samples",
+        "static stability margin unavailable",
+        "dynamic stability margin unavailable",
+        "equilibrium stability margin unavailable",
+        "contact normal forces unavailable",
+        "joint torque utilization unavailable"
+      ]
+    },
+    "diagnostics": {
+      "cleared_obstacle_tail": false,
+      "ended_past_obstacle_tail": false
+    },
+    "expected": {
+      "event_count": null,
+      "final_time_s": null,
+      "height_cm": 5
+    },
+    "failure_reasons": [
+      "telemetry_samples_present: actual=0 expected=>= 20",
+      "data_quality_not_insufficient: actual=INSUFFICIENT expected=PASS or WARN",
+      "replay_started: actual=False expected=True",
+      "replay_finished_success: actual= expected=Replay complete",
+      "front_of_robot_reached_obstacle: actual=nan expected=>= 0.246m",
+      "base_height_indicates_climb: actual=nan expected=>= 0.017m",
+      "not_flipped_roll_pitch: actual=nan expected=<= 0.85rad",
+      "base_height_reasonable: actual={'min': nan, 'final': nan} expected=no sustained collapse",
+      "static_margin_finite: actual=0 expected=> 0"
+    ],
+    "metrics": {
+      "contact_supported_fraction": 0.0,
+      "contact_supported_sample_count": 0,
+      "duration_s": 0.0,
+      "final_active_contacts": NaN,
+      "final_base_x_m": NaN,
+      "final_base_z_m": NaN,
+      "finite_static_margin_count": 0,
+      "first_clearance_time_s": null,
+      "forward_progress_m": NaN,
+      "initial_base_x_m": NaN,
+      "last_replay_state": "",
+      "last_sequence_success": null,
+      "max_abs_pitch_rad": NaN,
+      "max_abs_roll_pitch_rad": NaN,
+      "max_abs_roll_rad": NaN,
+      "max_active_contacts": NaN,
+      "max_base_x_m": NaN,
+      "max_base_z_delta_m": NaN,
+      "max_base_z_m": NaN,
+      "min_active_contacts": NaN,
+      "min_base_z_m": NaN,
+      "min_static_margin_m": null,
+      "recent_active_contacts_max": NaN,
+      "recent_contact_supported_fraction": 0.0,
+      "sample_count": 0
+    },
+    "ok": false,
+    "replay": {
+      "command_event_count": 0,
+      "event_duration_s": 0.0,
+      "finish_message": "",
+      "finished": false,
+      "finished_sim_time_s": null,
+      "finished_success": false,
+      "max_event_index": -1,
+      "started": false,
+      "started_sim_time_s": null
+    },
+    "run_dir": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\diagnostics\\replay_50mm_attempt001\\20260727_023038_obstacle-05cm_5cm-accepted-steps",
+    "scene": {
+      "clear_x_m": 2.7161877987786527,
+      "mount_x_m": 0.24631220122134778,
+      "obstacle_front_x_m": 0.5213122012213478,
+      "obstacle_length_m": 2.0573755975573045,
+      "obstacle_x_m": 1.55,
+      "required_clearance_m": 0.1375,
+      "robot_length_m": 0.55
+    },
+    "schema": "height_replay_physical_success.v1",
+    "sources": {
+      "events": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\diagnostics\\replay_50mm_attempt001\\20260727_023038_obstacle-05cm_5cm-accepted-steps\\events.jsonl",
+      "metadata": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\diagnostics\\replay_50mm_attempt001\\20260727_023038_obstacle-05cm_5cm-accepted-steps\\metadata.json",
+      "replay_window_sample_count": 0,
+      "stability_summary": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\diagnostics\\replay_50mm_attempt001\\20260727_023038_obstacle-05cm_5cm-accepted-steps\\stability_summary.json",
+      "telemetry_samples": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\diagnostics\\replay_50mm_attempt001\\20260727_023038_obstacle-05cm_5cm-accepted-steps\\telemetry_samples.csv"
+    },
+    "verdict": "FAIL"
+  },
+  "plot_backend": "html_only",
+  "run_dir": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\diagnostics\\replay_50mm_attempt001\\20260727_023038_obstacle-05cm_5cm-accepted-steps",
+  "session_dashboard": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\diagnostics\\replay_50mm_attempt001\\20260727_023038_obstacle-05cm_5cm-accepted-steps\\session_dashboard.html",
+  "session_summary_png": ""
+}

@@ -1,0 +1,65 @@
+{
+  "failures": [
+    "max FK error 0.007984922m exceeds 0.000500000m"
+  ],
+  "finished_unix": 1785140774.500483,
+  "metrics": {
+    "batch_metrics": [
+      {
+        "batch": 0,
+        "max_error_m": 0.00724778464064002,
+        "rms_error_m": 0.0005802289815619588
+      },
+      {
+        "batch": 1,
+        "max_error_m": 0.007712602149695158,
+        "rms_error_m": 0.0006240530055947602
+      },
+      {
+        "batch": 2,
+        "max_error_m": 0.00715064350515604,
+        "rms_error_m": 0.0006411172798834741
+      },
+      {
+        "batch": 3,
+        "max_error_m": 0.007777305319905281,
+        "rms_error_m": 0.000626295804977417
+      },
+      {
+        "batch": 4,
+        "max_error_m": 0.007534606847912073,
+        "rms_error_m": 0.000638624420389533
+      },
+      {
+        "batch": 5,
+        "max_error_m": 0.007677176035940647,
+        "rms_error_m": 0.0005337236216291785
+      },
+      {
+        "batch": 6,
+        "max_error_m": 0.007057892624288797,
+        "rms_error_m": 0.0006740497192367911
+      },
+      {
+        "batch": 7,
+        "max_error_m": 0.007984922267496586,
+        "rms_error_m": 0.0007211638148874044
+      }
+    ],
+    "jacobian_condition_max": 5.094799041748047,
+    "jacobian_condition_p95": 4.282407760620117,
+    "max_contact_force_n": 0.0,
+    "max_error_m": 0.007984922267496586,
+    "mean_error_m": 7.905815436970443e-05,
+    "p95_error_m": 2.3611642063769978e-06,
+    "rms_error_m": 0.000632110342849046,
+    "safe_limit_violation_sample_count": 0,
+    "unexpected_external_contact_sample_count": 0
+  },
+  "passed": false,
+  "per_leg_comparisons": 4096,
+  "sampled_configurations": 1024,
+  "schema": "resume_validation.runtime_fk_validation.v1",
+  "started_unix": 1785140772.2857943,
+  "tolerance_m": 0.0005
+}

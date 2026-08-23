@@ -1,0 +1,58 @@
+{
+  "schema": "resume_validation.pre_code_candidate_analysis.v1",
+  "created_at_local": "2026-07-30T05:42:00-04:00",
+  "candidate_runtime": "runtime-v27-deficient-diagonal-downward-support-emergency",
+  "source_attempts": [
+    "method-B-v25-v19checkpoint_seed-11_stage-50mm_development_counterfactual_attempt001",
+    "method-B-v26-v19checkpoint_seed-11_stage-50mm_development_counterfactual_attempt001"
+  ],
+  "v25_source_telemetry_sha256": "270a706251a02aede774334a0f5bfe9fa7f56ad823bc771215fc2f6bd83d61d8",
+  "v26_source_telemetry_sha256": "c541ac57894e9fd42f6745da26a68efe1d4863ee9a10c05f596b81789dc8d263",
+  "v25_front_right_downward_source_rows": 1602,
+  "v26_nonzero_source_rows": 146,
+  "v25_result": "front-right -3 mm alone was physically realized on every row and delayed scenarios 0008/0013 to timeout, but added no rescue",
+  "v26_result": "rear-left +2.4 mm raises the other missing support channel; all requests were physically realized, but 0008/0013 returned to collision and all seven failures collided",
+  "terminal_failure_pattern_fl_fr_rl_rr": [true, false, false, true],
+  "terminal_failure_pattern_count": 7,
+  "candidate_executed_wheel_center_z_signs_fl_fr_rl_rr": [0, -1, -1, 0],
+  "candidate_corrective_wheel_center_z_scales_fl_fr_rl_rr": [0.0, 1.0, 1.0, 0.0],
+  "candidate_floor_physical_z_m_fl_fr_rl_rr": [0.0, -0.003, -0.003, 0.0],
+  "v25_candidate_valid_counts": {
+    "rear_left_down_2.4mm": 1602,
+    "rear_left_down_3.0mm": 1602,
+    "rear_left_down_5.0mm": 1602,
+    "rear_left_down_10.0mm": 1602
+  },
+  "v26_candidate_valid_counts": {
+    "rear_left_down_2.4mm": 146,
+    "rear_left_down_3.0mm": 146,
+    "rear_left_down_5.0mm": 146,
+    "rear_left_down_10.0mm": 146
+  },
+  "candidate_rear_left_safe_joint_margin_rad": {
+    "hip_minimum": 0.2133154172919251,
+    "knee_minimum": 0.03597454673085032,
+    "any_joint_minimum": 0.03597454673085032
+  },
+  "candidate_cartesian_margin_to_registered_10mm_bound_mm": 7.0,
+  "candidate_reason": "Negative wheel-center z extends the deficient support leg downward. V25 establishes that front-right downward extension delays failure; v26 establishes that rear-left positive z/upward retraction reverses that benefit. The candidate extends both universally deficient legs, while frozen reconstruction proves all-leg IK validity through the entire registered 10 mm rear-left bound on every v25 and v26 source row.",
+  "unchanged_controls": [
+    "development manifest",
+    "v19 final checkpoint",
+    "phase-aware roll IMU gates",
+    "phase-8 corrective latch",
+    "positive actor drive half-space used to compute shared magnitude",
+    "0.1 pre-gain corrective floor",
+    "front-right 3 mm corrective authority",
+    "phase gain 3",
+    "10 mm per-channel hard z bound",
+    "architecture, rewards, optimizer, randomization, curriculum, and budget",
+    "locked-test non-access"
+  ],
+  "required_pre_counterfactual_gates": [
+    "compile and unit tests",
+    "real-Isaac exact deficient-diagonal downward action smoke",
+    "real-Isaac all-leg IK and front-right/rear-left downward final-target realization smoke",
+    "exact v19 checkpoint restore smoke"
+  ]
+}

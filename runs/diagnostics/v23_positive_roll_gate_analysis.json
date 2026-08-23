@@ -1,0 +1,155 @@
+{
+  "schema": "resume_validation.development_gate_analysis.v1",
+  "analyzed_at_local": "2026-07-30T02:18:00-04:00",
+  "purpose": "Pre-registration analysis only; no v23 Isaac execution existed when this file was written.",
+  "locked_test_access": false,
+  "candidate": {
+    "phase_window": [
+      8,
+      10
+    ],
+    "high_roll_gate": {
+      "minimum_roll_rad": 0.1
+    },
+    "early_phase8_gate": {
+      "minimum_roll_rad": 0.06,
+      "minimum_pitch_rate_rad_s": 0.35
+    },
+    "phase8_rapid_gate_latched_until_phase_exit": true,
+    "corrective_wheel_center_z_signs": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "physical_interpretation": "Positive body roll lowers the right side in the project convention. Left-positive/right-negative wheel-center-z residuals lower the left body support and raise the right support, create a pure negative roll correction, have zero four-wheel sum, and have zero front-rear pitch moment."
+  },
+  "sources": {
+    "frozen_fsm_50mm": {
+      "run": "runs/fsm/development_50mm_current_config_attempt043",
+      "result_sha256": "778ee3de28b15e48d05667d10f1939d2fef1bef176325555d463207b01208adc",
+      "episodes_sha256": "45ab81f4158210b160b7f12016c88a618a525cf5df1ba74618114475ea3141a6",
+      "telemetry_sha256": "2bb4b5f39a0375c58347eba9fca7b480faa4a1ddc86d6894b67fd00b0b9a0b6a",
+      "phase8_10_success_max_roll_rad": 0.0907671824097633,
+      "phase8_10_success_max_pitch_rate_rad_s": 0.3304636180400848,
+      "high_roll_success_environment_indices": [],
+      "high_roll_failure_environment_indices": [
+        3,
+        5,
+        6,
+        8,
+        9,
+        13,
+        17,
+        19
+      ],
+      "early_gate_success_environment_indices": [],
+      "early_gate_failure_environment_indices": [
+        5,
+        6,
+        8,
+        19
+      ],
+      "union_success_environment_indices": [],
+      "union_failure_environment_indices": [
+        3,
+        5,
+        6,
+        8,
+        9,
+        13,
+        17,
+        19
+      ],
+      "first_union_trigger_time_s": {
+        "3": 125.15,
+        "5": 107.35,
+        "6": 107.65,
+        "8": 107.5,
+        "9": 107.7,
+        "13": 108.4,
+        "17": 107.85,
+        "19": 107.45
+      }
+    },
+    "v19_final_gate_50mm": {
+      "run": "runs/ppo_without_com/development/method-B-v19_seed-11_stage-50mm_development_gate_attempt001",
+      "result_sha256": "2dadb76b978753b903146160cb301ce2cd3018ca6b595652e1c12604118f1f0e",
+      "episodes_sha256": "888e37b49e884f07d26baaa8a8f8f3fde76026200fcf21e45f0d801a72e599c6",
+      "telemetry_sha256": "eef4e209511f4646cbca6054b181087d834aef9583d81127ce7828eb7fa090d4",
+      "phase8_10_success_max_roll_rad": 0.0960802808403968,
+      "phase8_10_success_max_pitch_rate_rad_s": 0.3304636180400848,
+      "high_roll_success_environment_indices": [],
+      "high_roll_failure_environment_indices": [
+        3,
+        5,
+        6,
+        8,
+        13,
+        17,
+        19
+      ],
+      "early_gate_success_environment_indices": [],
+      "early_gate_failure_environment_indices": [
+        5,
+        6,
+        8,
+        19
+      ],
+      "union_success_environment_indices": [],
+      "union_failure_environment_indices": [
+        3,
+        5,
+        6,
+        8,
+        13,
+        17,
+        19
+      ],
+      "scenario_0009_is_success_and_union_never_triggers": true
+    },
+    "v22_counterfactual_50mm": {
+      "run": "runs/ppo_without_com/development/method-B-v22-v19checkpoint_seed-11_stage-50mm_development_counterfactual_attempt001",
+      "result_sha256": "9252d07295c46c93aed32d041f95bffd6e01c54254a6cf15e075884e5bacb9f9",
+      "episodes_sha256": "f92eaeb67c0d596a8de8d0ea4d477c2abe65610456b1f6d24b55bb72b0256f0d",
+      "telemetry_sha256": "7dfbcdf34ca2595ac165a067a66cbd45d4ab756d90339642db7bc60a8b4af039",
+      "phase8_10_success_max_roll_rad": 0.0960835739970207,
+      "phase8_10_success_max_pitch_rate_rad_s": 0.3304636180400848,
+      "high_roll_success_environment_indices": [],
+      "high_roll_failure_environment_indices": [
+        3,
+        5,
+        6,
+        8,
+        13,
+        17,
+        19
+      ],
+      "early_gate_success_environment_indices": [],
+      "early_gate_failure_environment_indices": [
+        5,
+        6,
+        8,
+        19
+      ],
+      "union_success_environment_indices": [],
+      "union_failure_environment_indices": [
+        3,
+        5,
+        6,
+        8,
+        13,
+        17,
+        19
+      ],
+      "scenario_0009_is_success_and_union_never_triggers": true
+    }
+  },
+  "selection_rationale": {
+    "high_roll_margin_over_largest_v19_v22_success_rad": 0.0039164260029793,
+    "early_pitch_rate_margin_over_largest_success_rad_s": 0.0195363819599152,
+    "single_high_roll_gate_is_not_selected_at_0_091_rad": "Although +0.091 rad separates frozen-FSM success and failure rows, scenario 0009 reaches +0.09609 rad after the v19 policy rescues it. The +0.100 rad gate is therefore the smallest round registered threshold above every current-baseline success trajectory.",
+    "early_gate_role": "The high-roll gate leaves only 0.05-0.10 s of recorded lead in short collision scenarios 0005/0006. The phase-8 conjunction adds 0.15-0.25 s lead and remains inactive for all frozen-FSM, v19, and v22 success trajectories.",
+    "anti_cherry_pick_rule": "The thresholds and signs are fixed before code validation and before any v23 Isaac execution. Promotion still requires at least 16/20 and zero loss of all 12 frozen-FSM successes plus v19 rescue 0009."
+  }
+}

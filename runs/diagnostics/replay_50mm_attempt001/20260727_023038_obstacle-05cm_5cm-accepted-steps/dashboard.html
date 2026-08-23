@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5cm accepted steps</title>
+<style>
+body { font-family: system-ui, -apple-system, Segoe UI, sans-serif; margin: 24px; background: #f7f7f4; color: #202124; }
+h1 { font-size: 24px; margin: 0 0 16px; }
+h2 { font-size: 18px; margin-top: 28px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; }
+.metric { border: 1px solid #d7d7d0; border-radius: 8px; padding: 12px; background: white; }
+.metric b { display: block; font-size: 12px; color: #5d6368; font-weight: 600; }
+.metric span { font-size: 20px; }
+img { max-width: 100%; border: 1px solid #d7d7d0; background: white; }
+table { border-collapse: collapse; width: 100%; background: white; }
+th, td { border: 1px solid #ddd; padding: 6px 8px; font-size: 12px; text-align: left; vertical-align: top; }
+th { background: #efefea; }
+code { background: #eeeeea; padding: 1px 4px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<h1>5cm accepted steps</h1>
+<div class="grid"><div class="metric"><b>Samples</b><span>0</span></div><div class="metric"><b>Joint Rows</b><span>0</span></div><div class="metric"><b>Contact Rows</b><span>0</span></div><div class="metric"><b>Events</b><span>2</span></div><div class="metric"><b>Min Static Margin</b><span>nan</span></div><div class="metric"><b>Min Dynamic Margin</b><span>nan</span></div><div class="metric"><b>Max Torque Util</b><span>nan</span></div><div class="metric"><b>Mean Overhead</b><span>nan</span></div><div class="metric"><b>Data Quality</b><span>INSUFFICIENT</span></div><div class="metric"><b>Physical Success</b><span>FAIL</span></div></div>
+<h2>Figures</h2>
+<p>No figures were generated; check matplotlib availability or sample files.</p>
+<h2>Stability Summary</h2>
+<table><tbody><tr><th>body_com_sample_count</th><td>0</td></tr>
+<tr><th>contact_sample_count</th><td>0</td></tr>
+<tr><th>dropped_samples</th><td>0</td></tr>
+<tr><th>duration_sim_s</th><td>0.0</td></tr>
+<tr><th>duration_wall_s</th><td>1.7402095794677734</td></tr>
+<tr><th>event_count</th><td>2</td></tr>
+<tr><th>event_severity_counts</th><td>{&quot;info&quot;: 1, &quot;warning&quot;: 1}</td></tr>
+<tr><th>joint_sample_count</th><td>0</td></tr>
+<tr><th>max_contact_force_n</th><td>NaN</td></tr>
+<tr><th>max_sample_overhead_ms</th><td>NaN</td></tr>
+<tr><th>max_torque_utilization</th><td>NaN</td></tr>
+<tr><th>mean_sample_overhead_ms</th><td>NaN</td></tr>
+<tr><th>min_dynamic_margin_m</th><td>NaN</td></tr>
+<tr><th>min_equilibrium_margin_m</th><td>NaN</td></tr>
+<tr><th>min_static_margin_m</th><td>NaN</td></tr>
+<tr><th>sample_count</th><td>0</td></tr>
+<tr><th>stability_state_counts</th><td>{}</td></tr></tbody></table>
+<h2>Data Quality Verdict</h2>
+<table><tbody><tr><th>Overall Verdict</th><td>&quot;INSUFFICIENT&quot;</td></tr>
+<tr><th>Stability Conclusion</th><td>&quot;Insufficient valid data for stability conclusion&quot;</td></tr>
+<tr><th>Static Baseline</th><td>{&quot;sample_count&quot;: 0, &quot;duration_s&quot;: 0.0, &quot;com_jitter_xy_m&quot;: NaN, &quot;com_z_range_m&quot;: NaN, &quot;static_margin_mean_m&quot;: null, &quot;static_margin_std_m&quot;: null, &quot;support_area_mean_m2&quot;: null, &quot;support_area_std_m2&quot;: null}</td></tr>
+<tr><th>Dynamic Consistency</th><td>{&quot;dynamic_margin_mean_m&quot;: null, &quot;dynamic_margin_std_m&quot;: null, &quot;equilibrium_margin_mean_m&quot;: null, &quot;equilibrium_margin_std_m&quot;: null, &quot;max_torque_utilization&quot;: null, &quot;max_contact_normal_force_n&quot;: null, &quot;finite_torque_rows&quot;: 0, &quot;finite_contact_rows&quot;: 0}</td></tr></tbody></table><h3>Warnings</h3><ul><li>not enough telemetry samples</li><li>static stability margin unavailable</li><li>dynamic stability margin unavailable</li><li>equilibrium stability margin unavailable</li><li>contact normal forces unavailable</li><li>joint torque utilization unavailable</li></ul>
+<h2>Physical Success</h2>
+<table><tbody><tr><th>Verdict</th><td>&quot;FAIL&quot;</td></tr>
+<tr><th>Scene</th><td>{&quot;obstacle_x_m&quot;: 1.55, &quot;obstacle_length_m&quot;: 2.0573755975573045, &quot;robot_length_m&quot;: 0.55, &quot;required_clearance_m&quot;: 0.1375, &quot;obstacle_front_x_m&quot;: 0.5213122012213478, &quot;mount_x_m&quot;: 0.24631220122134778, &quot;clear_x_m&quot;: 2.7161877987786527}</td></tr>
+<tr><th>Metrics</th><td>{&quot;sample_count&quot;: 0, &quot;duration_s&quot;: 0.0, &quot;initial_base_x_m&quot;: NaN, &quot;final_base_x_m&quot;: NaN, &quot;max_base_x_m&quot;: NaN, &quot;forward_progress_m&quot;: NaN, &quot;first_clearance_time_s&quot;: null, &quot;min_base_z_m&quot;: NaN, &quot;final_base_z_m&quot;: NaN, &quot;max_base_z_m&quot;: NaN, &quot;max_base_z_delta_m&quot;: NaN, &quot;max_abs_roll_rad&quot;: NaN, &quot;max_abs_pitch_rad&quot;: NaN, &quot;max_abs_roll_pitch_rad&quot;: NaN, &quot;min_static_margin_m&quot;: null, &quot;finite_static_margin_count&quot;: 0, &quot;min_active_contacts&quot;: NaN, &quot;max_active_contacts&quot;: NaN, &quot;final_active_contacts&quot;: NaN, &quot;recent_active_contacts_max&quot;: NaN, &quot;contact_supported_sample_count&quot;: 0, &quot;contact_supported_fraction&quot;: 0.0, &quot;recent_contact_supported_fraction&quot;: 0.0, &quot;last_replay_state&quot;: &quot;&quot;, &quot;last_sequence_success&quot;: null}</td></tr>
+<tr><th>Replay</th><td>{&quot;started&quot;: false, &quot;finished&quot;: false, &quot;finished_success&quot;: false, &quot;finish_message&quot;: &quot;&quot;, &quot;command_event_count&quot;: 0, &quot;max_event_index&quot;: -1, &quot;started_sim_time_s&quot;: null, &quot;finished_sim_time_s&quot;: null, &quot;event_duration_s&quot;: 0.0}</td></tr></tbody></table><h3>Failed Checks</h3><ul><li>telemetry_samples_present: actual=0 expected=&gt;= 20</li><li>data_quality_not_insufficient: actual=INSUFFICIENT expected=PASS or WARN</li><li>replay_started: actual=False expected=True</li><li>replay_finished_success: actual= expected=Replay complete</li><li>front_of_robot_reached_obstacle: actual=nan expected=&gt;= 0.246m</li><li>base_height_indicates_climb: actual=nan expected=&gt;= 0.017m</li><li>not_flipped_roll_pitch: actual=nan expected=&lt;= 0.85rad</li><li>base_height_reasonable: actual={&#x27;min&#x27;: nan, &#x27;final&#x27;: nan} expected=no sustained collapse</li><li>static_margin_finite: actual=0 expected=&gt; 0</li></ul>
+<h2>Recent Events</h2>
+<table><thead><tr><th>Time</th><th>Severity</th><th>Type</th><th>Message</th></tr></thead><tbody><tr><td>0s</td><td>info</td><td>telemetry_started</td><td>Telemetry run started: 5cm accepted steps</td></tr>
+<tr><td>0s</td><td>warning</td><td>telemetry_finished</td><td>auto-play did not complete</td></tr></tbody></table>
+<h2>Files</h2>
+<table><tbody>
+<tr><th>Run Directory</th><td><code>C:\robotics_sim\wlr_robot\resume_validation_fsm_residual_ppo\runs\diagnostics\replay_50mm_attempt001\20260727_023038_obstacle-05cm_5cm-accepted-steps</code></td></tr>
+<tr><th>Telemetry CSV</th><td><code>telemetry_samples.csv</code></td></tr>
+<tr><th>Body COM CSV</th><td><code>body_com_timeseries.csv</code></td></tr>
+<tr><th>Joint CSV</th><td><code>joint_timeseries.csv</code></td></tr>
+<tr><th>Contacts CSV</th><td><code>contacts.csv</code></td></tr>
+<tr><th>Events JSONL</th><td><code>events.jsonl</code></td></tr>
+<tr><th>Model Audit</th><td><code>model_audit.json</code></td></tr>
+</tbody></table>
+</body>
+</html>

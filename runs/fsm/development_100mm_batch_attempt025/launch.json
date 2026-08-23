@@ -1,0 +1,14 @@
+{
+  "schema": "resume_validation.launch_record.v1",
+  "launched_local": "2026-07-27T18:23:33-04:00",
+  "working_directory": "C:\\robotics_sim\\IsaacLab",
+  "command": "conda run --no-capture-output -n env_isaaclab .\\isaaclab.bat -p C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\evaluate_controller.py --controller fsm --manifest C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\data\\scenario_manifests\\development_v2.json --height_mm 100 --output_dir C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\development_100mm_batch_attempt025 --max_episode_s 150 --record_stride 3 --headless",
+  "launcher_pid": 156956,
+  "initial_command_shell_pid": 162848,
+  "conda_executable_pid": 144560,
+  "conda_wrapper_pid": 158608,
+  "command_shell_pid": 118492,
+  "environment_python_pid": 169952,
+  "stdout": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\development_100mm_batch_attempt025.stdout.log",
+  "stderr": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\development_100mm_batch_attempt025.stderr.log"
+}

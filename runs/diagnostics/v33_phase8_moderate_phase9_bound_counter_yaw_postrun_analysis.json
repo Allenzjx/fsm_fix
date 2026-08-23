@@ -1,0 +1,101 @@
+{
+  "schema": "resume_validation.runtime_counterfactual_analysis.v1",
+  "runtime": "runtime-v33-phase8-moderate-phase9-bound-counter-yaw-skid-steer-emergency",
+  "development_only": true,
+  "locked_test_manifest_read": false,
+  "checkpoint_sha256": "86cf826ee471afc67c65d538013a5f11c4a3600c405bab49193733be95ea242f",
+  "run": {
+    "path": "runs/ppo_without_com/development/method-B-v33-v19checkpoint_seed-11_stage-50mm_development_counterfactual_attempt001",
+    "result_sha256": "4510890eb081e58c95d15e0e12b77af454af05e2c653389ff5017db5f6ec64ba",
+    "episodes_sha256": "f2290d190b4a52895ad652ee6d518cd85787ebd4669f868bbcd93150404aa872",
+    "status_sha256": "d1fe02e5f200016361d33e4f58228bb1168c4c1049d7268c601f1494bb179266",
+    "telemetry_sha256": "57fa047507790c99206346f6f6a37698cf66b471358f69f928dab6beea3e1856",
+    "stdout_sha256": "954c7d3cb1652954d5a6562e4f9557e5a27b64bb24d3df779bdcc5aac8fec393",
+    "stderr_sha256": "69b88143604bcb1c3325db0bf8c4c3359be2d7084fd61fd13186a9ab533c76d2"
+  },
+  "outcome": {
+    "success_count": 13,
+    "episode_count": 20,
+    "success_rate": 0.65,
+    "ideal_development_target_reached": false,
+    "success_scenario_ids_exactly_preserved_from_v31": true,
+    "all_13_success_telemetry_trajectories_byte_value_exact_to_v31": true,
+    "failure_counts": {
+      "BODY_OR_LINK_COLLISION": 6,
+      "FSM_PHASE_TIMEOUT": 1
+    }
+  },
+  "failed_scenarios": {
+    "development-h050-0003": "BODY_OR_LINK_COLLISION",
+    "development-h050-0005": "BODY_OR_LINK_COLLISION",
+    "development-h050-0006": "BODY_OR_LINK_COLLISION",
+    "development-h050-0008": "FSM_PHASE_TIMEOUT",
+    "development-h050-0013": "BODY_OR_LINK_COLLISION",
+    "development-h050-0017": "BODY_OR_LINK_COLLISION",
+    "development-h050-0019": "BODY_OR_LINK_COLLISION"
+  },
+  "speed_authorization": {
+    "total_nonzero_rows": 851,
+    "phase8_nonzero_rows": 220,
+    "phase9_nonzero_rows": 631,
+    "phase10_nonzero_rows": 0,
+    "success_environment_nonzero_rows": 0,
+    "by_environment": {
+      "development-h050-0005": {
+        "phase8_rows": 4,
+        "terminal_phase": 8,
+        "outcome": "BODY_OR_LINK_COLLISION"
+      },
+      "development-h050-0006": {
+        "phase8_rows": 6,
+        "terminal_phase": 8,
+        "outcome": "BODY_OR_LINK_COLLISION"
+      },
+      "development-h050-0008": {
+        "phase8_rows": 162,
+        "phase9_rows": 631,
+        "terminal_phase": 9,
+        "outcome": "FSM_PHASE_TIMEOUT"
+      },
+      "development-h050-0013": {
+        "phase8_rows": 36,
+        "terminal_phase": 8,
+        "outcome": "BODY_OR_LINK_COLLISION"
+      },
+      "development-h050-0017": {
+        "phase8_rows": 8,
+        "terminal_phase": 8,
+        "outcome": "BODY_OR_LINK_COLLISION"
+      },
+      "development-h050-0019": {
+        "phase8_rows": 4,
+        "terminal_phase": 8,
+        "outcome": "BODY_OR_LINK_COLLISION"
+      }
+    }
+  },
+  "comparison": {
+    "v31": {
+      "success_count": 13,
+      "body_or_link_collisions": 3,
+      "phase_timeouts": 4
+    },
+    "v32": {
+      "success_count": 13,
+      "body_or_link_collisions": 7,
+      "phase_timeouts": 0
+    },
+    "v33": {
+      "success_count": 13,
+      "body_or_link_collisions": 6,
+      "phase_timeouts": 1
+    },
+    "v33_timeout_target_0008_terminal_yaw_change_vs_v31_rad": 0.01934788215883129,
+    "interpretation": "Moderating phase-8 speed lets scenario 0008 survive the dynamic transfer and improves terminal yaw, but does not produce a new success; three other prior timeout targets still collide. No phase-8 speed candidate improves success, and both increase body collision rate relative to phase-9-only v31."
+  },
+  "selection": {
+    "selected_behavior": "v31 phase-9-only exact-bound counter-yaw",
+    "reason": "The three candidates tie at 13/20 and preserve the same successes; v31 has the fewest body/link collisions (3 versus 7 and 6), so it dominates on the pre-registered safety constraint.",
+    "training_decision": "Proceed to required B/C multi-seed training while disclosing that the ideal development improvement target was not reached."
+  }
+}

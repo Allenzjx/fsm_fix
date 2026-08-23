@@ -1,0 +1,10 @@
+{
+  "dynamic_margin_mean_m": null,
+  "dynamic_margin_std_m": null,
+  "equilibrium_margin_mean_m": null,
+  "equilibrium_margin_std_m": null,
+  "finite_contact_rows": 0,
+  "finite_torque_rows": 0,
+  "max_contact_normal_force_n": null,
+  "max_torque_utilization": null
+}

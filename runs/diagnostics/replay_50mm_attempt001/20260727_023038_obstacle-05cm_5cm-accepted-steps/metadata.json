@@ -1,0 +1,29 @@
+{
+  "created_wall_time": 1785133838.4383516,
+  "obstacle_height_cm": 5,
+  "obstacle_height_m": 0.05,
+  "obstacle_length_m": 2.0573755975573045,
+  "obstacle_width_m": 0.882200685486094,
+  "obstacle_x_m": 1.55,
+  "physics_dt": 0.008333333333333333,
+  "render_interval": 2,
+  "robot_body_count": 13,
+  "robot_joint_count": 12,
+  "robot_length_m": 0.55,
+  "robot_usd": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\assets\\converted\\wlr_robot_validation.usd",
+  "robot_width_m": 0.8,
+  "run_label": "5cm accepted steps",
+  "runtime": {
+    "executable": "C:\\Users\\kskzz\\miniconda3\\envs\\env_isaaclab\\python.exe",
+    "python_version": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]"
+  },
+  "scene": {
+    "obstacle_length_m": 2.0573755975573045,
+    "obstacle_width_m": 0.882200685486094,
+    "obstacle_x_m": 1.55,
+    "robot_length_m": 0.55,
+    "robot_width_m": 0.8
+  },
+  "schema_version": "height_replay_telemetry_run.v1",
+  "source": "auto_play"
+}

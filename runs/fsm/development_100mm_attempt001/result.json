@@ -1,0 +1,54 @@
+{
+  "aggregate": {
+    "episode_count": 1,
+    "failure_counts": {
+      "BODY_OR_LINK_COLLISION": 1
+    },
+    "mean_episode_min_margin_m": null,
+    "mean_pitch_rate_rms_rad_s": null,
+    "success_count": 0,
+    "success_rate": 0.0
+  },
+  "artifacts": {
+    "episodes": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\development_100mm_attempt001\\episodes.jsonl",
+    "episodes_sha256": "37da9985f8478602cb90867576202664eca1b349d9cdc1abca17b50b407958f1",
+    "status": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\development_100mm_attempt001\\status.json",
+    "status_sha256": "103c524fca4329f63f5ffd589397d1dafc055cc3759662ff2e74c5fb1b7f098a",
+    "telemetry": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\development_100mm_attempt001\\telemetry.csv",
+    "telemetry_sha256": "72d26d59e653e7a18b2b18fb7346783514f19872a74519751ace07f320a4e282"
+  },
+  "controller": "fsm",
+  "diagnostic_scenario_limit": 1,
+  "failures": [],
+  "finished_unix": 1785143492.320449,
+  "height_mm": 100,
+  "passed_execution": true,
+  "provenance": {
+    "asset": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\assets\\converted\\wlr_robot_validation.usd",
+    "asset_sha256": "98103315e8ad456881a28a9b3dc77f7aaa8bc9a5200e40c435bea8002c4f81dd",
+    "checkpoint": null,
+    "checkpoint_sha256": null,
+    "cuda": "12.8",
+    "fsm_config": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\fsm.yaml",
+    "fsm_config_sha256": "53e6e0f8c5f5cf576ac9b8ebb2b49a437baec729fdef3a4e348d1eecf5b622ac",
+    "isaaclab": "0.54.3",
+    "isaacsim": "5.1.0.0",
+    "manifest": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\data\\scenario_manifests\\development_v2.json",
+    "manifest_metadata": {
+      "episodes_per_height": 20,
+      "generator_version": "v2_reference_replay_geometry",
+      "initial_distance_policy": "reference settled distance +/- 0.025 m",
+      "obstacle_position_policy": "fixed translationally-equivalent reference front",
+      "protocol_version": "1.0.0",
+      "seed": 20260727,
+      "split": "development",
+      "training_code_must_not_read_locked_results": false
+    },
+    "manifest_sha256": "f3d10d7340c06f78c200c44119bb2e17c81e587bd314b342ac90b49019ea2cdc",
+    "metrics_config": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\metrics.yaml",
+    "metrics_config_sha256": "8f603da796fe4624b7534452d7d90182ee49425d8b5b9f805686813b4d1d52c0",
+    "torch": "2.7.0+cu128"
+  },
+  "schema": "resume_validation.controller_evaluation.v1",
+  "started_unix": 1785143490.0510476
+}

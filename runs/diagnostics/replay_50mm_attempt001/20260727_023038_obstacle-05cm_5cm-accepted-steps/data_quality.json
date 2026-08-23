@@ -1,0 +1,38 @@
+{
+  "dynamic_consistency": {
+    "dynamic_margin_mean_m": null,
+    "dynamic_margin_std_m": null,
+    "equilibrium_margin_mean_m": null,
+    "equilibrium_margin_std_m": null,
+    "finite_contact_rows": 0,
+    "finite_torque_rows": 0,
+    "max_contact_normal_force_n": null,
+    "max_torque_utilization": null
+  },
+  "overall_verdict": "INSUFFICIENT",
+  "schema": "telemetry.data_quality.v1",
+  "sources": {
+    "contacts": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\diagnostics\\replay_50mm_attempt001\\20260727_023038_obstacle-05cm_5cm-accepted-steps\\contacts.csv",
+    "joints": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\diagnostics\\replay_50mm_attempt001\\20260727_023038_obstacle-05cm_5cm-accepted-steps\\joint_timeseries.csv",
+    "telemetry_samples": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\diagnostics\\replay_50mm_attempt001\\20260727_023038_obstacle-05cm_5cm-accepted-steps\\telemetry_samples.csv"
+  },
+  "stability_conclusion": "Insufficient valid data for stability conclusion",
+  "static_baseline": {
+    "com_jitter_xy_m": NaN,
+    "com_z_range_m": NaN,
+    "duration_s": 0.0,
+    "sample_count": 0,
+    "static_margin_mean_m": null,
+    "static_margin_std_m": null,
+    "support_area_mean_m2": null,
+    "support_area_std_m2": null
+  },
+  "warnings": [
+    "not enough telemetry samples",
+    "static stability margin unavailable",
+    "dynamic stability margin unavailable",
+    "equilibrium stability margin unavailable",
+    "contact normal forces unavailable",
+    "joint torque utilization unavailable"
+  ]
+}

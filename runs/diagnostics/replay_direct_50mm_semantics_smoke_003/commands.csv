@@ -1,0 +1,2 @@
+time_s,event_cursor,step_index,event_index,command,front_left_hip,front_left_knee,front_right_hip,front_right_knee,rear_left_hip,rear_left_knee,rear_right_hip,rear_right_knee,front_left_ankle,front_right_ankle,rear_left_ankle,rear_right_ankle
+0.8589999999385327,0,1,0,wheel all 0.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.3,0.3,0.3,0.3

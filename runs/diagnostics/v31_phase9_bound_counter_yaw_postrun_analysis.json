@@ -1,0 +1,68 @@
+{
+  "schema": "resume_validation.postrun_candidate_analysis.v1",
+  "created_at_local": "2026-07-30T09:30:00-04:00",
+  "runtime": "runtime-v31-phase9-bound-counter-yaw-skid-steer-emergency",
+  "attempt": "method-B-v31-v19checkpoint_seed-11_stage-50mm_development_counterfactual_attempt001",
+  "source_hashes": {
+    "result_sha256": "4c7ea42306ea1a75cba97754be6e93c2d038dd177e34d7f08ee4f4d8352bf9ba",
+    "episodes_sha256": "265ce71365459366191fdedf244cb9e63f53cfa43c7480cc935e313d122bce8f",
+    "telemetry_sha256": "ddb579bf658359f63d6732213bc8ff18dfc5f788f9fa2ef0e43935ca953dc38d"
+  },
+  "outcome": {
+    "success_count": 13,
+    "episode_count": 20,
+    "success_rate": 0.65,
+    "collision_environment_ids": [3, 6, 19],
+    "phase9_timeout_environment_ids": [5, 8, 13, 17],
+    "development_gate_passed": false,
+    "training_authorized": false
+  },
+  "authorization_audit": {
+    "nonzero_wheel_speed_rows": 2524,
+    "nonzero_wheel_speed_environment_ids": [5, 8, 13, 17],
+    "nonzero_wheel_speed_phase_ids": [9],
+    "unique_physical_forward_wheel_speed_residual_rad_s": [-0.1000000014901161, 0.1000000014901161, -0.1000000014901161, 0.1000000014901161],
+    "pre_phase9_state_rows_compared_to_v30": 45944,
+    "pre_phase9_state_max_abs_difference": 0.0,
+    "existing_success_state_trajectories_exactly_equal_to_v30": true,
+    "new_ik_rollback_rows": 0
+  },
+  "measured_bound_speed_effect_vs_v30": {
+    "environment_ids": [5, 8, 13, 17],
+    "terminal_axle_midpoint_yaw_improvement_toward_zero_rad": [0.009115, 0.006950, 0.009978, 0.011244],
+    "terminal_front_right_lateral_improvement_toward_support_m": [0.002934, 0.002446, 0.002419, 0.003397],
+    "total_terminal_yaw_improvement_vs_v29_rad": [0.018991, 0.010060, 0.014112, 0.012962],
+    "total_terminal_front_right_lateral_improvement_vs_v29_m": [0.004799, 0.003952, 0.004262, 0.004524],
+    "terminal_contact_state_fl_fr_rl_rr": ["TOP", "TOP", "AIR", "TOP"],
+    "terminal_full_wheel_on_top_fl_fr_rl_rr": [true, false, false, true],
+    "interpretation": "The response remains monotonic and directionally correct at the hard speed bound, but phase-9 static differential motion settles by approximately 130--135 s and cannot rotate the footprint far enough to change support topology."
+  },
+  "phase8_opportunity_audit": {
+    "corrective_rows": 636,
+    "corrective_environment_ids": [5, 6, 8, 13, 17, 19],
+    "corrective_success_environment_count": 0,
+    "timeout_environment_row_counts": {
+      "5": 166,
+      "8": 162,
+      "13": 145,
+      "17": 156
+    },
+    "timeout_environment_authorized_time_ranges_s": {
+      "5": [107.35, 115.60],
+      "8": [107.55, 115.60],
+      "13": [108.40, 115.60],
+      "17": [107.85, 115.60]
+    },
+    "collision_environment_row_counts": {
+      "6": 3,
+      "19": 4
+    },
+    "reason": "The existing actor-observable roll-IMU corrective gate already isolates only failures during phase 8. Extending the identical bounded differential into this dynamic transfer interval adds 7.25--8.30 s of moving-contact yaw authority for each timeout without changing the gate or exposing any current success."
+  },
+  "decision": {
+    "classification": "correct_direction_and_bound_saturated_but_static_phase_too_late",
+    "next_candidate": "runtime-v32-phase8-9-bound-counter-yaw-skid-steer-emergency",
+    "registered_change": "Authorize the unchanged bound-speed counter-yaw output on corrective rows in phases 8 and 9 instead of phase 9 only; retain exact-zero wheel-speed residual in phase 10.",
+    "locked_test_accessed": false
+  }
+}

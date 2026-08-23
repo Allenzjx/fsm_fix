@@ -1,0 +1,76 @@
+{
+  "schema": "resume_validation.pre_code_candidate_analysis.v1",
+  "created_at_local": "2026-07-30T04:54:01-04:00",
+  "candidate_runtime": "runtime-v26-asymmetric-diagonal-ik-margin-emergency",
+  "source_attempt": "method-B-v25-v19checkpoint_seed-11_stage-50mm_development_counterfactual_attempt001",
+  "source_telemetry_sha256": "270a706251a02aede774334a0f5bfe9fa7f56ad823bc771215fc2f6bd83d61d8",
+  "source_result_sha256": "5b3ed2142b2b61dcfb8698ad6845c218df25b5a2cae6affb3f14e5159b33581c",
+  "v25_front_right_corrective_rows": 1602,
+  "v25_front_right_physically_realized_rows": 1602,
+  "v25_front_right_rollback_rows": 0,
+  "v25_new_rescues": 0,
+  "terminal_failure_pattern_fl_fr_rl_rr": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "terminal_failure_pattern_count": 7,
+  "front_right_fixed_request_m": -0.003,
+  "rear_left_positive_z_maximum_feasible_mm": {
+    "minimum": 2.7009390920975416,
+    "p01": 2.703465454504112,
+    "median": 2.70534114588736,
+    "maximum": 2.7119114930792416
+  },
+  "v25_candidate_valid_counts": {
+    "rear_left_2.4mm": 1602,
+    "rear_left_2.7mm": 1602,
+    "rear_left_3.0mm": 0
+  },
+  "v24_source_rows": 863,
+  "v24_candidate_valid_counts": {
+    "rear_left_2.4mm": 863,
+    "rear_left_2.7mm": 863,
+    "rear_left_3.0mm": 0
+  },
+  "candidate_executed_wheel_center_z_signs_fl_fr_rl_rr": [
+    0,
+    -1,
+    1,
+    0
+  ],
+  "candidate_corrective_wheel_center_z_scales_fl_fr_rl_rr": [
+    0.0,
+    1.0,
+    0.8,
+    0.0
+  ],
+  "candidate_floor_physical_z_m_fl_fr_rl_rr": [
+    0.0,
+    -0.003,
+    0.0024,
+    0.0
+  ],
+  "candidate_worst_observed_rear_left_ik_margin_mm": 0.3009390920975416,
+  "candidate_reason": "V25 proves front-right -3 mm is physically realized and causally delays failures but adds no rescue; every terminal failure still lacks rear-left support. Scaling only rear-left to +2.4 mm restores the missing channel while preserving at least 0.300939 mm measured IK margin on all v25 and v24 source rows.",
+  "unchanged_controls": [
+    "development manifest",
+    "v19 final checkpoint",
+    "phase-aware roll IMU gates",
+    "phase-8 corrective latch",
+    "positive actor drive half-space",
+    "0.1 pre-gain corrective floor",
+    "front-right 3 mm corrective authority",
+    "phase gain 3",
+    "10 mm per-channel hard z bound",
+    "architecture, rewards, optimizer, randomization, curriculum, and budget",
+    "locked-test non-access"
+  ],
+  "required_pre_counterfactual_gates": [
+    "compile and unit tests",
+    "real-Isaac exact asymmetric action smoke",
+    "real-Isaac all-leg IK and front-right/rear-left final-target realization smoke",
+    "exact v19 checkpoint restore smoke"
+  ]
+}

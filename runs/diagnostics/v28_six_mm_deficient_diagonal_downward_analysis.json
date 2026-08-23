@@ -1,0 +1,57 @@
+{
+  "schema": "resume_validation.pre_code_candidate_analysis.v1",
+  "created_at_local": "2026-07-30T06:27:00-04:00",
+  "candidate_runtime": "runtime-v28-six-mm-deficient-diagonal-downward-support-emergency",
+  "source_attempt": "method-B-v27-v19checkpoint_seed-11_stage-50mm_development_counterfactual_attempt001",
+  "source_result_sha256": "e19c8042e8405c8f6d6efb38acf37c0fd2d03cb5b537fbbdeb8b8ff137f902af",
+  "source_telemetry_sha256": "0da7d251c98acc5b4e9eb6ff318b216fad9aa6f4317890f7089ba7d982c8df53",
+  "v27_success_count": 13,
+  "v27_collision_count": 3,
+  "v27_phase_timeout_count": 4,
+  "v27_emergency_rows": 3269,
+  "v27_physically_realized_emergency_rows": 3267,
+  "v27_late_coupled_rollback_rows": 2,
+  "v27_late_coupled_rollback_scenario": "development-h050-0003",
+  "v27_late_coupled_rollback_times_s": [130.5, 130.55],
+  "terminal_failure_pattern_fl_fr_rl_rr": [true, false, false, true],
+  "candidate_executed_wheel_center_z_signs_fl_fr_rl_rr": [0, -1, -1, 0],
+  "candidate_corrective_wheel_center_z_scales_fl_fr_rl_rr": [0.0, 1.0, 1.0, 0.0],
+  "candidate_corrective_minimum_shared_magnitude": 0.2,
+  "candidate_phase_gain": 3.0,
+  "candidate_floor_normalized_z_fl_fr_rl_rr": [0.0, -0.6, -0.6, 0.0],
+  "candidate_floor_physical_z_m_fl_fr_rl_rr": [0.0, -0.006, -0.006, 0.0],
+  "candidate_hard_z_bound_m": 0.01,
+  "candidate_margin_to_hard_z_bound_m": 0.004,
+  "offline_candidate_validity": {
+    "v25_source_rows_valid": 1602,
+    "v25_source_rows_total": 1602,
+    "v26_source_rows_valid": 146,
+    "v26_source_rows_total": 146,
+    "v27_source_rows_valid": 3280,
+    "v27_source_rows_total": 3282,
+    "v27_invalid_rows": 2
+  },
+  "candidate_valid_row_joint_margin_rad": {
+    "front_right_minimum": 0.15511962957629355,
+    "rear_left_minimum": 0.05383216063954144
+  },
+  "candidate_invalid_row_policy": "The same two late scenario-0003 rows are already coupled-invalid at the v27 3 mm request and remain invalid at 6 mm; fail-closed rollback is unchanged and no new invalid source row is introduced.",
+  "candidate_reason": "V27 changes seven rapid collisions into three collisions plus four phase-9 timeouts, proving the downward direction but not enough authority. Doubling the registered corrective floor to 0.2 yields 6 mm physical extension, remains 4 mm inside the hard z bound, is IK-valid on every previously valid v25/v26/v27 source row, and preserves the same fail-closed behavior on the two already divergent late rows.",
+  "unchanged_controls": [
+    "development manifest",
+    "v19 final checkpoint",
+    "phase-aware roll IMU gates",
+    "phase-8 corrective latch",
+    "executed signs and scales",
+    "positive actor drive half-space used to compute shared magnitude",
+    "phase gain 3",
+    "10 mm per-channel hard z bound",
+    "architecture, rewards, optimizer, randomization, curriculum, and budget",
+    "locked-test non-access"
+  ],
+  "required_pre_counterfactual_gates": [
+    "compile and unit tests",
+    "real-Isaac exact 6 mm action and two-leg realization smoke",
+    "exact v19 checkpoint restore smoke"
+  ]
+}

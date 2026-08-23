@@ -1,0 +1,68 @@
+{
+  "schema": "resume_validation.pre_code_candidate_analysis.v1",
+  "created_at_local": "2026-07-30T03:59:32-04:00",
+  "candidate_runtime": "runtime-v25-front-right-only-ik-feasible-emergency",
+  "source_attempt": "method-B-v24-v19checkpoint_seed-11_stage-50mm_development_counterfactual_attempt001",
+  "source_telemetry_sha256": "52143cb7189de1acc4bbb5f74ea428d150b26ac09685bab259f7381e3a9c0f4a",
+  "source_result_sha256": "e70464760abdbe2e73e22da16afab7ba11979b764aa3c86e671dae03514a0d32",
+  "analysis_rows": 863,
+  "registered_v24_requested_direction_fl_fr_rl_rr": [
+    0,
+    -1,
+    1,
+    0
+  ],
+  "v24_ik_valid_counts_fl_fr_rl_rr": [
+    863,
+    863,
+    0,
+    863
+  ],
+  "v24_all_legs_valid_rows": 0,
+  "v24_all_leg_fail_closed_rollback_rows": 863,
+  "v24_final_target_to_baseline_max_error_m": 1.3969839035565812e-09,
+  "rear_left_primary_branch_knee_lower_limit_rad": -0.759206975401994,
+  "rear_left_primary_branch_knee_range_rad": [
+    -0.7611668562548932,
+    -0.7610942942590528
+  ],
+  "rear_left_max_knee_lower_limit_violation_rad": 0.0019598808528992206,
+  "candidate_requested_direction_fl_fr_rl_rr": [
+    0,
+    -1,
+    0,
+    0
+  ],
+  "candidate_workspace_valid_counts_fl_fr_rl_rr": [
+    863,
+    863,
+    863,
+    863
+  ],
+  "candidate_ik_valid_counts_fl_fr_rl_rr": [
+    863,
+    863,
+    863,
+    863
+  ],
+  "candidate_all_legs_valid_rows": 863,
+  "candidate_reason": "Every v24 collision is front_right_bot. Removing the universally infeasible rear-left request while retaining the valid front-right -3 mm request makes every reconstructed correction row pass the existing coupled all-legs IK safety check.",
+  "unchanged_controls": [
+    "development manifest",
+    "v19 final checkpoint",
+    "phase-aware roll IMU gates",
+    "phase-8 corrective latch",
+    "positive actor drive half-space",
+    "0.1 pre-gain corrective floor",
+    "phase gain 3",
+    "10 mm wheel-center z hard bound",
+    "architecture, rewards, optimizer, randomization, curriculum, and budget",
+    "locked-test non-access"
+  ],
+  "required_pre_counterfactual_gates": [
+    "compile and unit tests",
+    "real-Isaac action-layer smoke",
+    "real-Isaac final-wheel-center and servo-target realization smoke",
+    "exact v19 checkpoint restore smoke"
+  ]
+}

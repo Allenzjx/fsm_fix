@@ -1,0 +1,48 @@
+{
+  "schema": "resume_validation.postrun_candidate_analysis.v1",
+  "created_at_local": "2026-07-30T08:42:00-04:00",
+  "runtime": "runtime-v30-phase9-counter-yaw-skid-steer-emergency",
+  "attempt": "method-B-v30-v19checkpoint_seed-11_stage-50mm_development_counterfactual_attempt001",
+  "source_hashes": {
+    "result_sha256": "1a3d95b534fbd5b1a0c0061f5ac02508f01d600b67a7dd108603cc0df64584af",
+    "episodes_sha256": "a9f8833aa3db08f12c71c3f0089ee3add6a196c6ef9e8298f8b4cc8e14f9e0c5",
+    "telemetry_sha256": "20a8869df51821e1228bc16abde374fa0dfe34ad5097057bf80fdc7c32c90a7a"
+  },
+  "outcome": {
+    "success_count": 13,
+    "episode_count": 20,
+    "success_rate": 0.65,
+    "collision_environment_ids": [3, 6, 19],
+    "phase9_timeout_environment_ids": [5, 8, 13, 17],
+    "development_gate_passed": false,
+    "training_authorized": false
+  },
+  "authorization_audit": {
+    "nonzero_wheel_speed_rows": 2524,
+    "nonzero_wheel_speed_environment_ids": [5, 8, 13, 17],
+    "nonzero_wheel_speed_phase_ids": [9],
+    "nonzero_wheel_speed_time_range_s": [115.65, 147.15],
+    "unique_physical_forward_wheel_speed_residual_rad_s": [-0.0400000028312206, 0.0400000028312206, -0.0400000028312206, 0.0400000028312206],
+    "non_phase9_nonzero_wheel_speed_rows": 0,
+    "pre_phase9_state_rows_compared_to_v29": 45944,
+    "pre_phase9_state_max_abs_difference": 0.0,
+    "existing_success_environment_ids": [0, 1, 2, 4, 7, 9, 10, 11, 12, 14, 15, 16, 18],
+    "existing_success_state_trajectories_exactly_equal_to_v29": true,
+    "new_ik_rollback_rows": 0
+  },
+  "measured_counter_yaw_effect_vs_v29": {
+    "environment_ids": [5, 8, 13, 17],
+    "terminal_axle_midpoint_yaw_improvement_toward_zero_rad": [0.009877, 0.003110, 0.004134, 0.001719],
+    "terminal_front_right_lateral_improvement_toward_support_m": [0.001865, 0.001506, 0.001844, 0.001127],
+    "terminal_rear_left_vertical_change_m": [-0.000769, -0.001183, -0.001726, -0.001128],
+    "terminal_contact_state_fl_fr_rl_rr": ["TOP", "TOP", "AIR", "TOP"],
+    "terminal_full_wheel_on_top_fl_fr_rl_rr": [true, false, false, true],
+    "interpretation": "The registered sign is empirically correct: every target trajectory moves axle-midpoint yaw toward zero and front-right laterally toward support. The 0.04 rad/s magnitude is insufficient; all four contact topologies and timeout outcomes remain unchanged, and the effect settles before phase exit."
+  },
+  "decision": {
+    "classification": "directionally_valid_but_insufficient_authority",
+    "next_candidate": "runtime-v31-phase9-bound-counter-yaw-skid-steer-emergency",
+    "reason": "A 2.5x increase reaches the already registered 0.10 rad/s residual hard bound while retaining the exact v30 direction, phase, actor-observable emergency gate, and unchanged-success isolation. An independent wheel-speed floor avoids increasing the v29 3/4/3 mm wheel-center correction, because v28 already showed that increasing the vertical floor caused additional collisions."
+  },
+  "locked_test_accessed": false
+}

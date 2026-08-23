@@ -1,0 +1,61 @@
+{
+  "active_count": 0,
+  "completed_count": 1,
+  "control_step": 4755,
+  "env0": {
+    "base_x_m": 0.7157782316207886,
+    "contact_force_n": [
+      9.791646957397461,
+      0.0,
+      0.0,
+      7.541901111602783
+    ],
+    "contact_state": [
+      3,
+      3,
+      1,
+      1
+    ],
+    "phase": 6,
+    "terminal_nonwheel_contact_force_n": {
+      "base_link": 9.321496963500977
+    },
+    "wheel_position_xz_m": [
+      [
+        0.9835368394851685,
+        0.14921805262565613
+      ],
+      [
+        1.0891660451889038,
+        0.15009133517742157
+      ],
+      [
+        0.36626845598220825,
+        0.04968810826539993
+      ],
+      [
+        0.3837476372718811,
+        0.04916498064994812
+      ]
+    ]
+  },
+  "phase_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "schema": "resume_validation.controller_status.v1",
+  "sim_time_s": 79.25,
+  "success_count": 0,
+  "updated_unix": 1785147719.2853124
+}
