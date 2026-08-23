@@ -1,0 +1,23 @@
+{
+  "failures": [
+    "RuntimeError: Requested cumulative timesteps 153600 != registered full-development budget 76800"
+  ],
+  "finished_unix": 1785435995.7434309,
+  "height_mm": 75,
+  "method": "B",
+  "method_name": "without_com",
+  "run_dir": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_without_com\\training\\method-B-v34_seed-11_stage-75mm_attempt001",
+  "schema": "resume_validation.residual_ppo_training.v1",
+  "seed": 11,
+  "started_unix": 1785435995.698391,
+  "status": "FAILED",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\train_residual_ppo.py\", line 408, in main\n    raise RuntimeError(\nRuntimeError: Requested cumulative timesteps 153600 != registered full-development budget 76800\n",
+  "training_budget": {
+    "cumulative_timesteps_requested": 153600,
+    "cumulative_transitions_requested": 9830400,
+    "local_timesteps_requested": 76800,
+    "local_transitions_requested": 4915200,
+    "parallel_environments": 64,
+    "resume_offset_timesteps": 76800
+  }
+}
