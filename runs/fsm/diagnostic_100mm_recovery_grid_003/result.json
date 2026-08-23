@@ -1,0 +1,1389 @@
+{
+  "candidate_count": 25,
+  "candidates": [
+    {
+      "candidate_id": 0,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.015,
+      "front_right_offset_z_m": -0.01,
+      "success": false,
+      "terminal_control_step": 8234,
+      "terminal_margin_m": 0.32465171813964844,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.286270618438721
+      },
+      "terminal_phase": 9,
+      "terminal_pitch_rad": -0.03581161051988602,
+      "terminal_reference_commands": [
+        6.200000762939453,
+        2.299999237060547,
+        1.8501441478729248,
+        7.919205665588379,
+        -0.7000000476837158,
+        40.82475280761719,
+        -8.180258750915527,
+        -40.96795654296875,
+        0.30000001192092896,
+        0.30000001192092896,
+        0.30000001192092896,
+        0.30000001192092896
+      ],
+      "terminal_roll_rad": 0.058777038007974625,
+      "terminal_root_x_m": 1.0202741622924805,
+      "terminal_sim_time_s": 137.23333333333332,
+      "terminal_wheel_contact_force_n": [
+        8.335148811340332,
+        0.0,
+        5.382070064544678,
+        10.57026481628418
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3083419799804688,
+          0.14843572676181793
+        ],
+        [
+          1.214273452758789,
+          0.11351682990789413
+        ],
+        [
+          0.6435575485229492,
+          0.1487063765525818
+        ],
+        [
+          0.7579345703125,
+          0.15075469017028809
+        ]
+      ]
+    },
+    {
+      "candidate_id": 1,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.015,
+      "front_right_offset_z_m": -0.005,
+      "success": false,
+      "terminal_control_step": 8705,
+      "terminal_margin_m": 0.3125343322753906,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 24.3846378326416
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.021623462438583374,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        3.7406351566314697,
+        6.051382541656494,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.08148898184299469,
+      "terminal_root_x_m": 1.0626535415649414,
+      "terminal_sim_time_s": 145.08333333333334,
+      "terminal_wheel_contact_force_n": [
+        4.742588996887207,
+        0.0,
+        8.115602493286133,
+        7.378073692321777
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3448610305786133,
+          0.14815376698970795
+        ],
+        [
+          1.2654485702514648,
+          0.11182299256324768
+        ],
+        [
+          0.702092170715332,
+          0.1487324833869934
+        ],
+        [
+          0.8041963577270508,
+          0.1513001173734665
+        ]
+      ]
+    },
+    {
+      "candidate_id": 2,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.015,
+      "front_right_offset_z_m": 0.0,
+      "success": false,
+      "terminal_control_step": 8732,
+      "terminal_margin_m": 0.30683135986328125,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 28.401948928833008
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.014408777467906475,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        5.668625831604004,
+        4.2765679359436035,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.09255214780569077,
+      "terminal_root_x_m": 1.065145492553711,
+      "terminal_sim_time_s": 145.53333333333333,
+      "terminal_wheel_contact_force_n": [
+        3.7820839881896973,
+        0.0,
+        9.98078441619873,
+        9.199971199035645
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3473453521728516,
+          0.14870105683803558
+        ],
+        [
+          1.2745952606201172,
+          0.11259245872497559
+        ],
+        [
+          0.713470458984375,
+          0.14878830313682556
+        ],
+        [
+          0.8101348876953125,
+          0.15053309500217438
+        ]
+      ]
+    },
+    {
+      "candidate_id": 3,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.015,
+      "front_right_offset_z_m": 0.005,
+      "success": false,
+      "terminal_control_step": 8728,
+      "terminal_margin_m": 0.28955078125,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 13.467315673828125
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.004198580048978329,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        7.597490310668945,
+        2.561711549758911,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.10473725199699402,
+      "terminal_root_x_m": 1.0651283264160156,
+      "terminal_sim_time_s": 145.46666666666667,
+      "terminal_wheel_contact_force_n": [
+        5.641867637634277,
+        0.0,
+        9.979338645935059,
+        9.424721717834473
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3466119766235352,
+          0.14812546968460083
+        ],
+        [
+          1.2745161056518555,
+          0.11220192164182663
+        ],
+        [
+          0.7323217391967773,
+          0.14833170175552368
+        ],
+        [
+          0.8084673881530762,
+          0.1509481966495514
+        ]
+      ]
+    },
+    {
+      "candidate_id": 4,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.015,
+      "front_right_offset_z_m": 0.01,
+      "success": false,
+      "terminal_control_step": 8707,
+      "terminal_margin_m": 0.21645259857177734,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 15.066201210021973
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.002092270413413644,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        9.52629280090332,
+        0.9079900979995728,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.12570317089557648,
+      "terminal_root_x_m": 1.0622062683105469,
+      "terminal_sim_time_s": 145.11666666666667,
+      "terminal_wheel_contact_force_n": [
+        4.324034214019775,
+        0.0,
+        0.0,
+        13.959843635559082
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3434419631958008,
+          0.14853118360042572
+        ],
+        [
+          1.2636117935180664,
+          0.10953319072723389
+        ],
+        [
+          0.7477383613586426,
+          0.1489052027463913
+        ],
+        [
+          0.8008918762207031,
+          0.15068507194519043
+        ]
+      ]
+    },
+    {
+      "candidate_id": 5,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.0075,
+      "front_right_offset_z_m": -0.01,
+      "success": false,
+      "terminal_control_step": 8227,
+      "terminal_margin_m": 0.33060598373413086,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 5.315288543701172
+      },
+      "terminal_phase": 9,
+      "terminal_pitch_rad": -0.03671411797404289,
+      "terminal_reference_commands": [
+        6.200000762939453,
+        2.299999237060547,
+        1.792964220046997,
+        10.934403419494629,
+        -0.7000000476837158,
+        41.20795440673828,
+        -8.252054214477539,
+        -41.3035774230957,
+        0.30000001192092896,
+        0.30000001192092896,
+        0.30000001192092896,
+        0.30000001192092896
+      ],
+      "terminal_roll_rad": 0.061228446662425995,
+      "terminal_root_x_m": 1.0114507675170898,
+      "terminal_sim_time_s": 137.11666666666667,
+      "terminal_wheel_contact_force_n": [
+        7.933427333831787,
+        0.0,
+        5.915726184844971,
+        9.52992057800293
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.29927396774292,
+          0.14876094460487366
+        ],
+        [
+          1.2184958457946777,
+          0.11350895464420319
+        ],
+        [
+          0.6308498382568359,
+          0.14976657927036285
+        ],
+        [
+          0.7539839744567871,
+          0.15040899813175201
+        ]
+      ]
+    },
+    {
+      "candidate_id": 6,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.0075,
+      "front_right_offset_z_m": -0.005,
+      "success": false,
+      "terminal_control_step": 8751,
+      "terminal_margin_m": 0.3207530975341797,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 7.974725246429443
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.02397128939628601,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        3.3816936016082764,
+        9.143668174743652,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.000000476837158,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.07938975840806961,
+      "terminal_root_x_m": 1.066389560699463,
+      "terminal_sim_time_s": 145.85,
+      "terminal_wheel_contact_force_n": [
+        7.457011699676514,
+        0.0,
+        10.724749565124512,
+        9.460383415222168
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.348078727722168,
+          0.1485120952129364
+        ],
+        [
+          1.2844233512878418,
+          0.11294937878847122
+        ],
+        [
+          0.7003307342529297,
+          0.1492159515619278
+        ],
+        [
+          0.8139286041259766,
+          0.15066392719745636
+        ]
+      ]
+    },
+    {
+      "candidate_id": 7,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.0075,
+      "front_right_offset_z_m": 0.0,
+      "success": false,
+      "terminal_control_step": 8703,
+      "terminal_margin_m": 0.2935371398925781,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.852731704711914
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.008525288663804531,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        5.303953170776367,
+        7.363391399383545,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.09690988808870316,
+      "terminal_root_x_m": 1.0607452392578125,
+      "terminal_sim_time_s": 145.05,
+      "terminal_wheel_contact_force_n": [
+        9.52274227142334,
+        0.0,
+        7.068240642547607,
+        11.337821960449219
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3430843353271484,
+          0.1486995667219162
+        ],
+        [
+          1.2708678245544434,
+          0.11037027090787888
+        ],
+        [
+          0.7216396331787109,
+          0.14917407929897308
+        ],
+        [
+          0.7996406555175781,
+          0.15065518021583557
+        ]
+      ]
+    },
+    {
+      "candidate_id": 8,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.0075,
+      "front_right_offset_z_m": 0.005,
+      "success": false,
+      "terminal_control_step": 8735,
+      "terminal_margin_m": 0.29635143280029297,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 15.737871170043945
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.008943405002355576,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        7.221301078796387,
+        5.648817539215088,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.10622888058423996,
+      "terminal_root_x_m": 1.0664677619934082,
+      "terminal_sim_time_s": 145.58333333333334,
+      "terminal_wheel_contact_force_n": [
+        6.306436061859131,
+        0.0,
+        4.202193260192871,
+        12.810068130493164
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.348470687866211,
+          0.14909367263317108
+        ],
+        [
+          1.2821617126464844,
+          0.11205695569515228
+        ],
+        [
+          0.7262864112854004,
+          0.1483338475227356
+        ],
+        [
+          0.8114480972290039,
+          0.1507369577884674
+        ]
+      ]
+    },
+    {
+      "candidate_id": 9,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.0075,
+      "front_right_offset_z_m": 0.01,
+      "success": false,
+      "terminal_control_step": 8748,
+      "terminal_margin_m": -0.21367740631103516,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 22.479406356811523
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.0005069842445664108,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        9.136427879333496,
+        3.9967117309570312,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.000000476837158,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.1187879666686058,
+      "terminal_root_x_m": 1.0639901161193848,
+      "terminal_sim_time_s": 145.8,
+      "terminal_wheel_contact_force_n": [
+        0.04062344506382942,
+        0.0,
+        6.600106716156006,
+        10.429326057434082
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3455257415771484,
+          0.1485511064529419
+        ],
+        [
+          1.2802019119262695,
+          0.11168548464775085
+        ],
+        [
+          0.7397832870483398,
+          0.14881058037281036
+        ],
+        [
+          0.8079261779785156,
+          0.1505437195301056
+        ]
+      ]
+    },
+    {
+      "candidate_id": 10,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0,
+      "front_right_offset_z_m": -0.01,
+      "success": false,
+      "terminal_control_step": 8661,
+      "terminal_margin_m": 0.3189884424209595,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 8.45004940032959
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.030023830011487007,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        0.9572040438652039,
+        14.250711441040039,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.07431906461715698,
+      "terminal_root_x_m": 1.054000973701477,
+      "terminal_sim_time_s": 144.35,
+      "terminal_wheel_contact_force_n": [
+        8.650323867797852,
+        0.0,
+        8.003511428833008,
+        10.286337852478027
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3351975679397583,
+          0.14886897802352905
+        ],
+        [
+          1.2701077461242676,
+          0.11099325120449066
+        ],
+        [
+          0.6864281892776489,
+          0.14850230515003204
+        ],
+        [
+          0.7950413227081299,
+          0.1509319692850113
+        ]
+      ]
+    },
+    {
+      "candidate_id": 11,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0,
+      "front_right_offset_z_m": -0.005,
+      "success": false,
+      "terminal_control_step": 8672,
+      "terminal_margin_m": 0.3103875517845154,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 9.177184104919434
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.021995581686496735,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        2.8833324909210205,
+        12.390034675598145,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.0838794931769371,
+      "terminal_root_x_m": 1.0499529838562012,
+      "terminal_sim_time_s": 144.53333333333333,
+      "terminal_wheel_contact_force_n": [
+        8.418496131896973,
+        0.0,
+        8.433145523071289,
+        10.180389404296875
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3321926593780518,
+          0.14821894466876984
+        ],
+        [
+          1.264966607093811,
+          0.11062704771757126
+        ],
+        [
+          0.6917632222175598,
+          0.14850153028964996
+        ],
+        [
+          0.7905806303024292,
+          0.15126599371433258
+        ]
+      ]
+    },
+    {
+      "candidate_id": 12,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0,
+      "front_right_offset_z_m": 0.0,
+      "success": false,
+      "terminal_control_step": 8733,
+      "terminal_margin_m": -0.21000397205352783,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 26.816057205200195
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.01549739670008421,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        4.800000190734863,
+        10.600000381469727,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.09124394506216049,
+      "terminal_root_x_m": 1.0650595426559448,
+      "terminal_sim_time_s": 145.55,
+      "terminal_wheel_contact_force_n": [
+        1.3313175439834595,
+        0.0,
+        9.344685554504395,
+        9.613816261291504
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3472381830215454,
+          0.14875873923301697
+        ],
+        [
+          1.2902027368545532,
+          0.11248843371868134
+        ],
+        [
+          0.7106388807296753,
+          0.1490890085697174
+        ],
+        [
+          0.8113477230072021,
+          0.15062977373600006
+        ]
+      ]
+    },
+    {
+      "candidate_id": 13,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0,
+      "front_right_offset_z_m": 0.005,
+      "success": false,
+      "terminal_control_step": 8655,
+      "terminal_margin_m": 0.2165764570236206,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 9.343231201171875
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.0020140151027590036,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        6.709012508392334,
+        8.878105163574219,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.10923861712217331,
+      "terminal_root_x_m": 1.048508882522583,
+      "terminal_sim_time_s": 144.25,
+      "terminal_wheel_contact_force_n": [
+        9.853116035461426,
+        0.0,
+        0.0,
+        15.191758155822754
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3302546739578247,
+          0.14845441281795502
+        ],
+        [
+          1.2665501832962036,
+          0.10969458520412445
+        ],
+        [
+          0.7169657349586487,
+          0.1498168706893921
+        ],
+        [
+          0.7876840829849243,
+          0.1509927660226822
+        ]
+      ]
+    },
+    {
+      "candidate_id": 14,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0,
+      "front_right_offset_z_m": 0.01,
+      "success": false,
+      "terminal_control_step": 8723,
+      "terminal_margin_m": 0.28539782762527466,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.258209228515625
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.0012777142692357302,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        8.61194133758545,
+        7.2222137451171875,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.11732261627912521,
+      "terminal_root_x_m": 1.0662447214126587,
+      "terminal_sim_time_s": 145.38333333333333,
+      "terminal_wheel_contact_force_n": [
+        12.437223434448242,
+        0.0,
+        8.777727127075195,
+        9.936250686645508
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3475682735443115,
+          0.14837190508842468
+        ],
+        [
+          1.2916035652160645,
+          0.1115143895149231
+        ],
+        [
+          0.7394850850105286,
+          0.14859215915203094
+        ],
+        [
+          0.811939001083374,
+          0.1507353037595749
+        ]
+      ]
+    },
+    {
+      "candidate_id": 15,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0075,
+      "front_right_offset_z_m": -0.01,
+      "success": false,
+      "terminal_control_step": 8232,
+      "terminal_margin_m": 0.3302645683288574,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 8.363948822021484
+      },
+      "terminal_phase": 9,
+      "terminal_pitch_rad": -0.03649762272834778,
+      "terminal_reference_commands": [
+        6.200000762939453,
+        2.299999237060547,
+        0.7133594155311584,
+        17.045520782470703,
+        -0.7000000476837158,
+        41.15644073486328,
+        -8.242403030395508,
+        -41.258460998535156,
+        0.30000001192092896,
+        0.30000001192092896,
+        0.30000001192092896,
+        0.30000001192092896
+      ],
+      "terminal_roll_rad": 0.06082122400403023,
+      "terminal_root_x_m": 1.01080322265625,
+      "terminal_sim_time_s": 137.2,
+      "terminal_wheel_contact_force_n": [
+        5.62383508682251,
+        0.0,
+        7.547039031982422,
+        7.590468406677246
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2990038394927979,
+          0.14910775423049927
+        ],
+        [
+          1.2295968532562256,
+          0.11331069469451904
+        ],
+        [
+          0.6311311721801758,
+          0.1496548354625702
+        ],
+        [
+          0.7525992393493652,
+          0.15089210867881775
+        ]
+      ]
+    },
+    {
+      "candidate_id": 16,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0075,
+      "front_right_offset_z_m": -0.005,
+      "success": false,
+      "terminal_control_step": 8707,
+      "terminal_margin_m": 0.3153057098388672,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 12.807064056396484
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.021040435880422592,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        2.241374969482422,
+        15.804147720336914,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.08153288066387177,
+      "terminal_root_x_m": 1.0614840984344482,
+      "terminal_sim_time_s": 145.11666666666667,
+      "terminal_wheel_contact_force_n": [
+        7.987510681152344,
+        0.0,
+        8.430398941040039,
+        9.482643127441406
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3436260223388672,
+          0.14824701845645905
+        ],
+        [
+          1.288790225982666,
+          0.11105895787477493
+        ],
+        [
+          0.7004222869873047,
+          0.14915205538272858
+        ],
+        [
+          0.8039517402648926,
+          0.15089428424835205
+        ]
+      ]
+    },
+    {
+      "candidate_id": 17,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0075,
+      "front_right_offset_z_m": 0.0,
+      "success": false,
+      "terminal_control_step": 8699,
+      "terminal_margin_m": 0.2978081703186035,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 8.748591423034668
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.010207326151430607,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        4.154874801635742,
+        13.998083114624023,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.0958128273487091,
+      "terminal_root_x_m": 1.0594873428344727,
+      "terminal_sim_time_s": 144.98333333333332,
+      "terminal_wheel_contact_force_n": [
+        6.321688652038574,
+        0.0,
+        7.173023223876953,
+        10.201038360595703
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3424839973449707,
+          0.14852498471736908
+        ],
+        [
+          1.2846689224243164,
+          0.10990005731582642
+        ],
+        [
+          0.716895341873169,
+          0.1491621732711792
+        ],
+        [
+          0.7990055084228516,
+          0.15136031806468964
+        ]
+      ]
+    },
+    {
+      "candidate_id": 18,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0075,
+      "front_right_offset_z_m": 0.005,
+      "success": false,
+      "terminal_control_step": 8711,
+      "terminal_margin_m": 0.30243659019470215,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 27.199268341064453
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.01356710959225893,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        6.0579681396484375,
+        12.262824058532715,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.10899604111909866,
+      "terminal_root_x_m": 1.0545330047607422,
+      "terminal_sim_time_s": 145.18333333333334,
+      "terminal_wheel_contact_force_n": [
+        3.9413628578186035,
+        0.0,
+        8.629900932312012,
+        9.2114896774292
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3373701572418213,
+          0.1481909304857254
+        ],
+        [
+          1.2782533168792725,
+          0.10953925549983978
+        ],
+        [
+          0.7062544822692871,
+          0.14876241981983185
+        ],
+        [
+          0.7985880374908447,
+          0.15127766132354736
+        ]
+      ]
+    },
+    {
+      "candidate_id": 19,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0075,
+      "front_right_offset_z_m": 0.01,
+      "success": false,
+      "terminal_control_step": 8742,
+      "terminal_margin_m": 0.2825303077697754,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 16.99880599975586
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.0003185871464665979,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        7.950990676879883,
+        10.597488403320312,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.11767977476119995,
+      "terminal_root_x_m": 1.064079761505127,
+      "terminal_sim_time_s": 145.7,
+      "terminal_wheel_contact_force_n": [
+        5.016532897949219,
+        0.0,
+        8.376984596252441,
+        9.193920135498047
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3450536727905273,
+          0.14826500415802002
+        ],
+        [
+          1.2953813076019287,
+          0.1110055148601532
+        ],
+        [
+          0.7404377460479736,
+          0.1490512639284134
+        ],
+        [
+          0.8087751865386963,
+          0.15149635076522827
+        ]
+      ]
+    },
+    {
+      "candidate_id": 20,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.015,
+      "front_right_offset_z_m": -0.01,
+      "success": false,
+      "terminal_control_step": 8720,
+      "terminal_margin_m": 0.30810117721557617,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 23.52817153930664
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.01399855688214302,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        4.800000190734863,
+        10.600000381469727,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.09089347720146179,
+      "terminal_root_x_m": 1.063797950744629,
+      "terminal_sim_time_s": 145.33333333333334,
+      "terminal_wheel_contact_force_n": [
+        3.547558069229126,
+        0.0,
+        9.380704879760742,
+        8.843904495239258
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3459734916687012,
+          0.148267924785614
+        ],
+        [
+          1.2871670722961426,
+          0.1120586171746254
+        ],
+        [
+          0.7115797996520996,
+          0.14912647008895874
+        ],
+        [
+          0.8082504272460938,
+          0.15094275772571564
+        ]
+      ]
+    },
+    {
+      "candidate_id": 21,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.015,
+      "front_right_offset_z_m": -0.005,
+      "success": false,
+      "terminal_control_step": 8704,
+      "terminal_margin_m": 0.31488895416259766,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 25.652063369750977
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.021638190373778343,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        1.4491374492645264,
+        19.405935287475586,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.08281169086694717,
+      "terminal_root_x_m": 1.0611319541931152,
+      "terminal_sim_time_s": 145.06666666666666,
+      "terminal_wheel_contact_force_n": [
+        6.624833583831787,
+        0.0,
+        10.63571548461914,
+        8.654986381530762
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3434925079345703,
+          0.14824233949184418
+        ],
+        [
+          1.2931585311889648,
+          0.11018703132867813
+        ],
+        [
+          0.70013427734375,
+          0.14889107644557953
+        ],
+        [
+          0.8030643463134766,
+          0.15139465034008026
+        ]
+      ]
+    },
+    {
+      "candidate_id": 22,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.015,
+      "front_right_offset_z_m": 0.0,
+      "success": false,
+      "terminal_control_step": 8700,
+      "terminal_margin_m": 0.2974076271057129,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 15.424284934997559
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.00954215694218874,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        3.3649353981018066,
+        17.572433471679688,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.0974121168255806,
+      "terminal_root_x_m": 1.0589509010314941,
+      "terminal_sim_time_s": 145.0,
+      "terminal_wheel_contact_force_n": [
+        7.983074188232422,
+        0.0,
+        8.101716995239258,
+        11.316438674926758
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3413748741149902,
+          0.1487702876329422
+        ],
+        [
+          1.2919769287109375,
+          0.1091647818684578
+        ],
+        [
+          0.7175178527832031,
+          0.1491032987833023
+        ],
+        [
+          0.7986125946044922,
+          0.1507866233587265
+        ]
+      ]
+    },
+    {
+      "candidate_id": 23,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.015,
+      "front_right_offset_z_m": 0.005,
+      "success": false,
+      "terminal_control_step": 8700,
+      "terminal_margin_m": -0.21710920333862305,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 23.537267684936523
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.0034794018138200045,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        5.263411998748779,
+        15.818281173706055,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.1113642007112503,
+      "terminal_root_x_m": 1.0596704483032227,
+      "terminal_sim_time_s": 145.0,
+      "terminal_wheel_contact_force_n": [
+        0.48792341351509094,
+        0.0,
+        3.379580497741699,
+        12.048189163208008
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3418807983398438,
+          0.1487024575471878
+        ],
+        [
+          1.290461540222168,
+          0.10836579650640488
+        ],
+        [
+          0.7297906875610352,
+          0.14893785119056702
+        ],
+        [
+          0.7987504005432129,
+          0.15073975920677185
+        ]
+      ]
+    },
+    {
+      "candidate_id": 24,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.015,
+      "front_right_offset_z_m": 0.01,
+      "success": false,
+      "terminal_control_step": 8702,
+      "terminal_margin_m": 0.27527332305908203,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 5.240326404571533
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.0008466450963169336,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        7.149326801300049,
+        14.136558532714844,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.12370430678129196,
+      "terminal_root_x_m": 1.0595402717590332,
+      "terminal_sim_time_s": 145.03333333333333,
+      "terminal_wheel_contact_force_n": [
+        12.693649291992188,
+        0.0,
+        10.053293228149414,
+        11.739773750305176
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3408942222595215,
+          0.14842699468135834
+        ],
+        [
+          1.2933144569396973,
+          0.10849042981863022
+        ],
+        [
+          0.7422270774841309,
+          0.14811131358146667
+        ],
+        [
+          0.8021020889282227,
+          0.15197820961475372
+        ]
+      ]
+    }
+  ],
+  "failures": [],
+  "finished_unix": 1785157510.033317,
+  "manifest": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\data\\scenario_manifests\\development_v2.json",
+  "manifest_sha256": "f3d10d7340c06f78c200c44119bb2e17c81e587bd314b342ac90b49019ea2cdc",
+  "passed_execution": true,
+  "scenario_id": "development-h100-0000",
+  "schema": "resume_validation.fsm_recovery_grid.v1",
+  "started_unix": 1785156688.4043236,
+  "success_count": 0
+}

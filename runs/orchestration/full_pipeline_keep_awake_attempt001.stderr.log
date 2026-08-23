@@ -1,0 +1,5 @@
+C:\robotics_sim\wlr_robot\resume_validation_fsm_residual_ppo\scripts\pipeline_keep_awake.ps1 : Cannot convert value 
+"-2147483648" to type "System.UInt32". Error: "Value was either too large or too small for a UInt32."
+    + CategoryInfo          : InvalidArgument: (:) [pipeline_keep_awake.ps1], RuntimeException
+    + FullyQualifiedErrorId : InvalidCastIConvertible,pipeline_keep_awake.ps1
+ 

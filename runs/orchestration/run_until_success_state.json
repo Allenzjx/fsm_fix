@@ -1,0 +1,228 @@
+﻿{
+    "schema":  "resume_validation.run_until_success_state.v1",
+    "updated_utc":  "2026-08-01T01:14:01.7566525Z",
+    "invocation_id":  "run-until-success_20260731_173227_32d4ff22",
+    "stage_order":  [
+                        "INVENTORY",
+                        "UNIT_TEST",
+                        "ASSET_VALIDATION",
+                        "SENSOR_VALIDATION",
+                        "REPLAY_VALIDATION",
+                        "FSM_DEVELOPMENT",
+                        "FSM_VALIDATION",
+                        "PPO_NO_COM_SMOKE",
+                        "PPO_COM_SMOKE",
+                        "PPO_NO_COM_DEVELOPMENT",
+                        "PPO_COM_DEVELOPMENT",
+                        "MULTI_SEED_REPRODUCTION",
+                        "PREVALIDATION_VIDEO_SMOKE",
+                        "METHOD_FREEZE",
+                        "LOCKED_TEST",
+                        "REPORT",
+                        "COMPLETE"
+                    ],
+    "current_stage":  "MULTI_SEED_REPRODUCTION",
+    "status":  "INTERRUPTED_FOR_USER_INSPECTION",
+    "result":  "The user stopped Method C at seed=11, height=75mm after the complete 8000-timestep checkpoint; no later stage was launched.",
+    "next_action":  "Remain paused until the user explicitly requests recovery from attempt001/checkpoints/agent_8000.pt into immutable attempt002.",
+    "interruption":  {
+                             "reason":  "USER_REQUEST",
+                             "run_name":  "method-C-v34_seed-11_stage-75mm_attempt001",
+                             "last_complete_checkpoint_timesteps":  8000,
+                             "stopped_pids":  [158244, 118952, 89240, 60564, 138404, 97504, 61792],
+                             "exited_during_parent_teardown_pids":  [150752]
+                         },
+    "event_log":  "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\orchestration\\run-until-success_20260731_173227_32d4ff22\\stage_events.jsonl",
+    "history":  [
+                    {
+                        "invocation_id":  "run-until-success_20260730_120036_8c679a5d",
+                        "stage":  "FSM_VALIDATION",
+                        "status":  "COMPLETED",
+                        "timestamp_utc":  "2026-07-30T16:00:36.6103972Z",
+                        "result":  "Configuration freeze and every referenced development-evidence hash verified.",
+                        "evidence":  [
+                                         "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\config_freeze.json"
+                                     ]
+                    },
+                    {
+                        "invocation_id":  "run-until-success_20260730_120036_8c679a5d",
+                        "stage":  "MULTI_SEED_REPRODUCTION",
+                        "status":  "WAITING",
+                        "timestamp_utc":  "2026-07-30T16:00:36.6769012Z",
+                        "result":  "A live formal training process exists; no duplicate process was launched: method-B-v34_seed-11_stage-50mm_attempt001 pid=114424",
+                        "evidence":  [
+
+                                     ]
+                    },
+                    {
+                        "invocation_id":  "run-until-success_20260730_121900_a420dddd",
+                        "stage":  "FSM_VALIDATION",
+                        "status":  "COMPLETED",
+                        "timestamp_utc":  "2026-07-30T16:19:01.0964961Z",
+                        "result":  "Configuration freeze and every referenced development-evidence hash verified.",
+                        "evidence":  [
+                                         "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\config_freeze.json"
+                                     ]
+                    },
+                    {
+                        "invocation_id":  "run-until-success_20260730_121900_a420dddd",
+                        "stage":  "FSM_VALIDATION",
+                        "status":  "BLOCKED",
+                        "timestamp_utc":  "2026-07-30T16:19:01.7053022Z",
+                        "result":  "The term \u0027if\u0027 is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.",
+                        "evidence":  [
+
+                                     ]
+                    },
+                    {
+                        "invocation_id":  "run-until-success_20260730_121926_a5be8034",
+                        "stage":  "FSM_VALIDATION",
+                        "status":  "COMPLETED",
+                        "timestamp_utc":  "2026-07-30T16:19:26.6360357Z",
+                        "result":  "Configuration freeze and every referenced development-evidence hash verified.",
+                        "evidence":  [
+                                         "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\config_freeze.json"
+                                     ]
+                    },
+                    {
+                        "invocation_id":  "run-until-success_20260730_121926_a5be8034",
+                        "stage":  "PPO_NO_COM_SMOKE",
+                        "status":  "COMPLETED",
+                        "timestamp_utc":  "2026-07-30T16:19:26.6700628Z",
+                        "result":  "Verified preserved SMOKE_PASS for method B.",
+                        "evidence":  [
+                                         "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_without_com\\training\\method-B-v34_seed-11_stage-50mm_smoke_attempt001\\training_result.json"
+                                     ]
+                    },
+                    {
+                        "invocation_id":  "run-until-success_20260730_121926_a5be8034",
+                        "stage":  "MULTI_SEED_REPRODUCTION",
+                        "status":  "WAITING",
+                        "timestamp_utc":  "2026-07-30T16:19:27.1918043Z",
+                        "result":  "A live formal training process exists; no duplicate process was launched: method-B-v34_seed-11_stage-50mm_attempt001 pid=114424",
+                        "evidence":  [
+
+                                     ]
+                    },
+                    {
+                        "invocation_id":  "run-until-success_20260731_172944_3adb1088",
+                        "stage":  "FSM_VALIDATION",
+                        "status":  "COMPLETED",
+                        "timestamp_utc":  "2026-07-31T21:29:44.3061024Z",
+                        "result":  "Configuration freeze and every referenced development-evidence hash verified.",
+                        "evidence":  [
+                                         "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\config_freeze.json"
+                                     ]
+                    },
+                    {
+                        "invocation_id":  "run-until-success_20260731_172944_3adb1088",
+                        "stage":  "PPO_NO_COM_SMOKE",
+                        "status":  "COMPLETED",
+                        "timestamp_utc":  "2026-07-31T21:29:44.4009606Z",
+                        "result":  "Verified preserved SMOKE_PASS for method B.",
+                        "evidence":  [
+                                         "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_without_com\\training\\method-B-v34_seed-11_stage-50mm_smoke_attempt001\\training_result.json"
+                                     ]
+                    },
+                    {
+                        "invocation_id":  "run-until-success_20260731_172944_3adb1088",
+                        "stage":  "PPO_NO_COM_DEVELOPMENT",
+                        "status":  "COMPLETED",
+                        "timestamp_utc":  "2026-07-31T21:29:44.4590453Z",
+                        "result":  "At least one immutable COMPLETED stage-final checkpoint exists in every B stratum.",
+                        "evidence":  [
+
+                                     ]
+                    },
+                    {
+                        "invocation_id":  "run-until-success_20260731_172944_3adb1088",
+                        "stage":  "PPO_COM_SMOKE",
+                        "status":  "RUNNING",
+                        "timestamp_utc":  "2026-07-31T21:29:44.4661371Z",
+                        "result":  "Launching immutable smoke attempt 1.",
+                        "evidence":  [
+
+                                     ]
+                    },
+                    {
+                        "invocation_id":  "run-until-success_20260731_172944_3adb1088",
+                        "stage":  "PPO_COM_SMOKE",
+                        "status":  "COMPLETED",
+                        "timestamp_utc":  "2026-07-31T21:30:02.7445992Z",
+                        "result":  "SMOKE_PASS.",
+                        "evidence":  [
+                                         "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_with_com\\training\\method-C-v34_seed-11_stage-50mm_smoke_attempt001\\training_result.json"
+                                     ]
+                    },
+                    {
+                        "invocation_id":  "run-until-success_20260731_172944_3adb1088",
+                        "stage":  "MULTI_SEED_REPRODUCTION",
+                        "status":  "RUNNING",
+                        "timestamp_utc":  "2026-07-31T21:30:02.7529188Z",
+                        "result":  "Launching method C at seed=11, height=50mm, attempt=1.",
+                        "evidence":  [
+                                         ""
+                                     ]
+                    },
+                    {
+                        "invocation_id":  "run-until-success_20260731_172944_3adb1088",
+                        "stage":  "MULTI_SEED_REPRODUCTION",
+                        "status":  "BLOCKED",
+                        "timestamp_utc":  "2026-07-31T21:30:02.8284813Z",
+                        "result":  "Cannot process argument transformation on parameter \u0027Iterations\u0027. Cannot convert value \"-Attempt\" to type \"System.Int32\". Error: \"Input string was not in a correct format.\"",
+                        "evidence":  [
+
+                                     ]
+                    },
+                    {
+                        "invocation_id":  "run-until-success_20260731_173227_32d4ff22",
+                        "stage":  "FSM_VALIDATION",
+                        "status":  "COMPLETED",
+                        "timestamp_utc":  "2026-07-31T21:32:27.9223569Z",
+                        "result":  "Configuration freeze and every referenced development-evidence hash verified.",
+                        "evidence":  [
+                                         "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\config_freeze.json"
+                                     ]
+                    },
+                    {
+                        "invocation_id":  "run-until-success_20260731_173227_32d4ff22",
+                        "stage":  "PPO_NO_COM_SMOKE",
+                        "status":  "COMPLETED",
+                        "timestamp_utc":  "2026-07-31T21:32:28.0197366Z",
+                        "result":  "Verified preserved SMOKE_PASS for method B.",
+                        "evidence":  [
+                                         "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_without_com\\training\\method-B-v34_seed-11_stage-50mm_smoke_attempt001\\training_result.json"
+                                     ]
+                    },
+                    {
+                        "invocation_id":  "run-until-success_20260731_173227_32d4ff22",
+                        "stage":  "PPO_NO_COM_DEVELOPMENT",
+                        "status":  "COMPLETED",
+                        "timestamp_utc":  "2026-07-31T21:32:28.0666138Z",
+                        "result":  "At least one immutable COMPLETED stage-final checkpoint exists in every B stratum.",
+                        "evidence":  [
+
+                                     ]
+                    },
+                    {
+                        "invocation_id":  "run-until-success_20260731_173227_32d4ff22",
+                        "stage":  "PPO_COM_SMOKE",
+                        "status":  "COMPLETED",
+                        "timestamp_utc":  "2026-07-31T21:32:28.1286283Z",
+                        "result":  "Verified preserved SMOKE_PASS for method C.",
+                        "evidence":  [
+                                         "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_with_com\\training\\method-C-v34_seed-11_stage-50mm_smoke_attempt001\\training_result.json"
+                                     ]
+                    },
+                    {
+                        "invocation_id":  "run-until-success_20260731_173227_32d4ff22",
+                        "stage":  "MULTI_SEED_REPRODUCTION",
+                        "status":  "RUNNING",
+                        "timestamp_utc":  "2026-07-31T21:32:28.1381629Z",
+                        "result":  "Launching method C at seed=11, height=50mm, attempt=1.",
+                        "evidence":  [
+                                         ""
+                                     ]
+                    }
+                ]
+}

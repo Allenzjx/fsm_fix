@@ -1,0 +1,21 @@
+{
+  "active_count": 25,
+  "control_step": 3900,
+  "phase_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    25,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "sim_time_s": 65.0,
+  "success_count": 0
+}

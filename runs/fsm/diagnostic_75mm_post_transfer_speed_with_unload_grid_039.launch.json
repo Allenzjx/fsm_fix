@@ -1,0 +1,17 @@
+{
+  "attempt": "diagnostic_75mm_post_transfer_speed_with_unload_grid_039",
+  "launched_at": "2026-07-28T00:12:37-04:00",
+  "working_directory": "C:\\robotics_sim\\IsaacLab",
+  "command": "conda run --no-capture-output -n env_isaaclab .\\isaaclab.bat -p C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\diagnose_fsm_recovery_grid.py --manifest C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\data\\scenario_manifests\\development_v2.json --height_mm 75 --grid_kind post_transfer_speed_with_support_unload_75 --output_dir C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\diagnostic_75mm_post_transfer_speed_with_unload_grid_039 --max_episode_s 150 --headless",
+  "stdout": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\diagnostic_75mm_post_transfer_speed_with_unload_grid_039.stdout.log",
+  "stderr": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\diagnostic_75mm_post_transfer_speed_with_unload_grid_039.stderr.log",
+  "pid_tree": {
+    "launcher_powershell": 127000,
+    "initial_cmd": 108872,
+    "conda": 100068,
+    "base_python": 153796,
+    "temporary_cmd": 50828,
+    "environment_python": 130396
+  },
+  "monitored_pid": 130396
+}

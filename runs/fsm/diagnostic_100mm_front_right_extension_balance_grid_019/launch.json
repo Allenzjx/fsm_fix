@@ -1,0 +1,14 @@
+{
+  "schema": "resume_validation.launch_record.v1",
+  "launched_local": "2026-07-27T16:12:26-04:00",
+  "working_directory": "C:\\robotics_sim\\IsaacLab",
+  "command": "conda run --no-capture-output -n env_isaaclab .\\isaaclab.bat -p C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\diagnose_fsm_recovery_grid.py --manifest C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\data\\scenario_manifests\\development_v2.json --output_dir C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\diagnostic_100mm_front_right_extension_balance_grid_019 --max_episode_s 150 --grid_kind front_right_extension_balance --headless",
+  "launcher_pid": 125128,
+  "initial_command_shell_pid": 170584,
+  "conda_executable_pid": 121372,
+  "conda_wrapper_pid": 62148,
+  "command_shell_pid": 133196,
+  "environment_python_pid": 129696,
+  "stdout": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\diagnostic_100mm_front_right_extension_balance_grid_019.stdout.log",
+  "stderr": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\diagnostic_100mm_front_right_extension_balance_grid_019.stderr.log"
+}

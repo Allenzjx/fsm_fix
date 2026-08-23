@@ -1,0 +1,26 @@
+{
+  "active_candidate_ids": [],
+  "active_count": 0,
+  "completed_failure_counts": {
+    "BODY_OR_LINK_COLLISION": 12,
+    "TIMEOUT": 13
+  },
+  "control_step": 8998,
+  "phase_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "sim_time_s": 149.96666666666667,
+  "success_count": 0
+}

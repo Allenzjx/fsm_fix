@@ -1,0 +1,14 @@
+{
+  "schema": "resume_validation.launch_record.v1",
+  "launched_local": "2026-07-27T14:12:34-04:00",
+  "working_directory": "C:\\robotics_sim\\IsaacLab",
+  "command": "conda run --no-capture-output -n env_isaaclab .\\isaaclab.bat -p C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\diagnose_fsm_recovery_grid.py --manifest C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\data\\scenario_manifests\\development_v2.json --output_dir C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\diagnostic_100mm_front_right_rear_left_support_grid_013 --max_episode_s 150 --grid_kind front_right_rear_left_support_extension_wide --headless",
+  "launcher_pid": 135380,
+  "initial_command_shell_pid": 145536,
+  "conda_executable_pid": 155184,
+  "conda_wrapper_pid": 97980,
+  "command_shell_pid": 131324,
+  "environment_python_pid": 115064,
+  "stdout": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\diagnostic_100mm_front_right_rear_left_support_grid_013.stdout.log",
+  "stderr": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\diagnostic_100mm_front_right_rear_left_support_grid_013.stderr.log"
+}

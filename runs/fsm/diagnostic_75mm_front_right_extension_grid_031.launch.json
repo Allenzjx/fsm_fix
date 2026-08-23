@@ -1,0 +1,17 @@
+{
+  "attempt": "diagnostic_75mm_front_right_extension_grid_031",
+  "launched_at": "2026-07-27T21:17:04-04:00",
+  "working_directory": "C:\\robotics_sim\\IsaacLab",
+  "command": "conda run --no-capture-output -n env_isaaclab .\\isaaclab.bat -p C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\diagnose_fsm_recovery_grid.py --manifest C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\data\\scenario_manifests\\development_v2.json --height_mm 75 --grid_kind front_right_extension_75_with_half_rear_support --output_dir C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\diagnostic_75mm_front_right_extension_grid_031 --max_episode_s 150 --headless",
+  "stdout": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\diagnostic_75mm_front_right_extension_grid_031.stdout.log",
+  "stderr": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\diagnostic_75mm_front_right_extension_grid_031.stderr.log",
+  "pid_tree": {
+    "launcher_powershell": 119484,
+    "initial_cmd": 138868,
+    "conda": 154188,
+    "base_python": 161888,
+    "temporary_cmd": 151316,
+    "environment_python": 126592
+  },
+  "monitored_pid": 126592
+}

@@ -1,0 +1,12 @@
+﻿{
+    "schema":  "resume_validation.full_pipeline_supervisor.v1",
+    "updated_utc":  "2026-07-31T21:21:42.8398798Z",
+    "supervisor_pid":  162424,
+    "attempt":  1,
+    "status":  "FAILED",
+    "message":  "Method-B recovery supervisor failed: Recovery wrapper exited with code ",
+    "runtime_version":  "v34",
+    "locked_test_access":  "delegated only to run_until_success after verified method freeze",
+    "traceback":  "at \u003cScriptBlock\u003e, C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\scripts\\full_pipeline_supervisor.ps1: line 93",
+    "failure_type":  "System.Management.Automation.RuntimeException"
+}

@@ -1,0 +1,3266 @@
+{
+  "candidate_count": 25,
+  "candidates": [
+    {
+      "candidate_id": 0,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": 0.01042963471263647,
+        "roll_rad": 0.005868135951459408,
+        "time_s": 149.9499969482422,
+        "wheel_upward_force_n": [
+          7.662593364715576,
+          6.021901607513428,
+          6.386204242706299,
+          8.44408130645752
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 1.2333333333333334,
+      "diagnostic_post_transfer_top_eligible_sample_count": 185,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 6.021901607513428,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.535801887512207,
+        14.926848411560059,
+        15.33743667602539,
+        15.91839599609375
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 0,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.28573131561279297,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010426557622849941,
+      "terminal_reference_commands": [
+        5.37671422958374,
+        0.9134464859962463,
+        5.8740715980529785,
+        -2.327061653137207,
+        -2.883917808532715,
+        3.1511220932006836,
+        -3.1019561290740967,
+        -4.100105285644531,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.005864929407835007,
+      "terminal_root_x_m": 0.9758496284484863,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        7.624825477600098,
+        6.097828388214111,
+        6.467008590698242,
+        8.364663124084473
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        7.601618766784668,
+        6.097826957702637,
+        6.467008113861084,
+        8.364662170410156
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2412338256835938,
+          0.12416631728410721
+        ],
+        [
+          1.2430915832519531,
+          0.12510992586612701
+        ],
+        [
+          0.6695380210876465,
+          0.12472173571586609
+        ],
+        [
+          0.6938314437866211,
+          0.12398755550384521
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 1,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": 0.010124665684998035,
+        "roll_rad": 0.006317027844488621,
+        "time_s": 149.8333282470703,
+        "wheel_upward_force_n": [
+          7.187551975250244,
+          6.485546112060547,
+          6.882620811462402,
+          7.996820449829102
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 1.4833333333333334,
+      "diagnostic_post_transfer_top_eligible_sample_count": 208,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 6.485546112060547,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.907327651977539,
+        13.927327156066895,
+        16.35995864868164,
+        17.040706634521484
+      ],
+      "failure_reason": "",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 1,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": true,
+      "terminal_control_step": 8996,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.2858257293701172,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010068492032587528,
+      "terminal_reference_commands": [
+        5.376706600189209,
+        0.9134478569030762,
+        5.874075412750244,
+        -2.327019453048706,
+        -2.883915662765503,
+        3.151146173477173,
+        -3.101982593536377,
+        -4.100198268890381,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.006246011238545179,
+      "terminal_root_x_m": 0.9770565032958984,
+      "terminal_sim_time_s": 149.93333333333334,
+      "terminal_wheel_contact_force_n": [
+        7.501950263977051,
+        6.3962836265563965,
+        6.839909076690674,
+        7.8433098793029785
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        7.482279300689697,
+        6.396282196044922,
+        6.839908599853516,
+        7.8433027267456055
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2434024810791016,
+          0.12428289651870728
+        ],
+        [
+          1.2419013977050781,
+          0.1250876635313034
+        ],
+        [
+          0.6713047027587891,
+          0.12465182691812515
+        ],
+        [
+          0.6919994354248047,
+          0.12376242876052856
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 2,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": -0.056197211146354675,
+        "roll_rad": 0.05913423374295235,
+        "time_s": 148.36666870117188,
+        "wheel_upward_force_n": [
+          8.609140396118164,
+          8.432010650634766,
+          8.648040771484375,
+          12.069186210632324
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 0.8333333333333334,
+      "diagnostic_post_transfer_top_eligible_sample_count": 203,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 8.432010650634766,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.655122756958008,
+        14.638257026672363,
+        15.491561889648438,
+        17.965526580810547
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 2,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.2848939895629883,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.01078420877456665,
+      "terminal_reference_commands": [
+        5.376667022705078,
+        0.9135401844978333,
+        5.874129295349121,
+        -2.3268110752105713,
+        -2.883950710296631,
+        3.1507468223571777,
+        -3.101858139038086,
+        -4.100015163421631,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.005862602032721043,
+      "terminal_root_x_m": 0.9796533584594727,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        7.023989677429199,
+        6.911350250244141,
+        7.008211612701416,
+        7.570679664611816
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        6.973262310028076,
+        6.911348342895508,
+        7.008211135864258,
+        7.570679187774658
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2450571060180664,
+          0.12400371581315994
+        ],
+        [
+          1.2458562850952148,
+          0.12493113428354263
+        ],
+        [
+          0.6734671592712402,
+          0.12488623708486557
+        ],
+        [
+          0.697239875793457,
+          0.12394795566797256
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 3,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": 0.010746597312390804,
+        "roll_rad": 0.008858656510710716,
+        "time_s": 149.9499969482422,
+        "wheel_upward_force_n": [
+          12.948143005371094,
+          0.8650547862052917,
+          1.4303805828094482,
+          13.113797187805176
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 0.0,
+      "diagnostic_post_transfer_top_eligible_sample_count": 105,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 0.8650547862052917,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.545639038085938,
+        15.672130584716797,
+        16.98628044128418,
+        14.930831909179688
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 3,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.260744571685791,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010750091634690762,
+      "terminal_reference_commands": [
+        5.376701831817627,
+        0.9134573340415955,
+        5.874073028564453,
+        -2.327016830444336,
+        -2.883915901184082,
+        3.1511433124542236,
+        -3.101984977722168,
+        -4.100192546844482,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.008832363411784172,
+      "terminal_root_x_m": 0.975029468536377,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        12.90799617767334,
+        0.9073027968406677,
+        1.4676694869995117,
+        13.076601028442383
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        12.898894309997559,
+        0.9073027968406677,
+        1.4676694869995117,
+        13.069642066955566
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.238067626953125,
+          0.12490125000476837
+        ],
+        [
+          1.2427005767822266,
+          0.12414450198411942
+        ],
+        [
+          0.6689066886901855,
+          0.12481897324323654
+        ],
+        [
+          0.6962127685546875,
+          0.12421328574419022
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 4,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": -0.052910514175891876,
+        "roll_rad": 0.0723123624920845,
+        "time_s": 148.63333129882812,
+        "wheel_upward_force_n": [
+          12.526524543762207,
+          0.0,
+          2.2376372814178467,
+          14.274633407592773
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 0.0,
+      "diagnostic_post_transfer_top_eligible_sample_count": 69,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 0.0,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.448700904846191,
+        15.596990585327148,
+        13.860489845275879,
+        17.2325382232666
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 4,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.2554740905761719,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010188349522650242,
+      "terminal_reference_commands": [
+        5.376708030700684,
+        0.9134485721588135,
+        5.874064922332764,
+        -2.327054023742676,
+        -2.883922815322876,
+        3.151127338409424,
+        -3.101956605911255,
+        -4.1001105308532715,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.006903235800564289,
+      "terminal_root_x_m": 0.9744372367858887,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        13.242090225219727,
+        0.0,
+        1.4251400232315063,
+        13.920045852661133
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        13.238161087036133,
+        0.0,
+        1.425139307975769,
+        13.920045852661133
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2353315353393555,
+          0.12453190237283707
+        ],
+        [
+          1.2455129623413086,
+          0.12508228421211243
+        ],
+        [
+          0.6670246124267578,
+          0.12470551580190659
+        ],
+        [
+          0.7021913528442383,
+          0.12401019781827927
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 5,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": -0.05618111044168472,
+        "roll_rad": 0.06048949807882309,
+        "time_s": 148.01666259765625,
+        "wheel_upward_force_n": [
+          9.168753623962402,
+          8.303703308105469,
+          7.920431137084961,
+          12.50745677947998
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 1.2833333333333332,
+      "diagnostic_post_transfer_top_eligible_sample_count": 164,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 7.920431137084961,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.742623329162598,
+        14.106415748596191,
+        18.048561096191406,
+        15.699302673339844
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 5,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.2848172187805176,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010256517678499222,
+      "terminal_reference_commands": [
+        5.376681804656982,
+        0.9135079383850098,
+        5.874142169952393,
+        -2.3267641067504883,
+        -2.8839457035064697,
+        3.1508045196533203,
+        -3.1018595695495605,
+        -4.100030899047852,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.006499001756310463,
+      "terminal_root_x_m": 0.9742660522460938,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        7.554052352905273,
+        6.312185287475586,
+        6.573980808258057,
+        8.078752517700195
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        7.527781009674072,
+        6.3121771812438965,
+        6.573980808258057,
+        8.078740119934082
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.239997386932373,
+          0.12423393875360489
+        ],
+        [
+          1.2400102615356445,
+          0.12506245076656342
+        ],
+        [
+          0.6683454513549805,
+          0.12477628886699677
+        ],
+        [
+          0.6905689239501953,
+          0.12376771867275238
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 6,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": 0.010970224626362324,
+        "roll_rad": 0.006692836992442608,
+        "time_s": 149.9499969482422,
+        "wheel_upward_force_n": [
+          10.386312484741211,
+          2.989881992340088,
+          4.118890285491943,
+          11.017826080322266
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 0.11666666666666667,
+      "diagnostic_post_transfer_top_eligible_sample_count": 81,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 2.989881992340088,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.248692512512207,
+        2.989881992340088,
+        4.118890285491943,
+        16.360097885131836
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 6,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.2886624336242676,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.01094299741089344,
+      "terminal_reference_commands": [
+        5.376676082611084,
+        0.9135145545005798,
+        5.874135494232178,
+        -2.3267879486083984,
+        -2.883955955505371,
+        3.1507513523101807,
+        -3.101804494857788,
+        -4.0999016761779785,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.00673056161031127,
+      "terminal_root_x_m": 0.9744715690612793,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        10.295467376708984,
+        3.1093153953552246,
+        4.2005815505981445,
+        10.921594619750977
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        10.288000106811523,
+        3.109311819076538,
+        4.2005815505981445,
+        10.921594619750977
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2356019020080566,
+          0.12418617308139801
+        ],
+        [
+          1.2468280792236328,
+          0.12512585520744324
+        ],
+        [
+          0.6674728393554688,
+          0.12488128989934921
+        ],
+        [
+          0.7016973495483398,
+          0.12409758567810059
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 7,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": 0.010525157675147057,
+        "roll_rad": 0.006195140536874533,
+        "time_s": 149.61666870117188,
+        "wheel_upward_force_n": [
+          6.868547439575195,
+          6.859041690826416,
+          7.172586441040039,
+          7.61124849319458
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 1.4833333333333334,
+      "diagnostic_post_transfer_top_eligible_sample_count": 249,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 6.859041690826416,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.875035285949707,
+        14.775066375732422,
+        16.448572158813477,
+        16.406909942626953
+      ],
+      "failure_reason": "",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 7,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": true,
+      "terminal_control_step": 8996,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.28519248962402344,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010428275913000107,
+      "terminal_reference_commands": [
+        5.376698970794678,
+        0.9134654402732849,
+        5.874065399169922,
+        -2.3271307945251465,
+        -2.8839235305786133,
+        3.1510586738586426,
+        -3.1019790172576904,
+        -4.100161075592041,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.006245676893740892,
+      "terminal_root_x_m": 0.9800271987915039,
+      "terminal_sim_time_s": 149.93333333333334,
+      "terminal_wheel_contact_force_n": [
+        6.546589374542236,
+        7.243295192718506,
+        7.5561299324035645,
+        7.223240852355957
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        6.522485733032227,
+        7.243291854858398,
+        7.5561299324035645,
+        7.223240375518799
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2468461990356445,
+          0.12413474917411804
+        ],
+        [
+          1.2431845664978027,
+          0.12511394917964935
+        ],
+        [
+          0.6747102737426758,
+          0.12487025558948517
+        ],
+        [
+          0.693047046661377,
+          0.12379249930381775
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 8,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": 0.01048181764781475,
+        "roll_rad": 0.006833880674093962,
+        "time_s": 149.35000610351562,
+        "wheel_upward_force_n": [
+          7.5096869468688965,
+          6.252422332763672,
+          6.809553623199463,
+          7.941954135894775
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 1.4833333333333334,
+      "diagnostic_post_transfer_top_eligible_sample_count": 169,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 6.252422332763672,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.598576545715332,
+        14.84016227722168,
+        17.4451904296875,
+        15.913468360900879
+      ],
+      "failure_reason": "",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 8,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": true,
+      "terminal_control_step": 8984,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.2856717109680176,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010318730026483536,
+      "terminal_reference_commands": [
+        5.376680374145508,
+        0.9135086536407471,
+        5.874128341674805,
+        -2.3267810344696045,
+        -2.8839590549468994,
+        3.1507482528686523,
+        -3.1018004417419434,
+        -4.099898815155029,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.006712510250508785,
+      "terminal_root_x_m": 0.9753375053405762,
+      "terminal_sim_time_s": 149.73333333333332,
+      "terminal_wheel_contact_force_n": [
+        7.770803928375244,
+        6.227301120758057,
+        6.812345027923584,
+        7.72393274307251
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        7.747445106506348,
+        6.227300643920898,
+        6.812344551086426,
+        7.723920822143555
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.241391658782959,
+          0.12436580657958984
+        ],
+        [
+          1.239725112915039,
+          0.1250348687171936
+        ],
+        [
+          0.6695632934570312,
+          0.12498468160629272
+        ],
+        [
+          0.6900267601013184,
+          0.12377966940402985
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 9,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": -0.05624040588736534,
+        "roll_rad": 0.06039110943675041,
+        "time_s": 147.9166717529297,
+        "wheel_upward_force_n": [
+          7.815585613250732,
+          7.612606525421143,
+          7.541622161865234,
+          11.150205612182617
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 1.3666666666666667,
+      "diagnostic_post_transfer_top_eligible_sample_count": 164,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 7.541622161865234,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.76312255859375,
+        14.112649917602539,
+        19.64141273498535,
+        16.988718032836914
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 9,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.28493309020996094,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010194558650255203,
+      "terminal_reference_commands": [
+        5.376682758331299,
+        0.9134957790374756,
+        5.8741350173950195,
+        -2.3267662525177,
+        -2.883946180343628,
+        3.150789976119995,
+        -3.101863384246826,
+        -4.100035190582275,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.006712070666253567,
+      "terminal_root_x_m": 0.9751381874084473,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        7.384531021118164,
+        6.408392906188965,
+        6.986394882202148,
+        7.770423889160156
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        7.361124038696289,
+        6.408390998840332,
+        6.986393451690674,
+        7.770423412322998
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2409563064575195,
+          0.12437233328819275
+        ],
+        [
+          1.2407035827636719,
+          0.12505953013896942
+        ],
+        [
+          0.6696343421936035,
+          0.12474709004163742
+        ],
+        [
+          0.6909990310668945,
+          0.12381499260663986
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 10,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": 0.009915321134030819,
+        "roll_rad": 0.0067892251536250114,
+        "time_s": 149.93333435058594,
+        "wheel_upward_force_n": [
+          7.667796611785889,
+          5.995171070098877,
+          6.361306190490723,
+          8.48212718963623
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 1.2666666666666666,
+      "diagnostic_post_transfer_top_eligible_sample_count": 176,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 5.995171070098877,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.602167129516602,
+        14.462637901306152,
+        15.103519439697266,
+        17.92280387878418
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 10,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.28521013259887695,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.009896908886730671,
+      "terminal_reference_commands": [
+        5.376716613769531,
+        0.9134460091590881,
+        5.874062538146973,
+        -2.3270795345306396,
+        -2.883915901184082,
+        3.151146650314331,
+        -3.1019961833953857,
+        -4.1002044677734375,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.0067747668363153934,
+      "terminal_root_x_m": 0.975523054599762,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        7.864258766174316,
+        5.90098762512207,
+        6.307918071746826,
+        8.480979919433594
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        7.835415840148926,
+        5.900979518890381,
+        6.307917594909668,
+        8.480978965759277
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2412919998168945,
+          0.12449507415294647
+        ],
+        [
+          1.2417583465576172,
+          0.12510418891906738
+        ],
+        [
+          0.6695640683174133,
+          0.1247018575668335
+        ],
+        [
+          0.6920037865638733,
+          0.12376555055379868
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 11,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": 0.010138149373233318,
+        "roll_rad": 0.006316320039331913,
+        "time_s": 149.9499969482422,
+        "wheel_upward_force_n": [
+          7.00267219543457,
+          6.913173198699951,
+          7.041688919067383,
+          7.552620887756348
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 1.05,
+      "diagnostic_post_transfer_top_eligible_sample_count": 181,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 6.913173198699951,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.557339668273926,
+        15.134675979614258,
+        15.867753028869629,
+        16.2556095123291
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 11,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.2852773070335388,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.0101430369541049,
+      "terminal_reference_commands": [
+        5.376696586608887,
+        0.9134650230407715,
+        5.87406063079834,
+        -2.3271243572235107,
+        -2.8839223384857178,
+        3.1510391235351562,
+        -3.1019623279571533,
+        -4.100120544433594,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.006296416278928518,
+      "terminal_root_x_m": 0.9768036603927612,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        7.00057315826416,
+        6.96438455581665,
+        7.096445560455322,
+        7.500411510467529
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        6.954856872558594,
+        6.964384078979492,
+        7.096445560455322,
+        7.500410079956055
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.242932677268982,
+          0.12446887791156769
+        ],
+        [
+          1.242155909538269,
+          0.12511588633060455
+        ],
+        [
+          0.6707900166511536,
+          0.12487564980983734
+        ],
+        [
+          0.6927546858787537,
+          0.12387776374816895
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 12,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": 0.010693494230508804,
+        "roll_rad": 0.008626989088952541,
+        "time_s": 149.9499969482422,
+        "wheel_upward_force_n": [
+          9.935195922851562,
+          3.7623660564422607,
+          4.060964107513428,
+          10.767158508300781
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 0.5666666666666667,
+      "diagnostic_post_transfer_top_eligible_sample_count": 147,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 3.7623660564422607,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.546778678894043,
+        14.735590934753418,
+        12.78785514831543,
+        16.22772789001465
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 12,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.28522998094558716,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010688156820833683,
+      "terminal_reference_commands": [
+        5.376670837402344,
+        0.9135299921035767,
+        5.874125957489014,
+        -2.326875686645508,
+        -2.883960008621216,
+        3.150693655014038,
+        -3.1018142700195312,
+        -4.09991455078125,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.008633333258330822,
+      "terminal_root_x_m": 0.9758632183074951,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        9.909178733825684,
+        3.806765079498291,
+        4.102043628692627,
+        10.722372055053711
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        9.893974304199219,
+        3.8067641258239746,
+        4.102043628692627,
+        10.722372055053711
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2405188083648682,
+          0.12464451044797897
+        ],
+        [
+          1.2423973083496094,
+          0.12428386509418488
+        ],
+        [
+          0.6701982617378235,
+          0.12479007244110107
+        ],
+        [
+          0.693585991859436,
+          0.12388766556978226
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 13,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": -0.05469755828380585,
+        "roll_rad": 0.059720173478126526,
+        "time_s": 149.0500030517578,
+        "wheel_upward_force_n": [
+          8.551531791687012,
+          8.468559265136719,
+          9.28403377532959,
+          10.766201972961426
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 0.23333333333333334,
+      "diagnostic_post_transfer_top_eligible_sample_count": 96,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 8.468559265136719,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.614755630493164,
+        13.9761381149292,
+        12.129314422607422,
+        16.87249755859375
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 13,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.2880977392196655,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010443316772580147,
+      "terminal_reference_commands": [
+        5.3767008781433105,
+        0.9134618043899536,
+        5.874059200286865,
+        -2.3271279335021973,
+        -2.8839259147644043,
+        3.1510417461395264,
+        -3.1019582748413086,
+        -4.100124359130859,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.007045391947031021,
+      "terminal_root_x_m": 0.9751061797142029,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        10.378013610839844,
+        3.184039354324341,
+        3.561978578567505,
+        11.33013916015625
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        10.366128921508789,
+        3.1840388774871826,
+        3.561978340148926,
+        11.33013916015625
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2366819381713867,
+          0.12416329979896545
+        ],
+        [
+          1.2463346719741821,
+          0.12503783404827118
+        ],
+        [
+          0.668083131313324,
+          0.12485959380865097
+        ],
+        [
+          0.7005907893180847,
+          0.12381134182214737
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 14,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": -0.055785492062568665,
+        "roll_rad": 0.057089485228061676,
+        "time_s": 148.68333435058594,
+        "wheel_upward_force_n": [
+          9.589580535888672,
+          8.015035629272461,
+          7.96321439743042,
+          12.059709548950195
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 0.5,
+      "diagnostic_post_transfer_top_eligible_sample_count": 101,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 7.96321439743042,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        13.34695053100586,
+        14.45692253112793,
+        12.732170104980469,
+        14.977315902709961
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 14,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.2848662734031677,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010364922694861889,
+      "terminal_reference_commands": [
+        5.3767008781433105,
+        0.9134582877159119,
+        5.874063491821289,
+        -2.327080011367798,
+        -2.883910655975342,
+        3.1511390209198,
+        -3.102001905441284,
+        -4.100202560424805,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.00670115789398551,
+      "terminal_root_x_m": 0.968265950679779,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        9.586844444274902,
+        4.0148396492004395,
+        4.590389728546143,
+        10.286832809448242
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        9.567485809326172,
+        4.014832973480225,
+        4.590389728546143,
+        10.286832809448242
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.232810139656067,
+          0.12444741278886795
+        ],
+        [
+          1.2342517375946045,
+          0.12494168430566788
+        ],
+        [
+          0.662147581577301,
+          0.12485746294260025
+        ],
+        [
+          0.6867821216583252,
+          0.12398455291986465
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 15,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": -0.04770562797784805,
+        "roll_rad": 0.07069184631109238,
+        "time_s": 148.5500030517578,
+        "wheel_upward_force_n": [
+          12.56330394744873,
+          0.0,
+          2.023507595062256,
+          14.252490043640137
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 0.0,
+      "diagnostic_post_transfer_top_eligible_sample_count": 75,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 0.0,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.112900733947754,
+        15.63078498840332,
+        17.96613311767578,
+        14.656194686889648
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 15,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.2577168941497803,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010360542684793472,
+      "terminal_reference_commands": [
+        5.376672267913818,
+        0.9135175347328186,
+        5.874127388000488,
+        -2.3268635272979736,
+        -2.8839502334594727,
+        3.1507344245910645,
+        -3.101877450942993,
+        -4.100062847137451,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.005761151667684317,
+      "terminal_root_x_m": 0.972151517868042,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        13.382245063781738,
+        0.0,
+        1.316552758216858,
+        13.846847534179688
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        13.376832962036133,
+        0.0,
+        1.3165524005889893,
+        13.846847534179688
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.233762264251709,
+          0.12472725659608841
+        ],
+        [
+          1.2402968406677246,
+          0.1257484406232834
+        ],
+        [
+          0.6654579639434814,
+          0.1249920204281807
+        ],
+        [
+          0.6965193748474121,
+          0.12482189387083054
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 16,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": -0.05463138967752457,
+        "roll_rad": 0.07250708341598511,
+        "time_s": 149.14999389648438,
+        "wheel_upward_force_n": [
+          1.3271311521530151,
+          12.619989395141602,
+          16.35802459716797,
+          3.077416181564331
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 0.0,
+      "diagnostic_post_transfer_top_eligible_sample_count": 86,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 1.3271311521530151,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.409482955932617,
+        15.688563346862793,
+        16.35802459716797,
+        15.647795677185059
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 16,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.25675272941589355,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010373666882514954,
+      "terminal_reference_commands": [
+        5.376682758331299,
+        0.9135121703147888,
+        5.874137878417969,
+        -2.326767683029175,
+        -2.883960008621216,
+        3.1507251262664795,
+        -3.1018123626708984,
+        -4.099918365478516,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.008022824302315712,
+      "terminal_root_x_m": 0.9744534492492676,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        13.307373046875,
+        0.0,
+        1.3321655988693237,
+        13.968708038330078
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        13.302292823791504,
+        0.0,
+        1.3321653604507446,
+        13.968708038330078
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2360281944274902,
+          0.12481469660997391
+        ],
+        [
+          1.2451472282409668,
+          0.12465645372867584
+        ],
+        [
+          0.6673498153686523,
+          0.12484895437955856
+        ],
+        [
+          0.7008156776428223,
+          0.12395007163286209
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 17,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": -0.05510277301073074,
+        "roll_rad": 0.060472216457128525,
+        "time_s": 147.89999389648438,
+        "wheel_upward_force_n": [
+          7.538417816162109,
+          8.441322326660156,
+          8.968077659606934,
+          11.548998832702637
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 1.3333333333333333,
+      "diagnostic_post_transfer_top_eligible_sample_count": 232,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 7.538417816162109,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.682633399963379,
+        14.368069648742676,
+        17.03745460510254,
+        15.706324577331543
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 17,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.28544092178344727,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.01064869575202465,
+      "terminal_reference_commands": [
+        5.376700401306152,
+        0.9134703874588013,
+        5.874057292938232,
+        -2.3271543979644775,
+        -2.883925676345825,
+        3.1510889530181885,
+        -3.1019718647003174,
+        -4.1001434326171875,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.005633711814880371,
+      "terminal_root_x_m": 0.9774744510650635,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        6.812466621398926,
+        6.958081245422363,
+        7.338616847991943,
+        7.482821941375732
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        6.793409824371338,
+        6.958080291748047,
+        7.338616847991943,
+        7.482821941375732
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2433314323425293,
+          0.1240101084113121
+        ],
+        [
+          1.2442591190338135,
+          0.12508176267147064
+        ],
+        [
+          0.6712231636047363,
+          0.12477964162826538
+        ],
+        [
+          0.6946249008178711,
+          0.12393017113208771
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 18,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": -0.05662684515118599,
+        "roll_rad": 0.05886387825012207,
+        "time_s": 148.23333740234375,
+        "wheel_upward_force_n": [
+          9.22038745880127,
+          8.412675857543945,
+          7.999044895172119,
+          12.359209060668945
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 1.0333333333333332,
+      "diagnostic_post_transfer_top_eligible_sample_count": 160,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 7.999044895172119,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.475422859191895,
+        14.10326862335205,
+        12.220444679260254,
+        16.27619171142578
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 18,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.28623366355895996,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010416252538561821,
+      "terminal_reference_commands": [
+        5.376676082611084,
+        0.9135138988494873,
+        5.874143600463867,
+        -2.326767921447754,
+        -2.8839588165283203,
+        3.150721549987793,
+        -3.101811170578003,
+        -4.099915981292725,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.006546002812683582,
+      "terminal_root_x_m": 0.9761199951171875,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        8.23271369934082,
+        5.334744930267334,
+        5.78985595703125,
+        9.153302192687988
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        8.207974433898926,
+        5.334743976593018,
+        5.78985595703125,
+        9.153302192687988
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2409627437591553,
+          0.12426246702671051
+        ],
+        [
+          1.2442436218261719,
+          0.12489089369773865
+        ],
+        [
+          0.6698994636535645,
+          0.1246279776096344
+        ],
+        [
+          0.6952764987945557,
+          0.12389497458934784
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 19,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": 0.010507181286811829,
+        "roll_rad": 0.005989959929138422,
+        "time_s": 149.75,
+        "wheel_upward_force_n": [
+          8.408968925476074,
+          5.188075065612793,
+          5.54740571975708,
+          9.004572868347168
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 1.4833333333333334,
+      "diagnostic_post_transfer_top_eligible_sample_count": 202,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 5.188075065612793,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.526276588439941,
+        14.944230079650879,
+        18.506593704223633,
+        16.669118881225586
+      ],
+      "failure_reason": "",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 19,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": true,
+      "terminal_control_step": 8986,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.2854955196380615,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010523749515414238,
+      "terminal_reference_commands": [
+        5.376676559448242,
+        0.9135196805000305,
+        5.87413215637207,
+        -2.326862096786499,
+        -2.8839573860168457,
+        3.1507411003112793,
+        -3.101874589920044,
+        -4.100056171417236,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.005953176412731409,
+      "terminal_root_x_m": 0.9724225997924805,
+      "terminal_sim_time_s": 149.76666666666665,
+      "terminal_wheel_contact_force_n": [
+        8.567059516906738,
+        5.211572647094727,
+        5.599315643310547,
+        8.970176696777344
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        8.53095817565918,
+        5.211568355560303,
+        5.599315643310547,
+        8.962138175964355
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2384142875671387,
+          0.12441398203372955
+        ],
+        [
+          1.236757516860962,
+          0.125041663646698
+        ],
+        [
+          0.666614294052124,
+          0.12484926730394363
+        ],
+        [
+          0.6878139972686768,
+          0.12430483847856522
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 20,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": 0.01027249451726675,
+        "roll_rad": 0.005830473732203245,
+        "time_s": 149.9499969482422,
+        "wheel_upward_force_n": [
+          7.246596336364746,
+          6.406843185424805,
+          6.845644950866699,
+          8.058954238891602
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 1.3,
+      "diagnostic_post_transfer_top_eligible_sample_count": 197,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 6.406843185424805,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.772595405578613,
+        14.403547286987305,
+        17.882047653198242,
+        18.01786231994629
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 20,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.2856769561767578,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.01026493776589632,
+      "terminal_reference_commands": [
+        5.376704216003418,
+        0.91346275806427,
+        5.874073505401611,
+        -2.3270602226257324,
+        -2.8839213848114014,
+        3.1511104106903076,
+        -3.1019527912139893,
+        -4.100107192993164,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.005829219240695238,
+      "terminal_root_x_m": 0.9763603210449219,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        7.2326154708862305,
+        6.435495376586914,
+        6.881208419799805,
+        8.03189468383789
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        7.213756561279297,
+        6.435491561889648,
+        6.881208419799805,
+        8.03189468383789
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.242079257965088,
+          0.1241142675280571
+        ],
+        [
+          1.2434496879577637,
+          0.12507185339927673
+        ],
+        [
+          0.6701416969299316,
+          0.12456987053155899
+        ],
+        [
+          0.6938095092773438,
+          0.12381060421466827
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 21,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": -0.056575529277324677,
+        "roll_rad": 0.05450161546468735,
+        "time_s": 149.1666717529297,
+        "wheel_upward_force_n": [
+          9.757258415222168,
+          7.661750316619873,
+          6.842647075653076,
+          13.56554126739502
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 0.016666666666666666,
+      "diagnostic_post_transfer_top_eligible_sample_count": 59,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 6.842647075653076,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        13.91732406616211,
+        15.429740905761719,
+        13.349166870117188,
+        14.996631622314453
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 21,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.28205060958862305,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010465352796018124,
+      "terminal_reference_commands": [
+        5.376701354980469,
+        0.9134736657142639,
+        5.874075412750244,
+        -2.327091693878174,
+        -2.883918046951294,
+        3.151090383529663,
+        -3.101989269256592,
+        -4.100209712982178,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.007170853205025196,
+      "terminal_root_x_m": 0.969482421875,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        11.748271942138672,
+        1.928607702255249,
+        2.4324514865875244,
+        12.495268821716309
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        11.74376106262207,
+        1.9286072254180908,
+        2.4324512481689453,
+        12.495268821716309
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2323827743530273,
+          0.12438660860061646
+        ],
+        [
+          1.2343506813049316,
+          0.12485762685537338
+        ],
+        [
+          0.6633858680725098,
+          0.12495977431535721
+        ],
+        [
+          0.6900219917297363,
+          0.12387065589427948
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 22,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": 0.010458509437739849,
+        "roll_rad": 0.0062749204225838184,
+        "time_s": 149.9499969482422,
+        "wheel_upward_force_n": [
+          8.457547187805176,
+          5.206136226654053,
+          5.586294651031494,
+          9.26789665222168
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 0.8833333333333333,
+      "diagnostic_post_transfer_top_eligible_sample_count": 158,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 5.206136226654053,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.586210250854492,
+        14.291906356811523,
+        12.39635181427002,
+        15.239407539367676
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 22,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.2871437072753906,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010453343391418457,
+      "terminal_reference_commands": [
+        5.376668453216553,
+        0.9135314226150513,
+        5.874148845672607,
+        -2.326810359954834,
+        -2.8839519023895264,
+        3.1507065296173096,
+        -3.1018083095550537,
+        -4.099947452545166,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.006272343918681145,
+      "terminal_root_x_m": 0.9762215614318848,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        8.431971549987793,
+        5.256296157836914,
+        5.624715328216553,
+        9.21558952331543
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        8.416706085205078,
+        5.256295680999756,
+        5.6247148513793945,
+        9.215588569641113
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2402210235595703,
+          0.12421122193336487
+        ],
+        [
+          1.245833396911621,
+          0.12509845197200775
+        ],
+        [
+          0.6695256233215332,
+          0.12478795647621155
+        ],
+        [
+          0.6974387168884277,
+          0.1239931732416153
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 23,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": 0.010290298610925674,
+        "roll_rad": 0.005992619786411524,
+        "time_s": 149.60000610351562,
+        "wheel_upward_force_n": [
+          6.971701145172119,
+          6.9440531730651855,
+          7.0972442626953125,
+          7.515936374664307
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 1.3333333333333333,
+      "diagnostic_post_transfer_top_eligible_sample_count": 195,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 6.9440531730651855,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        14.448572158813477,
+        14.530533790588379,
+        15.963046073913574,
+        17.994903564453125
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 23,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.2853240966796875,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010387573391199112,
+      "terminal_reference_commands": [
+        5.376702308654785,
+        0.9134622812271118,
+        5.874075412750244,
+        -2.327092409133911,
+        -2.8839194774627686,
+        3.1510918140411377,
+        -3.101983070373535,
+        -4.100213050842285,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.0055185407400131226,
+      "terminal_root_x_m": 0.9779706001281738,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        6.304694175720215,
+        7.763003349304199,
+        7.914989948272705,
+        6.667379856109619
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        6.259729385375977,
+        7.763000011444092,
+        7.914988994598389,
+        6.667379856109619
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2444477081298828,
+          0.12416677176952362
+        ],
+        [
+          1.2441158294677734,
+          0.12508875131607056
+        ],
+        [
+          0.6715083122253418,
+          0.12482159584760666
+        ],
+        [
+          0.6942610740661621,
+          0.12386051565408707
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 24,
+      "diagnostic_best_minimum_upward_force_snapshot": {
+        "pitch_rad": -0.05665278434753418,
+        "roll_rad": 0.05472517013549805,
+        "time_s": 148.81666564941406,
+        "wheel_upward_force_n": [
+          9.634736061096191,
+          7.781898021697998,
+          6.676987648010254,
+          13.358268737792969
+        ]
+      },
+      "diagnostic_longest_success_condition_dwell_s": 0.31666666666666665,
+      "diagnostic_post_transfer_top_eligible_sample_count": 78,
+      "diagnostic_post_transfer_top_maximum_minimum_wheel_upward_force_n": 6.676987648010254,
+      "diagnostic_post_transfer_top_maximum_wheel_upward_force_n": [
+        13.766914367675781,
+        15.50052261352539,
+        13.546881675720215,
+        15.194865226745605
+      ],
+      "failure_reason": "TIMEOUT",
+      "front_support_command_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters": {
+        "diagnostic_replicate": 24,
+        "fixed_rear_transfer_front_wheel_speed_rad_s": 0.0,
+        "fixed_rear_wheel_speed_rad_s": 0.3,
+        "fixed_support_activation_phase": 9,
+        "fixed_support_activation_progress": 0.4,
+        "post_transfer_forward_speed_rad_s": 0.075,
+        "source_grid": 39,
+        "support_unload_maximum_m": 0.002,
+        "support_unload_rate_m_s": 0.00075
+      },
+      "success": false,
+      "terminal_control_step": 8998,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_fsm_baseline_ik_invalid_count_per_leg": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "terminal_fsm_diagnostic_front_support_clamp_count": 0,
+      "terminal_fsm_support_unload_trim_m": [
+        0.0020000000949949026,
+        0.0,
+        0.0,
+        0.0020000000949949026
+      ],
+      "terminal_margin_m": 0.2840256690979004,
+      "terminal_nonwheel_contact_force_n": {},
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.010419733822345734,
+      "terminal_reference_commands": [
+        5.376704692840576,
+        0.913464367389679,
+        5.8740692138671875,
+        -2.327052116394043,
+        -2.8839118480682373,
+        3.1511027812957764,
+        -3.101954936981201,
+        -4.1001129150390625,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.007241776678711176,
+      "terminal_root_x_m": 0.9682416915893555,
+      "terminal_sim_time_s": 149.96666666666667,
+      "terminal_wheel_contact_force_n": [
+        10.293244361877441,
+        3.3459742069244385,
+        3.8305394649505615,
+        11.010424613952637
+      ],
+      "terminal_wheel_contact_upward_force_n": [
+        10.27884578704834,
+        3.345968246459961,
+        3.8305389881134033,
+        11.010424613952637
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2327251434326172,
+          0.12456724792718887
+        ],
+        [
+          1.2323203086853027,
+          0.12483381479978561
+        ],
+        [
+          0.6625633239746094,
+          0.12497857958078384
+        ],
+        [
+          0.6856451034545898,
+          0.12397214025259018
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00925
+        ],
+        [
+          0.0,
+          0.005625
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    }
+  ],
+  "failures": [],
+  "finished_unix": 1785214161.663415,
+  "grid_kind": "selected_combined_repeat_75",
+  "height_mm": 75,
+  "manifest": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\data\\scenario_manifests\\development_v2.json",
+  "manifest_sha256": "f3d10d7340c06f78c200c44119bb2e17c81e587bd314b342ac90b49019ea2cdc",
+  "passed_execution": true,
+  "scenario_id": "development-h075-0000",
+  "schema": "resume_validation.fsm_recovery_grid.v1",
+  "started_unix": 1785213123.1579711,
+  "success_count": 4
+}

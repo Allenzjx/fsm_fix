@@ -1,0 +1,1915 @@
+{
+  "candidate_count": 25,
+  "candidates": [
+    {
+      "candidate_id": 0,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": -0.01,
+        "right_side_delta_z_m": -0.005
+      },
+      "success": false,
+      "terminal_control_step": 8036,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_margin_m": 0.32857275009155273,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 5.136173725128174
+      },
+      "terminal_phase": 9,
+      "terminal_pitch_rad": -0.0548088438808918,
+      "terminal_reference_commands": [
+        4.174378871917725,
+        4.158995151519775,
+        1.7847177982330322,
+        13.443674087524414,
+        1.2558188438415527,
+        41.044246673583984,
+        -5.811488628387451,
+        -45.86464309692383,
+        0.30000001192092896,
+        0.30000001192092896,
+        0.30000001192092896,
+        0.30000001192092896
+      ],
+      "terminal_roll_rad": 0.0792103037238121,
+      "terminal_root_x_m": 0.9711518287658691,
+      "terminal_sim_time_s": 133.93333333333334,
+      "terminal_wheel_contact_force_n": [
+        8.022327423095703,
+        0.0,
+        5.538300514221191,
+        10.408744812011719
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2598419189453125,
+          0.14869649708271027
+        ],
+        [
+          1.179952621459961,
+          0.11279480904340744
+        ],
+        [
+          0.5897984504699707,
+          0.1496863216161728
+        ],
+        [
+          0.7118983268737793,
+          0.15091750025749207
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          -0.01
+        ],
+        [
+          0.0,
+          -0.015
+        ],
+        [
+          0.0,
+          -0.01
+        ],
+        [
+          0.0,
+          -0.015
+        ]
+      ]
+    },
+    {
+      "candidate_id": 1,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": -0.01,
+        "right_side_delta_z_m": -0.0025
+      },
+      "success": false,
+      "terminal_control_step": 8707,
+      "terminal_fsm_baseline_ik_invalid_count": 446,
+      "terminal_margin_m": 0.29121923446655273,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 9.362874984741211
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.030833775177598,
+      "terminal_reference_commands": [
+        2.332108497619629,
+        5.908207893371582,
+        4.800000190734863,
+        10.600000381469727,
+        -0.7000000476837158,
+        1.0,
+        4.236154079437256,
+        -10.554959297180176,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.12374041974544525,
+      "terminal_root_x_m": 1.0608997344970703,
+      "terminal_sim_time_s": 145.11666666666667,
+      "terminal_wheel_contact_force_n": [
+        7.093170166015625,
+        0.0,
+        8.071273803710938,
+        9.718360900878906
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3446617126464844,
+          0.14823047816753387
+        ],
+        [
+          1.279505729675293,
+          0.1091802641749382
+        ],
+        [
+          0.7230734825134277,
+          0.14890705049037933
+        ],
+        [
+          0.8008322715759277,
+          0.15186181664466858
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          -0.01
+        ],
+        [
+          0.0,
+          -0.0125
+        ],
+        [
+          0.0,
+          -0.01
+        ],
+        [
+          0.0,
+          -0.0125
+        ]
+      ]
+    },
+    {
+      "candidate_id": 2,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": -0.01,
+        "right_side_delta_z_m": 0.0
+      },
+      "success": false,
+      "terminal_control_step": 8730,
+      "terminal_fsm_baseline_ik_invalid_count": 2,
+      "terminal_margin_m": 0.31938648223876953,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 10.986043930053711
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.05328135937452316,
+      "terminal_reference_commands": [
+        2.332076072692871,
+        5.908191204071045,
+        0.9572297930717468,
+        14.250330924987793,
+        -0.7000000476837158,
+        1.0,
+        3.2396140098571777,
+        -9.668402671813965,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.09643374383449554,
+      "terminal_root_x_m": 1.0672788619995117,
+      "terminal_sim_time_s": 145.5,
+      "terminal_wheel_contact_force_n": [
+        13.1544189453125,
+        0.0,
+        8.924287796020508,
+        4.577515602111816
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3497991561889648,
+          0.1488954722881317
+        ],
+        [
+          1.2894554138183594,
+          0.11187303811311722
+        ],
+        [
+          0.6994056701660156,
+          0.1491946130990982
+        ],
+        [
+          0.8118815422058105,
+          0.1510106921195984
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          -0.01
+        ],
+        [
+          0.0,
+          -0.01
+        ],
+        [
+          0.0,
+          -0.01
+        ],
+        [
+          0.0,
+          -0.01
+        ]
+      ]
+    },
+    {
+      "candidate_id": 3,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": -0.01,
+        "right_side_delta_z_m": 0.0025
+      },
+      "success": false,
+      "terminal_control_step": 8726,
+      "terminal_fsm_baseline_ik_invalid_count": 4,
+      "terminal_margin_m": 0.3043332099914551,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 8.717738151550293
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.03850448504090309,
+      "terminal_reference_commands": [
+        2.3321142196655273,
+        5.908217906951904,
+        1.9215892553329468,
+        13.31126880645752,
+        -0.7000000476837158,
+        1.0,
+        2.248255968093872,
+        -8.769221305847168,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.09888461232185364,
+      "terminal_root_x_m": 1.0610113143920898,
+      "terminal_sim_time_s": 145.43333333333334,
+      "terminal_wheel_contact_force_n": [
+        7.889639377593994,
+        0.0,
+        7.784451484680176,
+        10.65957260131836
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3446283340454102,
+          0.1480274796485901
+        ],
+        [
+          1.284804344177246,
+          0.11166424304246902
+        ],
+        [
+          0.7108759880065918,
+          0.14869298040866852
+        ],
+        [
+          0.8039493560791016,
+          0.15140745043754578
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          -0.01
+        ],
+        [
+          0.0,
+          -0.0075
+        ],
+        [
+          0.0,
+          -0.01
+        ],
+        [
+          0.0,
+          -0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 4,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": -0.01,
+        "right_side_delta_z_m": 0.005
+      },
+      "success": false,
+      "terminal_control_step": 8707,
+      "terminal_fsm_baseline_ik_invalid_count": 8,
+      "terminal_margin_m": 0.27060556411743164,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.457816123962402
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.02148260362446308,
+      "terminal_reference_commands": [
+        2.3321101665496826,
+        5.908181667327881,
+        2.88334321975708,
+        12.389982223510742,
+        -0.7000000476837158,
+        1.0,
+        1.2612844705581665,
+        -7.858360767364502,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.11199449747800827,
+      "terminal_root_x_m": 1.0564346313476562,
+      "terminal_sim_time_s": 145.11666666666667,
+      "terminal_wheel_contact_force_n": [
+        9.333441734313965,
+        0.0,
+        4.868980407714844,
+        11.448227882385254
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.339238166809082,
+          0.14868727326393127
+        ],
+        [
+          1.2749710083007812,
+          0.10913516581058502
+        ],
+        [
+          0.7412447929382324,
+          0.14833633601665497
+        ],
+        [
+          0.7906413078308105,
+          0.15067674219608307
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          -0.01
+        ],
+        [
+          0.0,
+          -0.005
+        ],
+        [
+          0.0,
+          -0.01
+        ],
+        [
+          0.0,
+          -0.005
+        ]
+      ]
+    },
+    {
+      "candidate_id": 5,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": -0.005,
+        "right_side_delta_z_m": -0.005
+      },
+      "success": false,
+      "terminal_control_step": 8207,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_margin_m": 0.3293166160583496,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 5.250296115875244
+      },
+      "terminal_phase": 9,
+      "terminal_pitch_rad": -0.0514349602162838,
+      "terminal_reference_commands": [
+        4.540041923522949,
+        3.818469285964966,
+        1.5043442249298096,
+        13.715492248535156,
+        0.9088379740715027,
+        39.88059616088867,
+        -5.235443592071533,
+        -44.85179901123047,
+        0.30000001192092896,
+        0.30000001192092896,
+        0.30000001192092896,
+        0.30000001192092896
+      ],
+      "terminal_roll_rad": 0.07668016850948334,
+      "terminal_root_x_m": 1.0038275718688965,
+      "terminal_sim_time_s": 136.78333333333333,
+      "terminal_wheel_contact_force_n": [
+        7.494836330413818,
+        0.0,
+        6.191081523895264,
+        9.532979011535645
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.2923612594604492,
+          0.14962543547153473
+        ],
+        [
+          1.2173948287963867,
+          0.11289042234420776
+        ],
+        [
+          0.6236586570739746,
+          0.1487489640712738
+        ],
+        [
+          0.746060848236084,
+          0.15131665766239166
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          -0.005
+        ],
+        [
+          0.0,
+          -0.01
+        ],
+        [
+          0.0,
+          -0.005
+        ],
+        [
+          0.0,
+          -0.01
+        ]
+      ]
+    },
+    {
+      "candidate_id": 6,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": -0.005,
+        "right_side_delta_z_m": -0.0025
+      },
+      "success": false,
+      "terminal_control_step": 8750,
+      "terminal_fsm_baseline_ik_invalid_count": 2,
+      "terminal_margin_m": 0.3240947723388672,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 7.099032878875732
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.04355062544345856,
+      "terminal_reference_commands": [
+        4.265947341918945,
+        4.073522090911865,
+        1.9216076135635376,
+        13.311026573181152,
+        -0.7000000476837158,
+        1.0,
+        2.2480881214141846,
+        -8.769606590270996,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.08893348276615143,
+      "terminal_root_x_m": 1.0683469772338867,
+      "terminal_sim_time_s": 145.83333333333334,
+      "terminal_wheel_contact_force_n": [
+        8.259100914001465,
+        0.0,
+        6.098721504211426,
+        8.301254272460938
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3500361442565918,
+          0.1487831324338913
+        ],
+        [
+          1.2924981117248535,
+          0.11250709742307663
+        ],
+        [
+          0.6969757080078125,
+          0.14867167174816132
+        ],
+        [
+          0.8146195411682129,
+          0.150857612490654
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          -0.005
+        ],
+        [
+          0.0,
+          -0.0075
+        ],
+        [
+          0.0,
+          -0.005
+        ],
+        [
+          0.0,
+          -0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 7,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": -0.005,
+        "right_side_delta_z_m": 0.0
+      },
+      "success": false,
+      "terminal_control_step": 8702,
+      "terminal_fsm_baseline_ik_invalid_count": 4,
+      "terminal_margin_m": 0.30275392532348633,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 11.224066734313965
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.027153655886650085,
+      "terminal_reference_commands": [
+        4.2659735679626465,
+        4.0733771324157715,
+        2.883340835571289,
+        12.39002799987793,
+        -0.7000000476837158,
+        1.0,
+        1.2613065242767334,
+        -7.8583221435546875,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.09799513965845108,
+      "terminal_root_x_m": 1.0585556030273438,
+      "terminal_sim_time_s": 145.03333333333333,
+      "terminal_wheel_contact_force_n": [
+        6.96492862701416,
+        0.0,
+        8.251004219055176,
+        12.347031593322754
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3414673805236816,
+          0.1487191766500473
+        ],
+        [
+          1.2765445709228516,
+          0.11022218316793442
+        ],
+        [
+          0.7088198661804199,
+          0.14909245073795319
+        ],
+        [
+          0.7980427742004395,
+          0.15113188326358795
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          -0.005
+        ],
+        [
+          0.0,
+          -0.005
+        ],
+        [
+          0.0,
+          -0.005
+        ],
+        [
+          0.0,
+          -0.005
+        ]
+      ]
+    },
+    {
+      "candidate_id": 8,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": -0.005,
+        "right_side_delta_z_m": 0.0025
+      },
+      "success": false,
+      "terminal_control_step": 8735,
+      "terminal_fsm_baseline_ik_invalid_count": 5,
+      "terminal_margin_m": 0.29761838912963867,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 7.125469207763672
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.021255115047097206,
+      "terminal_reference_commands": [
+        4.265951156616211,
+        4.073523044586182,
+        3.842737913131714,
+        11.486238479614258,
+        -0.7000000476837158,
+        1.0,
+        0.2786036431789398,
+        -6.935397148132324,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.0984453335404396,
+      "terminal_root_x_m": 1.062394618988037,
+      "terminal_sim_time_s": 145.58333333333334,
+      "terminal_wheel_contact_force_n": [
+        10.863800048828125,
+        0.0,
+        5.4466447830200195,
+        11.595216751098633
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3450102806091309,
+          0.1488284319639206
+        ],
+        [
+          1.2874817848205566,
+          0.11204978078603745
+        ],
+        [
+          0.7212905883789062,
+          0.14853201806545258
+        ],
+        [
+          0.8055548667907715,
+          0.15066353976726532
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          -0.005
+        ],
+        [
+          0.0,
+          -0.0025
+        ],
+        [
+          0.0,
+          -0.005
+        ],
+        [
+          0.0,
+          -0.0025
+        ]
+      ]
+    },
+    {
+      "candidate_id": 9,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": -0.005,
+        "right_side_delta_z_m": 0.005
+      },
+      "success": false,
+      "terminal_control_step": 8747,
+      "terminal_fsm_baseline_ik_invalid_count": 6,
+      "terminal_margin_m": 0.289705753326416,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.561465740203857
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.01561086717993021,
+      "terminal_reference_commands": [
+        4.26594352722168,
+        4.073537826538086,
+        4.800000190734863,
+        10.600000381469727,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.000000476837158,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.10433352738618851,
+      "terminal_root_x_m": 1.0621232986450195,
+      "terminal_sim_time_s": 145.78333333333333,
+      "terminal_wheel_contact_force_n": [
+        12.421886444091797,
+        0.0,
+        6.772250652313232,
+        10.477170944213867
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3443083763122559,
+          0.1485585719347
+        ],
+        [
+          1.2868447303771973,
+          0.11207682639360428
+        ],
+        [
+          0.7296366691589355,
+          0.14881891012191772
+        ],
+        [
+          0.8054208755493164,
+          0.15034347772598267
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          -0.005
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.005
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 10,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": 0.0,
+        "right_side_delta_z_m": -0.005
+      },
+      "success": false,
+      "terminal_control_step": 8661,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_margin_m": 0.31793004274368286,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 11.93352222442627
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.02917122095823288,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        2.88333797454834,
+        12.389997482299805,
+        -0.7000000476837158,
+        1.0,
+        1.2613199949264526,
+        -7.858297348022461,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.08750205487012863,
+      "terminal_root_x_m": 1.0554778575897217,
+      "terminal_sim_time_s": 144.35,
+      "terminal_wheel_contact_force_n": [
+        7.969710826873779,
+        0.0,
+        5.473726749420166,
+        10.879671096801758
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3370281457901,
+          0.14881695806980133
+        ],
+        [
+          1.2713212966918945,
+          0.11038210242986679
+        ],
+        [
+          0.6887645125389099,
+          0.14828559756278992
+        ],
+        [
+          0.7961417436599731,
+          0.15106286108493805
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.005
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.005
+        ]
+      ]
+    },
+    {
+      "candidate_id": 11,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": 0.0,
+        "right_side_delta_z_m": -0.0025
+      },
+      "success": false,
+      "terminal_control_step": 8672,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_margin_m": 0.3104766607284546,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 13.698644638061523
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.022139769047498703,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        3.8427281379699707,
+        11.486352920532227,
+        -0.7000000476837158,
+        1.0,
+        0.27863308787345886,
+        -6.935277462005615,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.09000977128744125,
+      "terminal_root_x_m": 1.050636649131775,
+      "terminal_sim_time_s": 144.53333333333333,
+      "terminal_wheel_contact_force_n": [
+        4.857349395751953,
+        0.0,
+        7.50969934463501,
+        9.386651992797852
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3330557346343994,
+          0.14821428060531616
+        ],
+        [
+          1.2659385204315186,
+          0.11046940088272095
+        ],
+        [
+          0.692325234413147,
+          0.1483163982629776
+        ],
+        [
+          0.7912807464599609,
+          0.15137237310409546
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.0025
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.0025
+        ]
+      ]
+    },
+    {
+      "candidate_id": 12,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": 0.0,
+        "right_side_delta_z_m": 0.0
+      },
+      "success": false,
+      "terminal_control_step": 8733,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_margin_m": -0.21000397205352783,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 26.816057205200195
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.01549739670008421,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        4.800000190734863,
+        10.600000381469727,
+        -0.7000000476837158,
+        1.0,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.09124394506216049,
+      "terminal_root_x_m": 1.0650595426559448,
+      "terminal_sim_time_s": 145.55,
+      "terminal_wheel_contact_force_n": [
+        1.3313175439834595,
+        0.0,
+        9.344685554504395,
+        9.613816261291504
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3472381830215454,
+          0.14875873923301697
+        ],
+        [
+          1.2902027368545532,
+          0.11248843371868134
+        ],
+        [
+          0.7106388807296753,
+          0.1490890085697174
+        ],
+        [
+          0.8113477230072021,
+          0.15062977373600006
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 13,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": 0.0,
+        "right_side_delta_z_m": 0.0025
+      },
+      "success": false,
+      "terminal_control_step": 8655,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_margin_m": -0.21594172716140747,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 20.634702682495117
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.003825974650681019,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        5.755357265472412,
+        9.730683326721191,
+        -0.7000000476837158,
+        1.0,
+        -1.6749335527420044,
+        -5.052389144897461,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.10240466147661209,
+      "terminal_root_x_m": 1.0491780042648315,
+      "terminal_sim_time_s": 144.25,
+      "terminal_wheel_contact_force_n": [
+        1.291393756866455,
+        0.0,
+        3.2100777626037598,
+        10.9214506149292
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3313060998916626,
+          0.14856985211372375
+        ],
+        [
+          1.2676650285720825,
+          0.11004508286714554
+        ],
+        [
+          0.7161542177200317,
+          0.14941032230854034
+        ],
+        [
+          0.7891791462898254,
+          0.15064391493797302
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0025
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0025
+        ]
+      ]
+    },
+    {
+      "candidate_id": 14,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": 0.0,
+        "right_side_delta_z_m": 0.005
+      },
+      "success": false,
+      "terminal_control_step": 8722,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_margin_m": -0.21139544248580933,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 24.39655303955078
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.003079233458265662,
+      "terminal_reference_commands": [
+        6.199999809265137,
+        2.299999952316284,
+        6.709009647369385,
+        8.878131866455078,
+        -0.7000000476837158,
+        1.0,
+        -2.6464693546295166,
+        -4.092389106750488,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.10296286642551422,
+      "terminal_root_x_m": 1.0670866966247559,
+      "terminal_sim_time_s": 145.36666666666667,
+      "terminal_wheel_contact_force_n": [
+        1.9561924934387207,
+        0.0,
+        2.8271963596343994,
+        11.03939437866211
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3487430810928345,
+          0.14830198884010315
+        ],
+        [
+          1.2927061319351196,
+          0.112107053399086
+        ],
+        [
+          0.7324598431587219,
+          0.14903099834918976
+        ],
+        [
+          0.8141650557518005,
+          0.15058927237987518
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.005
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.005
+        ]
+      ]
+    },
+    {
+      "candidate_id": 15,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": 0.005,
+        "right_side_delta_z_m": -0.005
+      },
+      "success": false,
+      "terminal_control_step": 8748,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_margin_m": 0.3248786926269531,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 14.857460975646973
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": -0.014430923387408257,
+      "terminal_reference_commands": [
+        8.135890007019043,
+        0.5862011313438416,
+        4.800000190734863,
+        10.600000381469727,
+        -2.6416869163513184,
+        2.9082765579223633,
+        -0.7000000476837158,
+        -6.0,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.08160974085330963,
+      "terminal_root_x_m": 1.0663402080535889,
+      "terminal_sim_time_s": 145.8,
+      "terminal_wheel_contact_force_n": [
+        9.12563705444336,
+        0.0,
+        8.209471702575684,
+        10.254485130310059
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3473985195159912,
+          0.14933671057224274
+        ],
+        [
+          1.287440538406372,
+          0.11265602707862854
+        ],
+        [
+          0.6954572200775146,
+          0.14927931129932404
+        ],
+        [
+          0.8116006851196289,
+          0.15071533620357513
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.005
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.005
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "candidate_id": 16,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": 0.005,
+        "right_side_delta_z_m": -0.0025
+      },
+      "success": false,
+      "terminal_control_step": 8708,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_margin_m": 0.3080742359161377,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 8.77741527557373
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.00011050873581552878,
+      "terminal_reference_commands": [
+        8.135894775390625,
+        0.5861071348190308,
+        5.755353927612305,
+        9.73079776763916,
+        -2.6416897773742676,
+        2.908267021179199,
+        -1.6748936176300049,
+        -5.052285671234131,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.08554453402757645,
+      "terminal_root_x_m": 1.0597484111785889,
+      "terminal_sim_time_s": 145.13333333333333,
+      "terminal_wheel_contact_force_n": [
+        7.485549449920654,
+        0.0,
+        7.988434314727783,
+        10.701491355895996
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.341930627822876,
+          0.14829836785793304
+        ],
+        [
+          1.281198501586914,
+          0.11155982315540314
+        ],
+        [
+          0.7079448699951172,
+          0.14877267181873322
+        ],
+        [
+          0.8020262718200684,
+          0.1508154571056366
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.005
+        ],
+        [
+          0.0,
+          0.0025
+        ],
+        [
+          0.0,
+          0.005
+        ],
+        [
+          0.0,
+          0.0025
+        ]
+      ]
+    },
+    {
+      "candidate_id": 17,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": 0.005,
+        "right_side_delta_z_m": 0.0
+      },
+      "success": false,
+      "terminal_control_step": 8699,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_margin_m": -0.21538114547729492,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 22.765745162963867
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.006812466308474541,
+      "terminal_reference_commands": [
+        8.1358642578125,
+        0.5862906575202942,
+        6.709017276763916,
+        8.878085136413574,
+        -2.641655445098877,
+        2.908590078353882,
+        -2.646449565887451,
+        -4.092336654663086,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.09365279972553253,
+      "terminal_root_x_m": 1.060960292816162,
+      "terminal_sim_time_s": 144.98333333333332,
+      "terminal_wheel_contact_force_n": [
+        1.0851213932037354,
+        0.0,
+        8.857661247253418,
+        9.467658996582031
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3432927131652832,
+          0.14847707748413086
+        ],
+        [
+          1.2784082889556885,
+          0.11058451235294342
+        ],
+        [
+          0.7192485332489014,
+          0.14915277063846588
+        ],
+        [
+          0.8015656471252441,
+          0.15129947662353516
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.005
+        ],
+        [
+          0.0,
+          0.005
+        ],
+        [
+          0.0,
+          0.005
+        ],
+        [
+          0.0,
+          0.005
+        ]
+      ]
+    },
+    {
+      "candidate_id": 18,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": 0.005,
+        "right_side_delta_z_m": 0.0025
+      },
+      "success": false,
+      "terminal_control_step": 8713,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_margin_m": 0.28869128227233887,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 5.280523777008057
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.011709468439221382,
+      "terminal_reference_commands": [
+        8.13589096069336,
+        0.5861088037490845,
+        7.661157131195068,
+        8.042340278625488,
+        -2.641681671142578,
+        2.9082565307617188,
+        -3.614758014678955,
+        -3.119319438934326,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.10038711130619049,
+      "terminal_root_x_m": 1.0556879043579102,
+      "terminal_sim_time_s": 145.21666666666667,
+      "terminal_wheel_contact_force_n": [
+        10.500903129577637,
+        0.0,
+        6.179512977600098,
+        11.637414932250977
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3379108905792236,
+          0.14843550324440002
+        ],
+        [
+          1.2732317447662354,
+          0.11042395234107971
+        ],
+        [
+          0.7239811420440674,
+          0.14942029118537903
+        ],
+        [
+          0.7976846694946289,
+          0.15150132775306702
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.005
+        ],
+        [
+          0.0,
+          0.0075
+        ],
+        [
+          0.0,
+          0.005
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 19,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": 0.005,
+        "right_side_delta_z_m": 0.005
+      },
+      "success": false,
+      "terminal_control_step": 8742,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_margin_m": 0.2859983444213867,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 22.406007766723633
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.01570088602602482,
+      "terminal_reference_commands": [
+        8.135894775390625,
+        0.5862101316452026,
+        8.61198902130127,
+        7.222466468811035,
+        -2.6416871547698975,
+        2.908282995223999,
+        -4.5803985595703125,
+        -2.134000062942505,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.10192713886499405,
+      "terminal_root_x_m": 1.0657823085784912,
+      "terminal_sim_time_s": 145.7,
+      "terminal_wheel_contact_force_n": [
+        3.6822474002838135,
+        0.0,
+        6.293442726135254,
+        11.136404037475586
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3465497493743896,
+          0.1481148898601532
+        ],
+        [
+          1.289870023727417,
+          0.1121850311756134
+        ],
+        [
+          0.7395639419555664,
+          0.14878880977630615
+        ],
+        [
+          0.8123326301574707,
+          0.15097013115882874
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.005
+        ],
+        [
+          0.0,
+          0.01
+        ],
+        [
+          0.0,
+          0.005
+        ],
+        [
+          0.0,
+          0.01
+        ]
+      ]
+    },
+    {
+      "candidate_id": 20,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": 0.01,
+        "right_side_delta_z_m": -0.005
+      },
+      "success": false,
+      "terminal_control_step": 8719,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_margin_m": 0.32068872451782227,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 13.306830406188965
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.006969161797314882,
+      "terminal_reference_commands": [
+        10.075034141540527,
+        -1.0692318677902222,
+        6.7090163230896,
+        8.878138542175293,
+        -4.577692031860352,
+        4.8735270500183105,
+        -2.646450996398926,
+        -4.0922932624816895,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.07840058952569962,
+      "terminal_root_x_m": 1.0679974555969238,
+      "terminal_sim_time_s": 145.31666666666666,
+      "terminal_wheel_contact_force_n": [
+        4.681483745574951,
+        0.0,
+        14.318741798400879,
+        9.800362586975098
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.349510669708252,
+          0.14867167174816132
+        ],
+        [
+          1.2893033027648926,
+          0.11237023025751114
+        ],
+        [
+          0.7034058570861816,
+          0.14901414513587952
+        ],
+        [
+          0.8128457069396973,
+          0.15066953003406525
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.01
+        ],
+        [
+          0.0,
+          0.005
+        ],
+        [
+          0.0,
+          0.01
+        ],
+        [
+          0.0,
+          0.005
+        ]
+      ]
+    },
+    {
+      "candidate_id": 21,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": 0.01,
+        "right_side_delta_z_m": -0.0025
+      },
+      "success": false,
+      "terminal_control_step": 8705,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_margin_m": 0.3080921173095703,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 18.70933723449707
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.017273878678679466,
+      "terminal_reference_commands": [
+        10.075034141540527,
+        -1.0690979957580566,
+        7.661149978637695,
+        8.042030334472656,
+        -4.57769250869751,
+        4.873493194580078,
+        -3.6148784160614014,
+        -3.1197426319122314,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.08574928343296051,
+      "terminal_root_x_m": 1.0607719421386719,
+      "terminal_sim_time_s": 145.08333333333334,
+      "terminal_wheel_contact_force_n": [
+        2.0530519485473633,
+        0.0,
+        6.0331268310546875,
+        12.343036651611328
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3427157402038574,
+          0.14841055870056152
+        ],
+        [
+          1.2788681983947754,
+          0.11092314124107361
+        ],
+        [
+          0.7091822624206543,
+          0.14915794134140015
+        ],
+        [
+          0.8031573295593262,
+          0.1512666493654251
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.01
+        ],
+        [
+          0.0,
+          0.0075
+        ],
+        [
+          0.0,
+          0.01
+        ],
+        [
+          0.0,
+          0.0075
+        ]
+      ]
+    },
+    {
+      "candidate_id": 22,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": 0.01,
+        "right_side_delta_z_m": 0.0
+      },
+      "success": false,
+      "terminal_control_step": 8701,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_margin_m": 0.2903017997741699,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 15.08151912689209
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.027963384985923767,
+      "terminal_reference_commands": [
+        10.07510757446289,
+        -1.0692452192306519,
+        8.61198902130127,
+        7.222532272338867,
+        -4.577756881713867,
+        4.872802257537842,
+        -4.58034610748291,
+        -2.133782148361206,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.09478815644979477,
+      "terminal_root_x_m": 1.0622754096984863,
+      "terminal_sim_time_s": 145.01666666666665,
+      "terminal_wheel_contact_force_n": [
+        4.5622358322143555,
+        0.0,
+        5.575698375701904,
+        11.103801727294922
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3435173034667969,
+          0.14865392446517944
+        ],
+        [
+          1.2800917625427246,
+          0.11006906628608704
+        ],
+        [
+          0.7300586700439453,
+          0.1490083634853363
+        ],
+        [
+          0.8016090393066406,
+          0.15027640759944916
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.01
+        ],
+        [
+          0.0,
+          0.01
+        ],
+        [
+          0.0,
+          0.01
+        ],
+        [
+          0.0,
+          0.01
+        ]
+      ]
+    },
+    {
+      "candidate_id": 23,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": 0.01,
+        "right_side_delta_z_m": 0.0025
+      },
+      "success": false,
+      "terminal_control_step": 8704,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_margin_m": 0.2670598030090332,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 5.046911716461182
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.035036999732255936,
+      "terminal_reference_commands": [
+        10.075035095214844,
+        -1.0691094398498535,
+        9.561554908752441,
+        6.418405055999756,
+        -4.577693462371826,
+        4.873494625091553,
+        -5.543591499328613,
+        -1.1359862089157104,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.10346333682537079,
+      "terminal_root_x_m": 1.0596599578857422,
+      "terminal_sim_time_s": 145.06666666666666,
+      "terminal_wheel_contact_force_n": [
+        10.479053497314453,
+        0.0,
+        6.309615612030029,
+        11.74738597869873
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.3401083946228027,
+          0.1487302929162979
+        ],
+        [
+          1.275871753692627,
+          0.10947427898645401
+        ],
+        [
+          0.7518649101257324,
+          0.1486179381608963
+        ],
+        [
+          0.7965812683105469,
+          0.15030328929424286
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.01
+        ],
+        [
+          0.0,
+          0.0125
+        ],
+        [
+          0.0,
+          0.01
+        ],
+        [
+          0.0,
+          0.0125
+        ]
+      ]
+    },
+    {
+      "candidate_id": 24,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "parameters": {
+        "common_offset_z_m": 0.01,
+        "right_side_delta_z_m": 0.005
+      },
+      "success": false,
+      "terminal_control_step": 8703,
+      "terminal_fsm_baseline_ik_invalid_count": 0,
+      "terminal_margin_m": 0.27440547943115234,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.673476219177246
+      },
+      "terminal_phase": 10,
+      "terminal_pitch_rad": 0.03359926864504814,
+      "terminal_reference_commands": [
+        10.075027465820312,
+        -1.069230318069458,
+        10.510090827941895,
+        5.6305623054504395,
+        -4.577689170837402,
+        4.873519420623779,
+        -6.504478931427002,
+        -0.12426675856113434,
+        -1.320000171661377,
+        -1.309999942779541,
+        0.0,
+        0.0
+      ],
+      "terminal_roll_rad": 0.10722416639328003,
+      "terminal_root_x_m": 1.05733060836792,
+      "terminal_sim_time_s": 145.05,
+      "terminal_wheel_contact_force_n": [
+        10.838237762451172,
+        0.0,
+        8.304718971252441,
+        11.505412101745605
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.338099479675293,
+          0.14868971705436707
+        ],
+        [
+          1.2762465476989746,
+          0.11042582243680954
+        ],
+        [
+          0.7428231239318848,
+          0.14869797229766846
+        ],
+        [
+          0.8015484809875488,
+          0.15171955525875092
+        ]
+      ],
+      "wheel_center_offsets_m": [
+        [
+          0.0,
+          0.01
+        ],
+        [
+          0.0,
+          0.015
+        ],
+        [
+          0.0,
+          0.01
+        ],
+        [
+          0.0,
+          0.015
+        ]
+      ]
+    }
+  ],
+  "failures": [],
+  "finished_unix": 1785158370.346381,
+  "grid_kind": "common_right_z",
+  "manifest": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\data\\scenario_manifests\\development_v2.json",
+  "manifest_sha256": "f3d10d7340c06f78c200c44119bb2e17c81e587bd314b342ac90b49019ea2cdc",
+  "passed_execution": true,
+  "scenario_id": "development-h100-0000",
+  "schema": "resume_validation.fsm_recovery_grid.v1",
+  "started_unix": 1785157579.1206985,
+  "success_count": 0
+}

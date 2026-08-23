@@ -1,0 +1,17 @@
+{
+  "attempt": "development_50mm_smoke_attempt027",
+  "launched_at": "2026-07-27T19:36:26-04:00",
+  "working_directory": "C:\\robotics_sim\\IsaacLab",
+  "command": "conda run --no-capture-output -n env_isaaclab .\\isaaclab.bat -p C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\evaluate_controller.py --controller fsm --manifest C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\data\\scenario_manifests\\development_v2.json --height_mm 50 --limit 1 --output_dir C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\development_50mm_smoke_attempt027 --max_episode_s 150 --record_stride 3 --headless",
+  "stdout": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\development_50mm_smoke_attempt027.stdout.log",
+  "stderr": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\development_50mm_smoke_attempt027.stderr.log",
+  "pid_tree": {
+    "launcher_powershell": 96028,
+    "initial_cmd": 152772,
+    "conda": 114640,
+    "base_python": 79424,
+    "temporary_cmd": 120524,
+    "environment_python": 136404
+  },
+  "monitored_pid": 136404
+}

@@ -1,0 +1,889 @@
+{
+  "candidate_count": 25,
+  "candidates": [
+    {
+      "candidate_id": 0,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.015,
+      "front_right_offset_z_m": -0.01,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.172605514526367
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        11.696571350097656,
+        2.5799505710601807,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.25144529342651367,
+          0.00351334479637444
+        ],
+        [
+          0.25396108627319336,
+          0.005215741693973541
+        ],
+        [
+          -0.30324268341064453,
+          0.015653103590011597
+        ],
+        [
+          -0.3062262535095215,
+          0.01743827946484089
+        ]
+      ]
+    },
+    {
+      "candidate_id": 1,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.015,
+      "front_right_offset_z_m": -0.005,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.8980231285095215
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        10.818339347839355,
+        2.4737205505371094,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.25144386291503906,
+          0.0035053715109825134
+        ],
+        [
+          0.25396108627319336,
+          0.005215972196310759
+        ],
+        [
+          -0.3032383918762207,
+          0.015660256147384644
+        ],
+        [
+          -0.30622291564941406,
+          0.017446663230657578
+        ]
+      ]
+    },
+    {
+      "candidate_id": 2,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.015,
+      "front_right_offset_z_m": 0.0,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 7.099980354309082
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        10.923055648803711,
+        2.5338966846466064,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.25142383575439453,
+          0.0035110116004943848
+        ],
+        [
+          0.25394392013549805,
+          0.005230773705989122
+        ],
+        [
+          -0.30324840545654297,
+          0.015702202916145325
+        ],
+        [
+          -0.3062272071838379,
+          0.0174491535872221
+        ]
+      ]
+    },
+    {
+      "candidate_id": 3,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.015,
+      "front_right_offset_z_m": 0.005,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.8988165855407715
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        10.817877769470215,
+        2.47342848777771,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.25144386291503906,
+          0.0035053500905632973
+        ],
+        [
+          0.25396108627319336,
+          0.005215903278440237
+        ],
+        [
+          -0.3032379150390625,
+          0.015660054981708527
+        ],
+        [
+          -0.30622291564941406,
+          0.017446467652916908
+        ]
+      ]
+    },
+    {
+      "candidate_id": 4,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.015,
+      "front_right_offset_z_m": 0.01,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.203210353851318
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        11.737213134765625,
+        2.557835340499878,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.25144481658935547,
+          0.0035149964969605207
+        ],
+        [
+          0.25396108627319336,
+          0.0052148401737213135
+        ],
+        [
+          -0.30324316024780273,
+          0.015656443312764168
+        ],
+        [
+          -0.3062262535095215,
+          0.01743854396045208
+        ]
+      ]
+    },
+    {
+      "candidate_id": 5,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.0075,
+      "front_right_offset_z_m": -0.01,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.205575466156006
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        11.695688247680664,
+        2.627601146697998,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.25142478942871094,
+          0.003512338735163212
+        ],
+        [
+          0.25394296646118164,
+          0.005232604220509529
+        ],
+        [
+          -0.30326271057128906,
+          0.01567831076681614
+        ],
+        [
+          -0.3062472343444824,
+          0.017426181584596634
+        ]
+      ]
+    },
+    {
+      "candidate_id": 6,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.0075,
+      "front_right_offset_z_m": -0.005,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 7.974725246429443
+      },
+      "terminal_phase": 10,
+      "terminal_wheel_contact_force_n": [
+        7.457011699676514,
+        0.0,
+        10.724749565124512,
+        9.460383415222168
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          1.348078727722168,
+          0.1485120952129364
+        ],
+        [
+          1.2844233512878418,
+          0.11294937878847122
+        ],
+        [
+          0.7003307342529297,
+          0.1492159515619278
+        ],
+        [
+          0.8139286041259766,
+          0.15066392719745636
+        ]
+      ]
+    },
+    {
+      "candidate_id": 7,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.0075,
+      "front_right_offset_z_m": 0.0,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 5.202246189117432
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        10.814620018005371,
+        0.32821252942085266,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.25145697593688965,
+          0.003522655926644802
+        ],
+        [
+          0.25397419929504395,
+          0.005224396474659443
+        ],
+        [
+          -0.30327367782592773,
+          0.015785839408636093
+        ],
+        [
+          -0.3062167167663574,
+          0.017470451071858406
+        ]
+      ]
+    },
+    {
+      "candidate_id": 8,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.0075,
+      "front_right_offset_z_m": 0.005,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.766180038452148
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        10.830870628356934,
+        2.51737117767334,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.25142478942871094,
+          0.0035154458601027727
+        ],
+        [
+          0.25394344329833984,
+          0.005231441464275122
+        ],
+        [
+          -0.30326175689697266,
+          0.015683993697166443
+        ],
+        [
+          -0.3062319755554199,
+          0.01743091456592083
+        ]
+      ]
+    },
+    {
+      "candidate_id": 9,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": -0.0075,
+      "front_right_offset_z_m": 0.01,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.48258638381958
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        11.578180313110352,
+        2.8378186225891113,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.251422643661499,
+          0.0034979654010385275
+        ],
+        [
+          0.25394344329833984,
+          0.005232229828834534
+        ],
+        [
+          -0.3032565116882324,
+          0.015706753358244896
+        ],
+        [
+          -0.30623388290405273,
+          0.01743442751467228
+        ]
+      ]
+    },
+    {
+      "candidate_id": 10,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0,
+      "front_right_offset_z_m": -0.01,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 5.96883487701416
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        11.333174705505371,
+        0.9295180439949036,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.25144943594932556,
+          0.003513085888698697
+        ],
+        [
+          0.2539670765399933,
+          0.005210649687796831
+        ],
+        [
+          -0.30321040749549866,
+          0.015650909394025803
+        ],
+        [
+          -0.3062424659729004,
+          0.01743999868631363
+        ]
+      ]
+    },
+    {
+      "candidate_id": 11,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0,
+      "front_right_offset_z_m": -0.005,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 5.028328895568848
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        11.231341361999512,
+        0.0,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.2514618933200836,
+          0.0035283672623336315
+        ],
+        [
+          0.253977507352829,
+          0.00522466329857707
+        ],
+        [
+          -0.30325064063072205,
+          0.01578148826956749
+        ],
+        [
+          -0.3062196671962738,
+          0.01746463216841221
+        ]
+      ]
+    },
+    {
+      "candidate_id": 12,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0,
+      "front_right_offset_z_m": 0.0,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 5.767514228820801
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        10.145947456359863,
+        0.512230396270752,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.25143635272979736,
+          0.003532146103680134
+        ],
+        [
+          0.2539548873901367,
+          0.00524041848257184
+        ],
+        [
+          -0.30329543352127075,
+          0.015809837728738785
+        ],
+        [
+          -0.30622851848602295,
+          0.017442183569073677
+        ]
+      ]
+    },
+    {
+      "candidate_id": 13,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0,
+      "front_right_offset_z_m": 0.005,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 7.079352378845215
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        10.99083423614502,
+        2.660942792892456,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.25145024061203003,
+          0.003518622135743499
+        ],
+        [
+          0.25396454334259033,
+          0.0052132029086351395
+        ],
+        [
+          -0.30322712659835815,
+          0.01567857712507248
+        ],
+        [
+          -0.3062181770801544,
+          0.017449146136641502
+        ]
+      ]
+    },
+    {
+      "candidate_id": 14,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0,
+      "front_right_offset_z_m": 0.01,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.918023586273193
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        10.820314407348633,
+        2.87410569190979,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.25144749879837036,
+          0.00350265228189528
+        ],
+        [
+          0.25396159291267395,
+          0.005213402211666107
+        ],
+        [
+          -0.30324262380599976,
+          0.01566866599023342
+        ],
+        [
+          -0.30622249841690063,
+          0.01745581440627575
+        ]
+      ]
+    },
+    {
+      "candidate_id": 15,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0075,
+      "front_right_offset_z_m": -0.01,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.352469444274902
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        11.579323768615723,
+        3.024789810180664,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.25142669677734375,
+          0.003504740307107568
+        ],
+        [
+          0.25394177436828613,
+          0.005228046793490648
+        ],
+        [
+          -0.30326342582702637,
+          0.01570163667201996
+        ],
+        [
+          -0.3062293529510498,
+          0.017452508211135864
+        ]
+      ]
+    },
+    {
+      "candidate_id": 16,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0075,
+      "front_right_offset_z_m": -0.005,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.50438928604126
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        11.81384563446045,
+        2.8602988719940186,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.251422643661499,
+          0.003504183841869235
+        ],
+        [
+          0.25394463539123535,
+          0.005232391878962517
+        ],
+        [
+          -0.3032543659210205,
+          0.015697315335273743
+        ],
+        [
+          -0.3062460422515869,
+          0.017425844445824623
+        ]
+      ]
+    },
+    {
+      "candidate_id": 17,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0075,
+      "front_right_offset_z_m": 0.0,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 5.97902774810791
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        11.342403411865234,
+        1.0439636707305908,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.2514498233795166,
+          0.003516314784064889
+        ],
+        [
+          0.2539687156677246,
+          0.005206092726439238
+        ],
+        [
+          -0.3032076358795166,
+          0.01565772481262684
+        ],
+        [
+          -0.3062400817871094,
+          0.017436813563108444
+        ]
+      ]
+    },
+    {
+      "candidate_id": 18,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0075,
+      "front_right_offset_z_m": 0.005,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.320187091827393
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        11.657767295837402,
+        2.6424357891082764,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.25142431259155273,
+          0.0035053936298936605
+        ],
+        [
+          0.25394225120544434,
+          0.005234101787209511
+        ],
+        [
+          -0.30325746536254883,
+          0.015692265704274178
+        ],
+        [
+          -0.306243896484375,
+          0.017420580610632896
+        ]
+      ]
+    },
+    {
+      "candidate_id": 19,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.0075,
+      "front_right_offset_z_m": 0.01,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 7.612946510314941
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        10.267046928405762,
+        5.157731056213379,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.251431941986084,
+          0.003503703512251377
+        ],
+        [
+          0.2539360523223877,
+          0.005225657485425472
+        ],
+        [
+          -0.3033134937286377,
+          0.015697315335273743
+        ],
+        [
+          -0.3062443733215332,
+          0.017431199550628662
+        ]
+      ]
+    },
+    {
+      "candidate_id": 20,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.015,
+      "front_right_offset_z_m": -0.01,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.2054877281188965
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        11.694278717041016,
+        2.6548945903778076,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.25144338607788086,
+          0.0035127876326441765
+        ],
+        [
+          0.25396108627319336,
+          0.00521512795239687
+        ],
+        [
+          -0.30324316024780273,
+          0.015655245631933212
+        ],
+        [
+          -0.3062276840209961,
+          0.017438333481550217
+        ]
+      ]
+    },
+    {
+      "candidate_id": 21,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.015,
+      "front_right_offset_z_m": -0.005,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.300131320953369
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        11.673571586608887,
+        2.4969255924224854,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.2514481544494629,
+          0.003513728268444538
+        ],
+        [
+          0.25395822525024414,
+          0.005213349126279354
+        ],
+        [
+          -0.3032412528991699,
+          0.015664907172322273
+        ],
+        [
+          -0.3062248229980469,
+          0.017447832971811295
+        ]
+      ]
+    },
+    {
+      "candidate_id": 22,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.015,
+      "front_right_offset_z_m": 0.0,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 5.02446985244751
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        11.123732566833496,
+        0.0,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.25144290924072266,
+          0.0035296068526804447
+        ],
+        [
+          0.25395870208740234,
+          0.005247528664767742
+        ],
+        [
+          -0.3032679557800293,
+          0.0158316008746624
+        ],
+        [
+          -0.30622005462646484,
+          0.01745806634426117
+        ]
+      ]
+    },
+    {
+      "candidate_id": 23,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.015,
+      "front_right_offset_z_m": 0.005,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.331529140472412
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        11.633676528930664,
+        2.5814290046691895,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.2514472007751465,
+          0.003511567134410143
+        ],
+        [
+          0.25395774841308594,
+          0.005212721414864063
+        ],
+        [
+          -0.3032417297363281,
+          0.0156649611890316
+        ],
+        [
+          -0.3062257766723633,
+          0.01744779571890831
+        ]
+      ]
+    },
+    {
+      "candidate_id": 24,
+      "failure_reason": "BODY_OR_LINK_COLLISION",
+      "front_right_offset_x_m": 0.015,
+      "front_right_offset_z_m": 0.01,
+      "success": false,
+      "terminal_nonwheel_contact_force_n": {
+        "front_right_bot": 6.193905830383301
+      },
+      "terminal_phase": 0,
+      "terminal_wheel_contact_force_n": [
+        0.0,
+        11.729762077331543,
+        2.586855888366699,
+        0.0
+      ],
+      "terminal_wheel_position_xz_m": [
+        [
+          0.25144433975219727,
+          0.0035138987004756927
+        ],
+        [
+          0.25396108627319336,
+          0.005216098856180906
+        ],
+        [
+          -0.30324363708496094,
+          0.015655120834708214
+        ],
+        [
+          -0.3062281608581543,
+          0.017438706010580063
+        ]
+      ]
+    }
+  ],
+  "failures": [],
+  "finished_unix": 1785156574.444853,
+  "manifest": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\data\\scenario_manifests\\development_v2.json",
+  "manifest_sha256": "f3d10d7340c06f78c200c44119bb2e17c81e587bd314b342ac90b49019ea2cdc",
+  "passed_execution": true,
+  "scenario_id": "development-h100-0000",
+  "schema": "resume_validation.fsm_recovery_grid.v1",
+  "started_unix": 1785155757.4918733,
+  "success_count": 0
+}

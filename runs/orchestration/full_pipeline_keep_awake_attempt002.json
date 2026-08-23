@@ -1,0 +1,13 @@
+﻿{
+    "schema":  "resume_validation.pipeline_keep_awake.v1",
+    "updated_utc":  "2026-07-31T21:22:05.5092312Z",
+    "helper_pid":  151916,
+    "supervisor_pid":  162424,
+    "attempt":  2,
+    "status":  "COMPLETED",
+    "message":  "Execution-state request released after the full-pipeline supervisor exited.",
+    "requested_execution_state":  "ES_CONTINUOUS | ES_SYSTEM_REQUIRED",
+    "native_return":  2147483649,
+    "power_plan_modified":  false,
+    "administrator_privileges_required":  false
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "resume_validation.launch_record.v1",
+  "launched_local": "2026-07-27T16:54:59-04:00",
+  "working_directory": "C:\\robotics_sim\\IsaacLab",
+  "command": "conda run --no-capture-output -n env_isaaclab .\\isaaclab.bat -p C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\diagnose_fsm_recovery_grid.py --manifest C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\data\\scenario_manifests\\development_v2.json --output_dir C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\diagnostic_100mm_front_right_extension_reach_boundary_grid_021 --max_episode_s 150 --grid_kind front_right_extension_reach_boundary --headless",
+  "launcher_pid": 124328,
+  "initial_command_shell_pid": 130872,
+  "conda_executable_pid": 84920,
+  "conda_wrapper_pid": 134312,
+  "command_shell_pid": 104092,
+  "environment_python_pid": 54336,
+  "stdout": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\diagnostic_100mm_front_right_extension_reach_boundary_grid_021.stdout.log",
+  "stderr": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\diagnostic_100mm_front_right_extension_reach_boundary_grid_021.stderr.log"
+}

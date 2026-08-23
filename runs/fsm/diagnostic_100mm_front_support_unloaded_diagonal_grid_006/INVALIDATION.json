@@ -1,0 +1,11 @@
+{
+  "schema": "resume_validation.invalidation.v1",
+  "invalidated_local": "2026-07-27T10:13:19-04:00",
+  "reason": "Launcher pre-created the output directory, but diagnose_fsm_recovery_grid.py requires an absent directory and exited with FileExistsError before constructing the environment or executing any candidate.",
+  "physics_started": false,
+  "candidate_steps_executed": 0,
+  "result_eligible": false,
+  "stdout": "runs/fsm/diagnostic_100mm_front_support_unloaded_diagonal_grid_006.stdout.log",
+  "stderr": "runs/fsm/diagnostic_100mm_front_support_unloaded_diagonal_grid_006.stderr.log",
+  "replacement_attempt": "diagnostic_100mm_front_support_unloaded_diagonal_grid_007"
+}

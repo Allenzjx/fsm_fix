@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\robotics_sim\wlr_robot\resume_validation_fsm_residual_ppo\src\resume_validation\diagnose_fsm_recovery_grid.py", line 381, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "C:\robotics_sim\wlr_robot\resume_validation_fsm_residual_ppo\src\resume_validation\diagnose_fsm_recovery_grid.py", line 116, in main
+    output_dir.mkdir(parents=True, exist_ok=False)
+  File "C:\Users\kskzz\miniconda3\envs\env_isaaclab\Lib\pathlib.py", line 1116, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [WinError 183] Cannot create a file when that file already exists: 'C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\fsm\\diagnostic_100mm_front_support_unloaded_diagonal_grid_006'

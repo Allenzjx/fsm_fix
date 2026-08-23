@@ -1,0 +1,15 @@
+{
+  "schema": "resume_validation.invalidation.v1",
+  "invalidated_local": "2026-07-27T08:34:00-04:00",
+  "status": "INVALIDATED_BEFORE_CANDIDATE_INTERVENTION",
+  "terminated_environment_python_pid": 142060,
+  "last_status": {
+    "control_step": 3300,
+    "sim_time_s": 55.0,
+    "active_count": 25,
+    "success_count": 0,
+    "phase": 5
+  },
+  "reason": "The development-only wheel-center offset ramp reached one at the end of phase 9 but incorrectly reset to zero at entry to phase 10. This contradicted the registered phase-9/10 hold semantics and would contaminate stable-dwell outcomes. All candidates were still in phase 5 when the exact recorded process was stopped, so no candidate offset had yet been applied.",
+  "replacement": "runs/fsm/diagnostic_100mm_recovery_grid_002"
+}

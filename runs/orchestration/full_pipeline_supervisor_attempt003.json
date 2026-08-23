@@ -1,0 +1,19 @@
+﻿{
+    "schema":  "resume_validation.full_pipeline_supervisor.v1",
+    "updated_utc":  "2026-08-01T01:14:01.7566525Z",
+    "supervisor_pid":  61792,
+    "attempt":  3,
+    "status":  "INTERRUPTED_FOR_USER_INSPECTION",
+    "message":  "Stopped at the user's request; do not resume automatically.",
+    "runtime_version":  "v34",
+    "locked_test_access":  "delegated only to run_until_success after verified method freeze",
+    "runner_pid":  60564,
+    "stderr_log":  "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\orchestration\\full_pipeline_attempt003_runner001.stderr.log",
+    "stdout_log":  "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\orchestration\\full_pipeline_attempt003_runner001.stdout.log",
+    "live_training_pids":  [],
+    "interrupted_run":  "method-C-v34_seed-11_stage-75mm_attempt001",
+    "last_complete_checkpoint_timesteps":  8000,
+    "stopped_pids":  [158244, 118952, 89240, 60564, 138404, 97504, 61792],
+    "exited_during_parent_teardown_pids":  [150752],
+    "runner_invocation":  1
+}
