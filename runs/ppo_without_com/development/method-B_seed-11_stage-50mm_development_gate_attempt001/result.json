@@ -1,0 +1,80 @@
+{
+  "controller": "B",
+  "failures": [
+    "AttributeError: 'PPO' object has no attribute 'set_running_mode'"
+  ],
+  "finished_unix": 1785226114.1155863,
+  "height_mm": 50,
+  "initialization": {
+    "episode_clock_starts_after_settle": true,
+    "settle_physics_steps": 120,
+    "settle_sim_time_s": 1.0
+  },
+  "passed_execution": false,
+  "provenance": {
+    "asset": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\assets\\converted\\wlr_robot_validation.usd",
+    "asset_sha256": "98103315e8ad456881a28a9b3dc77f7aaa8bc9a5200e40c435bea8002c4f81dd",
+    "checkpoint": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_without_com\\training\\method-B_seed-11_stage-50mm_attempt003\\checkpoints\\final_agent.pt",
+    "checkpoint_sha256": "0a72d1ae9da70d53d138a00eb440e917a94c2ce9946f0f4a55ef8ab0cb8a467d",
+    "cuda": "12.8",
+    "effective_post_transfer_forward_speed_rad_s": 0.0,
+    "effective_post_transfer_offset_start_progress": [
+      0.4,
+      0.4,
+      0.4,
+      0.4
+    ],
+    "effective_post_transfer_wheel_center_offsets_m": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "effective_rear_transfer_wheel_speed_rad_s": [
+      0.3,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "effective_support_unload": {
+      "high_force_n": 8.0,
+      "low_force_n": 4.0,
+      "maximum_m": 0.0,
+      "rate_m_s": 0.00075
+    },
+    "fsm_config": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\fsm.yaml",
+    "fsm_config_sha256": "3e4b65ee87a260723d06b7c5ed6e470884917efb2ec6cb4654993e669883e4e9",
+    "isaaclab": "0.54.3",
+    "isaacsim": "5.1.0.0",
+    "manifest": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\data\\scenario_manifests\\development_v2.json",
+    "manifest_metadata": {
+      "episodes_per_height": 20,
+      "generator_version": "v2_reference_replay_geometry",
+      "initial_distance_policy": "reference settled distance +/- 0.025 m",
+      "obstacle_position_policy": "fixed translationally-equivalent reference front",
+      "protocol_version": "1.0.0",
+      "seed": 20260727,
+      "split": "development",
+      "training_code_must_not_read_locked_results": false
+    },
+    "manifest_sha256": "f3d10d7340c06f78c200c44119bb2e17c81e587bd314b342ac90b49019ea2cdc",
+    "metrics_config": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\metrics.yaml",
+    "metrics_config_sha256": "6a02b1c09c23245d7ce5b44a6781557f8c578ed56ac11b9d1ef1149c413b30ab",
+    "torch": "2.7.0+cu128"
+  },
+  "schema": "resume_validation.controller_evaluation.v1",
+  "started_unix": 1785226109.8969054,
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\evaluate_controller.py\", line 296, in main\n    agent = _make_agent(env, checkpoint) if checkpoint else None\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\evaluate_controller.py\", line 111, in _make_agent\n    agent.set_running_mode(\"eval\")\n    ^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'PPO' object has no attribute 'set_running_mode'\n"
+}

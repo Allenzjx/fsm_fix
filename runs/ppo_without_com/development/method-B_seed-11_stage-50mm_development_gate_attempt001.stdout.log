@@ -1,0 +1,86 @@
+[INFO] Using python from: C:\Users\kskzz\miniconda3\envs\env_isaaclab\python.exe
+Loading user config located at: 'c:/users/kskzz/miniconda3/envs/env_isaaclab/lib/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: c:/users/kskzz/miniconda3/envs/env_isaaclab/lib/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20260728_040821.log
+2026-07-28T08:08:21Z [186ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-07-28T08:08:22Z [1,115ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-07-28T08:08:22Z [1,131ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-07-28T08:08:28Z [7,155ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) UHD Graphics
+2026-07-28T08:08:28Z [7,155ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) UHD Graphics
+2026-07-28T08:08:28Z [7,155ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) UHD Graphics
+2026-07-28T08:08:28Z [7,156ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) UHD Graphics
+2026-07-28T08:08:28Z [7,156ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) UHD Graphics
+2026-07-28T08:08:28Z [7,156ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: Intel(R) UHD Graphics
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 581.29        | Graphics API: D3D12
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 4080 Laptop.. | Yes: 0 |     | 11997   MB | 10de      | efad0100.. |
+|     |                                  |        |     |            | 27e0      | 0          |
+|     |                                  |        |     |            | 1         |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | Intel(R) UHD Graphics            |        |     | 128     MB | 8086      | fba90100.. |
+|     |                                  |        |     |            | a788      | 0          |
+|     |                                  |        |     |            | N/A       |            |
+|---------------------------------------------------------------------------------------------|
+| 2   | Intel(R) UHD Graphics            |        |     | 128     MB | 8086      | d14f0200.. |
+|     |                                  |        |     |            | a788      | 0          |
+|     |                                  |        |     |            | N/A       |            |
+|---------------------------------------------------------------------------------------------|
+| 3   | Intel(R) UHD Graphics            |        |     | 128     MB | 8086      | 6a4b0200.. |
+|     |                                  |        |     |            | a788      | 0          |
+|     |                                  |        |     |            | N/A       |            |
+|=============================================================================================|
+| OS: Windows 11 Home, Version: 10.0 (25H2), Build: 26200, Kernel: 10.0.26100.8875
+| Processor: 13th Gen Intel(R) Core(TM) i9-13900HX
+| Cores: 24 | Logical Cores: 32
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 32456 | Free Memory: 6332
+| Tota[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: C:\robotics_sim\IsaacLab\apps\isaaclab.python.headless.kit
+
+[36m===================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: C:\Users\kskzz\AppData\Local\Temp\isaaclab\logs\isaaclab_2026-07-28_04-08-30.log[0m
+[36m===================================================================================================================[0m
+
+[33m04:08:30 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 20260727
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.016666666666666666
+	Environment step-size : 0.016666666666666666
+[INFO]: Time taken for scene creation : 0.805010 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 20
+	Environment spacing   : 3.5
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.487493 seconds
+[INFO]: Completed setting up the environment...
+[INFO] WLR obstacle DirectRLEnv initialized.
+[INFO] task_id=WLR-Obstacle-Cross-v1, num_envs=20, device=cuda:0
+[INFO] robot_usd=C:/robotics_sim/wlr_robot/resume_validation_fsm_residual_ppo/assets/converted/wlr_robot_validation.usd
+[INFO] validation_file=C:\robotics_sim\wlr_robot\validation\latest_validation.json state=passed
+[INFO] action order servos=['front_left_hip', 'front_left_knee', 'front_right_hip', 'front_right_knee', 'rear_left_hip', 'rear_left_knee', 'rear_right_hip', 'rear_right_knee'], wheels=['front_left_ankle', 'front_right_ankle', 'rear_left_ankle', 'rear_right_ankle']
+[INFO] servo joint ids={'front_left_hip': 0, 'front_left_knee': 4, 'front_right_hip': 1, 'front_right_knee': 5, 'rear_left_hip': 2, 'rear_left_knee': 6, 'rear_right_hip': 3, 'rear_right_knee': 7}
+[INFO] wheel joint ids={'front_left_ankle': 8, 'front_right_ankle': 9, 'rear_left_ankle': 10, 'rear_right_ankle': 11}
+[INFO] wheel body names={'front_left': 'front_left_wheel', 'front_right': 'front_right_wheel', 'rear_left': 'rear_left_wheel', 'rear_right': 'rear_right_wheel'}
+[INFO] standing servo pose rad=[-0.0017161170253530145, -0.013699640519917011, 0.0019442568300291896, -0.017688488587737083, -0.047193367034196854, 0.029611926525831223, -0.05002370476722717, 0.03235858678817749]
+[INFO] standing servo pose deg=[-0.09832626581192017, -0.7849316000938416, 0.11139771342277527, -1.013475775718689, -2.7039806842803955, 1.6966384649276733, -2.86614727973938, 1.8540104627609253]
+[INFO] hip command range deg=(-90.0, 90.0)
+[INFO] knee command range deg=(-35.0, 210.0)
+[INFO] WHEEL_FORWARD_SIGN={'front_left_ankle': -1.0, 'rear_left_ankle': -1.0, 'front_right_ankle': 1.0, 'rear_right_ankle': 1.0}
+[INFO] JOINT_COMMAND_SIGN={'front_left_hip': 1.0, 'front_left_knee': 1.0, 'front_right_hip': 1.0, 'front_right_knee': 1.0, 'rear_left_hip': -1.0, 'rear_left_knee': -1.0, 'rear_right_hip': -1.0, 'rear_right_knee': -1.0}
+[INFO] obstacle dimensions: height=0.0500, length=2.0574, width=0.8822, center_x=1.5500, front_x=0.5213, back_x=2.5787
+[INFO] robot dimensions: length=0.6006, width=0.4411, method=loaded_wheel_body_positions
+[INFO] COM mode=true_body_com
+[33m04:08:34 [base.py] WARNING: Skipping module 'value_preprocessor'. The agent doesn't have such an instance[0m
+l Page/Swap (MB): 72127 | Free Page/Swap: 7171
+|---------------------------------------------------------------------------------------------|
+2026-07-28T08:08:29Z [7,597ms] [Warning] [gpu.foundation.plugin] PCIe link width current (8) and maximum (16) for device 0 don't match.

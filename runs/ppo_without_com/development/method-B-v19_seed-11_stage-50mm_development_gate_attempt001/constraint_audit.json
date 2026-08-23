@@ -1,0 +1,85 @@
+{
+  "schema": "resume_validation.development_constraint_audit.v1",
+  "audited_at_local": "2026-07-29T23:45:37-04:00",
+  "disposition": "EXECUTION_PASS_PERFORMANCE_FAIL",
+  "promotion_threshold_successes": 16,
+  "success_count": 13,
+  "episode_count": 20,
+  "failure_counts": {
+    "BODY_OR_LINK_COLLISION": 4,
+    "FSM_PHASE_TIMEOUT": 3
+  },
+  "successful_scenario_indices": [
+    0,
+    1,
+    2,
+    4,
+    7,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16,
+    18
+  ],
+  "failed_scenario_indices": [
+    3,
+    5,
+    6,
+    8,
+    13,
+    17,
+    19
+  ],
+  "telemetry": {
+    "rows": 52618,
+    "columns": 122,
+    "nonfinite_columns": {
+      "margin_m": 5854
+    },
+    "nonfinite_action_or_physical_columns": 0,
+    "max_policy_action_abs": 0.1896670907735824,
+    "max_executed_action_abs": 0.0335410274565219,
+    "max_scaled_wheel_center_residual_m": 0.0003354102664161,
+    "max_scaled_wheel_speed_residual_rad_s": 0.0,
+    "authorized_phase8_or_9_pitch_ge_0_09_rows": 2387,
+    "nonzero_executed_rows": 2386,
+    "nonzero_authorized_rows": 2386,
+    "nonzero_unauthorized_rows": 0,
+    "phase7_nonzero_rows": 0,
+    "below_threshold_phase8_or_9_nonzero_rows": 0,
+    "masked_action_max_abs": 0.0,
+    "bilateral_pair_max_error": 0.0,
+    "four_wheel_balance_max_error": 0.0,
+    "nonzero_environment_indices": [
+      5,
+      6,
+      8,
+      9,
+      13,
+      17,
+      19
+    ]
+  },
+  "paired_interpretation": {
+    "frozen_fsm_successes_retained": 12,
+    "frozen_fsm_successes_lost": 0,
+    "frozen_fsm_failure_rescued": 9,
+    "same_success_set_as_v19_v17_checkpoint_counterfactual": true,
+    "new_training_added_rescues": 0,
+    "new_training_lost_rescues": 0,
+    "frozen_fsm_success_physical_trajectories_exact": true,
+    "v19_failure_branch_mean_action_l2_ratio_vs_old_checkpoint": "approximately 3 to 5 for long phase-9 timeout branches",
+    "mechanism_diagnosis": "The positive-pitch hazard gate selected the intended branches, but the fixed front-negative/rear-positive wheel-center-z direction produces a positive-pitch moment under fixed wheel contact. Stronger learned use of that direction did not rescue any additional scenario."
+  },
+  "artifact_sha256": {
+    "result.json": "2dadb76b978753b903146160cb301ce2cd3018ca6b595652e1c12604118f1f0e",
+    "episodes.jsonl": "888e37b49e884f07d26baaa8a8f8f3fde76026200fcf21e45f0d801a72e599c6",
+    "status.json": "68ac8d63588074bc80ac3810cad4eeedd21fc97eac98c7fb68563cca1006120a",
+    "telemetry.csv": "eef4e209511f4646cbca6054b181087d834aef9583d81127ce7828eb7fa090d4",
+    "stdout": "14a7c1cc5443b05812205717f75896cc66c8d62b4e40f3dfcc23b1d2f870a0aa",
+    "stderr": "69b88143604bcb1c3325db0bf8c4c3359be2d7084fd61fd13186a9ab533c76d2"
+  }
+}

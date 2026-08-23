@@ -1,0 +1,102 @@
+{
+  "active_count": 0,
+  "completed_count": 1,
+  "control_step": 298,
+  "env0": {
+    "all_wheels_on_top": false,
+    "base_x_m": 0.08132214844226837,
+    "contact_force_magnitude_n": [
+      8.323659896850586,
+      6.183568477630615,
+      6.653487205505371,
+      7.569081783294678
+    ],
+    "contact_force_n": [
+      8.323659896850586,
+      6.183568477630615,
+      6.653487205505371,
+      7.569081783294678
+    ],
+    "contact_state": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "contact_upward_force_n": [
+      8.323659896850586,
+      6.183568477630615,
+      6.653487205505371,
+      7.569081783294678
+    ],
+    "fsm_front_load_trim_z_m": [
+      0.0,
+      0.0
+    ],
+    "fsm_support_unload_trim_m": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "full_wheel_on_top": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "phase": 1,
+    "support_score": 0.9999985098838806,
+    "terminal_joint_limit_diagnostic": {},
+    "terminal_nonwheel_contact_force_n": {},
+    "wheel_on_top": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "wheel_position_xz_m": [
+      [
+        0.33404138684272766,
+        0.048677895218133926
+      ],
+      [
+        0.33589398860931396,
+        0.04934405907988548
+      ],
+      [
+        -0.22602051496505737,
+        0.049935806542634964
+      ],
+      [
+        -0.22539590299129486,
+        0.04853293299674988
+      ]
+    ],
+    "wheel_position_y_m": [
+      0.07970507442951202,
+      -0.31862688064575195,
+      0.07864635437726974,
+      -0.31766507029533386
+    ]
+  },
+  "phase_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "schema": "resume_validation.controller_status.v1",
+  "sim_time_s": 4.966666666666667,
+  "success_count": 0,
+  "updated_unix": 1785295534.6806006
+}
