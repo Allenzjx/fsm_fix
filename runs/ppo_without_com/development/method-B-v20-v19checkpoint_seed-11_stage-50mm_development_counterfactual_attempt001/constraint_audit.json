@@ -1,0 +1,84 @@
+{
+  "schema": "resume_validation.development_constraint_audit.v1",
+  "audited_at_local": "2026-07-30T00:34:23-04:00",
+  "disposition": "EXECUTION_PASS_PERFORMANCE_FAIL",
+  "counterfactual_authorization_threshold_successes": 16,
+  "success_count": 12,
+  "episode_count": 20,
+  "failure_counts": {
+    "BODY_OR_LINK_COLLISION": 5,
+    "FSM_PHASE_TIMEOUT": 3
+  },
+  "successful_scenario_indices": [
+    0,
+    1,
+    2,
+    4,
+    7,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16,
+    18
+  ],
+  "failed_scenario_indices": [
+    3,
+    5,
+    6,
+    8,
+    9,
+    13,
+    17,
+    19
+  ],
+  "telemetry": {
+    "rows": 52560,
+    "columns": 122,
+    "nonfinite_columns": {
+      "margin_m": 5854
+    },
+    "nonfinite_action_or_physical_columns": 0,
+    "max_policy_action_abs": 0.1896670907735824,
+    "max_executed_action_abs": 0.03313051909208298,
+    "max_scaled_wheel_center_residual_m": 0.0003313052002340555,
+    "max_scaled_wheel_speed_residual_rad_s": 0.0,
+    "authorized_phase8_or_9_pitch_ge_0_09_rows": 2387,
+    "nonzero_executed_rows": 2386,
+    "nonzero_authorized_rows": 2386,
+    "nonzero_unauthorized_rows": 0,
+    "phase7_nonzero_rows": 0,
+    "below_threshold_phase8_or_9_nonzero_rows": 0,
+    "masked_action_max_abs": 0.0,
+    "bilateral_pair_max_error": 0.0,
+    "four_wheel_balance_max_error": 0.0,
+    "corrective_direction_max_error": 0.0,
+    "nonzero_environment_indices": [
+      5,
+      6,
+      8,
+      9,
+      13,
+      17,
+      19
+    ]
+  },
+  "paired_interpretation": {
+    "frozen_fsm_successes_retained": 12,
+    "frozen_fsm_successes_lost": 0,
+    "v19_counterfactual_rescue_lost": 9,
+    "new_v20_rescues": 0,
+    "same_success_set_as_frozen_fsm": true,
+    "frozen_fsm_success_physical_trajectories_exact": true,
+    "mechanism_diagnosis": "The v20 corrective reversal preserves all action-free frozen-FSM successes, but it removes v19's scenario-0009 rescue and produces no new rescue. Reversal alone is therefore insufficient and v20 training is not authorized."
+  },
+  "artifact_sha256": {
+    "result.json": "c12d03cfc91959d69ba87bf74fa69dc01f01794b6c77d32297b36057e44660c0",
+    "episodes.jsonl": "4705caf2fa92686147f2a759224899dedf6b86f40cc544c1b6d4b53d17486906",
+    "status.json": "2c9326563d50acf4f3d1c389329251718a148d125beaf876c01d12f78cef819e",
+    "telemetry.csv": "aa6e05854900cd1169a1defa16add8a506d7d5f951823ae603f2ee290d998c5d",
+    "stdout": "be4fb238bfbe741e987c77952f4978d4dd1af3230d769e6553b985be0a14927f",
+    "stderr": "69b88143604bcb1c3325db0bf8c4c3359be2d7084fd61fd13186a9ab533c76d2"
+  }
+}

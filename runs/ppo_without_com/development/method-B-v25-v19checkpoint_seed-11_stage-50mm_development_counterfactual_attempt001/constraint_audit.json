@@ -1,0 +1,129 @@
+{
+  "schema": "resume_validation.development_constraint_audit.v1",
+  "audited_at_local": "2026-07-30T04:54:01-04:00",
+  "disposition": "EXECUTION_AND_PHYSICAL_REALIZATION_PASS_PERFORMANCE_FAIL",
+  "counterfactual_authorization_threshold_successes": 16,
+  "success_count": 13,
+  "episode_count": 20,
+  "failure_counts": {
+    "BODY_OR_LINK_COLLISION": 5,
+    "FSM_PHASE_TIMEOUT": 2
+  },
+  "successful_scenario_indices": [
+    0,
+    1,
+    2,
+    4,
+    7,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16,
+    18
+  ],
+  "failed_scenario_indices": [
+    3,
+    5,
+    6,
+    8,
+    13,
+    17,
+    19
+  ],
+  "telemetry": {
+    "rows": 51831,
+    "columns": 122,
+    "nonfinite_columns": {
+      "margin_m": 5854
+    },
+    "nonfinite_action_or_physical_columns": 0,
+    "max_policy_action_abs": 0.18966709077358246,
+    "max_executed_action_abs": 0.30000001192092896,
+    "max_scaled_wheel_center_residual_m": 0.003000000026077032,
+    "max_scaled_wheel_speed_residual_rad_s": 0.0,
+    "authorized_rows_from_post_step_telemetry_and_latch": 1615,
+    "nonzero_executed_rows": 1615,
+    "nonzero_outside_registered_phase_window": 0,
+    "nonzero_unauthorized_rows": 0,
+    "phase8_nonzero_rows": 340,
+    "phase9_nonzero_rows": 1262,
+    "phase10_nonzero_rows": 13,
+    "phase8_climb_rows": 13,
+    "front_right_corrective_rows": 1602,
+    "front_right_floor_rows": 1602,
+    "front_right_other_channel_max_abs": 0.0,
+    "disabled_action_max_abs": 0.0,
+    "registered_sign_vector_violations": 0,
+    "climb_pair_and_balance_max_error": 0.0,
+    "scaled_residual_consistency_max_error_m": 9.313228920698746e-11,
+    "nonzero_environment_indices": [
+      3,
+      5,
+      6,
+      8,
+      9,
+      13,
+      17,
+      19
+    ],
+    "front_right_corrective_rows_by_environment": {
+      "3": 13,
+      "5": 4,
+      "6": 6,
+      "8": 793,
+      "13": 776,
+      "17": 6,
+      "19": 4
+    }
+  },
+  "physical_realization_audit": {
+    "corrective_rows": 1602,
+    "requested_front_right_z_delta_range_m": [
+      -0.0030000000260769974,
+      -0.0030000000260769974
+    ],
+    "final_front_right_z_delta_range_m": [
+      -0.003000014927238198,
+      -0.0029999851249158938
+    ],
+    "physically_realized_rows": 1602,
+    "coupled_ik_rollback_rows": 0,
+    "final_target_to_requested_max_error_m": 4.4703483595420757e-08,
+    "all_13_success_shared_56_physical_state_fields_exact_vs_v24": true,
+    "shared_success_rows": 34800,
+    "mechanism": "The v25 front-right-only correction survives the coupled IK safety branch on every corrective row and changes final targets. It changes failure duration/type but does not add a success."
+  },
+  "paired_interpretation": {
+    "frozen_fsm_successes_retained": 12,
+    "frozen_fsm_successes_lost": 0,
+    "scenario_0009_retained": true,
+    "new_v25_rescues": 0,
+    "same_success_set_as_v19_v23_v24": true,
+    "scenario_0008_changed_from_collision_to_timeout_vs_v24": true,
+    "scenario_0013_changed_from_collision_to_timeout_vs_v24": true,
+    "scenario_0019_changed_from_timeout_to_collision_vs_v24": true,
+    "terminal_failure_full_wheel_on_top_pattern": [
+      true,
+      false,
+      false,
+      true
+    ],
+    "terminal_failure_pattern_environment_count": 7,
+    "collision_contact_body": "front_right_bot",
+    "collision_contact_body_environment_count": 5,
+    "terminal_front_right_and_rear_left_upward_support_absent": true,
+    "mechanism_diagnosis": "Front-right -3 mm is physically active and delays two collisions into phase timeouts, but every failure still lacks both front-right and rear-left full support. Front-right-only action cannot correct the rear-left support defect. A reduced rear-left component must stay below the measured IK boundary while retaining front-right authority."
+  },
+  "artifact_sha256": {
+    "result.json": "5b3ed2142b2b61dcfb8698ad6845c218df25b5a2cae6affb3f14e5159b33581c",
+    "episodes.jsonl": "5c2cf1043c8ac1354ca16649a1384cfe173980d005b911c4c512270472eba8b4",
+    "status.json": "f070b82e0b965831df6991994a001d327f0b8b9d25c40a26b957412650ebc51e",
+    "telemetry.csv": "270a706251a02aede774334a0f5bfe9fa7f56ad823bc771215fc2f6bd83d61d8",
+    "stdout": "e7cfc0676d3fdf09c4ac429e47dc60f39eb9947c7aa8639236edefd8a913e1f2",
+    "stderr": "69b88143604bcb1c3325db0bf8c4c3359be2d7084fd61fd13186a9ab533c76d2"
+  },
+  "telemetry_timing_note": "Policy actions are undelayed actor outputs, executed actions include registered 0-2-step delay, and state signals are post-physics samples. Phase-8 authorization includes the registered latch; stride-3 telemetry can observe a latched row after the trigger sample."
+}

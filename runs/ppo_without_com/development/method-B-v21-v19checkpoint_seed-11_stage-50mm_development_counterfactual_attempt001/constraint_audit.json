@@ -1,0 +1,93 @@
+{
+  "schema": "resume_validation.development_constraint_audit.v1",
+  "audited_at_local": "2026-07-30T01:21:00-04:00",
+  "disposition": "EXECUTION_PASS_PERFORMANCE_FAIL",
+  "counterfactual_authorization_threshold_successes": 16,
+  "success_count": 13,
+  "episode_count": 20,
+  "failure_counts": {
+    "BODY_OR_LINK_COLLISION": 5,
+    "FSM_PHASE_TIMEOUT": 2
+  },
+  "successful_scenario_indices": [
+    0,
+    1,
+    2,
+    4,
+    7,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16,
+    18
+  ],
+  "failed_scenario_indices": [
+    3,
+    5,
+    6,
+    8,
+    13,
+    17,
+    19
+  ],
+  "telemetry": {
+    "rows": 51949,
+    "columns": 122,
+    "nonfinite_columns": {
+      "margin_m": 5854
+    },
+    "nonfinite_action_or_physical_columns": 0,
+    "max_policy_action_abs": 0.18966709077358246,
+    "max_executed_action_abs": 0.10821524262428284,
+    "max_scaled_wheel_center_residual_m": 0.0010821523610502481,
+    "max_scaled_wheel_speed_residual_rad_s": 0.0,
+    "authorized_rows_from_post_step_telemetry": 1747,
+    "nonzero_executed_rows": 1744,
+    "nonzero_unauthorized_rows_from_post_step_telemetry": 0,
+    "phase8_nonzero_rows": 362,
+    "phase9_nonzero_rows": 1262,
+    "phase10_nonzero_rows": 120,
+    "actual_phase8_climb_rows": 348,
+    "actual_phase8_corrective_rows": 14,
+    "actual_phase9_corrective_rows": 1262,
+    "actual_phase10_corrective_rows": 120,
+    "masked_action_max_abs": 0.0,
+    "bilateral_pair_max_error": 0.0,
+    "four_wheel_balance_max_error": 0.0,
+    "registered_sign_vector_violations": 0,
+    "scaled_residual_consistency_max_error_m": 7.450580603862722e-11,
+    "nonzero_environment_indices": [
+      3,
+      5,
+      6,
+      8,
+      9,
+      13,
+      17,
+      19
+    ]
+  },
+  "paired_interpretation": {
+    "frozen_fsm_successes_retained": 12,
+    "frozen_fsm_successes_lost": 0,
+    "scenario_0009_retained": true,
+    "new_v21_rescues": 0,
+    "same_success_set_as_v19": true,
+    "scenario_0017_changed_from_timeout_to_collision": true,
+    "frozen_fsm_success_shared_physical_state_reference_fields_exact": true,
+    "exact_shared_field_count": 56,
+    "mechanism_diagnosis": "The rapid-rise correction is not persistent. Once pitch rate falls below 0.35 rad/s while phase-8 pitch remains high, v21 switches back to climb direction. Failed environment 0008 executes 3 corrective rows followed by 22 climb rows; failed environment 0019 executes 4 early corrective rows followed by 160 phase-8 climb rows before its phase-9 correction. The short correction does not rescue a new scenario."
+  },
+  "artifact_sha256": {
+    "result.json": "4926c3a4628f486deea7f59e86904ee0f3e994b9fdb81ae0a003f1d7afb47642",
+    "episodes.jsonl": "a3f99e4c18a5ddf15e7904a44f6ca9bc762677edf4a89748a0e4c820ecde8418",
+    "status.json": "c7ebdbbe23f6b8056391fb87e15acf7df57ac83a2d52b75722add236c633495c",
+    "telemetry.csv": "5f964adf061435942108f5f81a32fce8b578a3c79d97d672bdbd93af15927fb1",
+    "stdout": "e78fab809e92f9093ca354488bfb24fea432e1379440265b0cd7628c040fe975",
+    "stderr": "69b88143604bcb1c3325db0bf8c4c3359be2d7084fd61fd13186a9ab533c76d2"
+  },
+  "telemetry_timing_note": "Policy-action columns are undelayed actor outputs, while executed-action columns use each scenario's registered 0-2-step actuator delay. Pitch, pitch rate, and phase are sampled after the physics step. Full-run gain and threshold-transition behavior is therefore verified by frozen source provenance plus the direct runtime smoke; row-local comparisons are used only where post-step state is unambiguous."
+}

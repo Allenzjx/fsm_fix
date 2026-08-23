@@ -1,0 +1,110 @@
+{
+  "schema": "resume_validation.development_constraint_audit.v1",
+  "audited_at_local": "2026-07-30T03:06:46-04:00",
+  "disposition": "EXECUTION_PASS_PERFORMANCE_FAIL",
+  "counterfactual_authorization_threshold_successes": 16,
+  "success_count": 13,
+  "episode_count": 20,
+  "failure_counts": {
+    "BODY_OR_LINK_COLLISION": 6,
+    "FSM_PHASE_TIMEOUT": 1
+  },
+  "successful_scenario_indices": [
+    0,
+    1,
+    2,
+    4,
+    7,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16,
+    18
+  ],
+  "failed_scenario_indices": [
+    3,
+    5,
+    6,
+    8,
+    13,
+    17,
+    19
+  ],
+  "telemetry": {
+    "rows": 51092,
+    "columns": 122,
+    "nonfinite_columns": {
+      "margin_m": 5854
+    },
+    "nonfinite_action_or_physical_columns": 0,
+    "max_policy_action_abs": 0.18966709077358246,
+    "max_executed_action_abs": 0.30000001192092896,
+    "max_scaled_wheel_center_residual_m": 0.003000000026077032,
+    "max_scaled_wheel_speed_residual_rad_s": 0.0,
+    "authorized_rows_from_post_step_telemetry": 876,
+    "nonzero_executed_rows": 876,
+    "nonzero_outside_registered_phase_window": 0,
+    "nonzero_unauthorized_rows_from_post_step_telemetry": 0,
+    "phase8_nonzero_rows": 235,
+    "phase9_nonzero_rows": 631,
+    "phase10_nonzero_rows": 10,
+    "phase8_climb_rows": 13,
+    "phase8_pure_roll_rows": 222,
+    "phase9_pure_roll_rows": 631,
+    "phase10_pure_roll_rows": 10,
+    "pure_roll_corrective_rows": 863,
+    "pure_roll_floor_rows": 863,
+    "masked_action_max_abs": 0.0,
+    "registered_sign_vector_violations": 0,
+    "pure_roll_pair_max_error": 0.0,
+    "pure_roll_four_wheel_sum_max_error": 0.0,
+    "pure_roll_front_sum_max_error": 0.0,
+    "pure_roll_rear_sum_max_error": 0.0,
+    "climb_pair_max_error": 0.0,
+    "climb_four_wheel_balance_max_error": 0.0,
+    "scaled_residual_consistency_max_error_m": 9.313228920698746e-11,
+    "nonzero_environment_indices": [
+      3,
+      5,
+      6,
+      8,
+      9,
+      13,
+      17,
+      19
+    ]
+  },
+  "paired_interpretation": {
+    "frozen_fsm_successes_retained": 12,
+    "frozen_fsm_successes_lost": 0,
+    "scenario_0009_retained": true,
+    "new_v23_rescues": 0,
+    "same_success_set_as_v19": true,
+    "scenario_0013_changed_from_timeout_to_collision_vs_v22": true,
+    "scenario_0019_changed_from_collision_to_timeout_vs_v22": true,
+    "frozen_fsm_success_shared_physical_state_reference_fields_exact": true,
+    "exact_shared_field_count": 56,
+    "terminal_failure_full_wheel_on_top_pattern": [
+      true,
+      false,
+      false,
+      true
+    ],
+    "terminal_failure_pattern_environment_count": 7,
+    "collision_contact_body": "front_right_bot",
+    "collision_contact_body_environment_count": 6,
+    "mechanism_diagnosis": "The pure-roll action executes exactly but adds no rescue. All seven failures finish with front-left and rear-right fully on top while front-right and rear-left are not fully on top. Every collision is front_right_bot. The pure-roll vector also moves the already-good front-left and rear-right channels; the observed support defect instead identifies a diagonal front-right-extension/rear-left-retraction correction [0,-1,+1,0], which is the sum of the historical climb and roll directions and leaves the good diagonal untouched."
+  },
+  "artifact_sha256": {
+    "result.json": "3e360e5acc0c8ae990a22728be14e1b8263d962ae097982240a10718b03436a4",
+    "episodes.jsonl": "643b8cfd66cd1dc2e0f34878863a096a806dc6821d0ca3cf8996c0bfe8cd0f9d",
+    "status.json": "ece68649c7d48206f2eeeedded1e49ac145066c173870939bf3f84c9736aa073",
+    "telemetry.csv": "70d990948beec72c092476ae3f5dfb360e20ee6338351bfc66dcb494a073fff9",
+    "stdout": "2826a478cd319e11411e11408331506d4be706c8837abc3d2bec889e7d33e007",
+    "stderr": "69b88143604bcb1c3325db0bf8c4c3359be2d7084fd61fd13186a9ab533c76d2"
+  },
+  "telemetry_timing_note": "Policy-action columns are undelayed actor outputs, while executed-action columns use each scenario's registered 0-2-step actuator delay. Roll, pitch, pitch rate, and phase are sampled after the physics step. Every nonzero row is inside phases 8-10 and satisfies a registered row-local enable predicate; exact direction/floor/latch transition semantics are additionally established by frozen source provenance and the direct runtime smoke."
+}

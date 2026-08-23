@@ -1,0 +1,13 @@
+{
+  "controller": "B",
+  "diagnostic_scenario_limit": 1,
+  "failures": [
+    "UnboundLocalError: cannot access local variable 'cfg' where it is not associated with a value"
+  ],
+  "finished_unix": 1785237017.063619,
+  "height_mm": 50,
+  "passed_execution": false,
+  "schema": "resume_validation.controller_evaluation.v1",
+  "started_unix": 1785237016.974916,
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\evaluate_controller.py\", line 283, in main\n    for name, value in cfg.residual_bounds.items()\n                       ^^^\nUnboundLocalError: cannot access local variable 'cfg' where it is not associated with a value\n"
+}

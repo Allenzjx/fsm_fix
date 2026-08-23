@@ -1,0 +1,147 @@
+{
+  "schema": "resume_validation.development_constraint_audit.v1",
+  "audited_at_local": "2026-07-30T03:59:32-04:00",
+  "disposition": "ACTION_LAYER_PASS_PHYSICAL_REALIZATION_FAIL_PERFORMANCE_FAIL",
+  "counterfactual_authorization_threshold_successes": 16,
+  "success_count": 13,
+  "episode_count": 20,
+  "failure_counts": {
+    "BODY_OR_LINK_COLLISION": 6,
+    "FSM_PHASE_TIMEOUT": 1
+  },
+  "successful_scenario_indices": [
+    0,
+    1,
+    2,
+    4,
+    7,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16,
+    18
+  ],
+  "failed_scenario_indices": [
+    3,
+    5,
+    6,
+    8,
+    13,
+    17,
+    19
+  ],
+  "telemetry": {
+    "rows": 51092,
+    "columns": 122,
+    "nonfinite_columns": {
+      "margin_m": 5854
+    },
+    "nonfinite_action_or_physical_columns": 0,
+    "max_policy_action_abs": 0.18966709077358246,
+    "max_executed_action_abs": 0.30000001192092896,
+    "max_scaled_wheel_center_residual_m": 0.003000000026077032,
+    "max_scaled_wheel_speed_residual_rad_s": 0.0,
+    "authorized_rows_from_post_step_telemetry": 876,
+    "nonzero_executed_rows": 876,
+    "nonzero_outside_registered_phase_window": 0,
+    "nonzero_unauthorized_rows_from_post_step_telemetry": 0,
+    "phase8_nonzero_rows": 235,
+    "phase9_nonzero_rows": 631,
+    "phase10_nonzero_rows": 10,
+    "phase8_climb_rows": 13,
+    "phase8_diagonal_rows": 222,
+    "phase9_diagonal_rows": 631,
+    "phase10_diagonal_rows": 10,
+    "diagonal_corrective_rows": 863,
+    "diagonal_floor_rows": 863,
+    "masked_action_max_abs": 0.0,
+    "registered_sign_vector_violations": 0,
+    "diagonal_front_left_max_abs": 0.0,
+    "diagonal_rear_right_max_abs": 0.0,
+    "diagonal_front_right_rear_left_pair_max_error": 0.0,
+    "diagonal_four_wheel_sum_max_error": 0.0,
+    "climb_pair_max_error": 0.0,
+    "climb_four_wheel_balance_max_error": 0.0,
+    "scaled_residual_consistency_max_error_m": 9.313228920698746e-11,
+    "nonzero_environment_indices": [
+      3,
+      5,
+      6,
+      8,
+      9,
+      13,
+      17,
+      19
+    ]
+  },
+  "physical_realization_audit": {
+    "corrective_rows": 863,
+    "corrective_rows_with_all_leg_ik_valid": 0,
+    "per_leg_ik_valid_counts_fl_fr_rl_rr": [
+      863,
+      863,
+      0,
+      863
+    ],
+    "workspace_valid_counts_fl_fr_rl_rr": [
+      863,
+      863,
+      863,
+      863
+    ],
+    "rear_left_primary_branch_knee_lower_limit_rad": -0.759206975401994,
+    "rear_left_primary_branch_knee_range_rad": [
+      -0.7611668562548932,
+      -0.7610942942590528
+    ],
+    "rear_left_max_knee_lower_limit_violation_rad": 0.0019598808528992206,
+    "all_leg_fail_closed_rollback_rows": 863,
+    "final_target_to_inferred_baseline_max_error_m": 1.3969839035565812e-09,
+    "climb_rows_physically_realized": 13,
+    "telemetry_columns_exact_vs_v23": 116,
+    "telemetry_columns_different_vs_v23": [
+      "executed_action_01",
+      "executed_action_07",
+      "scaled_wheel_center_residual_m_01",
+      "scaled_wheel_center_residual_m_07",
+      "requested_wheel_center_target_m_01",
+      "requested_wheel_center_target_m_07"
+    ],
+    "final_wheel_center_targets_exact_vs_v23": true,
+    "final_servo_targets_exact_vs_v23": true,
+    "all_56_shared_physical_state_fields_exact_vs_v23": true,
+    "episodes_jsonl_byte_identical_vs_v23": true,
+    "mechanism": "Every registered diagonal correction makes only the rear-left IK leg invalid. The all-legs-valid fail-closed branch therefore replaces all four chosen IK targets with the FSM baseline, canceling the otherwise-valid front-right correction as well. V24 changes requested-action telemetry but cannot change the final targets or physics."
+  },
+  "paired_interpretation": {
+    "frozen_fsm_successes_retained": 12,
+    "frozen_fsm_successes_lost": 0,
+    "scenario_0009_retained": true,
+    "new_v24_rescues": 0,
+    "same_success_set_as_v19_and_v23": true,
+    "terminal_failure_full_wheel_on_top_pattern": [
+      true,
+      false,
+      false,
+      true
+    ],
+    "terminal_failure_pattern_environment_count": 7,
+    "collision_contact_body": "front_right_bot",
+    "collision_contact_body_environment_count": 6,
+    "front_right_only_offline_replay_rows": 863,
+    "front_right_only_all_leg_ik_valid_rows": 863,
+    "next_candidate": "Keep the frozen v23/v24 IMU gates and actor half-space, but execute only front-right wheel-center z signs [0,-1,0,0]. This preserves the valid front-right request, removes the universally invalid rear-left request, and directly targets every collision body. Registration and a real-Isaac final-target realization smoke are required before any counterfactual."
+  },
+  "artifact_sha256": {
+    "result.json": "e70464760abdbe2e73e22da16afab7ba11979b764aa3c86e671dae03514a0d32",
+    "episodes.jsonl": "643b8cfd66cd1dc2e0f34878863a096a806dc6821d0ca3cf8996c0bfe8cd0f9d",
+    "status.json": "f9ae9fb2ada4ba7b3a2f185da6fbff57454f79ccd0e0bb4d5935fb1e97ff1068",
+    "telemetry.csv": "52143cb7189de1acc4bbb5f74ea428d150b26ac09685bab259f7381e3a9c0f4a",
+    "stdout": "247f5ac7e9d621da4200eaaa2ac84bec12d0f377b33c77a19367dc511f532637",
+    "stderr": "69b88143604bcb1c3325db0bf8c4c3359be2d7084fd61fd13186a9ab533c76d2"
+  },
+  "telemetry_timing_note": "Policy-action columns are undelayed actor outputs, while executed-action columns use each scenario's registered 0-2-step actuator delay. Roll, pitch, pitch rate, and phase are post-physics samples. Action-layer authorization passes, but all 863 diagonal rows are rejected by the coupled IK realization branch."
+}

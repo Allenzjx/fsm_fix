@@ -1,0 +1,95 @@
+{
+  "schema": "resume_validation.development_constraint_audit.v1",
+  "audited_at_local": "2026-07-30T02:12:57-04:00",
+  "disposition": "EXECUTION_PASS_PERFORMANCE_FAIL",
+  "counterfactual_authorization_threshold_successes": 16,
+  "success_count": 13,
+  "episode_count": 20,
+  "failure_counts": {
+    "BODY_OR_LINK_COLLISION": 5,
+    "FSM_PHASE_TIMEOUT": 2
+  },
+  "successful_scenario_indices": [
+    0,
+    1,
+    2,
+    4,
+    7,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16,
+    18
+  ],
+  "failed_scenario_indices": [
+    3,
+    5,
+    6,
+    8,
+    13,
+    17,
+    19
+  ],
+  "telemetry": {
+    "rows": 51926,
+    "columns": 122,
+    "nonfinite_columns": {
+      "margin_m": 5854
+    },
+    "nonfinite_action_or_physical_columns": 0,
+    "max_policy_action_abs": 0.18966709077358246,
+    "max_executed_action_abs": 0.30000001192092896,
+    "max_scaled_wheel_center_residual_m": 0.003000000026077032,
+    "max_scaled_wheel_speed_residual_rad_s": 0.0,
+    "authorized_rows_from_post_step_telemetry": 1721,
+    "nonzero_executed_rows": 1721,
+    "nonzero_unauthorized_rows_from_post_step_telemetry": 0,
+    "corrective_minimum_floor_rows": 1555,
+    "phase8_nonzero_rows": 339,
+    "phase9_nonzero_rows": 1262,
+    "phase10_nonzero_rows": 120,
+    "actual_phase8_climb_rows": 166,
+    "actual_phase8_corrective_rows": 173,
+    "actual_phase9_corrective_rows": 1262,
+    "actual_phase10_corrective_rows": 120,
+    "masked_action_max_abs": 0.0,
+    "bilateral_pair_max_error": 0.0,
+    "four_wheel_balance_max_error": 0.0,
+    "registered_sign_vector_violations": 0,
+    "scaled_residual_consistency_max_error_m": 9.313225746154785e-11,
+    "nonzero_environment_indices": [
+      3,
+      5,
+      6,
+      8,
+      9,
+      13,
+      17,
+      19
+    ]
+  },
+  "paired_interpretation": {
+    "frozen_fsm_successes_retained": 12,
+    "frozen_fsm_successes_lost": 0,
+    "scenario_0009_retained": true,
+    "new_v22_rescues": 0,
+    "same_success_set_as_v19": true,
+    "scenario_0008_changed_from_collision_to_timeout": true,
+    "scenario_0019_changed_from_timeout_to_collision": true,
+    "frozen_fsm_success_shared_physical_state_reference_fields_exact": true,
+    "exact_shared_field_count": 56,
+    "mechanism_diagnosis": "The registered latch and 3 mm corrective floor execute, but they do not add a rescue. All five terminal collisions involve front_right_bot contact; the failure trajectories develop positive roll that lowers the right side, while every v19-v22 residual direction remains bilaterally tied and can create pitch but no roll moment. V22 therefore trades scenario 0008 collision for timeout and scenario 0019 timeout for collision without changing the 13/20 success set."
+  },
+  "artifact_sha256": {
+    "result.json": "9252d07295c46c93aed32d041f95bffd6e01c54254a6cf15e075884e5bacb9f9",
+    "episodes.jsonl": "f92eaeb67c0d596a8de8d0ea4d477c2abe65610456b1f6d24b55bb72b0256f0d",
+    "status.json": "51c3c0f83f7164b150cf97c3a607c48d17998a5039ad605bb71926fc0743532c",
+    "telemetry.csv": "7dfbcdf34ca2595ac165a067a66cbd45d4ab756d90339642db7bc60a8b4af039",
+    "stdout": "9b7bfefdd2e62cece3a68d05cd63f8d2497cc15f640bb8ab8d09b9c287039dbe",
+    "stderr": "69b88143604bcb1c3325db0bf8c4c3359be2d7084fd61fd13186a9ab533c76d2"
+  },
+  "telemetry_timing_note": "Policy-action columns are undelayed actor outputs, while executed-action columns use each scenario's registered 0-2-step actuator delay. Roll, pitch, pitch rate, and phase are sampled after the physics step. Full-run floor, latch, gain, and transition semantics are therefore verified by frozen source provenance plus the direct runtime smoke; row-local comparisons are used only where post-step state is unambiguous."
+}
