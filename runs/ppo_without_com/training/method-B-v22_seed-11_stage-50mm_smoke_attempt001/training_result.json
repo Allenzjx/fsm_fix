@@ -1,0 +1,475 @@
+{
+  "arguments": {
+    "active_gpu": 0,
+    "anim_recording_enabled": false,
+    "anim_recording_start_time": 0,
+    "anim_recording_stop_time": 10,
+    "checkpoint_every_iterations": 25,
+    "cpu": false,
+    "create_new_stage": false,
+    "device": "cuda:0",
+    "enable_cameras": false,
+    "headless": true,
+    "height_mm": 50,
+    "hide_ui": true,
+    "info": false,
+    "iterations": 1,
+    "kit_args": "",
+    "learning_epochs": 5,
+    "method": "B",
+    "mini_batches": 8,
+    "num_envs": 1,
+    "output_root": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_without_com\\training",
+    "physics_gpu": 0,
+    "randomization_level": "full",
+    "rendering_mode": null,
+    "resume": null,
+    "resume_offset_timesteps": 0,
+    "robot_usd": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\assets\\converted\\wlr_robot_validation.usd",
+    "rollouts": 64,
+    "run_name": "method-B-v22_seed-11_stage-50mm_smoke_attempt001",
+    "seed": 11,
+    "smoke_only": true,
+    "verbose": false,
+    "xr": false
+  },
+  "failures": [],
+  "finished_unix": 1785389410.428833,
+  "height_mm": 50,
+  "method": "B",
+  "method_name": "without_com",
+  "preflight": {
+    "actor_observation_shape": [
+      1,
+      96
+    ],
+    "contact_force_finite": true,
+    "critic_state_shape": [
+      1,
+      146
+    ],
+    "critic_value_finite": true,
+    "critic_value_shape": [
+      1,
+      1
+    ],
+    "episode_tracker_class": "AuditablePPO",
+    "episode_tracker_env0_preserved_when_other_envs_done": true,
+    "forced_fall_raw_term": 1.0,
+    "forced_fall_reward_finite": true,
+    "forced_fall_terminal_snapshot": true,
+    "forced_fall_terminated": true,
+    "forced_fall_total_reward": -404.9188232421875,
+    "forced_fall_weighted_term": -200.0,
+    "partial_reset_env_count": 1,
+    "partial_reset_finite": true,
+    "policy_action_finite": true,
+    "policy_action_max_abs": 0.04842372611165047,
+    "policy_action_shape": [
+      1,
+      12
+    ],
+    "post_terminal_reset_distance_error_m": 0.0013268589973449707,
+    "post_terminal_reset_distance_m": 0.26548653841018677,
+    "post_terminal_reset_done": false,
+    "post_terminal_reset_expected_distance_m": 0.26681339740753174,
+    "post_terminal_reset_reward_finite": true,
+    "post_terminal_reset_success": false,
+    "residual_action_mask_passed": true,
+    "residual_bilateral_tie_passed": true,
+    "residual_direction_projection_applied_z": {
+      "10": [
+        0.6000000238418579,
+        0.6000000238418579,
+        -0.6000000238418579,
+        -0.6000000238418579
+      ],
+      "11": [
+        -0.0,
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "7": [
+        -0.0,
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "8": [
+        -0.6000000238418579,
+        -0.6000000238418579,
+        0.6000000238418579,
+        0.6000000238418579
+      ],
+      "9": [
+        0.6000000238418579,
+        0.6000000238418579,
+        -0.6000000238418579,
+        -0.6000000238418579
+      ]
+    },
+    "residual_direction_projection_passed": true,
+    "residual_early_hazard_direction_passed": true,
+    "residual_early_hazard_phase8_applied_z": [
+      0.6000000238418579,
+      0.6000000238418579,
+      -0.6000000238418579,
+      -0.6000000238418579
+    ],
+    "residual_early_hazard_phase9_applied_z": [
+      -0.0,
+      -0.0,
+      0.0,
+      0.0
+    ],
+    "residual_early_hazard_pitch_rad": 0.05000000074505806,
+    "residual_early_hazard_pitch_rate_rad_s": 0.4000000059604645,
+    "residual_four_wheel_balance_passed": true,
+    "residual_latched_phase8_floor_applied_z": [
+      0.30000001192092896,
+      0.30000001192092896,
+      -0.30000001192092896,
+      -0.30000001192092896
+    ],
+    "residual_phase_gate_expected_enabled": {
+      "10": true,
+      "11": false,
+      "7": false,
+      "8": true,
+      "9": true
+    },
+    "residual_phase_gate_passed": true,
+    "residual_phase_gate_scaled_max": {
+      "10": 0.006000000052154064,
+      "11": 0.0,
+      "7": 0.0,
+      "8": 0.006000000052154064,
+      "9": 0.006000000052154064
+    },
+    "residual_projection_applied_action": {
+      "10": [
+        0.0,
+        0.6000000238418579,
+        0.0,
+        0.6000000238418579,
+        0.0,
+        -0.6000000238418579,
+        0.0,
+        -0.6000000238418579,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "11": [
+        0.0,
+        -0.0,
+        0.0,
+        -0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "7": [
+        0.0,
+        -0.0,
+        0.0,
+        -0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "8": [
+        0.0,
+        -0.6000000238418579,
+        0.0,
+        -0.6000000238418579,
+        0.0,
+        0.6000000238418579,
+        0.0,
+        0.6000000238418579,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "9": [
+        0.0,
+        0.6000000238418579,
+        0.0,
+        0.6000000238418579,
+        0.0,
+        -0.6000000238418579,
+        0.0,
+        -0.6000000238418579,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "residual_state_gate_above_pitch_rad": 0.10000000149011612,
+    "residual_state_gate_below_exact_zero": true,
+    "residual_state_gate_below_pitch_rad": -0.022441990673542023,
+    "residual_zero_preserving_gate_passed": true,
+    "reward_control_step_dt_s": 0.016666666666666666,
+    "reward_term_count": 22,
+    "reward_term_names": [
+      "action_rate",
+      "body_collision",
+      "com_margin",
+      "contact_impact",
+      "excessive_tilt",
+      "fall",
+      "joint_acceleration",
+      "joint_limit",
+      "numerical",
+      "phase_progress",
+      "phase_timeout",
+      "pitch_rate_sq",
+      "progress",
+      "recovery",
+      "residual_left_right_asymmetry",
+      "residual_magnitude",
+      "slip",
+      "stuck",
+      "success",
+      "time",
+      "top_contact",
+      "wheel_speed_saturation"
+    ],
+    "reward_terms_finite": true,
+    "terminal_safety_raw_max_abs": {
+      "body_collision": 0.0,
+      "fall": 0.0,
+      "joint_limit": 0.0,
+      "numerical": 0.0,
+      "phase_timeout": 0.0
+    },
+    "zero_residual_exact": true
+  },
+  "provenance": {
+    "asset_path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\assets\\converted\\wlr_robot_validation.usd",
+    "asset_sha256": "98103315e8ad456881a28a9b3dc77f7aaa8bc9a5200e40c435bea8002c4f81dd",
+    "configs": {
+      "fsm.yaml": {
+        "canonical_config_sha256": "db948598572155c452e403af4064fecdb88753227125acfb0fbfa102c48f24b3",
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\fsm.yaml",
+        "sha256": "3e4b65ee87a260723d06b7c5ed6e470884917efb2ec6cb4654993e669883e4e9"
+      },
+      "metrics.yaml": {
+        "canonical_config_sha256": "9c91d1d03d42741d8904e1e91a0ca20fd422cf31d1bc8b70f2f16d97bfcf69f0",
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\metrics.yaml",
+        "sha256": "6a02b1c09c23245d7ce5b44a6781557f8c578ed56ac11b9d1ef1149c413b30ab"
+      },
+      "obstacle_train.yaml": {
+        "canonical_config_sha256": "4d8f8f08cba07a128f74aff35ae7d9f596e96b16ea886df3883790f5ce1f1c99",
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\obstacle_train.yaml",
+        "sha256": "86f1476a82197624d1be1901bb27c0c40f0df32c36d710b1b044b2299d846267"
+      },
+      "ppo_common.yaml": {
+        "canonical_config_sha256": "180d8d52c8f12f1d74316708e865a4bd699984ae093b568842697b8fe670e05a",
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\ppo_common.yaml",
+        "sha256": "39927e1e21f8bdfc364cc2d81bef9e617911fa4acaa31e241de0f02159b43b74"
+      },
+      "ppo_without_com.yaml": {
+        "canonical_config_sha256": "fc1fea05370a92fd5111fe00d27564aab67ae9a7383cd49664fa6a2953274689",
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\ppo_without_com.yaml",
+        "sha256": "d27d84488d692a4af2764859ae55cf913803b0e9645a4abf2796a2cd65a2e8b1"
+      }
+    },
+    "cuda": "12.8",
+    "effective_post_transfer_forward_speed_rad_s": 0.0,
+    "effective_post_transfer_offset_start_progress": [
+      0.4,
+      0.4,
+      0.4,
+      0.4
+    ],
+    "effective_post_transfer_wheel_center_offsets_m": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "effective_rear_transfer_wheel_speed_rad_s": [
+      0.3,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "effective_residual_action_mask": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "effective_residual_activation_threshold": 0.0,
+    "effective_residual_bounds": {
+      "wheel_center_x_m": 0.0075,
+      "wheel_center_z_m": 0.01,
+      "wheel_speed_rad_s": 0.1
+    },
+    "effective_residual_corrective_minimum_shared_magnitude": 0.1,
+    "effective_residual_executed_wheel_center_z_signs": [
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "effective_residual_execution_phase_gains": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "effective_residual_execution_phase_window": [
+      8,
+      10
+    ],
+    "effective_residual_projection_type": "wheel_center_z_four_wheel_phase_aware_emergency_gate",
+    "effective_residual_state_gate_corrective_latch": true,
+    "effective_residual_state_gate_early_pitch_rad": 0.04,
+    "effective_residual_state_gate_early_pitch_rate_rad_s": 0.35,
+    "effective_residual_state_gate_min_pitch_rad": 0.09,
+    "effective_residual_state_gate_type": "phase_aware_pitch_rate_imu_emergency",
+    "effective_residual_wheel_center_z_signs": [
+      -1,
+      -1,
+      1,
+      1
+    ],
+    "effective_reward_weights": {
+      "action_rate": -0.1,
+      "body_collision": -200.0,
+      "com_margin": 0.0,
+      "contact_impact": -0.01,
+      "excessive_tilt": -1.0,
+      "fall": -200.0,
+      "joint_acceleration": -0.0001,
+      "joint_limit": -200.0,
+      "numerical": -200.0,
+      "phase_progress": 2.0,
+      "phase_timeout": -200.0,
+      "pitch_rate_sq": -0.25,
+      "progress": 8.0,
+      "recovery": 2.0,
+      "residual_left_right_asymmetry": -180.0,
+      "residual_magnitude": -120.0,
+      "slip": -0.2,
+      "stuck": -6.0,
+      "success": 200.0,
+      "time": -0.005,
+      "top_contact": 1.0,
+      "wheel_speed_saturation": -0.1
+    },
+    "effective_support_unload": {
+      "high_force_n": 8.0,
+      "low_force_n": 4.0,
+      "maximum_m": 0.0,
+      "rate_m_s": 0.00075
+    },
+    "effective_training_randomization": {
+      "actuator_delay_steps": [
+        0,
+        2
+      ],
+      "friction_range": [
+        0.9,
+        1.2
+      ],
+      "initial_distance_half_range_m": 0.025,
+      "initial_pitch_half_range_rad": 0.02,
+      "sensor_noise_std_range": [
+        0.0,
+        0.005
+      ]
+    },
+    "episode_tracker_policy": "local AuditablePPO repairs only skrl 2.0 display accumulators; rollout memory, GAE, losses, and parameter updates are unchanged",
+    "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+    "isaaclab": "0.54.3",
+    "isaacsim": "5.1.0.0",
+    "pid": 38728,
+    "registered_local_training_timesteps": 76800,
+    "reward_baseline_regularization_timebase": "residual magnitude/asymmetry are integrated by control step_dt and weighted -120/-180 per second, exactly preserving the prior -2/-3 per-step strength at 60 Hz",
+    "reward_occupancy_integration": "top_contact, recovery, and stuck raw terms are multiplied by control step_dt",
+    "reward_rate_integration": "pitch_rate_sq, excessive_tilt, slip, residual_magnitude, residual_left_right_asymmetry, joint_acceleration, and wheel_speed_saturation raw terms are multiplied by control step_dt",
+    "reward_reset_initialization": "randomized root pose uses cached settled standing root-to-wheel geometry plus registered scenario values; no current terminal root/body pose cache is read",
+    "reward_terminal_safety": "fall, body_collision, numerical, phase_timeout, and joint_limit carry explicit one-shot -200 terms",
+    "skrl": "2.0.0",
+    "source_files": {
+      "episode_tracking.py": {
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\episode_tracking.py",
+        "sha256": "27375f7c1f9e114084add988808ddd8bba28099c67de89a635dbc3ae6c916ee6"
+      },
+      "ppo_models.py": {
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\ppo_models.py",
+        "sha256": "97e7f1974ef79b71250d9ea5e215b0ffd86495304901da8f384ca21b36e0f14e"
+      },
+      "residual_rl_env.py": {
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\residual_rl_env.py",
+        "sha256": "d3cd1f808804fbf559430ccdead5416010f8901563a6e9361a5c6d72663e2ae2"
+      },
+      "residual_safety.py": {
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\residual_safety.py",
+        "sha256": "f82040465935e19763ab62cc23f352c3088694f344899d72f4af67e13c3cef4f"
+      },
+      "reward.py": {
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\reward.py",
+        "sha256": "6dc9e7a98f21862bc9d334db46b28e2c9343368951844eefb62f52a798ae4036"
+      },
+      "train_residual_ppo.py": {
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\train_residual_ppo.py",
+        "sha256": "d9edde392ba5c8396783cf66ec11d5743d98bdf973434dcc17989e7ef7479fd9"
+      },
+      "training_randomization.py": {
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\training_randomization.py",
+        "sha256": "bb5cc2c4bca4a89ad79d9f5a2b142ae85685845d8b071b10e2cf87878278ad84"
+      }
+    },
+    "torch": "2.7.0+cu128"
+  },
+  "run_dir": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_without_com\\training\\method-B-v22_seed-11_stage-50mm_smoke_attempt001",
+  "schema": "resume_validation.residual_ppo_training.v1",
+  "seed": 11,
+  "started_unix": 1785389404.933572,
+  "status": "SMOKE_PASS",
+  "training_budget": {
+    "cumulative_timesteps_requested": 64,
+    "cumulative_transitions_requested": 64,
+    "local_timesteps_requested": 64,
+    "local_transitions_requested": 64,
+    "parallel_environments": 1,
+    "resume_offset_timesteps": 0
+  }
+}
