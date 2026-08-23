@@ -1,0 +1,29 @@
+{
+  "actual": {
+    "development_episode_count": 20,
+    "development_success_rate": 0.6500000357627869
+  },
+  "checkpoint": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_without_com\\training\\method-B-v34_seed-29_stage-50mm_attempt002\\checkpoints\\final_agent.pt",
+  "checkpoint_sha256": "2f484e02b6caa3a79b664af69e18a6aaabebcd28333e251e00128b3b828e7738",
+  "checks": {
+    "checkpoint_hash_matches": true,
+    "controller_matches": true,
+    "episode_count_sufficient": true,
+    "evaluation_completed": true,
+    "height_matches": true,
+    "success_rate_sufficient": false
+  },
+  "common_config": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\ppo_common.yaml",
+  "common_config_sha256": "dcf500751263661930a30cffff3f029e45d081894019cdef594e3d0c01836066",
+  "evaluation": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_without_com\\development_gates\\method-B-v34_seed-29_stage-50mm_attempt002\\result.json",
+  "evaluation_sha256": "faf56e2c287f3c5b98cd313ee5e81f746c307fdc30faad4a119d14065e492ad0",
+  "height_mm": 50,
+  "method": "B",
+  "promote": false,
+  "required": {
+    "development_episode_count": 20,
+    "minimum_development_success_rate": 0.8
+  },
+  "schema": "resume_validation.curriculum_gate.v1",
+  "seed": 29
+}

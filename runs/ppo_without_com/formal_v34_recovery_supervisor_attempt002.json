@@ -1,0 +1,15 @@
+﻿{
+    "schema":  "resume_validation.formal_recovery_supervisor.v1",
+    "updated_utc":  "2026-07-31T21:21:26.6295889Z",
+    "supervisor_pid":  117916,
+    "observed_wrapper_pid":  120320,
+    "method":  "B",
+    "recovery_attempt":  2,
+    "start_seed":  11,
+    "start_height_mm":  75,
+    "status":  "FAILED",
+    "message":  "Recovery wrapper exited with code ",
+    "locked_test_access":  "forbidden",
+    "traceback":  "at \u003cScriptBlock\u003e, C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\scripts\\formal_training_recovery_supervisor.ps1: line 271",
+    "failure_type":  "System.Management.Automation.RuntimeException"
+}

@@ -1,0 +1,11 @@
+[38;20m[skrl:INFO] Environment wrapper: Isaac Lab (single-agent)[0m
+[38;20m[skrl:INFO] Environment wrapper: Isaac Lab (single-agent)[0m
+Training artifacts are incomplete: C:\robotics_sim\wlr_robot\resume_validation_fsm_residual_ppo\runs\ppo_without_com\tr
+aining\method-B-v34_seed-11_stage-75mm_attempt001
+At C:\robotics_sim\wlr_robot\resume_validation_fsm_residual_ppo\scripts\train_curriculum.ps1:76 char:17
++                 throw "Training artifacts are incomplete: $RunDir"
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Training artifa...75mm_attempt001:String) [], RuntimeException
+    + FullyQualifiedErrorId : Training artifacts are incomplete: C:\robotics_sim\wlr_robot\resume_validation_fsm_resid 
+   ual_ppo\runs\ppo_without_com\training\method-B-v34_seed-11_stage-75mm_attempt001
+ 

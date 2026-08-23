@@ -1,0 +1,143 @@
+{
+  "arguments": {
+    "active_gpu": 0,
+    "anim_recording_enabled": false,
+    "anim_recording_start_time": 0,
+    "anim_recording_stop_time": 10,
+    "checkpoint_every_iterations": 25,
+    "cpu": false,
+    "create_new_stage": false,
+    "device": "cuda:0",
+    "enable_cameras": false,
+    "headless": true,
+    "height_mm": 50,
+    "hide_ui": true,
+    "info": false,
+    "iterations": 1,
+    "kit_args": "",
+    "learning_epochs": 5,
+    "method": "B",
+    "mini_batches": 8,
+    "num_envs": 16,
+    "output_root": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_without_com\\training",
+    "physics_gpu": 0,
+    "randomization_level": "nominal",
+    "rendering_mode": null,
+    "resume": null,
+    "robot_usd": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\assets\\converted\\wlr_robot_validation.usd",
+    "rollouts": 8,
+    "run_name": "method-B_seed-11_stage-50mm_smoke_attempt049",
+    "seed": 11,
+    "smoke_only": true,
+    "verbose": false,
+    "xr": false
+  },
+  "failures": [],
+  "finished_unix": 1785223150.6252031,
+  "height_mm": 50,
+  "method": "B",
+  "method_name": "without_com",
+  "preflight": {
+    "actor_observation_shape": [
+      16,
+      96
+    ],
+    "contact_force_finite": true,
+    "critic_state_shape": [
+      16,
+      146
+    ],
+    "critic_value_finite": true,
+    "critic_value_shape": [
+      16,
+      1
+    ],
+    "policy_action_finite": true,
+    "policy_action_max_abs": 0.42357566952705383,
+    "policy_action_shape": [
+      16,
+      12
+    ],
+    "zero_residual_exact": true
+  },
+  "provenance": {
+    "asset_path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\assets\\converted\\wlr_robot_validation.usd",
+    "asset_sha256": "98103315e8ad456881a28a9b3dc77f7aaa8bc9a5200e40c435bea8002c4f81dd",
+    "configs": {
+      "fsm.yaml": {
+        "canonical_config_sha256": "db948598572155c452e403af4064fecdb88753227125acfb0fbfa102c48f24b3",
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\fsm.yaml",
+        "sha256": "3e4b65ee87a260723d06b7c5ed6e470884917efb2ec6cb4654993e669883e4e9"
+      },
+      "metrics.yaml": {
+        "canonical_config_sha256": "9c91d1d03d42741d8904e1e91a0ca20fd422cf31d1bc8b70f2f16d97bfcf69f0",
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\metrics.yaml",
+        "sha256": "6a02b1c09c23245d7ce5b44a6781557f8c578ed56ac11b9d1ef1149c413b30ab"
+      },
+      "obstacle_train.yaml": {
+        "canonical_config_sha256": "587ce0dc39bbecee35a2e4bc7c804525c5e23ba4de3b456bcbb2f524bf2e2169",
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\obstacle_train.yaml",
+        "sha256": "48fdf2cffb892fa50b768e5e3774ec43037d493894806fb37efca3271b978cb8"
+      },
+      "ppo_common.yaml": {
+        "canonical_config_sha256": "ed16ca3c4211e5f2fb8b5b6448191d142aec4e3b7ee0a705abe884a9e62323bd",
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\ppo_common.yaml",
+        "sha256": "3b8f9aad142774f5c27caf1175d5bf396011529cf93f4036b83f30c304eec1e3"
+      },
+      "ppo_without_com.yaml": {
+        "canonical_config_sha256": "fc1fea05370a92fd5111fe00d27564aab67ae9a7383cd49664fa6a2953274689",
+        "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\configs\\ppo_without_com.yaml",
+        "sha256": "d27d84488d692a4af2764859ae55cf913803b0e9645a4abf2796a2cd65a2e8b1"
+      }
+    },
+    "cuda": "12.8",
+    "effective_post_transfer_forward_speed_rad_s": 0.0,
+    "effective_post_transfer_offset_start_progress": [
+      0.4,
+      0.4,
+      0.4,
+      0.4
+    ],
+    "effective_post_transfer_wheel_center_offsets_m": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "effective_rear_transfer_wheel_speed_rad_s": [
+      0.3,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "effective_support_unload": {
+      "high_force_n": 8.0,
+      "low_force_n": 4.0,
+      "maximum_m": 0.0,
+      "rate_m_s": 0.00075
+    },
+    "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+    "isaaclab": "0.54.3",
+    "isaacsim": "5.1.0.0",
+    "pid": 119208,
+    "skrl": "2.0.0",
+    "torch": "2.7.0+cu128"
+  },
+  "run_dir": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_without_com\\training\\method-B_seed-11_stage-50mm_smoke_attempt049",
+  "schema": "resume_validation.residual_ppo_training.v1",
+  "seed": 11,
+  "started_unix": 1785223145.5390546,
+  "status": "SMOKE_PASS"
+}

@@ -1,0 +1,41 @@
+﻿{
+    "schema":  "resume_validation.training_heartbeat.v1",
+    "updated_utc":  "2026-07-30T18:26:41.0207185Z",
+    "wrapper_pid":  120320,
+    "wrapper_alive":  false,
+    "child_pids":  [
+                       30032,
+                       120136,
+                       162884,
+                       106896
+                   ],
+    "environment_python_pids":  [
+                                    106896
+                                ],
+    "stage":  "training",
+    "method":  "B",
+    "seed":  11,
+    "height_mm":  75,
+    "run_name":  "method-B-v34_seed-11_stage-75mm_attempt002",
+    "local_control_timestep":  76800,
+    "total_local_control_timesteps":  76800,
+    "control_steps_per_second":  0,
+    "elapsed_wall_time_s":  null,
+    "gpu_memory_used_mib":  0,
+    "gpu_memory_total_mib":  12282,
+    "gpu_utilization_percent":  0,
+    "latest_train_return":  null,
+    "latest_success_rate":  null,
+    "latest_validation_success":  null,
+    "nan_inf_mentions_in_tail":  0,
+    "oom_mentions_in_tail":  0,
+    "traceback_mentions_in_tail":  0,
+    "checkpoint":  "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_without_com\\training\\method-B-v34_seed-11_stage-50mm_attempt001\\checkpoints\\final_agent.pt",
+    "checkpoint_last_write_utc":  "2026-07-30T17:54:36.2941328Z",
+    "last_log_or_artifact_time_utc":  "2026-07-30T18:26:39.3640700Z",
+    "silence_seconds":  1.6040372999999999,
+    "hang_suspected":  false,
+    "stdout_log":  "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_without_com\\formal_v34_training.stdout.log",
+    "stderr_log":  "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_without_com\\formal_v34_training.stderr.log",
+    "intervention_policy":  "diagnose-only; never terminate unrelated processes; recovery is launched with a new preserved attempt"
+}
