@@ -1,0 +1,42 @@
+protocol_version: "1.0.0"
+canonical_asset:
+  usd_path: "C:/robotics_sim/wlr_robot/usd/wlr_robot_drive_test.usd"
+  usd_sha256: "e8a2a2b1485a32a50e851a07b9dd8ac4945b78ec49b7fada2b61c3eeb1e18892"
+  urdf_path: "C:/robotics_sim/wlr_robot/sw2urdf_output/wlr_robot_isaac/urdf/wlr_robot_isaac.urdf"
+  urdf_sha256: "15c99a3f0a07e01f8c3830235d8f8a684f400db280a06ed5f75b56d58ebc2722"
+  selection_reason:
+    - "This is the default USD actually loaded by height_based_obstacle_replay."
+    - "It contains the 12 expected articulation joints and four wheel bodies."
+    - "Prior project validation used the same SHA256; this project still requires a fresh runtime validation."
+validation_asset:
+  usd_path: "C:/robotics_sim/wlr_robot/resume_validation_fsm_residual_ppo/assets/converted/wlr_robot_validation.usd"
+  usd_sha256: "98103315e8ad456881a28a9b3dc77f7aaa8bc9a5200e40c435bea8002c4f81dd"
+  source_usd_sha256: "e8a2a2b1485a32a50e851a07b9dd8ac4945b78ec49b7fada2b61c3eeb1e18892"
+  modification_scope: "eight servo revolute PhysX lower/upper limits only"
+  scope_audit: "assets/manifests/wlr_robot_validation.json"
+  status: "fresh Isaac static, motion and ContactSensor integration passed"
+robot_prim_path: "/World/envs/env_.*/Robot"
+travel_axis_world: [1.0, 0.0, 0.0]
+joint_order:
+  - front_left_hip
+  - front_left_knee
+  - front_right_hip
+  - front_right_knee
+  - rear_left_hip
+  - rear_left_knee
+  - rear_right_hip
+  - rear_right_knee
+  - front_left_ankle
+  - front_right_ankle
+  - rear_left_ankle
+  - rear_right_ankle
+wheel_body_order:
+  - front_left_wheel
+  - front_right_wheel
+  - rear_left_wheel
+  - rear_right_wheel
+kinematics:
+  model: "planar_2r_with_urdf_fixed_offsets"
+  upper_length_m: 0.1478
+  lower_vector_source: "URDF knee-to-wheel joint origin; exact per-leg calibration pending runtime FK audit"
+  analytic_ik_claim_status: "PENDING_RUNTIME_VALIDATION"

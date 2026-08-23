@@ -1,0 +1,146 @@
+{
+  "changes": [
+    {
+      "command_range_deg": [
+        -32.5,
+        63.0
+      ],
+      "command_sign": 1.0,
+      "joint": "front_left_hip",
+      "source_physical_limit_deg": [
+        -89.9543685913086,
+        89.9543685913086
+      ],
+      "standing_raw_deg": 0.07935156363204786,
+      "validation_physical_limit_deg": [
+        -32.420648436367955,
+        63.079351563632045
+      ]
+    },
+    {
+      "command_range_deg": [
+        -42.0,
+        23.1
+      ],
+      "command_sign": 1.0,
+      "joint": "front_left_knee",
+      "source_physical_limit_deg": [
+        0.0,
+        179.9087371826172
+      ],
+      "standing_raw_deg": 0.02684400080484552,
+      "validation_physical_limit_deg": [
+        -41.97315599919516,
+        23.126844000804848
+      ]
+    },
+    {
+      "command_range_deg": [
+        0.0,
+        39.5
+      ],
+      "command_sign": 1.0,
+      "joint": "front_right_hip",
+      "source_physical_limit_deg": [
+        -89.9543685913086,
+        89.9543685913086
+      ],
+      "standing_raw_deg": -0.006745560524854715,
+      "validation_physical_limit_deg": [
+        -0.006745560524854715,
+        39.493254439475145
+      ]
+    },
+    {
+      "command_range_deg": [
+        -15.7,
+        31.4
+      ],
+      "command_sign": 1.0,
+      "joint": "front_right_knee",
+      "source_physical_limit_deg": [
+        0.0,
+        179.9087371826172
+      ],
+      "standing_raw_deg": 0.1251883495021952,
+      "validation_physical_limit_deg": [
+        -15.574811650497804,
+        31.525188349502194
+      ]
+    },
+    {
+      "command_range_deg": [
+        -11.8,
+        24.2
+      ],
+      "command_sign": -1.0,
+      "joint": "rear_left_hip",
+      "source_physical_limit_deg": [
+        -89.9543685913086,
+        89.9543685913086
+      ],
+      "standing_raw_deg": -0.1794263347525243,
+      "validation_physical_limit_deg": [
+        -24.379426334752523,
+        11.620573665247477
+      ]
+    },
+    {
+      "command_range_deg": [
+        0.0,
+        45.2
+      ],
+      "command_sign": -1.0,
+      "joint": "rear_left_knee",
+      "source_physical_limit_deg": [
+        -179.9087371826172,
+        0.0
+      ],
+      "standing_raw_deg": 0.16301483092001173,
+      "validation_physical_limit_deg": [
+        -45.03698516907999,
+        0.16301483092001173
+      ]
+    },
+    {
+      "command_range_deg": [
+        -35.3,
+        29.8
+      ],
+      "command_sign": -1.0,
+      "joint": "rear_right_hip",
+      "source_physical_limit_deg": [
+        -89.9543685913086,
+        89.9543685913086
+      ],
+      "standing_raw_deg": -0.3229814231186408,
+      "validation_physical_limit_deg": [
+        -30.12298142311864,
+        34.977018576881356
+      ]
+    },
+    {
+      "command_range_deg": [
+        -60.0,
+        0.0
+      ],
+      "command_sign": -1.0,
+      "joint": "rear_right_knee",
+      "source_physical_limit_deg": [
+        -179.9087371826172,
+        0.0
+      ],
+      "standing_raw_deg": 0.21524399350241663,
+      "validation_physical_limit_deg": [
+        0.0,
+        60.21524399350242
+      ]
+    }
+  ],
+  "limit_policy": "per-joint union of observed commands across successful 50/100 mm recordings, transformed using measured standing pose and direction sign",
+  "modification_scope": "physics:lowerLimit and physics:upperLimit on eight hip/knee joints only",
+  "output": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\assets\\converted\\wlr_robot_validation.usd",
+  "output_sha256": "98103315e8ad456881a28a9b3dc77f7aaa8bc9a5200e40c435bea8002c4f81dd",
+  "source": "C:\\robotics_sim\\wlr_robot\\usd\\wlr_robot_drive_test.usd",
+  "source_sha256": "e8a2a2b1485a32a50e851a07b9dd8ac4945b78ec49b7fada2b61c3eeb1e18892"
+}

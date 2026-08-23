@@ -1,0 +1,18 @@
+{
+  "failures": [
+    "ValueError: The following joints have default positions out of the limits: \n\t- 'rear_right_knee': 0.000 not in [0.004, 1.051]\n"
+  ],
+  "passed": false,
+  "robot_usd": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\assets\\converted\\wlr_robot_validation.usd",
+  "robot_usd_sha256": "e3c3f4f66ef3a8b65a87f0b3b62c0f2a8579c6ade46bfbd482da84b8fd13e7c7",
+  "script": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\isaac_validation.py",
+  "timestamp_unix": 1785132821.292956,
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\isaac_validation.py\", line 168, in main\n    env = WLRObstacleRLEnv(cfg)\n          ^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\robotics_sim\\wlr_robot\\wlr_obstacle_rl_env.py\", line 667, in __init__\n    super().__init__(cfg, render_mode, **kwargs)\n  File \"c:/robotics_sim/isaaclab/source/isaaclab/isaaclab/envs/direct_rl_env.py\", line 167, in __init__\n    self.sim.reset()\n  File \"c:/robotics_sim/isaaclab/source/isaaclab/isaaclab/sim/simulation_context.py\", line 530, in reset\n    self.render()\n  File \"c:/robotics_sim/isaaclab/source/isaaclab/isaaclab/sim/simulation_context.py\", line 601, in render\n    raise exception_to_raise\n  File \"c:/robotics_sim/isaaclab/source/isaaclab/isaaclab/assets/asset_base.py\", line 317, in _initialize_callback\n    self._initialize_impl()\n  File \"c:/robotics_sim/isaaclab/source/isaaclab/isaaclab/assets/articulation/articulation.py\", line 1587, in _initialize_impl\n    self._validate_cfg()\n  File \"c:/robotics_sim/isaaclab/source/isaaclab/isaaclab/assets/articulation/articulation.py\", line 1935, in _validate_cfg\n    raise ValueError(msg)\nValueError: The following joints have default positions out of the limits: \n\t- 'rear_right_knee': 0.000 not in [0.004, 1.051]\n\n",
+  "versions": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+    "isaaclab": "0.54.3",
+    "isaacsim": "5.1.0.0",
+    "torch": "2.7.0+cu128"
+  }
+}

@@ -1,0 +1,550 @@
+{
+  "note": "USD/PhysX runtime properties are validated separately inside Isaac Sim.",
+  "urdf": {
+    "joints": [
+      {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child": "front_left_upper",
+        "effort": 2.7,
+        "joint_type": "revolute",
+        "lower": -1.57,
+        "name": "front_left_hip",
+        "origin_rpy": [
+          1.5707963267949,
+          0.0608549307343607,
+          0.0
+        ],
+        "origin_xyz": [
+          0.125605412969816,
+          0.00130809302576086,
+          0.111477729785037
+        ],
+        "parent": "base_link",
+        "upper": 1.57,
+        "velocity": 5.0
+      },
+      {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child": "front_left_bot",
+        "effort": 2.7,
+        "joint_type": "revolute",
+        "lower": 0.0,
+        "name": "front_left_knee",
+        "origin_rpy": [
+          0.0,
+          0.0,
+          -1.5098
+        ],
+        "origin_xyz": [
+          0.14786,
+          -0.0002124,
+          0.0
+        ],
+        "parent": "front_left_upper",
+        "upper": 3.14,
+        "velocity": 5.0
+      },
+      {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child": "front_left_wheel",
+        "effort": 1.0,
+        "joint_type": "continuous",
+        "lower": null,
+        "name": "front_left_ankle",
+        "origin_rpy": [
+          0.0,
+          0.0,
+          -1.9983
+        ],
+        "origin_xyz": [
+          0.1559,
+          -0.02,
+          -0.0784
+        ],
+        "parent": "front_left_bot",
+        "upper": null,
+        "velocity": 20.0
+      },
+      {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child": "front_right_upper",
+        "effort": 2.7,
+        "joint_type": "revolute",
+        "lower": -1.57,
+        "name": "front_right_hip",
+        "origin_rpy": [
+          1.5707963267949,
+          0.0554849314629031,
+          0.0
+        ],
+        "origin_xyz": [
+          0.125613921776569,
+          -0.241332100772366,
+          0.111477729785037
+        ],
+        "parent": "base_link",
+        "upper": 1.57,
+        "velocity": 5.0
+      },
+      {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child": "front_right_bot",
+        "effort": 2.7,
+        "joint_type": "revolute",
+        "lower": 0.0,
+        "name": "front_right_knee",
+        "origin_rpy": [
+          0.0,
+          0.0,
+          -1.4988
+        ],
+        "origin_xyz": [
+          0.1478,
+          0.0,
+          0.0
+        ],
+        "parent": "front_right_upper",
+        "upper": 3.14,
+        "velocity": 5.0
+      },
+      {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child": "front_right_wheel",
+        "effort": 1.0,
+        "joint_type": "continuous",
+        "lower": null,
+        "name": "front_right_ankle",
+        "origin_rpy": [
+          3.1416,
+          0.0,
+          -1.3507
+        ],
+        "origin_xyz": [
+          0.1559,
+          -0.02,
+          0.07726
+        ],
+        "parent": "front_right_bot",
+        "upper": null,
+        "velocity": 20.0
+      },
+      {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child": "rear_left_upper",
+        "effort": 2.7,
+        "joint_type": "revolute",
+        "lower": -1.57,
+        "name": "rear_left_hip",
+        "origin_rpy": [
+          -1.5707963267949,
+          0.00255307404240576,
+          -3.14159265358979
+        ],
+        "origin_xyz": [
+          -0.170186078223461,
+          0.0,
+          0.110012233831204
+        ],
+        "parent": "base_link",
+        "upper": 1.57,
+        "velocity": 5.0
+      },
+      {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child": "rear_left_bot",
+        "effort": 2.7,
+        "joint_type": "revolute",
+        "lower": -3.14,
+        "name": "rear_left_knee",
+        "origin_rpy": [
+          0.0,
+          0.0,
+          1.55
+        ],
+        "origin_xyz": [
+          0.1478,
+          0.0,
+          0.0
+        ],
+        "parent": "rear_left_upper",
+        "upper": 0.0,
+        "velocity": 5.0
+      },
+      {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child": "rear_left_wheel",
+        "effort": 1.0,
+        "joint_type": "continuous",
+        "lower": null,
+        "name": "rear_left_ankle",
+        "origin_rpy": [
+          0.0,
+          0.0,
+          1.4276
+        ],
+        "origin_xyz": [
+          0.1559,
+          0.02,
+          -0.074908
+        ],
+        "parent": "rear_left_bot",
+        "upper": null,
+        "velocity": 20.0
+      },
+      {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child": "rear_right_upper",
+        "effort": 2.7,
+        "joint_type": "revolute",
+        "lower": -1.57,
+        "name": "rear_right_hip",
+        "origin_rpy": [
+          -1.5707963267949,
+          0.00187729446256285,
+          -3.14159265358979
+        ],
+        "origin_xyz": [
+          -0.17017756941671,
+          -0.242991906974238,
+          0.110012233831204
+        ],
+        "parent": "base_link",
+        "upper": 1.57,
+        "velocity": 5.0
+      },
+      {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child": "rear_right_bot",
+        "effort": 2.7,
+        "joint_type": "revolute",
+        "lower": -3.14,
+        "name": "rear_right_knee",
+        "origin_rpy": [
+          0.0,
+          0.0,
+          1.5269
+        ],
+        "origin_xyz": [
+          0.14779,
+          0.0,
+          0.0
+        ],
+        "parent": "rear_right_upper",
+        "upper": 0.0,
+        "velocity": 5.0
+      },
+      {
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "child": "rear_right_wheel",
+        "effort": 1.0,
+        "joint_type": "continuous",
+        "lower": null,
+        "name": "rear_right_ankle",
+        "origin_rpy": [
+          3.1416,
+          0.0,
+          -1.2492
+        ],
+        "origin_xyz": [
+          0.1559,
+          0.02,
+          0.0784
+        ],
+        "parent": "rear_right_bot",
+        "upper": null,
+        "velocity": 20.0
+      }
+    ],
+    "links": {
+      "base_link": {
+        "com": [
+          -0.0229305328231174,
+          -0.120913963171336,
+          0.0841316296287879
+        ],
+        "has_collision": true,
+        "has_visual": true,
+        "inertia": {
+          "ixx": 0.00463364904296372,
+          "ixy": -1.47214519540624e-05,
+          "ixz": -3.76622853771432e-07,
+          "iyy": 0.00443325667940435,
+          "iyz": 3.03520058893681e-07,
+          "izz": 0.00859007574910036
+        },
+        "mass": 1.34844221640949
+      },
+      "front_left_bot": {
+        "com": [
+          0.095940296829135,
+          -0.0141830253726981,
+          -0.0341006337731112
+        ],
+        "has_collision": true,
+        "has_visual": true,
+        "inertia": {
+          "ixx": 6.56796886338992e-05,
+          "ixy": 6.07075792641884e-06,
+          "ixz": 1.99237132768612e-06,
+          "iyy": 8.18480170254456e-05,
+          "iyz": -7.89868622553961e-09,
+          "izz": 6.21759583902867e-05
+        },
+        "mass": 0.214217904028655
+      },
+      "front_left_upper": {
+        "com": [
+          0.0863868667763387,
+          -3.02285714631756e-05,
+          -0.028460122238088
+        ],
+        "has_collision": true,
+        "has_visual": true,
+        "inertia": {
+          "ixx": 2.49679382293875e-05,
+          "ixy": 3.65531351670737e-08,
+          "ixz": -2.57825656232124e-08,
+          "iyy": 6.93364142865116e-05,
+          "iyz": -6.40550547398917e-11,
+          "izz": 5.22434245193916e-05
+        },
+        "mass": 0.120630501101589
+      },
+      "front_left_wheel": {
+        "com": [
+          -6.60313470568497e-11,
+          -2.26328823738076e-10,
+          -0.0111754246423867
+        ],
+        "has_collision": true,
+        "has_visual": true,
+        "inertia": {
+          "ixx": 4.95580630444304e-05,
+          "ixy": -7.38967365760106e-14,
+          "ixz": -1.75009732011825e-13,
+          "iyy": 4.95580610313915e-05,
+          "iyz": 5.26686751412869e-13,
+          "izz": 9.55484783667699e-05
+        },
+        "mass": 0.0595192159008023
+      },
+      "front_right_bot": {
+        "com": [
+          0.0958511745320124,
+          -0.0141667360496698,
+          0.0329569591756543
+        ],
+        "has_collision": true,
+        "has_visual": true,
+        "inertia": {
+          "ixx": 6.57071064848945e-05,
+          "ixy": 6.09232482012081e-06,
+          "ixz": -1.99134040227367e-06,
+          "iyy": 8.19552631335633e-05,
+          "iyz": 7.75986828284912e-09,
+          "izz": 6.22878627706913e-05
+        },
+        "mass": 0.214654393413861
+      },
+      "front_right_upper": {
+        "com": [
+          0.0861059706190562,
+          5.05720703161683e-07,
+          0.0287992480207489
+        ],
+        "has_collision": true,
+        "has_visual": true,
+        "inertia": {
+          "ixx": 2.54679216538392e-05,
+          "ixy": 3.36631760245127e-09,
+          "ixz": -2.57503729797295e-08,
+          "iyy": 7.19422110660087e-05,
+          "iyz": -1.46971977667158e-11,
+          "izz": 5.45236233283287e-05
+        },
+        "mass": 0.121988122752492
+      },
+      "front_right_wheel": {
+        "com": [
+          -6.37971619976696e-11,
+          -2.32180247250469e-10,
+          -0.0111754246423855
+        ],
+        "has_collision": true,
+        "has_visual": true,
+        "inertia": {
+          "ixx": 4.95580630444304e-05,
+          "ixy": -7.38966967654621e-14,
+          "ixz": -1.75009218782214e-13,
+          "iyy": 4.95580610313915e-05,
+          "iyz": 5.26687070519791e-13,
+          "izz": 9.55484783667699e-05
+        },
+        "mass": 0.0595192159008023
+      },
+      "rear_left_bot": {
+        "com": [
+          0.0958542747019854,
+          0.0141645692050459,
+          -0.032077415433513
+        ],
+        "has_collision": true,
+        "has_visual": true,
+        "inertia": {
+          "ixx": 6.57086405739392e-05,
+          "ixy": -6.09139143643319e-06,
+          "ixz": 1.98888645891933e-06,
+          "iyy": 8.19537290738494e-05,
+          "iyz": 9.36364661711886e-09,
+          "izz": 6.22878627801439e-05
+        },
+        "mass": 0.214654393447816
+      },
+      "rear_left_upper": {
+        "com": [
+          0.0861059706244852,
+          -7.53332741326718e-07,
+          -0.0284475348428552
+        ],
+        "has_collision": true,
+        "has_visual": true,
+        "inertia": {
+          "ixx": 2.5467921653872e-05,
+          "ixy": -3.10166412388711e-09,
+          "ixz": 2.57503729305428e-08,
+          "iyy": 7.19422110660383e-05,
+          "iyz": -1.46972060638728e-11,
+          "izz": 5.45236233283767e-05
+        },
+        "mass": 0.121988122761346
+      },
+      "rear_left_wheel": {
+        "com": [
+          -6.37943586845324e-11,
+          -2.32180955017647e-10,
+          -0.0111754246423862
+        ],
+        "has_collision": true,
+        "has_visual": true,
+        "inertia": {
+          "ixx": 4.95580630444304e-05,
+          "ixy": -7.38967399641424e-14,
+          "ixz": -1.75009190254472e-13,
+          "iyy": 4.95580610313916e-05,
+          "iyz": 5.2668702763091e-13,
+          "izz": 9.554847836677e-05
+        },
+        "mass": 0.0595192159008024
+      },
+      "rear_right_bot": {
+        "com": [
+          0.0959364882680044,
+          0.0141796214320874,
+          0.0341006335844532
+        ],
+        "has_collision": true,
+        "has_visual": true,
+        "inertia": {
+          "ixx": 6.56814292075882e-05,
+          "ixy": -6.07075175709505e-06,
+          "ixz": -1.99538075642431e-06,
+          "iyy": 8.18462581621623e-05,
+          "iyz": -1.04824378504864e-08,
+          "izz": 6.21759335723933e-05
+        },
+        "mass": 0.214217903316692
+      },
+      "rear_right_upper": {
+        "com": [
+          0.0861059706245484,
+          -7.53332735484169e-07,
+          0.0284605581829271
+        ],
+        "has_collision": true,
+        "has_visual": true,
+        "inertia": {
+          "ixx": 2.54679216538726e-05,
+          "ixy": -3.10166412432554e-09,
+          "ixz": 2.57503729301436e-08,
+          "iyy": 7.19422110660389e-05,
+          "iyz": -1.46972060804818e-11,
+          "izz": 5.45236233283776e-05
+        },
+        "mass": 0.121988122761446
+      },
+      "rear_right_wheel": {
+        "com": [
+          -6.37950248183472e-11,
+          -2.32181468495796e-10,
+          -0.011175424642386
+        ],
+        "has_collision": true,
+        "has_visual": true,
+        "inertia": {
+          "ixx": 4.95580630444307e-05,
+          "ixy": -7.3896795021284e-14,
+          "ixz": -1.75009429883618e-13,
+          "iyy": 4.95580610313916e-05,
+          "iyz": 5.26687061228093e-13,
+          "izz": 9.55484783667703e-05
+        },
+        "mass": 0.0595192159008026
+      }
+    },
+    "path": "C:\\robotics_sim\\wlr_robot\\sw2urdf_output\\wlr_robot_isaac\\urdf\\wlr_robot_isaac.urdf",
+    "robot_name": "wlr_robot_isaac",
+    "sha256": "15c99a3f0a07e01f8c3830235d8f8a684f400db280a06ed5f75b56d58ebc2722"
+  },
+  "validation": {
+    "failures": [],
+    "passed": true
+  }
+}

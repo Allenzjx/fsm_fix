@@ -1,0 +1,38 @@
+{
+  "schema": "resume_validation.validation_selection_protocol.v1",
+  "frozen_before_validation": true,
+  "runtime_version": "v34",
+  "validation_manifest": "data/scenario_manifests/validation_v2.json",
+  "validation_manifest_sha256": "46bc9947bdaad189057b867c2a6cf6960c4694f5f5d908ea286c68d530cefc6a",
+  "episodes_per_height": 30,
+  "heights_mm": [
+    50,
+    75,
+    100
+  ],
+  "training_seeds": [
+    11,
+    29,
+    47
+  ],
+  "candidate_definition": "Every COMPLETED runtime-v34 stage-final checkpoint for the method and seed across all preserved attempts and 50/75/100 mm curriculum stages that exists when the validation candidate registry is created; no completed matching checkpoint may be omitted.",
+  "minimum_candidate_coverage": "At least one completed stage-final checkpoint from each of 50/75/100 mm for every method and seed.",
+  "success_floor": "Frozen-FSM equal-height-weighted validation success rate on this exact manifest.",
+  "serious_safety_violation_definition": [
+    "NUMERICAL_ERROR episode",
+    "JOINT_LIMIT episode or non-empty terminal joint-limit diagnostic",
+    "nonzero frozen-FSM baseline IK-invalid count"
+  ],
+  "body_collision_policy": "Body/link collision is a failed episode and remains in all result/failure tables; it is not reclassified as a policy-integrity violation for checkpoint eligibility.",
+  "eligible_lexicographic_order": [
+    "maximum equal-height mean episode minimum longitudinal quasi-static support margin",
+    "minimum equal-height mean support-transfer pitch-rate RMS",
+    "minimum equal-height mean slip distance when the evaluator records that field for every candidate",
+    "minimum equal-height mean residual saturation rate",
+    "deterministic checkpoint SHA256 tie break"
+  ],
+  "fallback_policy": "If no candidate reaches the FSM-derived success floor without a serious safety violation, retain the highest-success safety-clean validation candidate for a disclosed confirmatory locked comparison. If none is safety-clean, retain the least-violating candidate. A fallback never counts as passing validation and cannot support a claim that the gate was met.",
+  "selection_unit": "one checkpoint per method and training seed; all three seeds remain in the locked-test analysis",
+  "deterministic_evaluation": true,
+  "locked_test_access": "forbidden until method_freeze.json is created and verified"
+}

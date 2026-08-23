@@ -1,0 +1,62 @@
+{
+  "schema": "resume_validation.experiment_state.v1",
+  "last_updated_local": "2026-07-30T14:29:05-04:00",
+  "status": "FORMAL_V34_METHOD_B_MULTI_SEED_CURRICULUM_RUNNING",
+  "completed_gates": {
+    "inventory_and_source_manifest": true,
+    "isolated_project_created": true,
+    "urdf_structure_validation": true,
+    "derived_usd_scope_audited": true,
+    "joint_and_wheel_mapping": true,
+    "static_and_motion_isaac_integration": true,
+    "contact_sensor_direct_env_smoke": true,
+    "zero_residual_exact_equivalence": true,
+    "replay_command_semantics_verified": true,
+    "raw_50mm_replay": true,
+    "raw_100mm_replay_execution": true,
+    "raw_100mm_traversal": false,
+    "runtime_fk_1024_configurations": true,
+    "residual_env_16x520_step_validation": true,
+    "unit_tests": 188
+  },
+  "active_gate": {
+    "name": "formal_v34_method_B_three_seed_curriculum",
+    "parent_attempt": "v34_formal_training_registration",
+    "attempt": "method-B-v34_seed-11_stage-75mm_attempt002",
+    "artifact": "runs/ppo_without_com/formal_v34_recovery_attempt002_heartbeat.json",
+    "checkpoint_sha256": "dd7a503c90acd6a0855de4468fef566063fafa7e32133ca0b0b47e821491f271",
+    "environment_python_pid": 106896,
+    "wrapper_pid": 32684,
+    "monitor_pid": 104544,
+    "recovery_supervisor_pid": 117916,
+    "recovery_supervisor_status": "runs/ppo_without_com/formal_v34_recovery_supervisor_attempt002.json",
+    "full_pipeline_supervisor_pid": 162424,
+    "full_pipeline_supervisor_status": "runs/orchestration/full_pipeline_supervisor_attempt001.json",
+    "keep_awake_pid": 151916,
+    "keep_awake_status": "runs/orchestration/full_pipeline_keep_awake_attempt002.json",
+    "heartbeat": "runs/ppo_without_com/formal_v34_recovery_attempt002_heartbeat.json",
+    "observed_local_control_timestep": 1079,
+    "registered_local_control_timesteps": 76800,
+    "previous_completed_stage": {
+      "attempt": "method-B-v34_seed-11_stage-50mm_attempt001",
+      "local_control_timesteps": 76800,
+      "transitions": 4915200,
+      "checkpoint_sha256": "dd7a503c90acd6a0855de4468fef566063fafa7e32133ca0b0b47e821491f271",
+      "development_gate_success_count": 13,
+      "development_gate_episode_count": 20,
+      "development_gate_success_rate": 0.65,
+      "development_gate_promote": false
+    }
+  },
+  "locked": {
+    "asset_sha256": "98103315e8ad456881a28a9b3dc77f7aaa8bc9a5200e40c435bea8002c4f81dd",
+    "locked_test_manifest_sha256": "a621045d04b5a84a707fd2fb7a6cc8a8fe13aab3407dc944ea0dd6ae95cb58a3"
+  },
+  "blocked_gates": {
+    "freeze_fsm": "COMPLETED: selection-time 50/75/100 mm results were 12/20, 7/20, and 7/20; frozen FSM SHA-256 is 3e4b65ee87a260723d06b7c5ed6e470884917efb2ec6cb4654993e669883e4e9 and frozen metrics SHA-256 is 6a02b1c09c23245d7ce5b44a6781557f8c578ed56ac11b9d1ef1149c413b30ab.",
+    "ppo_training": "RUNNING: Method-B seed11/50 completed 76800 local timesteps and its development gate produced 13/20 success, below the preregistered 0.80 ideal. The historical 75 mm attempt001 failed before training because it incorrectly requested 153600 cumulative timesteps. Corrected attempt002 is running from the verified 50 mm checkpoint with resume_offset_timesteps=0. Failed development ideals remain disclosed but do not suppress the required complete 3-seed x 3-height comparison.",
+    "locked_test": "Requires selected checkpoint hashes for all three seeds and both PPO variants.",
+    "final_resume_audit": "Requires completed paired locked-test results."
+  },
+  "truthfulness_note": "No placeholder resume percentages are treated as measurements. A missing result remains missing."
+}

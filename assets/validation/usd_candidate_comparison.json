@@ -1,0 +1,4132 @@
+{
+  "assets": [
+    {
+      "path": "C:\\robotics_sim\\wlr_robot\\usd\\wlr_robot_drive_test.usd",
+      "physical_prims": {
+        "/Render/OmniverseKit/HydraTextures/omni_kit_widget_viewport_ViewportTexture_0": {
+          "attributes": {
+            "omni:rtx:viewTile:limit": 4294967295
+          },
+          "name": "omni_kit_widget_viewport_ViewportTexture_0",
+          "relationships": {},
+          "type": "RenderProduct"
+        },
+        "/World/GroundPlane/CollisionPlane": {
+          "attributes": {
+            "axis": "Z",
+            "physics:collisionEnabled": true
+          },
+          "name": "CollisionPlane",
+          "relationships": {},
+          "type": "Plane"
+        },
+        "/colliders/base_link/base_link/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/base_link/base_link/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/base_link/base_link/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/collidersCollisionGroup": {
+          "attributes": {
+            "physics:invertFilteredGroups": null,
+            "physics:mergeGroup": null
+          },
+          "name": "collidersCollisionGroup",
+          "relationships": {},
+          "type": "PhysicsCollisionGroup"
+        },
+        "/colliders/front_left_bot/front_left_bot/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/front_left_bot/front_left_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/front_left_bot/front_left_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/front_left_upper/front_left_upper/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/front_left_upper/front_left_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/front_left_upper/front_left_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/front_left_wheel/front_left_wheel/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/front_left_wheel/front_left_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/front_left_wheel/front_left_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/front_right_bot/front_right_bot/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/front_right_bot/front_right_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/front_right_bot/front_right_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/front_right_upper/front_right_upper/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/front_right_upper/front_right_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/front_right_upper/front_right_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/front_right_wheel/front_right_wheel/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/front_right_wheel/front_right_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/front_right_wheel/front_right_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/rear_left_bot/rear_left_bot/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/rear_left_bot/rear_left_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/rear_left_bot/rear_left_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/rear_left_upper/rear_left_upper/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/rear_left_upper/rear_left_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/rear_left_upper/rear_left_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/rear_left_wheel/rear_left_wheel/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/rear_left_wheel/rear_left_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/rear_left_wheel/rear_left_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/rear_right_bot/rear_right_bot/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/rear_right_bot/rear_right_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/rear_right_bot/rear_right_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/rear_right_upper/rear_right_upper/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/rear_right_upper/rear_right_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/rear_right_upper/rear_right_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/rear_right_wheel/rear_right_wheel/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/rear_right_wheel/rear_right_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/rear_right_wheel/rear_right_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/robotCollisionGroup": {
+          "attributes": {
+            "physics:invertFilteredGroups": null,
+            "physics:mergeGroup": null
+          },
+          "name": "robotCollisionGroup",
+          "relationships": {},
+          "type": "PhysicsCollisionGroup"
+        },
+        "/meshes/base_link/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/base_link/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/front_left_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/front_left_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/front_left_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/front_left_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/front_left_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/front_left_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/front_right_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/front_right_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/front_right_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/front_right_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/front_right_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/front_right_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/rear_left_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/rear_left_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/rear_left_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/rear_left_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/rear_left_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/rear_left_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/rear_right_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/rear_right_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/rear_right_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/rear_right_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/rear_right_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/rear_right_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/physicsScene": {
+          "attributes": {
+            "physics:gravityDirection": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "physics:gravityMagnitude": 9.8100004196167,
+            "physxScene:bounceThreshold": 0.0,
+            "physxScene:broadphaseType": "MBP",
+            "physxScene:collisionSystem": "PCM",
+            "physxScene:enableCCD": true,
+            "physxScene:enableEnhancedDeterminism": false,
+            "physxScene:enableExternalForcesEveryIteration": false,
+            "physxScene:enableGPUDynamics": false,
+            "physxScene:enableResidualReporting": false,
+            "physxScene:enableSceneQuerySupport": true,
+            "physxScene:enableStabilization": true,
+            "physxScene:frictionCorrelationDistance": 0.02500000037252903,
+            "physxScene:frictionOffsetThreshold": 0.03999999910593033,
+            "physxScene:frictionType": "patch",
+            "physxScene:gpuCollisionStackSize": 67108864,
+            "physxScene:gpuFoundLostAggregatePairsCapacity": 1024,
+            "physxScene:gpuFoundLostPairsCapacity": 262144,
+            "physxScene:gpuHeapCapacity": 67108864,
+            "physxScene:gpuMaxDeformableSurfaceContacts": 1048576,
+            "physxScene:gpuMaxNumPartitions": 8,
+            "physxScene:gpuMaxParticleContacts": 1048576,
+            "physxScene:gpuMaxRigidContactCount": 524288,
+            "physxScene:gpuMaxRigidPatchCount": 81920,
+            "physxScene:gpuMaxSoftBodyContacts": 1048576,
+            "physxScene:gpuTempBufferCapacity": 16777216,
+            "physxScene:gpuTotalAggregatePairsCapacity": 1024,
+            "physxScene:invertCollisionGroupFilter": false,
+            "physxScene:maxBiasCoefficient": Infinity,
+            "physxScene:maxPositionIterationCount": 255,
+            "physxScene:maxVelocityIterationCount": 255,
+            "physxScene:minPositionIterationCount": 1,
+            "physxScene:minVelocityIterationCount": 0,
+            "physxScene:reportKinematicKinematicPairs": false,
+            "physxScene:reportKinematicStaticPairs": false,
+            "physxScene:solverType": "TGS",
+            "physxScene:timeStepsPerSecond": 60,
+            "physxScene:updateType": "Synchronous"
+          },
+          "name": "physicsScene",
+          "relationships": {},
+          "type": "PhysicsScene"
+        },
+        "/visuals/base_link/base_link": {
+          "attributes": {},
+          "name": "base_link",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_CAD1EE"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/base_link/base_link/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/base_link/base_link/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/front_left_bot/front_left_bot": {
+          "attributes": {},
+          "name": "front_left_bot",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_CAD1EE"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/front_left_bot/front_left_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/front_left_bot/front_left_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/front_left_upper/front_left_upper": {
+          "attributes": {},
+          "name": "front_left_upper",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_CAD1EE"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/front_left_upper/front_left_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/front_left_upper/front_left_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/front_left_wheel/front_left_wheel": {
+          "attributes": {},
+          "name": "front_left_wheel",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_4C4C4C"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/front_left_wheel/front_left_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/front_left_wheel/front_left_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/front_right_bot/front_right_bot": {
+          "attributes": {},
+          "name": "front_right_bot",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_CAD1EE"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/front_right_bot/front_right_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/front_right_bot/front_right_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/front_right_upper/front_right_upper": {
+          "attributes": {},
+          "name": "front_right_upper",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_CAD1EE"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/front_right_upper/front_right_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/front_right_upper/front_right_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/front_right_wheel/front_right_wheel": {
+          "attributes": {},
+          "name": "front_right_wheel",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_4C4C4C"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/front_right_wheel/front_right_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/front_right_wheel/front_right_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/rear_left_bot/rear_left_bot": {
+          "attributes": {},
+          "name": "rear_left_bot",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_CAD1EE"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/rear_left_bot/rear_left_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/rear_left_bot/rear_left_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/rear_left_upper/rear_left_upper": {
+          "attributes": {},
+          "name": "rear_left_upper",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_CAD1EE"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/rear_left_upper/rear_left_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/rear_left_upper/rear_left_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/rear_left_wheel/rear_left_wheel": {
+          "attributes": {},
+          "name": "rear_left_wheel",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_4C4C4C"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/rear_left_wheel/rear_left_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/rear_left_wheel/rear_left_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/rear_right_bot/rear_right_bot": {
+          "attributes": {},
+          "name": "rear_right_bot",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_CAD1EE"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/rear_right_bot/rear_right_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/rear_right_bot/rear_right_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/rear_right_upper/rear_right_upper": {
+          "attributes": {},
+          "name": "rear_right_upper",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_CAD1EE"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/rear_right_upper/rear_right_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/rear_right_upper/rear_right_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/rear_right_wheel/rear_right_wheel": {
+          "attributes": {},
+          "name": "rear_right_wheel",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_4C4C4C"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/rear_right_wheel/rear_right_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/rear_right_wheel/rear_right_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/wlr_robot_isaac": {
+          "attributes": {},
+          "name": "wlr_robot_isaac",
+          "relationships": {
+            "isaac:physics:robotJoints": [
+              "/wlr_robot_isaac/joints/front_left_hip",
+              "/wlr_robot_isaac/joints/front_left_knee",
+              "/wlr_robot_isaac/joints/front_left_ankle",
+              "/wlr_robot_isaac/joints/front_right_hip",
+              "/wlr_robot_isaac/joints/front_right_knee",
+              "/wlr_robot_isaac/joints/front_right_ankle",
+              "/wlr_robot_isaac/joints/rear_left_hip",
+              "/wlr_robot_isaac/joints/rear_left_knee",
+              "/wlr_robot_isaac/joints/rear_left_ankle",
+              "/wlr_robot_isaac/joints/rear_right_hip",
+              "/wlr_robot_isaac/joints/rear_right_knee",
+              "/wlr_robot_isaac/joints/rear_right_ankle"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/base_link": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              -0.022930532693862915,
+              -0.12091396003961563,
+              0.0841316282749176
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              0.00463472492992878,
+              0.004432180896401405,
+              0.008590076118707657
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 1.3484421968460083,
+            "physics:principalAxes": "(0.9993351, -0.000034912893, -0.000049038437, -0.03646247)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physxArticulation:articulationEnabled": true,
+            "physxArticulation:enabledSelfCollisions": false,
+            "physxArticulation:sleepThreshold": 4.999999873689376e-05,
+            "physxArticulation:solverPositionIterationCount": 32,
+            "physxArticulation:solverVelocityIterationCount": 1,
+            "physxArticulation:stabilizationThreshold": 9.999999747378752e-06
+          },
+          "name": "base_link",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/front_left_bot": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              0.09594029933214188,
+              -0.014183025807142258,
+              -0.03410063311457634
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              6.494014814961702e-05,
+              8.389166760025546e-05,
+              6.087185465730727e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.2142179012298584,
+            "physics:principalAxes": "(0.9424106, -0.033904683, -0.2924519, -0.15869677)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "front_left_bot",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/front_left_upper": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              0.08638686686754227,
+              -3.0228571631596424e-05,
+              -0.028460122644901276
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              2.496788147254847e-05,
+              6.933644181117415e-05,
+              5.224345295573585e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.12063050270080566,
+            "physics:principalAxes": "(0.9999999, -0.0000026897483, -0.00047262927, -0.00041192677)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "front_left_upper",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/front_left_wheel": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              -6.603134705684965e-11,
+              -2.2632883067696952e-10,
+              -0.011175424791872501
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              4.955806434736587e-05,
+              4.9558060709387064e-05,
+              9.554847929393873e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.059519216418266296,
+            "physics:principalAxes": "(1, 0, 0, 0)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "front_left_wheel",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/front_right_bot": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              0.09585117548704147,
+              -0.014166736043989658,
+              0.03295695781707764
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              6.499057053588331e-05,
+              8.400381921092048e-05,
+              6.0955841036047786e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.21465438604354858,
+            "physics:principalAxes": "(0.9409298, 0.03468375, 0.29727614, -0.15835162)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "front_right_bot",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/front_right_upper": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              0.08610597252845764,
+              5.057207204117731e-07,
+              0.02879924885928631
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              2.5467896193731576e-05,
+              7.194220961537212e-05,
+              5.452364348457195e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.12198812514543533,
+            "physics:principalAxes": "(0.9999999, -4.9147195e-7, -0.00044312028, -0.000036217047)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "front_right_upper",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/front_right_wheel": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              -6.37971619976696e-11,
+              -2.321802472504686e-10,
+              -0.011175424791872501
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              4.955806434736587e-05,
+              4.9558060709387064e-05,
+              9.554847929393873e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.059519216418266296,
+            "physics:principalAxes": "(1, 0, 0, 0)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "front_right_wheel",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/joints/front_left_ankle": {
+          "attributes": {
+            "drive:angular:physics:damping": 1.5709638595581055,
+            "drive:angular:physics:maxForce": 1.0,
+            "drive:angular:physics:stiffness": 0.0,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.0025135420728474855,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.1559000015258789,
+              -0.019999999552965164,
+              -0.07840000092983246
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.54101735, 0, 0, -0.8410114)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -Infinity,
+            "physics:upperLimit": Infinity,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 1145.91552734375
+          },
+          "name": "front_left_ankle",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/front_left_bot"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/front_left_wheel"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/front_left_hip": {
+          "attributes": {
+            "drive:angular:physics:damping": 0.006225196644663811,
+            "drive:angular:physics:maxForce": 2.700000047683716,
+            "drive:angular:physics:stiffness": 15.562992095947266,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.024900786578655243,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.12560541927814484,
+              0.0013080930802971125,
+              0.11147773265838623
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.7067795, 0.7067795, 0.021512147, -0.021512147)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -89.9543685913086,
+            "physics:upperLimit": 89.9543685913086,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 286.4788818359375,
+            "state:angular:physics:position": 0.0,
+            "state:angular:physics:velocity": 0.0
+          },
+          "name": "front_left_hip",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/base_link"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/front_left_upper"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/front_left_knee": {
+          "attributes": {
+            "drive:angular:physics:damping": 0.0028333812952041626,
+            "drive:angular:physics:maxForce": 2.700000047683716,
+            "drive:angular:physics:stiffness": 7.083453178405762,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.01133352518081665,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.14786000549793243,
+              -0.00021240000205580145,
+              0.0
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.7283401, 0, 0, -0.68521583)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": 0.0,
+            "physics:upperLimit": 179.9087371826172,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 286.4788818359375,
+            "state:angular:physics:position": 0.0,
+            "state:angular:physics:velocity": 0.0
+          },
+          "name": "front_left_knee",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/front_left_upper"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/front_left_bot"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/front_right_ankle": {
+          "attributes": {
+            "drive:angular:physics:damping": 1.7543237209320068,
+            "drive:angular:physics:maxForce": 1.0,
+            "drive:angular:physics:stiffness": 0.0,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.0028069179970771074,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.1559000015258789,
+              -0.019999999552965164,
+              0.07726000249385834
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(-0.0000028253596, 0.7804882, -0.6251705, 0.0000022631111)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -Infinity,
+            "physics:upperLimit": Infinity,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 1145.91552734375
+          },
+          "name": "front_right_ankle",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/front_right_bot"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/front_right_wheel"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/front_right_hip": {
+          "attributes": {
+            "drive:angular:physics:damping": 0.009969517588615417,
+            "drive:angular:physics:maxForce": 2.700000047683716,
+            "drive:angular:physics:stiffness": 24.92379379272461,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.03987807035446167,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.12561392784118652,
+              -0.24133209884166718,
+              0.11147773265838623
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.7068347, 0.7068347, 0.01961437, -0.01961437)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -89.9543685913086,
+            "physics:upperLimit": 89.9543685913086,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 286.4788818359375,
+            "state:angular:physics:position": 0.0,
+            "state:angular:physics:velocity": 0.0
+          },
+          "name": "front_right_hip",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/base_link"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/front_right_upper"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/front_right_knee": {
+          "attributes": {
+            "drive:angular:physics:damping": 0.0019806521013379097,
+            "drive:angular:physics:maxForce": 2.700000047683716,
+            "drive:angular:physics:stiffness": 4.951630115509033,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.007922608405351639,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.1477999985218048,
+              0.0,
+              0.0
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.7320977, 0, 0, -0.6811996)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": 0.0,
+            "physics:upperLimit": 179.9087371826172,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 286.4788818359375,
+            "state:angular:physics:position": 0.0,
+            "state:angular:physics:velocity": 0.0
+          },
+          "name": "front_right_knee",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/front_right_upper"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/front_right_bot"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/rear_left_ankle": {
+          "attributes": {
+            "drive:angular:physics:damping": 1.7374794483184814,
+            "drive:angular:physics:maxForce": 1.0,
+            "drive:angular:physics:stiffness": 0.0,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.002779967151582241,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.1559000015258789,
+              0.019999999552965164,
+              -0.07490800321102142
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.7558794, 0, 0, 0.6547108)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -Infinity,
+            "physics:upperLimit": Infinity,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 1145.91552734375
+          },
+          "name": "rear_left_ankle",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/rear_left_bot"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/rear_left_wheel"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/rear_left_hip": {
+          "attributes": {
+            "drive:angular:physics:damping": 0.007653512060642242,
+            "drive:angular:physics:maxForce": 2.700000047683716,
+            "drive:angular:physics:stiffness": 19.133779525756836,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.03061404824256897,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              -0.17018607258796692,
+              0.0,
+              0.1100122332572937
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.0009026168, 0.00090267864, 0.7071062, -0.7071062)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -89.9543685913086,
+            "physics:upperLimit": 89.9543685913086,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 286.4788818359375,
+            "state:angular:physics:position": 0.0,
+            "state:angular:physics:velocity": 0.0
+          },
+          "name": "rear_left_hip",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/base_link"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/rear_left_upper"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/rear_left_knee": {
+          "attributes": {
+            "drive:angular:physics:damping": 0.002703116973862052,
+            "drive:angular:physics:maxForce": 2.700000047683716,
+            "drive:angular:physics:stiffness": 6.757791996002197,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.010812467895448208,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.1477999985218048,
+              0.0,
+              0.0
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.71442103, 0, 0, 0.69971603)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -179.9087371826172,
+            "physics:upperLimit": 0.0,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 286.4788818359375,
+            "state:angular:physics:position": 0.0,
+            "state:angular:physics:velocity": 0.0
+          },
+          "name": "rear_left_knee",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/rear_left_upper"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/rear_left_bot"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/rear_right_ankle": {
+          "attributes": {
+            "drive:angular:physics:damping": 1.7716532945632935,
+            "drive:angular:physics:maxForce": 1.0,
+            "drive:angular:physics:stiffness": 0.0,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.0028346453327685595,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.1559000015258789,
+              0.019999999552965164,
+              0.07840000092983246
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(-0.0000029365256, 0.8111971, -0.5847728, 0.0000021168719)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -Infinity,
+            "physics:upperLimit": Infinity,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 1145.91552734375
+          },
+          "name": "rear_right_ankle",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/rear_right_bot"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/rear_right_wheel"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/rear_right_hip": {
+          "attributes": {
+            "drive:angular:physics:damping": 0.010803543962538242,
+            "drive:angular:physics:maxForce": 2.700000047683716,
+            "drive:angular:physics:stiffness": 27.008861541748047,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.04321417585015297,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              -0.17017756402492523,
+              -0.24299190938472748,
+              0.1100122332572937
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.00066369283, 0.00066375465, 0.7071065, -0.7071065)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -89.9543685913086,
+            "physics:upperLimit": 89.9543685913086,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 286.4788818359375,
+            "state:angular:physics:position": 0.0,
+            "state:angular:physics:velocity": 0.0
+          },
+          "name": "rear_right_hip",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/base_link"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/rear_right_upper"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/rear_right_knee": {
+          "attributes": {
+            "drive:angular:physics:damping": 0.0031861753668636084,
+            "drive:angular:physics:maxForce": 2.700000047683716,
+            "drive:angular:physics:stiffness": 7.965437889099121,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.012744701467454433,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.14778999984264374,
+              0.0,
+              0.0
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.7224549, 0, 0, 0.69141805)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -179.9087371826172,
+            "physics:upperLimit": 0.0,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 286.4788818359375,
+            "state:angular:physics:position": 0.0,
+            "state:angular:physics:velocity": 0.0
+          },
+          "name": "rear_right_knee",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/rear_right_upper"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/rear_right_bot"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/rear_left_bot": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              0.0958542749285698,
+              0.014164568856358528,
+              -0.03207741677761078
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              6.499011215055361e-05,
+              8.400190563406795e-05,
+              6.095822755014524e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.21465438604354858,
+            "physics:principalAxes": "(0.94098526, 0.034704413, -0.29710373, 0.15834096)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "rear_left_bot",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/rear_left_upper": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              0.08610597252845764,
+              -7.533327561759506e-07,
+              -0.028447534888982773
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              2.5467896193731576e-05,
+              7.194220961537212e-05,
+              5.452364348457195e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.12198812514543533,
+            "physics:principalAxes": "(0.9999999, -4.860013e-7, 0.00044312028, 0.00003336973)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "rear_left_upper",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/rear_left_wheel": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              -6.379435868453243e-11,
+              -2.321809550176468e-10,
+              -0.011175424791872501
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              4.955806434736587e-05,
+              4.9558060709387064e-05,
+              9.554847929393873e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.059519216418266296,
+            "physics:principalAxes": "(1, 0, 0, 0)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "rear_left_wheel",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/rear_right_bot": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              0.09593648463487625,
+              0.014179621823132038,
+              0.03410063311457634
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              6.49444991722703e-05,
+              8.389016147702932e-05,
+              6.0868944274261594e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.2142179012298584,
+            "physics:principalAxes": "(0.9423828, -0.03395546, 0.29252902, 0.15870911)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "rear_right_bot",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/rear_right_upper": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              0.08610597252845764,
+              -7.533327561759506e-07,
+              0.028460558503866196
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              2.5467896193731576e-05,
+              7.194220961537212e-05,
+              5.452364348457195e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.12198812514543533,
+            "physics:principalAxes": "(0.9999999, -4.860013e-7, 0.00044312028, 0.00003336973)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "rear_right_upper",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/rear_right_wheel": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              -6.37950248183472e-11,
+              -2.3218146849579568e-10,
+              -0.011175424791872501
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              4.955806434736587e-05,
+              4.9558060709387064e-05,
+              9.554847929393873e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.059519216418266296,
+            "physics:principalAxes": "(1, 0, 0, 0)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "rear_right_wheel",
+          "relationships": {},
+          "type": "Xform"
+        }
+      },
+      "prim_count": 337,
+      "sha256": "e8a2a2b1485a32a50e851a07b9dd8ac4945b78ec49b7fada2b61c3eeb1e18892"
+    },
+    {
+      "path": "C:\\robotics_sim\\wlr_robot\\usd\\generated\\wlr_robot_drive_test_command_knee_limits.usd",
+      "physical_prims": {
+        "/Render/OmniverseKit/HydraTextures/omni_kit_widget_viewport_ViewportTexture_0": {
+          "attributes": {
+            "omni:rtx:viewTile:limit": 4294967295
+          },
+          "name": "omni_kit_widget_viewport_ViewportTexture_0",
+          "relationships": {},
+          "type": "RenderProduct"
+        },
+        "/World/GroundPlane/CollisionPlane": {
+          "attributes": {
+            "axis": "Z",
+            "physics:collisionEnabled": true
+          },
+          "name": "CollisionPlane",
+          "relationships": {},
+          "type": "Plane"
+        },
+        "/colliders/base_link/base_link/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/base_link/base_link/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/base_link/base_link/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/collidersCollisionGroup": {
+          "attributes": {
+            "physics:invertFilteredGroups": null,
+            "physics:mergeGroup": null
+          },
+          "name": "collidersCollisionGroup",
+          "relationships": {},
+          "type": "PhysicsCollisionGroup"
+        },
+        "/colliders/front_left_bot/front_left_bot/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/front_left_bot/front_left_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/front_left_bot/front_left_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/front_left_upper/front_left_upper/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/front_left_upper/front_left_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/front_left_upper/front_left_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/front_left_wheel/front_left_wheel/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/front_left_wheel/front_left_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/front_left_wheel/front_left_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/front_right_bot/front_right_bot/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/front_right_bot/front_right_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/front_right_bot/front_right_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/front_right_upper/front_right_upper/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/front_right_upper/front_right_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/front_right_upper/front_right_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/front_right_wheel/front_right_wheel/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/front_right_wheel/front_right_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/front_right_wheel/front_right_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/rear_left_bot/rear_left_bot/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/rear_left_bot/rear_left_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/rear_left_bot/rear_left_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/rear_left_upper/rear_left_upper/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/rear_left_upper/rear_left_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/rear_left_upper/rear_left_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/rear_left_wheel/rear_left_wheel/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/rear_left_wheel/rear_left_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/rear_left_wheel/rear_left_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/rear_right_bot/rear_right_bot/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/rear_right_bot/rear_right_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/rear_right_bot/rear_right_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/rear_right_upper/rear_right_upper/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/rear_right_upper/rear_right_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/rear_right_upper/rear_right_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/rear_right_wheel/rear_right_wheel/node_STL_BINARY_": {
+          "attributes": {
+            "physics:approximation": "convexHull",
+            "physics:collisionEnabled": true
+          },
+          "name": "node_STL_BINARY_",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/colliders/rear_right_wheel/rear_right_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/colliders/rear_right_wheel/rear_right_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/colliders/robotCollisionGroup": {
+          "attributes": {
+            "physics:invertFilteredGroups": null,
+            "physics:mergeGroup": null
+          },
+          "name": "robotCollisionGroup",
+          "relationships": {},
+          "type": "PhysicsCollisionGroup"
+        },
+        "/meshes/base_link/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/base_link/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/front_left_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/front_left_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/front_left_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/front_left_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/front_left_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/front_left_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/front_right_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/front_right_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/front_right_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/front_right_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/front_right_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/front_right_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/rear_left_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/rear_left_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/rear_left_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/rear_left_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/rear_left_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/rear_left_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/rear_right_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/rear_right_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/rear_right_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/rear_right_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/meshes/rear_right_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/meshes/rear_right_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/physicsScene": {
+          "attributes": {
+            "physics:gravityDirection": [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "physics:gravityMagnitude": 9.8100004196167,
+            "physxScene:bounceThreshold": 0.0,
+            "physxScene:broadphaseType": "MBP",
+            "physxScene:collisionSystem": "PCM",
+            "physxScene:enableCCD": true,
+            "physxScene:enableEnhancedDeterminism": false,
+            "physxScene:enableExternalForcesEveryIteration": false,
+            "physxScene:enableGPUDynamics": false,
+            "physxScene:enableResidualReporting": false,
+            "physxScene:enableSceneQuerySupport": true,
+            "physxScene:enableStabilization": true,
+            "physxScene:frictionCorrelationDistance": 0.02500000037252903,
+            "physxScene:frictionOffsetThreshold": 0.03999999910593033,
+            "physxScene:frictionType": "patch",
+            "physxScene:gpuCollisionStackSize": 67108864,
+            "physxScene:gpuFoundLostAggregatePairsCapacity": 1024,
+            "physxScene:gpuFoundLostPairsCapacity": 262144,
+            "physxScene:gpuHeapCapacity": 67108864,
+            "physxScene:gpuMaxDeformableSurfaceContacts": 1048576,
+            "physxScene:gpuMaxNumPartitions": 8,
+            "physxScene:gpuMaxParticleContacts": 1048576,
+            "physxScene:gpuMaxRigidContactCount": 524288,
+            "physxScene:gpuMaxRigidPatchCount": 81920,
+            "physxScene:gpuMaxSoftBodyContacts": 1048576,
+            "physxScene:gpuTempBufferCapacity": 16777216,
+            "physxScene:gpuTotalAggregatePairsCapacity": 1024,
+            "physxScene:invertCollisionGroupFilter": false,
+            "physxScene:maxBiasCoefficient": Infinity,
+            "physxScene:maxPositionIterationCount": 255,
+            "physxScene:maxVelocityIterationCount": 255,
+            "physxScene:minPositionIterationCount": 1,
+            "physxScene:minVelocityIterationCount": 0,
+            "physxScene:reportKinematicKinematicPairs": false,
+            "physxScene:reportKinematicStaticPairs": false,
+            "physxScene:solverType": "TGS",
+            "physxScene:timeStepsPerSecond": 60,
+            "physxScene:updateType": "Synchronous"
+          },
+          "name": "physicsScene",
+          "relationships": {},
+          "type": "PhysicsScene"
+        },
+        "/visuals/base_link/base_link": {
+          "attributes": {},
+          "name": "base_link",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_CAD1EE"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/base_link/base_link/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/base_link/base_link/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/front_left_bot/front_left_bot": {
+          "attributes": {},
+          "name": "front_left_bot",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_CAD1EE"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/front_left_bot/front_left_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/front_left_bot/front_left_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/front_left_upper/front_left_upper": {
+          "attributes": {},
+          "name": "front_left_upper",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_CAD1EE"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/front_left_upper/front_left_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/front_left_upper/front_left_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/front_left_wheel/front_left_wheel": {
+          "attributes": {},
+          "name": "front_left_wheel",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_4C4C4C"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/front_left_wheel/front_left_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/front_left_wheel/front_left_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/front_right_bot/front_right_bot": {
+          "attributes": {},
+          "name": "front_right_bot",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_CAD1EE"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/front_right_bot/front_right_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/front_right_bot/front_right_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/front_right_upper/front_right_upper": {
+          "attributes": {},
+          "name": "front_right_upper",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_CAD1EE"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/front_right_upper/front_right_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/front_right_upper/front_right_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/front_right_wheel/front_right_wheel": {
+          "attributes": {},
+          "name": "front_right_wheel",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_4C4C4C"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/front_right_wheel/front_right_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/front_right_wheel/front_right_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/rear_left_bot/rear_left_bot": {
+          "attributes": {},
+          "name": "rear_left_bot",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_CAD1EE"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/rear_left_bot/rear_left_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/rear_left_bot/rear_left_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/rear_left_upper/rear_left_upper": {
+          "attributes": {},
+          "name": "rear_left_upper",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_CAD1EE"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/rear_left_upper/rear_left_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/rear_left_upper/rear_left_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/rear_left_wheel/rear_left_wheel": {
+          "attributes": {},
+          "name": "rear_left_wheel",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_4C4C4C"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/rear_left_wheel/rear_left_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/rear_left_wheel/rear_left_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/rear_right_bot/rear_right_bot": {
+          "attributes": {},
+          "name": "rear_right_bot",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_CAD1EE"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/rear_right_bot/rear_right_bot/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/rear_right_bot/rear_right_bot/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/rear_right_upper/rear_right_upper": {
+          "attributes": {},
+          "name": "rear_right_upper",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_CAD1EE"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/rear_right_upper/rear_right_upper/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/rear_right_upper/rear_right_upper/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/visuals/rear_right_wheel/rear_right_wheel": {
+          "attributes": {},
+          "name": "rear_right_wheel",
+          "relationships": {
+            "material:binding": [
+              "/wlr_robot_isaac/Looks/material_4C4C4C"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/visuals/rear_right_wheel/rear_right_wheel/node_STL_BINARY_/mesh": {
+          "attributes": {},
+          "name": "mesh",
+          "relationships": {
+            "material:binding": [
+              "/visuals/rear_right_wheel/rear_right_wheel/node_STL_BINARY_/Looks/DefaultMaterial"
+            ]
+          },
+          "type": "Mesh"
+        },
+        "/wlr_robot_isaac": {
+          "attributes": {},
+          "name": "wlr_robot_isaac",
+          "relationships": {
+            "isaac:physics:robotJoints": [
+              "/wlr_robot_isaac/joints/front_left_hip",
+              "/wlr_robot_isaac/joints/front_left_knee",
+              "/wlr_robot_isaac/joints/front_left_ankle",
+              "/wlr_robot_isaac/joints/front_right_hip",
+              "/wlr_robot_isaac/joints/front_right_knee",
+              "/wlr_robot_isaac/joints/front_right_ankle",
+              "/wlr_robot_isaac/joints/rear_left_hip",
+              "/wlr_robot_isaac/joints/rear_left_knee",
+              "/wlr_robot_isaac/joints/rear_left_ankle",
+              "/wlr_robot_isaac/joints/rear_right_hip",
+              "/wlr_robot_isaac/joints/rear_right_knee",
+              "/wlr_robot_isaac/joints/rear_right_ankle"
+            ]
+          },
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/base_link": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              -0.022930532693862915,
+              -0.12091396003961563,
+              0.0841316282749176
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              0.00463472492992878,
+              0.004432180896401405,
+              0.008590076118707657
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 1.3484421968460083,
+            "physics:principalAxes": "(0.9993351, -0.000034912893, -0.000049038437, -0.03646247)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physxArticulation:articulationEnabled": true,
+            "physxArticulation:enabledSelfCollisions": false,
+            "physxArticulation:sleepThreshold": 4.999999873689376e-05,
+            "physxArticulation:solverPositionIterationCount": 32,
+            "physxArticulation:solverVelocityIterationCount": 1,
+            "physxArticulation:stabilizationThreshold": 9.999999747378752e-06
+          },
+          "name": "base_link",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/front_left_bot": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              0.09594029933214188,
+              -0.014183025807142258,
+              -0.03410063311457634
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              6.494014814961702e-05,
+              8.389166760025546e-05,
+              6.087185465730727e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.2142179012298584,
+            "physics:principalAxes": "(0.9424106, -0.033904683, -0.2924519, -0.15869677)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "front_left_bot",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/front_left_upper": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              0.08638686686754227,
+              -3.0228571631596424e-05,
+              -0.028460122644901276
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              2.496788147254847e-05,
+              6.933644181117415e-05,
+              5.224345295573585e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.12063050270080566,
+            "physics:principalAxes": "(0.9999999, -0.0000026897483, -0.00047262927, -0.00041192677)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "front_left_upper",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/front_left_wheel": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              -6.603134705684965e-11,
+              -2.2632883067696952e-10,
+              -0.011175424791872501
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              4.955806434736587e-05,
+              4.9558060709387064e-05,
+              9.554847929393873e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.059519216418266296,
+            "physics:principalAxes": "(1, 0, 0, 0)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "front_left_wheel",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/front_right_bot": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              0.09585117548704147,
+              -0.014166736043989658,
+              0.03295695781707764
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              6.499057053588331e-05,
+              8.400381921092048e-05,
+              6.0955841036047786e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.21465438604354858,
+            "physics:principalAxes": "(0.9409298, 0.03468375, 0.29727614, -0.15835162)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "front_right_bot",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/front_right_upper": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              0.08610597252845764,
+              5.057207204117731e-07,
+              0.02879924885928631
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              2.5467896193731576e-05,
+              7.194220961537212e-05,
+              5.452364348457195e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.12198812514543533,
+            "physics:principalAxes": "(0.9999999, -4.9147195e-7, -0.00044312028, -0.000036217047)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "front_right_upper",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/front_right_wheel": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              -6.37971619976696e-11,
+              -2.321802472504686e-10,
+              -0.011175424791872501
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              4.955806434736587e-05,
+              4.9558060709387064e-05,
+              9.554847929393873e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.059519216418266296,
+            "physics:principalAxes": "(1, 0, 0, 0)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "front_right_wheel",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/joints/front_left_ankle": {
+          "attributes": {
+            "drive:angular:physics:damping": 1.5709638595581055,
+            "drive:angular:physics:maxForce": 1.0,
+            "drive:angular:physics:stiffness": 0.0,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.0025135420728474855,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.1559000015258789,
+              -0.019999999552965164,
+              -0.07840000092983246
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.54101735, 0, 0, -0.8410114)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -Infinity,
+            "physics:upperLimit": Infinity,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 1145.91552734375
+          },
+          "name": "front_left_ankle",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/front_left_bot"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/front_left_wheel"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/front_left_hip": {
+          "attributes": {
+            "drive:angular:physics:damping": 0.006225196644663811,
+            "drive:angular:physics:maxForce": 2.700000047683716,
+            "drive:angular:physics:stiffness": 15.562992095947266,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.024900786578655243,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.12560541927814484,
+              0.0013080930802971125,
+              0.11147773265838623
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.7067795, 0.7067795, 0.021512147, -0.021512147)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -89.9543685913086,
+            "physics:upperLimit": 89.9543685913086,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 286.4788818359375,
+            "state:angular:physics:position": 0.0,
+            "state:angular:physics:velocity": 0.0
+          },
+          "name": "front_left_hip",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/base_link"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/front_left_upper"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/front_left_knee": {
+          "attributes": {
+            "drive:angular:physics:damping": 0.0028333812952041626,
+            "drive:angular:physics:maxForce": 2.700000047683716,
+            "drive:angular:physics:stiffness": 7.083453178405762,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.01133352518081665,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.14786000549793243,
+              -0.00021240000205580145,
+              0.0
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.7283401, 0, 0, -0.68521583)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -35.001991271972656,
+            "physics:upperLimit": 210.00048828125,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 286.4788818359375,
+            "state:angular:physics:position": 0.0,
+            "state:angular:physics:velocity": 0.0
+          },
+          "name": "front_left_knee",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/front_left_upper"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/front_left_bot"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/front_right_ankle": {
+          "attributes": {
+            "drive:angular:physics:damping": 1.7543237209320068,
+            "drive:angular:physics:maxForce": 1.0,
+            "drive:angular:physics:stiffness": 0.0,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.0028069179970771074,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.1559000015258789,
+              -0.019999999552965164,
+              0.07726000249385834
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(-0.0000028253596, 0.7804882, -0.6251705, 0.0000022631111)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -Infinity,
+            "physics:upperLimit": Infinity,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 1145.91552734375
+          },
+          "name": "front_right_ankle",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/front_right_bot"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/front_right_wheel"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/front_right_hip": {
+          "attributes": {
+            "drive:angular:physics:damping": 0.009969517588615417,
+            "drive:angular:physics:maxForce": 2.700000047683716,
+            "drive:angular:physics:stiffness": 24.92379379272461,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.03987807035446167,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.12561392784118652,
+              -0.24133209884166718,
+              0.11147773265838623
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.7068347, 0.7068347, 0.01961437, -0.01961437)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -89.9543685913086,
+            "physics:upperLimit": 89.9543685913086,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 286.4788818359375,
+            "state:angular:physics:position": 0.0,
+            "state:angular:physics:velocity": 0.0
+          },
+          "name": "front_right_hip",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/base_link"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/front_right_upper"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/front_right_knee": {
+          "attributes": {
+            "drive:angular:physics:damping": 0.0019806521013379097,
+            "drive:angular:physics:maxForce": 2.700000047683716,
+            "drive:angular:physics:stiffness": 4.951630115509033,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.007922608405351639,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.1477999985218048,
+              0.0,
+              0.0
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.7320977, 0, 0, -0.6811996)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -35.001991271972656,
+            "physics:upperLimit": 210.00048828125,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 286.4788818359375,
+            "state:angular:physics:position": 0.0,
+            "state:angular:physics:velocity": 0.0
+          },
+          "name": "front_right_knee",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/front_right_upper"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/front_right_bot"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/rear_left_ankle": {
+          "attributes": {
+            "drive:angular:physics:damping": 1.7374794483184814,
+            "drive:angular:physics:maxForce": 1.0,
+            "drive:angular:physics:stiffness": 0.0,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.002779967151582241,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.1559000015258789,
+              0.019999999552965164,
+              -0.07490800321102142
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.7558794, 0, 0, 0.6547108)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -Infinity,
+            "physics:upperLimit": Infinity,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 1145.91552734375
+          },
+          "name": "rear_left_ankle",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/rear_left_bot"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/rear_left_wheel"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/rear_left_hip": {
+          "attributes": {
+            "drive:angular:physics:damping": 0.007653512060642242,
+            "drive:angular:physics:maxForce": 2.700000047683716,
+            "drive:angular:physics:stiffness": 19.133779525756836,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.03061404824256897,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              -0.17018607258796692,
+              0.0,
+              0.1100122332572937
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.0009026168, 0.00090267864, 0.7071062, -0.7071062)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -89.9543685913086,
+            "physics:upperLimit": 89.9543685913086,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 286.4788818359375,
+            "state:angular:physics:position": 0.0,
+            "state:angular:physics:velocity": 0.0
+          },
+          "name": "rear_left_hip",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/base_link"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/rear_left_upper"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/rear_left_knee": {
+          "attributes": {
+            "drive:angular:physics:damping": 0.002703116973862052,
+            "drive:angular:physics:maxForce": 2.700000047683716,
+            "drive:angular:physics:stiffness": 6.757791996002197,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.010812467895448208,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.1477999985218048,
+              0.0,
+              0.0
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.71442103, 0, 0, 0.69971603)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -210.00048828125,
+            "physics:upperLimit": 35.001991271972656,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 286.4788818359375,
+            "state:angular:physics:position": 0.0,
+            "state:angular:physics:velocity": 0.0
+          },
+          "name": "rear_left_knee",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/rear_left_upper"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/rear_left_bot"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/rear_right_ankle": {
+          "attributes": {
+            "drive:angular:physics:damping": 1.7716532945632935,
+            "drive:angular:physics:maxForce": 1.0,
+            "drive:angular:physics:stiffness": 0.0,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.0028346453327685595,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.1559000015258789,
+              0.019999999552965164,
+              0.07840000092983246
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(-0.0000029365256, 0.8111971, -0.5847728, 0.0000021168719)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -Infinity,
+            "physics:upperLimit": Infinity,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 1145.91552734375
+          },
+          "name": "rear_right_ankle",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/rear_right_bot"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/rear_right_wheel"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/rear_right_hip": {
+          "attributes": {
+            "drive:angular:physics:damping": 0.010803543962538242,
+            "drive:angular:physics:maxForce": 2.700000047683716,
+            "drive:angular:physics:stiffness": 27.008861541748047,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.04321417585015297,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              -0.17017756402492523,
+              -0.24299190938472748,
+              0.1100122332572937
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.00066369283, 0.00066375465, 0.7071065, -0.7071065)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -89.9543685913086,
+            "physics:upperLimit": 89.9543685913086,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 286.4788818359375,
+            "state:angular:physics:position": 0.0,
+            "state:angular:physics:velocity": 0.0
+          },
+          "name": "rear_right_hip",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/base_link"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/rear_right_upper"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/joints/rear_right_knee": {
+          "attributes": {
+            "drive:angular:physics:damping": 0.0031861753668636084,
+            "drive:angular:physics:maxForce": 2.700000047683716,
+            "drive:angular:physics:stiffness": 7.965437889099121,
+            "drive:angular:physics:targetPosition": 0.0,
+            "drive:angular:physics:targetVelocity": 0.0,
+            "drive:angular:physics:type": "force",
+            "isaac:physics:AccelerationLimit": null,
+            "isaac:physics:JerkLimit": null,
+            "isaac:physics:Rot_X:DofOffset": null,
+            "isaac:physics:Rot_Y:DofOffset": null,
+            "isaac:physics:Rot_Z:DofOffset": null,
+            "isaac:physics:Tr_X:DofOffset": null,
+            "isaac:physics:Tr_Y:DofOffset": null,
+            "isaac:physics:Tr_Z:DofOffset": null,
+            "isaac:physics:index": null,
+            "physics:JointEquivalentInertia": 0.012744701467454433,
+            "physics:axis": "Z",
+            "physics:breakForce": 3.4028234663852886e+38,
+            "physics:breakTorque": 3.4028234663852886e+38,
+            "physics:collisionEnabled": false,
+            "physics:excludeFromArticulation": false,
+            "physics:jointEnabled": true,
+            "physics:localPos0": [
+              0.14778999984264374,
+              0.0,
+              0.0
+            ],
+            "physics:localPos1": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:localRot0": "(0.7224549, 0, 0, 0.69141805)",
+            "physics:localRot1": "(1, 0, 0, 0)",
+            "physics:lowerLimit": -210.00048828125,
+            "physics:upperLimit": 35.001991271972656,
+            "physxJoint:armature": 0.0,
+            "physxJoint:jointFriction": 0.0,
+            "physxJoint:maxJointVelocity": 286.4788818359375,
+            "state:angular:physics:position": 0.0,
+            "state:angular:physics:velocity": 0.0
+          },
+          "name": "rear_right_knee",
+          "relationships": {
+            "physics:body0": [
+              "/wlr_robot_isaac/rear_right_upper"
+            ],
+            "physics:body1": [
+              "/wlr_robot_isaac/rear_right_bot"
+            ]
+          },
+          "type": "PhysicsRevoluteJoint"
+        },
+        "/wlr_robot_isaac/rear_left_bot": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              0.0958542749285698,
+              0.014164568856358528,
+              -0.03207741677761078
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              6.499011215055361e-05,
+              8.400190563406795e-05,
+              6.095822755014524e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.21465438604354858,
+            "physics:principalAxes": "(0.94098526, 0.034704413, -0.29710373, 0.15834096)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "rear_left_bot",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/rear_left_upper": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              0.08610597252845764,
+              -7.533327561759506e-07,
+              -0.028447534888982773
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              2.5467896193731576e-05,
+              7.194220961537212e-05,
+              5.452364348457195e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.12198812514543533,
+            "physics:principalAxes": "(0.9999999, -4.860013e-7, 0.00044312028, 0.00003336973)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "rear_left_upper",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/rear_left_wheel": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              -6.379435868453243e-11,
+              -2.321809550176468e-10,
+              -0.011175424791872501
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              4.955806434736587e-05,
+              4.9558060709387064e-05,
+              9.554847929393873e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.059519216418266296,
+            "physics:principalAxes": "(1, 0, 0, 0)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "rear_left_wheel",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/rear_right_bot": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              0.09593648463487625,
+              0.014179621823132038,
+              0.03410063311457634
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              6.49444991722703e-05,
+              8.389016147702932e-05,
+              6.0868944274261594e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.2142179012298584,
+            "physics:principalAxes": "(0.9423828, -0.03395546, 0.29252902, 0.15870911)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "rear_right_bot",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/rear_right_upper": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              0.08610597252845764,
+              -7.533327561759506e-07,
+              0.028460558503866196
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              2.5467896193731576e-05,
+              7.194220961537212e-05,
+              5.452364348457195e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.12198812514543533,
+            "physics:principalAxes": "(0.9999999, -4.860013e-7, 0.00044312028, 0.00003336973)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "rear_right_upper",
+          "relationships": {},
+          "type": "Xform"
+        },
+        "/wlr_robot_isaac/rear_right_wheel": {
+          "attributes": {
+            "physics:angularVelocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "physics:centerOfMass": [
+              -6.37950248183472e-11,
+              -2.3218146849579568e-10,
+              -0.011175424791872501
+            ],
+            "physics:density": 0.0,
+            "physics:diagonalInertia": [
+              4.955806434736587e-05,
+              4.9558060709387064e-05,
+              9.554847929393873e-05
+            ],
+            "physics:kinematicEnabled": false,
+            "physics:mass": 0.059519216418266296,
+            "physics:principalAxes": "(1, 0, 0, 0)",
+            "physics:rigidBodyEnabled": true,
+            "physics:startsAsleep": false,
+            "physics:velocity": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "name": "rear_right_wheel",
+          "relationships": {},
+          "type": "Xform"
+        }
+      },
+      "prim_count": 337,
+      "sha256": "2730b1b7b0d23f18c8f9c044a1cecbdf7d0ead8f00a74a95201037a55de2c6e5"
+    }
+  ],
+  "physical_metadata_difference_count": 4,
+  "physical_metadata_differences": [
+    {
+      "baseline": {
+        "attributes": {
+          "drive:angular:physics:damping": 0.0028333812952041626,
+          "drive:angular:physics:maxForce": 2.700000047683716,
+          "drive:angular:physics:stiffness": 7.083453178405762,
+          "drive:angular:physics:targetPosition": 0.0,
+          "drive:angular:physics:targetVelocity": 0.0,
+          "drive:angular:physics:type": "force",
+          "isaac:physics:AccelerationLimit": null,
+          "isaac:physics:JerkLimit": null,
+          "isaac:physics:Rot_X:DofOffset": null,
+          "isaac:physics:Rot_Y:DofOffset": null,
+          "isaac:physics:Rot_Z:DofOffset": null,
+          "isaac:physics:Tr_X:DofOffset": null,
+          "isaac:physics:Tr_Y:DofOffset": null,
+          "isaac:physics:Tr_Z:DofOffset": null,
+          "isaac:physics:index": null,
+          "physics:JointEquivalentInertia": 0.01133352518081665,
+          "physics:axis": "Z",
+          "physics:breakForce": 3.4028234663852886e+38,
+          "physics:breakTorque": 3.4028234663852886e+38,
+          "physics:collisionEnabled": false,
+          "physics:excludeFromArticulation": false,
+          "physics:jointEnabled": true,
+          "physics:localPos0": [
+            0.14786000549793243,
+            -0.00021240000205580145,
+            0.0
+          ],
+          "physics:localPos1": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:localRot0": "(0.7283401, 0, 0, -0.68521583)",
+          "physics:localRot1": "(1, 0, 0, 0)",
+          "physics:lowerLimit": 0.0,
+          "physics:upperLimit": 179.9087371826172,
+          "physxJoint:armature": 0.0,
+          "physxJoint:jointFriction": 0.0,
+          "physxJoint:maxJointVelocity": 286.4788818359375,
+          "state:angular:physics:position": 0.0,
+          "state:angular:physics:velocity": 0.0
+        },
+        "name": "front_left_knee",
+        "relationships": {
+          "physics:body0": [
+            "/wlr_robot_isaac/front_left_upper"
+          ],
+          "physics:body1": [
+            "/wlr_robot_isaac/front_left_bot"
+          ]
+        },
+        "type": "PhysicsRevoluteJoint"
+      },
+      "candidate": {
+        "attributes": {
+          "drive:angular:physics:damping": 0.0028333812952041626,
+          "drive:angular:physics:maxForce": 2.700000047683716,
+          "drive:angular:physics:stiffness": 7.083453178405762,
+          "drive:angular:physics:targetPosition": 0.0,
+          "drive:angular:physics:targetVelocity": 0.0,
+          "drive:angular:physics:type": "force",
+          "isaac:physics:AccelerationLimit": null,
+          "isaac:physics:JerkLimit": null,
+          "isaac:physics:Rot_X:DofOffset": null,
+          "isaac:physics:Rot_Y:DofOffset": null,
+          "isaac:physics:Rot_Z:DofOffset": null,
+          "isaac:physics:Tr_X:DofOffset": null,
+          "isaac:physics:Tr_Y:DofOffset": null,
+          "isaac:physics:Tr_Z:DofOffset": null,
+          "isaac:physics:index": null,
+          "physics:JointEquivalentInertia": 0.01133352518081665,
+          "physics:axis": "Z",
+          "physics:breakForce": 3.4028234663852886e+38,
+          "physics:breakTorque": 3.4028234663852886e+38,
+          "physics:collisionEnabled": false,
+          "physics:excludeFromArticulation": false,
+          "physics:jointEnabled": true,
+          "physics:localPos0": [
+            0.14786000549793243,
+            -0.00021240000205580145,
+            0.0
+          ],
+          "physics:localPos1": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:localRot0": "(0.7283401, 0, 0, -0.68521583)",
+          "physics:localRot1": "(1, 0, 0, 0)",
+          "physics:lowerLimit": -35.001991271972656,
+          "physics:upperLimit": 210.00048828125,
+          "physxJoint:armature": 0.0,
+          "physxJoint:jointFriction": 0.0,
+          "physxJoint:maxJointVelocity": 286.4788818359375,
+          "state:angular:physics:position": 0.0,
+          "state:angular:physics:velocity": 0.0
+        },
+        "name": "front_left_knee",
+        "relationships": {
+          "physics:body0": [
+            "/wlr_robot_isaac/front_left_upper"
+          ],
+          "physics:body1": [
+            "/wlr_robot_isaac/front_left_bot"
+          ]
+        },
+        "type": "PhysicsRevoluteJoint"
+      },
+      "prim_path": "/wlr_robot_isaac/joints/front_left_knee"
+    },
+    {
+      "baseline": {
+        "attributes": {
+          "drive:angular:physics:damping": 0.0019806521013379097,
+          "drive:angular:physics:maxForce": 2.700000047683716,
+          "drive:angular:physics:stiffness": 4.951630115509033,
+          "drive:angular:physics:targetPosition": 0.0,
+          "drive:angular:physics:targetVelocity": 0.0,
+          "drive:angular:physics:type": "force",
+          "isaac:physics:AccelerationLimit": null,
+          "isaac:physics:JerkLimit": null,
+          "isaac:physics:Rot_X:DofOffset": null,
+          "isaac:physics:Rot_Y:DofOffset": null,
+          "isaac:physics:Rot_Z:DofOffset": null,
+          "isaac:physics:Tr_X:DofOffset": null,
+          "isaac:physics:Tr_Y:DofOffset": null,
+          "isaac:physics:Tr_Z:DofOffset": null,
+          "isaac:physics:index": null,
+          "physics:JointEquivalentInertia": 0.007922608405351639,
+          "physics:axis": "Z",
+          "physics:breakForce": 3.4028234663852886e+38,
+          "physics:breakTorque": 3.4028234663852886e+38,
+          "physics:collisionEnabled": false,
+          "physics:excludeFromArticulation": false,
+          "physics:jointEnabled": true,
+          "physics:localPos0": [
+            0.1477999985218048,
+            0.0,
+            0.0
+          ],
+          "physics:localPos1": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:localRot0": "(0.7320977, 0, 0, -0.6811996)",
+          "physics:localRot1": "(1, 0, 0, 0)",
+          "physics:lowerLimit": 0.0,
+          "physics:upperLimit": 179.9087371826172,
+          "physxJoint:armature": 0.0,
+          "physxJoint:jointFriction": 0.0,
+          "physxJoint:maxJointVelocity": 286.4788818359375,
+          "state:angular:physics:position": 0.0,
+          "state:angular:physics:velocity": 0.0
+        },
+        "name": "front_right_knee",
+        "relationships": {
+          "physics:body0": [
+            "/wlr_robot_isaac/front_right_upper"
+          ],
+          "physics:body1": [
+            "/wlr_robot_isaac/front_right_bot"
+          ]
+        },
+        "type": "PhysicsRevoluteJoint"
+      },
+      "candidate": {
+        "attributes": {
+          "drive:angular:physics:damping": 0.0019806521013379097,
+          "drive:angular:physics:maxForce": 2.700000047683716,
+          "drive:angular:physics:stiffness": 4.951630115509033,
+          "drive:angular:physics:targetPosition": 0.0,
+          "drive:angular:physics:targetVelocity": 0.0,
+          "drive:angular:physics:type": "force",
+          "isaac:physics:AccelerationLimit": null,
+          "isaac:physics:JerkLimit": null,
+          "isaac:physics:Rot_X:DofOffset": null,
+          "isaac:physics:Rot_Y:DofOffset": null,
+          "isaac:physics:Rot_Z:DofOffset": null,
+          "isaac:physics:Tr_X:DofOffset": null,
+          "isaac:physics:Tr_Y:DofOffset": null,
+          "isaac:physics:Tr_Z:DofOffset": null,
+          "isaac:physics:index": null,
+          "physics:JointEquivalentInertia": 0.007922608405351639,
+          "physics:axis": "Z",
+          "physics:breakForce": 3.4028234663852886e+38,
+          "physics:breakTorque": 3.4028234663852886e+38,
+          "physics:collisionEnabled": false,
+          "physics:excludeFromArticulation": false,
+          "physics:jointEnabled": true,
+          "physics:localPos0": [
+            0.1477999985218048,
+            0.0,
+            0.0
+          ],
+          "physics:localPos1": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:localRot0": "(0.7320977, 0, 0, -0.6811996)",
+          "physics:localRot1": "(1, 0, 0, 0)",
+          "physics:lowerLimit": -35.001991271972656,
+          "physics:upperLimit": 210.00048828125,
+          "physxJoint:armature": 0.0,
+          "physxJoint:jointFriction": 0.0,
+          "physxJoint:maxJointVelocity": 286.4788818359375,
+          "state:angular:physics:position": 0.0,
+          "state:angular:physics:velocity": 0.0
+        },
+        "name": "front_right_knee",
+        "relationships": {
+          "physics:body0": [
+            "/wlr_robot_isaac/front_right_upper"
+          ],
+          "physics:body1": [
+            "/wlr_robot_isaac/front_right_bot"
+          ]
+        },
+        "type": "PhysicsRevoluteJoint"
+      },
+      "prim_path": "/wlr_robot_isaac/joints/front_right_knee"
+    },
+    {
+      "baseline": {
+        "attributes": {
+          "drive:angular:physics:damping": 0.002703116973862052,
+          "drive:angular:physics:maxForce": 2.700000047683716,
+          "drive:angular:physics:stiffness": 6.757791996002197,
+          "drive:angular:physics:targetPosition": 0.0,
+          "drive:angular:physics:targetVelocity": 0.0,
+          "drive:angular:physics:type": "force",
+          "isaac:physics:AccelerationLimit": null,
+          "isaac:physics:JerkLimit": null,
+          "isaac:physics:Rot_X:DofOffset": null,
+          "isaac:physics:Rot_Y:DofOffset": null,
+          "isaac:physics:Rot_Z:DofOffset": null,
+          "isaac:physics:Tr_X:DofOffset": null,
+          "isaac:physics:Tr_Y:DofOffset": null,
+          "isaac:physics:Tr_Z:DofOffset": null,
+          "isaac:physics:index": null,
+          "physics:JointEquivalentInertia": 0.010812467895448208,
+          "physics:axis": "Z",
+          "physics:breakForce": 3.4028234663852886e+38,
+          "physics:breakTorque": 3.4028234663852886e+38,
+          "physics:collisionEnabled": false,
+          "physics:excludeFromArticulation": false,
+          "physics:jointEnabled": true,
+          "physics:localPos0": [
+            0.1477999985218048,
+            0.0,
+            0.0
+          ],
+          "physics:localPos1": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:localRot0": "(0.71442103, 0, 0, 0.69971603)",
+          "physics:localRot1": "(1, 0, 0, 0)",
+          "physics:lowerLimit": -179.9087371826172,
+          "physics:upperLimit": 0.0,
+          "physxJoint:armature": 0.0,
+          "physxJoint:jointFriction": 0.0,
+          "physxJoint:maxJointVelocity": 286.4788818359375,
+          "state:angular:physics:position": 0.0,
+          "state:angular:physics:velocity": 0.0
+        },
+        "name": "rear_left_knee",
+        "relationships": {
+          "physics:body0": [
+            "/wlr_robot_isaac/rear_left_upper"
+          ],
+          "physics:body1": [
+            "/wlr_robot_isaac/rear_left_bot"
+          ]
+        },
+        "type": "PhysicsRevoluteJoint"
+      },
+      "candidate": {
+        "attributes": {
+          "drive:angular:physics:damping": 0.002703116973862052,
+          "drive:angular:physics:maxForce": 2.700000047683716,
+          "drive:angular:physics:stiffness": 6.757791996002197,
+          "drive:angular:physics:targetPosition": 0.0,
+          "drive:angular:physics:targetVelocity": 0.0,
+          "drive:angular:physics:type": "force",
+          "isaac:physics:AccelerationLimit": null,
+          "isaac:physics:JerkLimit": null,
+          "isaac:physics:Rot_X:DofOffset": null,
+          "isaac:physics:Rot_Y:DofOffset": null,
+          "isaac:physics:Rot_Z:DofOffset": null,
+          "isaac:physics:Tr_X:DofOffset": null,
+          "isaac:physics:Tr_Y:DofOffset": null,
+          "isaac:physics:Tr_Z:DofOffset": null,
+          "isaac:physics:index": null,
+          "physics:JointEquivalentInertia": 0.010812467895448208,
+          "physics:axis": "Z",
+          "physics:breakForce": 3.4028234663852886e+38,
+          "physics:breakTorque": 3.4028234663852886e+38,
+          "physics:collisionEnabled": false,
+          "physics:excludeFromArticulation": false,
+          "physics:jointEnabled": true,
+          "physics:localPos0": [
+            0.1477999985218048,
+            0.0,
+            0.0
+          ],
+          "physics:localPos1": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:localRot0": "(0.71442103, 0, 0, 0.69971603)",
+          "physics:localRot1": "(1, 0, 0, 0)",
+          "physics:lowerLimit": -210.00048828125,
+          "physics:upperLimit": 35.001991271972656,
+          "physxJoint:armature": 0.0,
+          "physxJoint:jointFriction": 0.0,
+          "physxJoint:maxJointVelocity": 286.4788818359375,
+          "state:angular:physics:position": 0.0,
+          "state:angular:physics:velocity": 0.0
+        },
+        "name": "rear_left_knee",
+        "relationships": {
+          "physics:body0": [
+            "/wlr_robot_isaac/rear_left_upper"
+          ],
+          "physics:body1": [
+            "/wlr_robot_isaac/rear_left_bot"
+          ]
+        },
+        "type": "PhysicsRevoluteJoint"
+      },
+      "prim_path": "/wlr_robot_isaac/joints/rear_left_knee"
+    },
+    {
+      "baseline": {
+        "attributes": {
+          "drive:angular:physics:damping": 0.0031861753668636084,
+          "drive:angular:physics:maxForce": 2.700000047683716,
+          "drive:angular:physics:stiffness": 7.965437889099121,
+          "drive:angular:physics:targetPosition": 0.0,
+          "drive:angular:physics:targetVelocity": 0.0,
+          "drive:angular:physics:type": "force",
+          "isaac:physics:AccelerationLimit": null,
+          "isaac:physics:JerkLimit": null,
+          "isaac:physics:Rot_X:DofOffset": null,
+          "isaac:physics:Rot_Y:DofOffset": null,
+          "isaac:physics:Rot_Z:DofOffset": null,
+          "isaac:physics:Tr_X:DofOffset": null,
+          "isaac:physics:Tr_Y:DofOffset": null,
+          "isaac:physics:Tr_Z:DofOffset": null,
+          "isaac:physics:index": null,
+          "physics:JointEquivalentInertia": 0.012744701467454433,
+          "physics:axis": "Z",
+          "physics:breakForce": 3.4028234663852886e+38,
+          "physics:breakTorque": 3.4028234663852886e+38,
+          "physics:collisionEnabled": false,
+          "physics:excludeFromArticulation": false,
+          "physics:jointEnabled": true,
+          "physics:localPos0": [
+            0.14778999984264374,
+            0.0,
+            0.0
+          ],
+          "physics:localPos1": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:localRot0": "(0.7224549, 0, 0, 0.69141805)",
+          "physics:localRot1": "(1, 0, 0, 0)",
+          "physics:lowerLimit": -179.9087371826172,
+          "physics:upperLimit": 0.0,
+          "physxJoint:armature": 0.0,
+          "physxJoint:jointFriction": 0.0,
+          "physxJoint:maxJointVelocity": 286.4788818359375,
+          "state:angular:physics:position": 0.0,
+          "state:angular:physics:velocity": 0.0
+        },
+        "name": "rear_right_knee",
+        "relationships": {
+          "physics:body0": [
+            "/wlr_robot_isaac/rear_right_upper"
+          ],
+          "physics:body1": [
+            "/wlr_robot_isaac/rear_right_bot"
+          ]
+        },
+        "type": "PhysicsRevoluteJoint"
+      },
+      "candidate": {
+        "attributes": {
+          "drive:angular:physics:damping": 0.0031861753668636084,
+          "drive:angular:physics:maxForce": 2.700000047683716,
+          "drive:angular:physics:stiffness": 7.965437889099121,
+          "drive:angular:physics:targetPosition": 0.0,
+          "drive:angular:physics:targetVelocity": 0.0,
+          "drive:angular:physics:type": "force",
+          "isaac:physics:AccelerationLimit": null,
+          "isaac:physics:JerkLimit": null,
+          "isaac:physics:Rot_X:DofOffset": null,
+          "isaac:physics:Rot_Y:DofOffset": null,
+          "isaac:physics:Rot_Z:DofOffset": null,
+          "isaac:physics:Tr_X:DofOffset": null,
+          "isaac:physics:Tr_Y:DofOffset": null,
+          "isaac:physics:Tr_Z:DofOffset": null,
+          "isaac:physics:index": null,
+          "physics:JointEquivalentInertia": 0.012744701467454433,
+          "physics:axis": "Z",
+          "physics:breakForce": 3.4028234663852886e+38,
+          "physics:breakTorque": 3.4028234663852886e+38,
+          "physics:collisionEnabled": false,
+          "physics:excludeFromArticulation": false,
+          "physics:jointEnabled": true,
+          "physics:localPos0": [
+            0.14778999984264374,
+            0.0,
+            0.0
+          ],
+          "physics:localPos1": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "physics:localRot0": "(0.7224549, 0, 0, 0.69141805)",
+          "physics:localRot1": "(1, 0, 0, 0)",
+          "physics:lowerLimit": -210.00048828125,
+          "physics:upperLimit": 35.001991271972656,
+          "physxJoint:armature": 0.0,
+          "physxJoint:jointFriction": 0.0,
+          "physxJoint:maxJointVelocity": 286.4788818359375,
+          "state:angular:physics:position": 0.0,
+          "state:angular:physics:velocity": 0.0
+        },
+        "name": "rear_right_knee",
+        "relationships": {
+          "physics:body0": [
+            "/wlr_robot_isaac/rear_right_upper"
+          ],
+          "physics:body1": [
+            "/wlr_robot_isaac/rear_right_bot"
+          ]
+        },
+        "type": "PhysicsRevoluteJoint"
+      },
+      "prim_path": "/wlr_robot_isaac/joints/rear_right_knee"
+    }
+  ],
+  "same_prim_count": true
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "resume_validation.video_selection_protocol.v1",
+  "frozen_before_locked_test": true,
+  "scope": "post-locked-test diagnostic replay only; videos never enter primary statistics or checkpoint selection",
+  "methods": [
+    "fsm",
+    "B",
+    "C"
+  ],
+  "heights_mm": [
+    50,
+    75,
+    100
+  ],
+  "categories": {
+    "typical_success": "Among successes, minimize absolute distance from the method-height successful-episode median margin, then median pitch-rate RMS, then training seed and scenario ID.",
+    "typical_failure": "If failures exist, apply the same deterministic median-distance rule within failures; missing margin sorts after valid margin.",
+    "worst_margin": "Minimum valid episode minimum margin, then highest pitch-rate RMS, training seed, and scenario ID; if no valid margin exists, select the deterministic first missing-margin episode and disclose it.",
+    "highest_pitch_rate": "Maximum episode support-transfer pitch-rate RMS, then lowest margin, training seed, and scenario ID."
+  },
+  "deduplication": "If one episode satisfies multiple categories for a method/height, encode it once and list every category in the overlay/inventory.",
+  "seed_policy": "B/C candidates include all locked episodes from seeds 11/29/47. Deterministic seed tie-break is ascending; video choice does not alter all-seed statistics.",
+  "failure_policy": "Do not require a failure video when no failure exists. Never omit a failure category when at least one failed locked episode exists.",
+  "render_policy": {
+    "resolution": [
+      960,
+      540
+    ],
+    "control_step_stride": 3,
+    "fps": 20.0,
+    "codec": "libx264",
+    "camera_eye_w": [
+      1.15,
+      -2.35,
+      0.95
+    ],
+    "camera_target_w": [
+      1.15,
+      0.0,
+      0.24
+    ]
+  },
+  "replay_policy": "Replay the exact locked scenario with the frozen controller/checkpoint and required locked-manifest hash. Compare replay outcome with the recorded locked outcome and disclose any mismatch."
+}

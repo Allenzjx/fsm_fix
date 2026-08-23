@@ -1,0 +1,8 @@
+protocol_version: "2.0.0"
+split: "validation"
+manifest: "data/scenario_manifests/validation_v2.json"
+manifest_sha256: "46bc9947bdaad189057b867c2a6cf6960c4694f5f5d908ea286c68d530cefc6a"
+episode_count: 90
+episodes_per_height: 30
+paired_methods: ["fsm", "residual_ppo_without_com", "residual_ppo_with_com"]
+checkpoint_selection_only: true

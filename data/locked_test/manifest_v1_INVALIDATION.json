@@ -1,0 +1,13 @@
+{
+  "schema": "resume_validation.manifest_invalidation.v1",
+  "invalidated_manifest": "manifest.json",
+  "invalidated_sha256": "315f3f597ae89ccfa480ebf0d53f9d94839e66db7d85b26753df259897c52205",
+  "valid_for_formal_test": false,
+  "reason": "The v1 generator used obstacle-front and initial-distance constants from an unrelated legacy RL geometry. Fresh DirectRLEnv replay telemetry established the accepted height-replay geometry front at 0.5213122012213478 m and settled initial front-wheel distance at 0.2681075872973213 m.",
+  "data_leakage": "No policy training, checkpoint selection, validation result, or locked-test result used v1. It was invalidated during foundation/replay validation before method freeze.",
+  "replacement": {
+    "path": "manifest_v2.json",
+    "sha256": "a621045d04b5a84a707fd2fb7a6cc8a8fe13aab3407dc944ea0dd6ae95cb58a3"
+  },
+  "preservation_policy": "The v1 manifest and sidecar remain immutable negative evidence."
+}

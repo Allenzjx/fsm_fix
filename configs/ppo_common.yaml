@@ -1,0 +1,117 @@
+protocol_version: "34.0.0"
+method_version: "runtime-v34-selected-phase9-bound-counter-yaw-skid-steer-emergency"
+algorithm: "skrl PPO"
+network:
+  actor_hidden: [256, 256, 128]
+  critic_hidden: [256, 256, 128]
+  activation: "elu"
+  initial_actor_mean: "zero"
+  initial_log_std: -4.0
+  min_log_std: -5.0
+  max_log_std: -4.0
+  stochastic_deterministic_alignment_policy: "v16 ended with per-channel standard deviation about 0.07 and shared-drive standard deviation 0.035, allowing exploration to open the one-sided gate while deterministic means remained off; v17 bounds each channel at exp(-4), so the independent four-channel mean has at most 0.009158 normalized or 0.09158 mm physical standard deviation and meaningful residuals must be represented by the deterministic mean"
+action:
+  dimension: 12
+  execution_phase_window: [8, 10]
+  execution_phase_gains: [3.0, 4.0, 3.0]
+  applied_action_hard_clip: 1.0
+  execution_phase_policy: "policy actions remain observable and regularized, but physical residuals can execute only in rear-transfer phase 8 and post-transfer phases 9 through 10 after the registered real-IMU gate opens; phases 0 through 7 and 11 through 12 preserve the frozen FSM exactly; phase-8 slow high-pitch rows retain the historical climb output, while positive-roll emergencies retain deficient-diagonal downward support with a 0.1 pre-gain positive-drive floor and phase gains [3,4,3], yielding front-right/rear-left downward authority of 3.0/4.0/3.0 mm; the safety-selected v34 behavior authorizes physical-forward skid-steer wheel-speed signs [-1,+1,-1,+1] only in corrective phase 9, with pre-gain floor 0.25 and phase gain 4 for the exact 0.10 rad/s hard bound; phases 8 and 10 retain exact-zero wheel-speed residual"
+  execution_state_gate:
+    type: "phase_aware_roll_imu_emergency"
+    minimum_pitch_rad: 0.09
+    minimum_roll_rad: 0.10
+    early_roll_rad: 0.06
+    early_pitch_rate_rad_s: 0.35
+    corrective_latch_until_phase_exit: true
+    policy: "phase 8 enables the historical climb output on pitch at least +0.09 rad; a roll of at least +0.10 rad in phases 8 through 10 instead selects asymmetric front-right/rear-left correction; phase 8 also selects correction on the earlier conjunction roll at least +0.06 rad and pitch rate at least +0.35 rad/s; any phase-8 roll emergency latches corrective mode through phase exit and clears on phase exit/reset; all signals are actor-observable real-IMU quantities and no simulator-only contact truth or scenario identity enters the gate"
+    threshold_derivation: "frozen-FSM phase-8--10 successes reach at most +0.0907672 rad roll and +0.330464 rad/s pitch rate; v19/v22 successes, including rescued 0009, reach at most +0.0960836 rad roll, so +0.10 rad activates no current-baseline success and all seven current failures; the phase-8 conjunction +0.06 rad roll and +0.35 rad/s pitch rate activates only failed 0005, 0006, 0008, and 0019, providing 0.15--0.25 s recorded lead; analysis was fixed in runs/diagnostics/v23_positive_roll_gate_analysis.json before code and Isaac execution"
+  execution_projection:
+    type: "wheel_center_z_deficient_diagonal_downward_support_phase9_counter_yaw_emergency_gate"
+    wheel_center_z_signs: [-1, -1, 1, 1]
+    executed_wheel_center_z_signs: [0, -1, -1, 0]
+    corrective_wheel_center_z_scales: [0.0, 1.0, 1.0, 0.0]
+    corrective_minimum_shared_magnitude: 0.1
+    corrective_wheel_speed_minimum_shared_magnitudes: [0.25]
+    corrective_wheel_speed_signs: [-1, 1, -1, 1]
+    corrective_wheel_speed_scales: [1.0, 1.0, 1.0, 1.0]
+    corrective_wheel_speed_phases: [9]
+    action_mask: [0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1]
+    policy: "after phase and IMU gating, wheel-center z shared magnitude remains computed from the historical front-negative/rear-positive actor half-space for checkpoint compatibility; a roll emergency retains vector [0,-1,-1,0] with at least 0.1 positive shared magnitude before phase gains [3,4,3], whose previously frozen phase-9 IK reconstruction retains at least 0.141975/0.068788 rad FR/RL safe-joint margin; v31/v32/v33 tied at 13/20, while phase-8 wheel speed increased body/link collisions from 3 to 7/6, so v34 safety-selects phase-9-only exact +/-0.10 rad/s through floor 0.25 and gain 4; physical-forward signs remain [-1,+1,-1,+1], phases 8 and 10 retain exact-zero wheel-speed residual, non-emergency phase-8 high-pitch rows retain actor-scaled historical climb, exact zero and the opposite actor half-space preserve the FSM exactly, and all wheel-center x residuals remain exactly zero"
+  order:
+    - fl_wheel_center_dx
+    - fl_wheel_center_dz
+    - fr_wheel_center_dx
+    - fr_wheel_center_dz
+    - rl_wheel_center_dx
+    - rl_wheel_center_dz
+    - rr_wheel_center_dx
+    - rr_wheel_center_dz
+    - fl_wheel_speed_delta
+    - fr_wheel_speed_delta
+    - rl_wheel_speed_delta
+    - rr_wheel_speed_delta
+  residual_bounds:
+    wheel_center_x_m: 0.0075
+    wheel_center_z_m: 0.010
+    wheel_speed_rad_s: 0.10
+ppo:
+  rollouts: 64
+  learning_epochs: 5
+  mini_batches: 8
+  learning_rate: 0.0002
+  discount_factor: 0.99
+  lambda: 0.95
+  ratio_clip: 0.2
+  value_clip: 0.2
+  grad_norm_clip: 1.0
+  entropy_loss_scale: 0.0
+  kl_threshold: 0.01
+reward:
+  occupancy_integration: "top_contact, recovery, and stuck raw terms are multiplied by control step_dt"
+  phase_progress_definition: "non-negative delta of monotonic fsm_phase + phase_progress coordinate"
+  rate_integration: "pitch_rate_sq, excessive_tilt, slip, residual_magnitude, residual_left_right_asymmetry, joint_acceleration, and wheel_speed_saturation raw terms are multiplied by control step_dt"
+  terminal_safety: "fall, body_collision, numerical, phase_timeout, and joint_limit carry explicit one-shot -200 terms"
+  reset_initialization: "randomized root pose uses cached settled standing root-to-wheel geometry plus registered scenario values; no current terminal root/body pose cache is read"
+  baseline_regularization_timebase: "residual magnitude/asymmetry are integrated by control step_dt and weighted -120/-180 per second, exactly preserving the prior -2/-3 per-step strength at 60 Hz"
+  weights:
+    progress: 8.0
+    phase_progress: 2.0
+    success: 200.0
+    top_contact: 1.0
+    recovery: 2.0
+    com_margin: 0.0
+    pitch_rate_sq: -0.25
+    excessive_tilt: -1.0
+    slip: -0.2
+    fall: -200.0
+    body_collision: -200.0
+    numerical: -200.0
+    phase_timeout: -200.0
+    contact_impact: -0.01
+    residual_magnitude: -120.0
+    residual_left_right_asymmetry: -180.0
+    action_rate: -0.1
+    joint_acceleration: -0.0001
+    wheel_speed_saturation: -0.1
+    joint_limit: -200.0
+    time: -0.005
+    stuck: -6.0
+seeds: [11, 29, 47]
+training_budget:
+  phase: "full_development"
+  local_timesteps_by_stage:
+    "50": 76800
+    "75": 76800
+    "100": 76800
+  rationale: "76800 control steps provide about 8.5 registered 150-second episode horizons per environment; the prior 19200-step medium runs provided only about 2.1"
+checkpoint_selection: "lexicographic frozen validation rule"
+curriculum:
+  development_episodes_required_per_height: 20
+  stage_50_training_randomization: "full"
+  promotion_stages:
+    50:
+      minimum_development_success_rate: 0.80
+    75:
+      minimum_development_success_rate: 0.75
+    100:
+      minimum_development_success_rate: 0.70

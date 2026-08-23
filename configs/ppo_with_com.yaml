@@ -1,0 +1,4 @@
+method: "residual_ppo_with_com"
+inherits: "ppo_common.yaml"
+reward:
+  com_margin_weight: 8.0

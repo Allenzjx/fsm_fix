@@ -1,0 +1,104 @@
+{
+  "active_conda_env": "base",
+  "conda_envs": {
+    "command": [
+      "C:\\Users\\kskzz\\miniconda3\\Library\\bin\\conda.BAT",
+      "env",
+      "list",
+      "--json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"envs\": [\n    \"C:\\\\Users\\\\kskzz\\\\OneDrive\\\\Desktop\\\\medica_robotics\\\\.conda\",\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\",\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\envs\\\\cs527_hw3\",\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\envs\\\\env_isaaclab\",\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\envs\\\\robot_env\",\n    \"c:\\\\Users\\\\kskzz\\\\OneDrive\\\\Desktop\\\\medica_robotics\\\\.conda\"\n  ],\n  \"envs_details\": {\n    \"C:\\\\Users\\\\kskzz\\\\OneDrive\\\\Desktop\\\\medica_robotics\\\\.conda\": {\n      \"name\": \"\",\n      \"created\": \"2026-01-22T04:41:08.360759+00:00\",\n      \"last_modified\": \"2026-02-18T21:49:01.293339+00:00\",\n      \"active\": false,\n      \"base\": false,\n      \"frozen\": false,\n      \"writable\": true\n    },\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\": {\n      \"name\": \"base\",\n      \"created\": \"2026-01-13T17:02:49.087897+00:00\",\n      \"last_modified\": \"2026-01-22T04:40:02.701465+00:00\",\n      \"active\": true,\n      \"base\": true,\n      \"frozen\": false,\n      \"writable\": true\n    },\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\envs\\\\cs527_hw3\": {\n      \"name\": \"cs527_hw3\",\n      \"created\": \"2026-02-18T21:50:43.971087+00:00\",\n      \"last_modified\": \"2026-02-18T21:51:07.964991+00:00\",\n      \"active\": false,\n      \"base\": false,\n      \"frozen\": false,\n      \"writable\": true\n    },\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\envs\\\\env_isaaclab\": {\n      \"name\": \"env_isaaclab\",\n      \"created\": \"2026-05-06T04:22:36.226541+00:00\",\n      \"last_modified\": \"2026-05-06T04:22:41.848407+00:00\",\n      \"active\": false,\n      \"base\": false,\n      \"frozen\": false,\n      \"writable\": true\n    },\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\envs\\\\robot_env\": {\n      \"name\": \"robot_env\",\n      \"created\": \"2026-04-19T16:57:16.003779+00:00\",\n      \"last_modified\": \"2026-04-19T16:57:20.672976+00:00\",\n      \"active\": false,\n      \"base\": false,\n      \"frozen\": false,\n      \"writable\": true\n    },\n    \"c:\\\\Users\\\\kskzz\\\\OneDrive\\\\Desktop\\\\medica_robotics\\\\.conda\": {\n      \"name\": \"\",\n      \"created\": \"2026-01-22T04:41:08.360759+00:00\",\n      \"last_modified\": \"2026-02-18T21:49:01.293339+00:00\",\n      \"active\": false,\n      \"base\": false,\n      \"frozen\": false,\n      \"writable\": true\n    }\n  }\n}"
+  },
+  "conda_info": {
+    "command": [
+      "C:\\Users\\kskzz\\miniconda3\\Library\\bin\\conda.BAT",
+      "info",
+      "--json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"platform\": \"win-64\",\n  \"conda_version\": \"25.11.1\",\n  \"conda_env_version\": \"25.11.1\",\n  \"conda_build_version\": \"not installed\",\n  \"root_prefix\": \"C:\\\\Users\\\\kskzz\\\\miniconda3\",\n  \"conda_prefix\": \"C:\\\\Users\\\\kskzz\\\\miniconda3\",\n  \"av_data_dir\": \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\etc\\\\conda\",\n  \"av_metadata_url_base\": null,\n  \"root_writable\": true,\n  \"pkgs_dirs\": [\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\pkgs\",\n    \"C:\\\\Users\\\\kskzz\\\\.conda\\\\pkgs\",\n    \"C:\\\\Users\\\\kskzz\\\\AppData\\\\Local\\\\conda\\\\conda\\\\pkgs\"\n  ],\n  \"envs_dirs\": [\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\envs\",\n    \"C:\\\\Users\\\\kskzz\\\\.conda\\\\envs\",\n    \"C:\\\\Users\\\\kskzz\\\\AppData\\\\Local\\\\conda\\\\conda\\\\envs\"\n  ],\n  \"default_prefix\": \"C:\\\\Users\\\\kskzz\\\\miniconda3\",\n  \"active_prefix\": \"C:\\\\Users\\\\kskzz\\\\miniconda3\",\n  \"active_prefix_name\": \"base\",\n  \"conda_shlvl\": 1,\n  \"channels\": [\n    \"https://repo.anaconda.com/pkgs/main/win-64\",\n    \"https://repo.anaconda.com/pkgs/main/noarch\",\n    \"https://repo.anaconda.com/pkgs/r/win-64\",\n    \"https://repo.anaconda.com/pkgs/r/noarch\",\n    \"https://repo.anaconda.com/pkgs/msys2/win-64\",\n    \"https://repo.anaconda.com/pkgs/msys2/noarch\"\n  ],\n  \"user_rc_path\": \"C:\\\\Users\\\\kskzz\\\\.condarc\",\n  \"rc_path\": \"C:\\\\Users\\\\kskzz\\\\.condarc\",\n  \"sys_rc_path\": \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\.condarc\",\n  \"offline\": false,\n  \"envs\": [\n    \"C:\\\\Users\\\\kskzz\\\\OneDrive\\\\Desktop\\\\medica_robotics\\\\.conda\",\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\",\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\envs\\\\cs527_hw3\",\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\envs\\\\env_isaaclab\",\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\envs\\\\robot_env\",\n    \"c:\\\\Users\\\\kskzz\\\\OneDrive\\\\Desktop\\\\medica_robotics\\\\.conda\"\n  ],\n  \"python_version\": \"3.13.11.final.0\",\n  \"requests_version\": \"2.32.5\",\n  \"user_agent\": \"conda/25.11.1 requests/2.32.5 CPython/3.13.11 Windows/11 Windows/10.0.26200 solver/libmamba conda-libmamba-solver/25.11.0 libmambapy/2.3.2 aau/0.7.5 c/Kl6cbrw273XrUmqoJyk7XG s/2essbS65g-vE_66351EGM8 e/iiZML9_8TCHtCK2OZasdt0\",\n  \"conda_location\": \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\Lib\\\\site-packages\\\\conda\",\n  \"config_files\": [\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\.condarc\",\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\condarc.d\\\\anaconda-auth.yml\"\n  ],\n  \"netrc_file\": null,\n  \"virtual_pkgs\": [\n    [\n      \"__archspec\",\n      \"1\",\n      \"skylake\"\n    ],\n    [\n      \"__conda\",\n      \"25.11.1\",\n      \"0\"\n    ],\n    [\n      \"__cuda\",\n      \"13.0\",\n      \"0\"\n    ],\n    [\n      \"__win\",\n      \"10.0.26200\",\n      \"0\"\n    ]\n  ],\n  \"solver\": {\n    \"name\": \"libmamba\",\n    \"user_agent\": \"solver/libmamba conda-libmamba-solver/25.11.0 libmambapy/2.3.2\",\n    \"default\": true\n  },\n  \"is_windows_admin\": false,\n  \"sys.version\": \"3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:58) [MSC v.1929 64 bit (AMD64)]\",\n  \"sys.prefix\": \"C:\\\\Users\\\\kskzz\\\\miniconda3\",\n  \"sys.executable\": \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\python.exe\",\n  \"site_dirs\": [\n    \"C:\\\\Users\\\\kskzz\\\\AppData\\\\Roaming\\\\Python\\\\etc\",\n    \"C:\\\\Users\\\\kskzz\\\\AppData\\\\Roaming\\\\Python\\\\Python312\",\n    \"C:\\\\Users\\\\kskzz\\\\AppData\\\\Roaming\\\\Python\\\\Python313\",\n    \"C:\\\\Users\\\\kskzz\\\\AppData\\\\Roaming\\\\Python\\\\share\"\n  ],\n  \"env_vars\": {\n    \"CURL_CA_BUNDLE\": \"<not set>\",\n    \"CONDA_EXES\": \"\\\"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\Scripts\\\\conda.exe\\\"  \",\n    \"CONDA_PYTHON_EXE\": \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\python.exe\",\n    \"PATH\": \"C:\\\\Users\\\\kskzz\\\\miniconda3;C:\\\\Users\\\\kskzz\\\\miniconda3\\\\Library\\\\mingw-w64\\\\bin;C:\\\\Users\\\\kskzz\\\\miniconda3\\\\Library\\\\usr\\\\bin;C:\\\\Users\\\\kskzz\\\\miniconda3\\\\Library\\\\bin;C:\\\\Users\\\\kskzz\\\\miniconda3\\\\Scripts;C:\\\\Users\\\\kskzz\\\\miniconda3\\\\bin;C:\\\\Users\\\\kskzz\\\\miniconda3\\\\condabin;C:\\\\Users\\\\kskzz\\\\.codex\\\\tmp\\\\arg0\\\\codex-arg0Po12m2;C:\\\\Users\\\\kskzz\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\bin\\\\override;C:\\\\\\u8fb0\\u7f18xs10224H\\u7248\\\\VM16.12\\\\bin;C:\\\\Pr;gram Files\\\\Python313\\\\Scripts;C:\\\\Program Files\\\\Python313;C:\\\\Program Files (x86)\\\\Razer Chroma SDK\\\\bin;C:\\\\Program Files\\\\Razer Chroma SDK\\\\bin;C:\\\\Program Files (x86)\\\\Razer\\\\ChromaBroadcast\\\\bin;C:\\\\Program Files\\\\Razer\\\\ChromaBroadcast\\\\bin;C:\\\\Windows\\\\system32;C:\\\\Windows;C:\\\\Windows\\\\System32\\\\Wbem;C:\\\\Windows\\\\System32\\\\WindowsPowerShell\\\\v1.0;C:\\\\Windows\\\\System32\\\\OpenSSH;C:\\\\Program Files\\\\dotnet;C:\\\\WINDOWS\\\\system32;C:\\\\WINDOWS;C:\\\\WINDOWS\\\\System32\\\\Wbem;C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0;C:\\\\WINDOWS\\\\System32\\\\OpenSSH;C:\\\\Program Files\\\\MATLAB\\\\R2023b\\\\bin;C:\\\\Program Files\\\\Microsoft SQL Server\\\\Client SDK\\\\ODBC\\\\170\\\\Tools\\\\Binn;C:\\\\Program Files (x86)\\\\Microsoft SQL Server\\\\150\\\\Tools\\\\Binn;C:\\\\Program Files\\\\Microsoft SQL Server\\\\150\\\\Tools\\\\Binn;C:\\\\Program Files\\\\Microsoft SQL Server\\\\150\\\\DTS\\\\Binn;C:\\\\Program Files (x86)\\\\Windows Kits\\\\8.1\\\\Windows Performance Toolkit;C:\\\\Users\\\\kskzz\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps;C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Windows Performance Toolkit;C:\\\\Program Files (x86)\\\\NVIDIA Corporation\\\\PhysX\\\\Common;C:\\\\WINDOWS\\\\system32\\\\config\\\\systemprofile\\\\AppData\\\\Local\\\\Microsoft\\\\WindowsApps;C:\\\\WINDOWS\\\\system32;C:\\\\WINDOWS;C:\\\\WINDOWS\\\\System32\\\\Wbem;C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0;C:\\\\WINDOWS\\\\System32\\\\OpenSSH;C:\\\\Program Files\\\\Git\\\\cmd;C:\\\\Program Files\\\\NVIDIA Corporation\\\\NVIDIA App\\\\NvDLISR;C:\\\\Users\\\\kskzz\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\Scripts;C:\\\\Users\\\\kskzz\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312;C:\\\\Users\\\\kskzz\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Launcher;C:\\\\Users\\\\kskzz\\\\.dotnet\\\\tools;C:\\\\Users\\\\kskzz\\\\AppData\\\\Local\\\\Programs\\\\Microsoft VS Code\\\\bin;C:\\\\msys64\\\\ucrt64\\\\bin;C:\\\\Users\\\\kskzz\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\bin\\\\fallback;C:\\\\Users\\\\kskzz\\\\.cache\\\\codex-runtimes\\\\codex-primary-runtime\\\\dependencies\\\\native\\\\git\\\\cmd;C:\\\\Users\\\\kskzz\\\\AppData\\\\Local\\\\OpenAI\\\\Codex\\\\bin\\\\3e42d49ad3e35a50;C:\\\\Program Files\\\\WindowsApps\\\\OpenAI.Codex_26.721.4979.0_x64__2p2nqsd0c76g0\\\\app\\\\resources\",\n    \"PSMODULEPATH\": \"C:\\\\Users\\\\kskzz\\\\OneDrive\\\\Documents\\\\WindowsPowerShell\\\\Modules;C:\\\\Program Files\\\\WindowsPowerShell\\\\Modules;C:\\\\WINDOWS\\\\system32\\\\WindowsPowerShell\\\\v1.0\\\\Modules;C:\\\\Program Files (x86)\\\\Microsoft SQL Server\\\\150\\\\Tools\\\\PowerShell\\\\Modules\\\\\",\n    \"HOMEPATH\": \"\\\\Users\\\\kskzz\",\n    \"CIO_TEST\": \"<not set>\",\n    \"CONDA_PROMPT_MODIFIER\": \"(base) \",\n    \"CONDA_ROOT\": \"C:\\\\Users\\\\kskzz\\\\miniconda3\",\n    \"CONDA_DEFAULT_ENV\": \"base\",\n    \"LD_PRELOAD\": \"<not set>\",\n    \"SSL_CERT_FILE\": \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\Library\\\\ssl\\\\cacert.pem\",\n    \"PYTHONPATH\": \"C:\\\\robotics_sim\\\\wlr_robot\\\\resume_validation_fsm_residual_ppo\\\\src\",\n    \"CONDA_SHLVL\": \"1\",\n    \"CONDA_EXE\": \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\Scripts\\\\conda.exe\",\n    \"CONDA_PREFIX\": \"C:\\\\Users\\\\kskzz\\\\miniconda3\",\n    \"REQUESTS_CA_BUNDLE\": \"<not set>\"\n  },\n  \"envs_details\": {\n    \"C:\\\\Users\\\\kskzz\\\\OneDrive\\\\Desktop\\\\medica_robotics\\\\.conda\": {\n      \"name\": \"\",\n      \"created\": \"2026-01-22T04:41:08.360759+00:00\",\n      \"last_modified\": \"2026-02-18T21:49:01.293339+00:00\",\n      \"active\": false,\n      \"base\": false,\n      \"frozen\": false,\n      \"writable\": true\n    },\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\": {\n      \"name\": \"base\",\n      \"created\": \"2026-01-13T17:02:49.087897+00:00\",\n      \"last_modified\": \"2026-01-22T04:40:02.701465+00:00\",\n      \"active\": true,\n      \"base\": true,\n      \"frozen\": false,\n      \"writable\": true\n    },\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\envs\\\\cs527_hw3\": {\n      \"name\": \"cs527_hw3\",\n      \"created\": \"2026-02-18T21:50:43.971087+00:00\",\n      \"last_modified\": \"2026-02-18T21:51:07.964991+00:00\",\n      \"active\": false,\n      \"base\": false,\n      \"frozen\": false,\n      \"writable\": true\n    },\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\envs\\\\env_isaaclab\": {\n      \"name\": \"env_isaaclab\",\n      \"created\": \"2026-05-06T04:22:36.226541+00:00\",\n      \"last_modified\": \"2026-05-06T04:22:41.848407+00:00\",\n      \"active\": false,\n      \"base\": false,\n      \"frozen\": false,\n      \"writable\": true\n    },\n    \"C:\\\\Users\\\\kskzz\\\\miniconda3\\\\envs\\\\robot_env\": {\n      \"name\": \"robot_env\",\n      \"created\": \"2026-04-19T16:57:16.003779+00:00\",\n      \"last_modified\": \"2026-04-19T16:57:20.672976+00:00\",\n      \"active\": false,\n      \"base\": false,\n      \"frozen\": false,\n      \"writable\": true\n    },\n    \"c:\\\\Users\\\\kskzz\\\\OneDrive\\\\Desktop\\\\medica_robotics\\\\.conda\": {\n      \"name\": \"\",\n      \"created\": \"2026-01-22T04:41:08.360759+00:00\",\n      \"last_modified\": \"2026-02-18T21:49:01.293339+00:00\",\n      \"active\": false,\n      \"base\": false,\n      \"frozen\": false,\n      \"writable\": true\n    }\n  }\n}"
+  },
+  "conda_prefix": "C:\\Users\\kskzz\\miniconda3",
+  "disk": {
+    "C:\\": {
+      "free": 88977854464,
+      "total": 999034974208,
+      "used": 910057119744
+    }
+  },
+  "generated_at_utc": "2026-07-27T05:48:49.040665+00:00",
+  "git": {
+    "project": {
+      "command": [
+        "git",
+        "-C",
+        "C:\\robotics_sim\\wlr_robot",
+        "status",
+        "--short",
+        "--branch"
+      ],
+      "returncode": 128,
+      "stderr": "fatal: not a git repository (or any of the parent directories): .git",
+      "stdout": ""
+    }
+  },
+  "gpu": {
+    "command": [
+      "C:\\Windows\\system32\\nvidia-smi.EXE",
+      "--query-gpu=name,memory.total,memory.free,driver_version",
+      "--format=csv,noheader,nounits"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "NVIDIA GeForce RTX 4080 Laptop GPU, 12282, 11997, 581.29"
+  },
+  "isaaclab_launcher": "C:\\robotics_sim\\IsaacLab\\isaaclab.bat",
+  "isaaclab_launcher_exists": true,
+  "known_isaac_versions_from_verified_local_artifacts": {
+    "isaaclab": "0.54.3",
+    "isaacsim": "5.1.0.0",
+    "requires_current_run_confirmation": true,
+    "source": "C:\\robotics_sim\\wlr_robot\\height_based_obstacle_replay\\artifacts\\e2e\\vision_round2_final.json"
+  },
+  "packages_current_python": {
+    "gymnasium": "1.2.1",
+    "isaaclab": "0.54.3",
+    "isaacsim": "5.1.0.0",
+    "matplotlib": "3.10.3",
+    "numpy": "1.26.0",
+    "pandas": "3.0.2",
+    "pyarrow": null,
+    "scipy": "1.15.3",
+    "skrl": "2.0.0",
+    "torch": "2.7.0+cu128"
+  },
+  "platform": "Windows-10-10.0.26200-SP0",
+  "powershell": {
+    "command": [
+      "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE",
+      "-NoProfile",
+      "-Command",
+      "$PSVersionTable.PSVersion.ToString()"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "5.1.26100.8875"
+  },
+  "python_executable": "C:\\Users\\kskzz\\miniconda3\\envs\\env_isaaclab\\python.exe",
+  "python_version": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+  "windows_cim": {
+    "command": [
+      "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE",
+      "-NoProfile",
+      "-Command",
+      "Get-CimInstance Win32_OperatingSystem | Select Caption,Version,BuildNumber,OSArchitecture | ConvertTo-Json -Compress"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"Caption\":\"Microsoft Windows 11 Home\",\"Version\":\"10.0.26200\",\"BuildNumber\":\"26200\",\"OSArchitecture\":\"64-bit\"}"
+  },
+  "windows_version": "10.0.26200"
+}

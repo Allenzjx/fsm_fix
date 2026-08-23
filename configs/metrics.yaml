@@ -1,0 +1,27 @@
+protocol_version: "1.0.0"
+frozen: true
+success:
+  require_all_wheels_beyond_front_edge: true
+  require_all_wheels_on_top_or_clear: true
+  stable_dwell_s: 1.5
+  max_abs_roll_rad: 0.45
+  max_abs_pitch_rad: 0.45
+  max_angular_velocity_rad_s: 0.50
+  reject_body_or_link_collision: true
+  reject_joint_limit_violation: true
+  reject_nan: true
+  minimum_each_wheel_upward_force_n: 2.0
+  joint_safe_envelope_tracking_tolerance_rad: 0.03490658503988659
+  nonwheel_external_contact_threshold_n: 5.0
+  nonwheel_contact_source: "ContactSensor net external force magnitude; legacy link-center bounding-box estimates are diagnostic only and cannot veto success"
+  note: "tracking tolerance covers compliant drive deflection; command targets themselves have 1e-6 rad tolerance"
+support_transfer_window:
+  start_phase: "FRONT_OR_FIRST_WHEEL_LIFT"
+  end_phase: "RECOVER"
+primary:
+  - success_rate
+  - mean_episode_min_longitudinal_quasistatic_support_margin_m
+  - mean_episode_support_transfer_pitch_rate_rms_rad_s
+bootstrap_draws: 10000
+confidence_level: 0.95
+aggregation: "equal weight per 50/75/100 mm height"

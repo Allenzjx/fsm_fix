@@ -1,0 +1,14 @@
+schema_version: "1.0.0"
+format: "chunked_csv"
+pyarrow_policy: "use parquet only if already installed; do not install solely for telemetry"
+chunk_rows: 1000
+heartbeat_interval_s: 15
+status_interval_s: 5
+raw_contact_classification:
+  - NONE
+  - LOWER_GROUND
+  - STEP_TOP
+  - STEP_RISER
+  - STEP_EDGE_OR_AMBIGUOUS
+  - BODY_COLLISION
+  - LINK_COLLISION

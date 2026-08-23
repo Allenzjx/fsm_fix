@@ -1,0 +1,32 @@
+protocol_version: "2.1.0"
+split: "training"
+heights_m: [0.05, 0.075, 0.10]
+geometry:
+  center_x_m: 1.55
+  front_x_m: 0.5213122012213478
+  length_m: 2.0573755975573045
+  width_m: 0.882200685486094
+initial_distance:
+  nominal_m: 0.2681075872973213
+  development_half_range_m: 0.025
+randomization_policy: "reward-v5 uses bounded full variation at 50 mm after nominal-only v4 failed every delay-2 development scenario"
+randomization_levels:
+  nominal:
+    initial_distance_half_range_m: 0.0
+    initial_pitch_half_range_rad: 0.0
+    friction_range: [1.0, 1.0]
+    actuator_delay_steps: [0, 0]
+    sensor_noise_std_range: [0.0, 0.0]
+  light:
+    initial_distance_half_range_m: 0.010
+    initial_pitch_half_range_rad: 0.005
+    friction_range: [0.95, 1.05]
+    actuator_delay_steps: [0, 1]
+    sensor_noise_std_range: [0.0, 0.001]
+  full:
+    initial_distance_half_range_m: 0.025
+    initial_pitch_half_range_rad: 0.020
+    friction_range: [0.90, 1.20]
+    actuator_delay_steps: [0, 2]
+    sensor_noise_std_range: [0.0, 0.005]
+source: "fresh corrected 50 mm DirectRLEnv replay geometry and settled wheel positions"

@@ -1,0 +1,18 @@
+{
+  "failures": [
+    "ValueError: KNEE_COMMAND_LIMIT_DEG must be (-35, 210), got (-60.0, 210.0)"
+  ],
+  "passed": false,
+  "robot_usd": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\assets\\converted\\wlr_robot_validation.usd",
+  "robot_usd_sha256": "e3c3f4f66ef3a8b65a87f0b3b62c0f2a8579c6ade46bfbd482da84b8fd13e7c7",
+  "script": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\isaac_validation.py",
+  "timestamp_unix": 1785132785.5684037,
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\isaac_validation.py\", line 168, in main\n    env = WLRObstacleRLEnv(cfg)\n          ^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\robotics_sim\\wlr_robot\\wlr_obstacle_rl_env.py\", line 666, in __init__\n    self._validate_cfg(cfg)\n  File \"C:\\robotics_sim\\wlr_robot\\wlr_obstacle_rl_env.py\", line 5119, in _validate_cfg\n    raise ValueError(f\"KNEE_COMMAND_LIMIT_DEG must be (-35, 210), got {KNEE_COMMAND_LIMIT_DEG}\")\nValueError: KNEE_COMMAND_LIMIT_DEG must be (-35, 210), got (-60.0, 210.0)\n",
+  "versions": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+    "isaaclab": "0.54.3",
+    "isaacsim": "5.1.0.0",
+    "torch": "2.7.0+cu128"
+  }
+}

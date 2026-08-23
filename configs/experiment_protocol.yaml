@@ -1,0 +1,74 @@
+protocol_version: "1.0.0"
+status: "FSM_AND_METRICS_FROZEN"
+methods:
+  - fsm
+  - residual_ppo_without_com
+  - residual_ppo_with_com
+training_seeds: [11, 29, 47]
+scenario_seeds:
+  development: 20260727
+  validation: 20260728
+  locked_test: 20260729
+episodes_per_height:
+  development: 20
+  validation: 30
+  locked_test: 100
+paired_evaluation: true
+deterministic_policy_action: true
+locked_test_readable_by_training: false
+active_manifests:
+  development: "data/scenario_manifests/development_v2.json"
+  validation: "data/scenario_manifests/validation_v2.json"
+  locked_test: "data/locked_test/manifest_v2.json"
+locked_test_manifest_sha256: "a621045d04b5a84a707fd2fb7a6cc8a8fe13aab3407dc944ea0dd6ae95cb58a3"
+superseded_manifest:
+  path: "data/locked_test/manifest.json"
+  sha256: "315f3f597ae89ccfa480ebf0d53f9d94839e66db7d85b26753df259897c52205"
+  reason: "invalid legacy geometry constants; never used for training or evaluation"
+formal_test_requires:
+  - frozen_fsm_hash
+  - selected_checkpoint_hashes
+  - frozen_metric_hash
+  - locked_manifest_hash
+configuration_freeze:
+  lock_manifest: "configs/config_freeze.json"
+  selection_fsm_sha256: "1943be80e44e57ff63b479195970e0e02d0bad6f22bc4712337cec51fae243af"
+  selection_metrics_sha256: "4f45c82087052fdd1fde1a89e427f8c376385c47ed24caa949d392b3ba490814"
+  administrative_change: "only the top-level frozen field changed from false to true after development selection"
+  development_evidence:
+    50mm: "runs/fsm/development_50mm_current_config_attempt043/result.json"
+    75mm: "runs/fsm/development_75mm_formal_full_attempt042/result.json"
+    100mm: "runs/fsm/development_100mm_current_config_attempt044/result.json"
+ppo_development:
+  active_method_version: "runtime-v19-positive-pitch-imu-hazard-gate"
+  parent_method_version: "runtime-v18-two-sigma-confidence-balanced-z-gate"
+  common_config_sha256: "f115a3a4e435c70721ffdc44468e0352e71ca66f8187610f6ecd3cda112a8f93"
+  common_config_canonical_sha256: "3ffba6ff7e809a4244ebcee93e38b359a080ab7f594c87c73bd6e22f39ea31bf"
+  training_randomization_config_sha256: "86f1476a82197624d1be1901bb27c0c40f0df32c36d710b1b044b2299d846267"
+  training_randomization_config_canonical_sha256: "4d8f8f08cba07a128f74aff35ae7d9f596e96b16ea886df3883790f5ce1f1c99"
+  stage_50_training_randomization: "full"
+  reason: "Runtime-v18 reached 10/20 and missed its registered retraining gate. It was physically active in 89.96% of phase-7 rows but off in 99.18%/95.50% of phase-8/9 rows. Frozen-FSM development telemetry shows successful phase-8/9 pitch below +0.08677/+0.07910 rad while failed branches enter +0.09 to +0.169 rad. V19 replaces action-confidence gating with an actor-observable real-IMU threshold of +0.09 rad and preserves phase 7 exactly."
+  retraining_policy: "after 144 tests and real-Isaac training/restore smokes pass, evaluate the unchanged v17 checkpoint under v19 on all 20 fixed 50 mm development scenarios; authorize exactly one from-scratch Method-B seed-11 50 mm run for 76800 local timesteps only if the counterfactual reaches at least 12/20, loses none of the frozen FSM's 12 paired successes, and contains at least one nonzero above-hazard residual row; a trained checkpoint still requires 16/20 for promotion"
+formal_v34:
+  active_method_version: "runtime-v34-selected-phase9-bound-counter-yaw-skid-steer-emergency"
+  parent_development_history: "ppo_development above is retained as historical registration; v19 through v33 diagnostics and real-Isaac counterfactuals are preserved under runs/diagnostics and experiment_ledger.csv"
+  ppo_common_sha256: "dcf500751263661930a30cffff3f029e45d081894019cdef594e3d0c01836066"
+  ppo_common_canonical_sha256: "00cda2749fcb006e1a843e9f30580c149e11bc62171c52cf3eea6372447c002d"
+  training_seeds: [11, 29, 47]
+  local_timesteps_per_seed_height_stage: 76800
+  transitions_per_seed_height_stage: 4915200
+  heights_mm: [50, 75, 100]
+  without_com_weight: 0.0
+  with_com_weight: 8.0
+  validation_selection_protocol:
+    path: "configs/validation_selection_protocol.json"
+    sha256: "bf6b2aef9f8499416d6e7d3cadfbb5c012b1cafc064d38252d1a98c99b0254e5"
+  claims_audit_protocol:
+    path: "configs/claims_audit_protocol.json"
+    sha256: "ae36a96d589e1d6bbcad9f414cefcf00f80fb8198f58ce3cf2040683a33f6974"
+  video_selection_protocol:
+    path: "configs/video_selection_protocol.json"
+    sha256: "3fdbda58ad45efc035eb7840ca46e4c617369762548915acdd19dec500aa7174"
+  validation_manifest_sha256: "46bc9947bdaad189057b867c2a6cf6960c4694f5f5d908ea286c68d530cefc6a"
+  prevalidation_evaluator_sha256: "c082f724b957105129de7664d0cf869919e93cc95179c8657577f69baff984e4"
+  locked_test_access_gate: "configs/method_freeze.json must be created after validation and must verify before any read/hash of data/locked_test/manifest_v2.json"

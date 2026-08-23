@@ -1,0 +1,557 @@
+{
+  "adjacent_duplicate_command_count": 0,
+  "command_sequence": [
+    {
+      "commands": [
+        "wheel all 0.3",
+        "wheel stop"
+      ],
+      "duration_s": 10.796000000089407,
+      "step": 1
+    },
+    {
+      "commands": [
+        "servo rear_left_hip 3.5",
+        "servo rear_left_hip 17.3",
+        "servo rear_left_hip 18.7"
+      ],
+      "duration_s": 3.469000000040978,
+      "step": 2
+    },
+    {
+      "commands": [
+        "servo front_left_hip 6.2",
+        "servo front_left_hip 11.8",
+        "servo front_left_hip 14.5"
+      ],
+      "duration_s": 2.797000000020489,
+      "step": 3
+    },
+    {
+      "commands": [
+        "servo front_right_hip 2.1",
+        "servo front_right_hip 31.2",
+        "servo front_right_hip 39.5",
+        "servo front_right_knee 16.2",
+        "servo front_right_knee 20.3"
+      ],
+      "duration_s": 5.719000000040978,
+      "step": 4
+    },
+    {
+      "commands": [
+        "wheel all 0.3",
+        "wheel stop"
+      ],
+      "duration_s": 7.1399999998975545,
+      "step": 5
+    },
+    {
+      "commands": [
+        "servo front_right_hip 31.2",
+        "servo front_right_hip 29.8",
+        "servo front_right_knee 25.8",
+        "servo front_right_knee 30",
+        "servo front_right_knee 31.4",
+        "servo front_right_hip 22.8",
+        "servo front_right_hip 20.1"
+      ],
+      "duration_s": 8.922000000020489,
+      "step": 6
+    },
+    {
+      "commands": [
+        "servo_wheel launch",
+        "wheel stop"
+      ],
+      "duration_s": 5.2189999998081475,
+      "step": 7
+    },
+    {
+      "commands": [
+        "wheel all 0.3",
+        "wheel stop"
+      ],
+      "duration_s": 5.7030000002123415,
+      "step": 8
+    },
+    {
+      "commands": [
+        "servo_wheel launch",
+        "wheel stop"
+      ],
+      "duration_s": 4.202999999979511,
+      "step": 9
+    },
+    {
+      "commands": [
+        "wheel all 0.3",
+        "wheel stop"
+      ],
+      "duration_s": 4.702999999979511,
+      "step": 10
+    },
+    {
+      "commands": [
+        "servo rear_right_hip 2.1",
+        "servo rear_right_hip 18.7",
+        "servo rear_right_hip 20.1"
+      ],
+      "duration_s": 5.484999999869615,
+      "step": 11
+    },
+    {
+      "commands": [
+        "servo front_left_knee -17.1",
+        "servo front_left_knee -18.5",
+        "servo front_left_knee -32.3",
+        "servo front_left_knee -39.2",
+        "servo front_left_knee -40.6",
+        "servo front_left_knee -42"
+      ],
+      "duration_s": 6.483999999938533,
+      "step": 12
+    },
+    {
+      "commands": [
+        "servo front_left_hip 0.7",
+        "servo front_left_hip 10.4",
+        "servo front_left_hip 20.1",
+        "servo front_left_hip 24.2",
+        "servo front_left_hip 29.8",
+        "servo front_left_hip 38.1",
+        "servo front_left_hip 39.5",
+        "servo front_left_hip 43.6",
+        "servo front_left_knee -35.1",
+        "servo front_left_knee -32.3",
+        "servo front_left_knee -29.5",
+        "servo front_left_knee -25.4",
+        "servo front_left_knee -12.9",
+        "servo front_left_knee -1.8"
+      ],
+      "duration_s": 6.25,
+      "step": 13
+    },
+    {
+      "commands": [
+        "servo front_left_hip 45",
+        "servo front_left_hip 28.4",
+        "servo front_left_hip 22.8",
+        "servo front_left_hip 18.7",
+        "servo front_left_hip 17.3",
+        "servo front_left_hip 21.5",
+        "servo front_left_hip 22.8"
+      ],
+      "duration_s": 4.015000000130385,
+      "step": 14
+    },
+    {
+      "commands": [
+        "wheel all 0.3",
+        "wheel stop"
+      ],
+      "duration_s": 35.5,
+      "step": 15
+    },
+    {
+      "commands": [
+        "servo_wheel launch",
+        "wheel stop"
+      ],
+      "duration_s": 3.219000000040978,
+      "step": 16
+    },
+    {
+      "commands": [
+        "servo front_left_hip 14.5",
+        "servo front_left_hip 17.3",
+        "servo front_left_hip 18.7",
+        "servo front_left_hip 20.1",
+        "servo front_left_hip 22.8",
+        "servo front_left_hip 24.2",
+        "servo front_left_knee 14.8",
+        "servo front_left_knee 23.1"
+      ],
+      "duration_s": 4.625,
+      "step": 17
+    },
+    {
+      "commands": [
+        "servo front_right_hip 4.8",
+        "servo front_right_hip 6.2",
+        "servo front_right_hip 9",
+        "servo front_right_hip 10.4",
+        "servo front_right_hip 11.8",
+        "servo front_right_hip 13.2"
+      ],
+      "duration_s": 7.936999999918044,
+      "step": 18
+    },
+    {
+      "commands": [
+        "servo rear_left_hip -4.8",
+        "servo rear_left_hip -6.2",
+        "servo rear_left_hip -10.4",
+        "servo rear_left_hip -11.8",
+        "servo rear_left_hip -6.2",
+        "servo rear_left_hip -4.8",
+        "servo rear_left_hip 0.7",
+        "servo rear_left_hip 2.1",
+        "servo rear_left_hip 7.6",
+        "servo rear_left_hip 15.9",
+        "servo rear_left_hip 17.3",
+        "servo rear_left_hip 21.5",
+        "servo rear_left_hip 22.8",
+        "servo rear_left_hip 24.2"
+      ],
+      "duration_s": 8.047000000020489,
+      "step": 19
+    },
+    {
+      "commands": [
+        "servo rear_right_hip 2.1",
+        "servo rear_right_hip 21.5",
+        "servo rear_right_hip 29.8",
+        "servo rear_right_knee -18.5",
+        "servo rear_right_knee -44.8",
+        "servo rear_right_knee -60",
+        "servo rear_right_knee -57.2",
+        "servo rear_right_knee -48.9",
+        "servo rear_right_knee -44.8"
+      ],
+      "duration_s": 8.297000000020489,
+      "step": 20
+    },
+    {
+      "commands": [
+        "wheel all 0.3",
+        "wheel stop"
+      ],
+      "duration_s": 20.0,
+      "step": 21
+    },
+    {
+      "commands": [
+        "servo_wheel launch",
+        "wheel stop"
+      ],
+      "duration_s": 8.844000000040978,
+      "step": 22
+    },
+    {
+      "commands": [
+        "servo front_left_hip 17.3",
+        "servo front_left_hip 13.2",
+        "servo front_left_hip 7.6",
+        "servo front_left_hip 4.8",
+        "servo front_left_hip 0.7",
+        "servo front_left_hip 11.8",
+        "servo front_left_hip 15.9",
+        "servo front_left_hip 22.8",
+        "servo front_left_hip 27",
+        "servo front_left_hip 28.4",
+        "servo front_left_hip 29.8",
+        "servo front_left_hip 33.9",
+        "servo front_left_hip 35.3",
+        "servo front_right_hip 20.1",
+        "servo front_right_hip 24.2",
+        "servo front_right_hip 27",
+        "servo front_right_hip 29.8",
+        "servo front_right_hip 31.2",
+        "servo front_right_hip 32.5"
+      ],
+      "duration_s": 14.686999999918044,
+      "step": 23
+    },
+    {
+      "commands": [
+        "servo_wheel launch",
+        "wheel stop"
+      ],
+      "duration_s": 5.422000000020489,
+      "step": 24
+    },
+    {
+      "commands": [
+        "servo_wheel launch",
+        "wheel stop"
+      ],
+      "duration_s": 4.265000000130385,
+      "step": 25
+    },
+    {
+      "commands": [
+        "servo_wheel launch",
+        "wheel stop"
+      ],
+      "duration_s": 9.452999999979511,
+      "step": 26
+    },
+    {
+      "commands": [
+        "servo front_right_knee -14.3",
+        "servo front_right_knee 2.3",
+        "servo front_right_knee 7.8"
+      ],
+      "duration_s": 7.983999999938533,
+      "step": 27
+    },
+    {
+      "commands": [
+        "servo rear_left_knee 21.7",
+        "servo rear_left_knee 41.1",
+        "servo rear_left_knee 43.8",
+        "servo rear_left_knee 45.2"
+      ],
+      "duration_s": 5.7810000001918525,
+      "step": 28
+    },
+    {
+      "commands": [
+        "servo_wheel launch",
+        "wheel stop"
+      ],
+      "duration_s": 4.641000000061467,
+      "step": 29
+    },
+    {
+      "commands": [
+        "wheel all -0.3",
+        "wheel stop"
+      ],
+      "duration_s": 5.484999999869615,
+      "step": 30
+    },
+    {
+      "commands": [
+        "wheel all -0.3",
+        "wheel stop"
+      ],
+      "duration_s": 5.983999999938533,
+      "step": 31
+    },
+    {
+      "commands": [
+        "servo_wheel launch",
+        "wheel stop"
+      ],
+      "duration_s": 9.281000000191852,
+      "step": 32
+    },
+    {
+      "commands": [
+        "servo rear_right_hip -31.2",
+        "servo rear_right_hip -27",
+        "servo rear_right_hip -25.6",
+        "servo rear_right_hip -24.2",
+        "servo rear_right_hip -22.8",
+        "servo rear_right_hip -20.1",
+        "servo rear_right_hip -17.3",
+        "servo rear_right_hip -14.5",
+        "servo rear_right_hip -13.2",
+        "servo rear_right_hip -9"
+      ],
+      "duration_s": 4.125,
+      "step": 33
+    },
+    {
+      "commands": [
+        "wheel all 0.3",
+        "wheel stop"
+      ],
+      "duration_s": 20.968000000109896,
+      "step": 34
+    },
+    {
+      "commands": [
+        "servo_wheel launch",
+        "wheel stop"
+      ],
+      "duration_s": 3.422000000020489,
+      "step": 35
+    }
+  ],
+  "dispatched_command_count": 269,
+  "event_count": 159,
+  "event_kinds": {
+    "servo_wheel_launch": 10,
+    "ui": 149
+  },
+  "height_m": [
+    0.05
+  ],
+  "long_idle_steps_gt_30s": [
+    15
+  ],
+  "path": "C:\\robotics_sim\\wlr_robot\\height_based_obstacle_replay\\saved_height_steps\\height_05cm\\accepted_steps.jsonl",
+  "playback_profiles": {
+    "fast_1s_idle_cap": {
+      "duration_s": 41.500000000232816,
+      "state_event_count": 159
+    },
+    "fast_no_idle_cap": {
+      "duration_s": 134.23300000024025,
+      "state_event_count": 159
+    },
+    "note": "expanded_commands dispatch at the same event timestamp; state_event_count is smaller than dispatched_command_count",
+    "raw": {
+      "duration_s": 278.8720000004396,
+      "state_event_count": 159
+    }
+  },
+  "recorded_duration_s": 278.8720000004396,
+  "recorded_ranges": {
+    "front_left_ankle": [
+      -2.09,
+      2.0944
+    ],
+    "front_left_hip": [
+      -32.5,
+      45.0
+    ],
+    "front_left_knee": [
+      -42.0,
+      23.1
+    ],
+    "front_right_ankle": [
+      -2.09,
+      0.3
+    ],
+    "front_right_hip": [
+      0.0,
+      39.5
+    ],
+    "front_right_knee": [
+      -15.7,
+      31.4
+    ],
+    "rear_left_ankle": [
+      -1.14,
+      2.0944
+    ],
+    "rear_left_hip": [
+      -11.8,
+      24.2
+    ],
+    "rear_left_knee": [
+      0.0,
+      45.2
+    ],
+    "rear_right_ankle": [
+      -2.09,
+      2.0944
+    ],
+    "rear_right_hip": [
+      -35.3,
+      29.8
+    ],
+    "rear_right_knee": [
+      -60.0,
+      0.0
+    ]
+  },
+  "sha256": "66be488058660467810260cb42d86357736bee2ff408d0741956c31db30426f8",
+  "state_reconstruction": {
+    "semantics": "dispatch expanded_commands when present, otherwise command",
+    "stale_event_snapshot_count": 19,
+    "stale_event_snapshots": [
+      {
+        "command": "servo rear_left_knee 21.7",
+        "event_index": 0,
+        "step": 28
+      },
+      {
+        "command": "servo rear_left_knee 41.1",
+        "event_index": 1,
+        "step": 28
+      },
+      {
+        "command": "servo rear_left_knee 43.8",
+        "event_index": 2,
+        "step": 28
+      },
+      {
+        "command": "servo rear_left_knee 45.2",
+        "event_index": 3,
+        "step": 28
+      },
+      {
+        "command": "wheel stop",
+        "event_index": 1,
+        "step": 29
+      },
+      {
+        "command": "wheel stop",
+        "event_index": 1,
+        "step": 32
+      },
+      {
+        "command": "servo rear_right_hip -31.2",
+        "event_index": 0,
+        "step": 33
+      },
+      {
+        "command": "servo rear_right_hip -27",
+        "event_index": 1,
+        "step": 33
+      },
+      {
+        "command": "servo rear_right_hip -25.6",
+        "event_index": 2,
+        "step": 33
+      },
+      {
+        "command": "servo rear_right_hip -24.2",
+        "event_index": 3,
+        "step": 33
+      },
+      {
+        "command": "servo rear_right_hip -22.8",
+        "event_index": 4,
+        "step": 33
+      },
+      {
+        "command": "servo rear_right_hip -20.1",
+        "event_index": 5,
+        "step": 33
+      },
+      {
+        "command": "servo rear_right_hip -17.3",
+        "event_index": 6,
+        "step": 33
+      },
+      {
+        "command": "servo rear_right_hip -14.5",
+        "event_index": 7,
+        "step": 33
+      },
+      {
+        "command": "servo rear_right_hip -13.2",
+        "event_index": 8,
+        "step": 33
+      },
+      {
+        "command": "servo rear_right_hip -9",
+        "event_index": 9,
+        "step": 33
+      },
+      {
+        "command": "wheel all 0.3",
+        "event_index": 0,
+        "step": 34
+      },
+      {
+        "command": "wheel stop",
+        "event_index": 1,
+        "step": 34
+      },
+      {
+        "command": "wheel stop",
+        "event_index": 1,
+        "step": 35
+      }
+    ]
+  },
+  "step_count": 35,
+  "zero_duration_steps": []
+}

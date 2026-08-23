@@ -1,0 +1,148 @@
+protocol_version: "1.0.0"
+frozen: true
+source_replays:
+  50mm:
+    path: "C:/robotics_sim/wlr_robot/height_based_obstacle_replay/saved_height_steps/height_05cm/accepted_steps.jsonl"
+    sha256: "66be488058660467810260cb42d86357736bee2ff408d0741956c31db30426f8"
+  100mm:
+    path: "C:/robotics_sim/wlr_robot/height_based_obstacle_replay/saved_height_steps/height_10cm/accepted_steps.jsonl"
+    sha256: "1132b160e4e6e937e060285344d1ae3608b2f749fc28dce24aae26def5f005f5"
+playback_profile:
+  profile: "wheel-distance-preserving-fast"
+  max_idle_gap_s: 1.0
+  trailing_pad_s: 0.05
+  speed_scale: 1.0
+  preserve_wheel_distance: true
+  active_wheel_gap_policy: "never compress an interval while a non-zero wheel command is held"
+  command_interpolation: "zero-order hold at every accepted actuator target event"
+  execution_duration_policy: "use the slower source duration at every height"
+servo_reference_safety_margin_deg: 1.0
+support_load_balance:
+  enabled: true
+  active_phases: [RECOVER, DRIVE_CLEAR]
+  low_force_n: 4.0
+  high_force_n: 8.0
+  shortening_rate_m_s: 0.00075
+  maximum_radial_shortening_by_height_m:
+    50mm: 0.0
+    75mm: 0.002
+    100mm: 0.0
+  height_interpolation: "piecewise-linear through the 50/75/100 mm anchors and clamped outside them"
+  policy: "shorten only legs above 8 N, release only below 4 N, and enable the selected 2 mm bound only at the 75 mm anchor"
+  selected_from: "diagnostic_75mm_selected_combined_repeat_grid_040"
+  selection_reason: "grid 040 repeated the complete selected combination 25 times with 4/25 strict successes, zero analytic-IK fallback, zero clamp, and terminal trim 2/0/0/2 mm; attempts 017 and 037 remain rejected provenance for other bounds/rates"
+  evidence_result_sha256: "641275183c48ab5ff76b8a23e166ee5e09e7f13844ae21d31612cf9e5a978562"
+post_transfer_support_geometry:
+  enabled: true
+  active_phases: [RECOVER, DRIVE_CLEAR]
+  wheel_order: [front_left, front_right, rear_left, rear_right]
+  wheel_center_offsets_m:
+    - [0.0, 0.0]
+    - [0.0, 0.0185]
+    - [0.0, 0.01125]
+    - [0.0, 0.015]
+  height_conditioning:
+    low_height_m: 0.05
+    low_scale: 0.0
+    high_height_m: 0.10
+    high_scale: 1.0
+    interpolation: "linear and clamped; 50/75/100 mm use 0/50/100% of the selected 100 mm offsets"
+  offset_start_progress_per_leg: [0.4, 0.4, 0.4, 0.4]
+  interpolation: "smoothstep during phase 9; hold through phase 10"
+  selected_from: "diagnostic_100mm_front_right_extension_diagnostic_limit_grid_022 candidate 19"
+  selection_reason: "lowest strict-success amplitude in 100 mm grid 022; 0/0/0/0 analytic-IK fallback, zero clamp, and 1.5 mm margin below the declared 20 mm diagnostic limit"
+  evidence_result_sha256: "8ef8c0c9c4e16f9582063605edd233eb22cf46a45163456394277decca348b58"
+  height_conditioning_evidence: "formal 50 mm attempt 026 with unscaled offsets had 0/20 strict success and 9,235 rear-left analytic-IK invalid samples; result SHA-256 81e73edad3bffc56887f4cc7a5db8f2612af32262e515983b43f9a4d37f80b74"
+contact_debounce_steps: 3
+phase_timeout_scale: 4.0
+transition_policy: "monotonic; elapsed reference progress AND a debounced physical exit milestone latched within the current phase"
+height_conditioned_phase_boundaries:
+  50mm: [0.01, 0.04, 0.16, 0.20, 0.38, 0.50, 0.64, 0.78, 0.88, 0.94, 1.00]
+  100mm: [0.01, 0.04, 0.16, 0.20, 0.38, 0.574, 0.64, 0.78, 0.88, 0.94, 1.00]
+  75mm_policy: "linear interpolation"
+  phase_5_evidence: "the 100 mm source places the lifted front leg at u=0.535-0.560 and begins the next forward roll at u=0.5747"
+phase_exit_conditions:
+  INIT: "planned window elapsed"
+  SETTLE: "planned window elapsed"
+  APPROACH: "either front wheel has front-face or top contact"
+  FIRST_CONTACT_CONFIRM: "front contact remains valid for debounce"
+  FRONT_OR_FIRST_WHEEL_LIFT: "at least one front wheel has top contact"
+  FRONT_OR_FIRST_WHEEL_PLACE: "both front wheels have top contact"
+  BODY_TRANSFER: "both front wheels retain top contact"
+  REAR_OR_REMAINING_WHEEL_LIFT: "at least one rear wheel has top contact"
+  REAR_OR_REMAINING_WHEEL_PLACE: "both rear wheels have top contact"
+  RECOVER: "all four wheels have top contact"
+  DRIVE_CLEAR: "all four wheels top, tilt bounded, angular speed bounded"
+failure_fallbacks:
+  - "global episode timeout"
+  - "fall roll/pitch"
+  - "any non-wheel external contact above 5 N"
+  - "joint safe-envelope violation above 2 deg compliance tolerance"
+  - "NaN/Inf"
+nonwheel_contact_policy: "formal failure and success rejection use ContactSensor net external force magnitude above 5 N; inherited link-center bounding-box counts are diagnostic only"
+active_recovery_commands:
+  APPROACH: "while no front wheel contact exists, hold all physical-forward wheel speeds at 0.3 rad/s"
+  BODY_TRANSFER: "hold all wheel speeds at zero during phase 6 so rear-leg preparation completes without pushing the base across the edge"
+  REAR_TRANSFER: "while both rear top contacts are incomplete in phases 7-8, use the height-conditioned per-wheel rear_transfer_drive anchors"
+  POST_TRANSFER: "in phases 9-10 command all wheels at the height-conditioned post_transfer_drive speed anchors (0.0/0.075/0.3 rad/s at 50/75/100 mm) until supported capture, then command all wheels zero; this replaces the partial 100 mm source's -1.32/-1.31/0/0 split"
+  OTHER_GATE_WAIT: "hold wheel speeds at zero so a latched non-zero source command cannot cause unbounded travel"
+rear_transfer_reference:
+  source: "complete 50 mm physically successful rear-leg channels"
+  applies_to_phases: "entire episode, from time zero, using a continuous height-conditioned time map"
+  time_map:
+    50mm: "identity"
+    75mm: "piecewise-linear map aligning rear u=0.50 to global u=0.537"
+    100mm: "piecewise-linear map aligning rear u=0.50 to global u=0.574"
+  reason: "the accepted 100 mm source is partial and contains no rear-leg lift/place commands; phase-only substitution caused a target jump, while unwarped mixing began rear preparation before 100 mm front placement"
+  body_transfer_coordination:
+    active_window: "height-conditioned phase-6 interval ending at global u=0.64"
+    50mm_blend: 0.0
+    75mm_blend: 0.5
+    100mm_blend: 1.0
+    trajectory: "first 35% smoothly extends front support to the recorded 100 mm recovery pose; next 40% moves both rear hips synchronously; final 25% performs the rear-right-knee tuck"
+    front_support_target_deg: [6.2, 2.3, 1.8, -4.4]
+    endpoints: "[0.7, 0, 0.7, 0] deg to [24.2, 0, 29.8, -44.8] deg, both recorded-safe"
+    front_support_target_evidence: "grid 005 candidate 0 (-3/-15 deg front-right offsets) and grid 007 candidate 0 reproduced the same collision-free phase-10 trajectory with zero IK fallback and zero clamp; the formal target is height-conditioned, so the complete 50 mm source remains unchanged"
+  rear_transfer_drive:
+    wheel_order: [front_left, front_right, rear_left, rear_right]
+    speed_anchors_rad_s:
+      50mm: [0.3, 0.3, 0.3, 0.3]
+      75mm: [0.0, 0.0, 0.3, 0.3]
+      100mm: [0.3, 0.3, 0.3, 0.3]
+    height_interpolation: "piecewise-linear through the 50/75/100 mm anchors and clamped outside them"
+    selection_reason: "grid 033 isolated front-wheel stopping during phases 7-8; grid 040 combined it with the selected post-transfer speed, support geometry, and unload trim"
+    evidence_result_sha256: "641275183c48ab5ff76b8a23e166ee5e09e7f13844ae21d31612cf9e5a978562"
+  post_transfer_drive:
+    maximum_physical_forward_speed_rad_s: 0.3
+    speed_anchors_rad_s:
+      50mm: 0.0
+      75mm: 0.075
+      100mm: 0.3
+    height_interpolation: "piecewise-linear through the 50/75/100 mm anchors and clamped outside them"
+    active_phases: [RECOVER, DRIVE_CLEAR]
+    evidence: "grid 039 produced strict successes at 0.075/0.1125/0.15 rad/s; the lowest successful 0.075 rad/s candidate had the best mean diagnostic dwell and grid 040 then repeated the complete selected combination"
+    evidence_result_sha256: "641275183c48ab5ff76b8a23e166ee5e09e7f13844ae21d31612cf9e5a978562"
+    supported_capture: "override all four wheel commands to zero whenever the formal all-wheels-on-top geometry is captured OR all four measured upward forces reach the unchanged 2 N threshold; resume only if both conditions drop"
+    supported_capture_evidence: "attempt 023 had full-top geometry from 129.2-131.6 s but did not reach four-wheel force support until 133.6 s; continued rolling moved front-right y from -0.4182 m to about -0.4312 m and made the two valid windows disjoint"
+  post_transfer_recovery:
+    active_window: "phase 9, global u=0.88 to u=0.94, only after both rear top contacts have permitted phase entry"
+    target_source: "direction toward the exact final rear-leg command from the physically successful 50 mm replay"
+    maximum_path_fraction: 0.10
+    height_blend: "0% path at 50 mm, 5% path at 75 mm, 10% path at 100 mm"
+    interpolation: "smoothstep"
+    reason: "attempt 013 logged contact-force magnitudes of 6.13/6.64/7.96/6.52 N near 10% recovery; these are not proof of the upward-force success predicate, so the 10% cap remains provisional pending the explicit upward-force audit"
+phases:
+  - INIT
+  - SETTLE
+  - APPROACH
+  - FIRST_CONTACT_CONFIRM
+  - FRONT_OR_FIRST_WHEEL_LIFT
+  - FRONT_OR_FIRST_WHEEL_PLACE
+  - BODY_TRANSFER
+  - REAR_OR_REMAINING_WHEEL_LIFT
+  - REAR_OR_REMAINING_WHEEL_PLACE
+  - RECOVER
+  - DRIVE_CLEAR
+  - SUCCESS
+  - FAIL
+height_75mm_reference: "normalized-time interpolation between frozen 50mm and 100mm references; development tuning required"

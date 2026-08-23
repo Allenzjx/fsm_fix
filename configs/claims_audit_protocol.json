@@ -1,0 +1,34 @@
+{
+  "schema": "resume_validation.claims_audit_protocol.v1",
+  "frozen_before_locked_test": true,
+  "primary_method": "C",
+  "baseline_method": "fsm",
+  "bootstrap_draws": 10000,
+  "confidence_level": 0.95,
+  "success_claim": {
+    "baseline_target_rate": 0.84,
+    "ppo_target_rate": 0.91,
+    "absolute_rate_tolerance": 0.005,
+    "verified_rule": "Both point estimates are within 0.5 percentage points of the claimed endpoints and the paired success-rate delta 95% bootstrap CI is strictly above zero.",
+    "partially_verified_rule": "The paired success-rate delta 95% bootstrap CI is strictly above zero, but one or both claimed numeric endpoints miss the registered tolerance.",
+    "not_verified_rule": "The paired success-rate delta 95% bootstrap CI includes or falls below zero."
+  },
+  "margin_claim": {
+    "target_improvement_mm": 10.0,
+    "absolute_tolerance_mm": 0.5,
+    "verified_rule": "The equal-height point estimate is within 0.5 mm of +10 mm and the paired all-valid-pair margin-delta 95% stratified bootstrap CI is strictly above zero.",
+    "partially_verified_rule": "The paired margin-delta 95% stratified bootstrap CI is strictly above zero, but the +10 mm numeric target misses the registered tolerance.",
+    "not_verified_rule": "The paired margin-delta 95% stratified bootstrap CI includes or falls below zero, or no complete valid pairs exist."
+  },
+  "pitch_claim": {
+    "target_reduction_percent": 31.0,
+    "absolute_tolerance_percentage_points": 0.5,
+    "near_zero_baseline_threshold_rad_s": 1e-06,
+    "verified_rule": "The reduction point estimate is within 0.5 percentage points of 31% and the paired pitch-rate delta (PPO minus FSM) 95% stratified bootstrap CI is strictly below zero.",
+    "partially_verified_rule": "The paired pitch-rate delta 95% stratified bootstrap CI is strictly below zero, but the 31% numeric target misses the registered tolerance.",
+    "not_verified_rule": "The paired pitch-rate delta CI includes or exceeds zero, or the FSM denominator is below the registered near-zero threshold."
+  },
+  "missing_continuous_metric_policy": "Never impute. Report missing counts and scenario IDs; paired continuous analysis uses complete pairs only and stratifies the bootstrap by height.",
+  "seed_policy": "Use all selected checkpoints for seeds 11/29/47. For FSM-vs-PPO paired across-seed inference, duplicate the fixed FSM outcome once per training seed and key pairs by seed plus scenario ID; also report every seed separately.",
+  "wording_policy": "A fallback validation selection, non-supportive confidence interval, or numeric mismatch must be disclosed. The generated resume wording uses actual locked-test values only."
+}

@@ -1,0 +1,9 @@
+protocol_version: "2.0.0"
+split: "locked_test"
+manifest: "data/locked_test/manifest_v2.json"
+manifest_sha256: "a621045d04b5a84a707fd2fb7a6cc8a8fe13aab3407dc944ea0dd6ae95cb58a3"
+episode_count: 300
+episodes_per_height: 100
+paired_methods: ["fsm", "residual_ppo_without_com", "residual_ppo_with_com"]
+training_must_not_read_results: true
+superseded_manifest: "data/locked_test/manifest.json"

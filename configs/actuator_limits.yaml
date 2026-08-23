@@ -1,0 +1,40 @@
+protocol_version: "1.0.0"
+units:
+  servo_command: "degree relative to imported standing pose"
+  simulator_position: "radian"
+  wheel_command: "radian/second physical-forward convention"
+replay_command_space:
+  hip_deg: [-135.0, 135.0]
+  knee_deg: [-60.0, 210.0]
+wheel_max_speed_rad_s: 2.0943951023931953
+joint_command_sign:
+  front_left_hip: 1.0
+  front_left_knee: 1.0
+  front_right_hip: 1.0
+  front_right_knee: 1.0
+  rear_left_hip: -1.0
+  rear_left_knee: -1.0
+  rear_right_hip: -1.0
+  rear_right_knee: -1.0
+wheel_forward_sign:
+  front_left_ankle: -1.0
+  front_right_ankle: 1.0
+  rear_left_ankle: -1.0
+  rear_right_ankle: 1.0
+recorded_success_union_deg:
+  front_left_hip: [-32.5, 63.0]
+  front_left_knee: [-42.0, 23.1]
+  front_right_hip: [0.0, 39.5]
+  front_right_knee: [-15.7, 31.4]
+  rear_left_hip: [-11.8, 24.2]
+  rear_left_knee: [0.0, 45.2]
+  rear_right_hip: [-35.3, 29.8]
+  rear_right_knee: [-60.0, 0.0]
+runtime_safe_limits_status: "PENDING_FRESH_USD_PHYSX_AND_COLLISION_WORKSPACE_INTERSECTION"
+known_conflicts:
+  - source_a: "canonical URDF/USD knee lower limits are approximately zero in raw space"
+    source_b: "successful recordings contain negative front-knee command and negative rear-right-knee command"
+    policy: "Do not silently choose. Fresh replay/runtime limit audit must establish whether runtime PhysX limits were widened. Until then formal training is gated."
+  - source_a: "height replay command hip range is +/-135 deg"
+    source_b: "canonical hip physical range is approximately +/-90 deg"
+    policy: "Use the more conservative runtime-verified physical range."

@@ -1,0 +1,27 @@
+physics_dt_s: 0.008333333333333333
+control_decimation: 2
+control_dt_s: 0.016666666666666666
+device: "cuda:0"
+episode_timeout_s: 150.0
+num_envs:
+  smoke: 1
+  vector_smoke: 16
+  development: 128
+terrain:
+  static_friction: 1.20
+  dynamic_friction: 1.00
+  restitution: 0.0
+obstacle:
+  heights_m: [0.05, 0.075, 0.10]
+  center_x_m: 1.55
+  front_x_m: 0.5213122012213478
+  length_m: 2.0573755975573045
+  width_m: 0.882200685486094
+  width_policy: "2x measured robot width"
+  length_policy: "3x measured robot length"
+  geometry_source: "fresh runtime dimensions of the converted validation USD, matching height replay generation policy"
+contact:
+  minimum_upward_support_force_n: 2.0
+  top_z_tolerance_m: 0.012
+  riser_x_tolerance_m: 0.012
+  minimum_support_span_m: 0.03
