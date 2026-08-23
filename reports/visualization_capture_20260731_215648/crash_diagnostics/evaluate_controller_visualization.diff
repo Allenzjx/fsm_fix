@@ -1,0 +1,332 @@
+--- C:\robotics_sim\wlr_robot\resume_validation_fsm_residual_ppo\src\resume_validation\evaluate_controller.py.pre_visualization_20260731_215648.bak
++++ C:\robotics_sim\wlr_robot\resume_validation_fsm_residual_ppo\src\resume_validation\evaluate_controller.py
+@@ -43,6 +43,23 @@
+ parser.add_argument("--video_fps", type=float, default=20.0)
+ parser.add_argument("--video_category", type=str, default="")
+ parser.add_argument("--video_outcome_label", choices=("", "success", "failure"), default="")
++parser.add_argument("--video_width", type=int, default=1280)
++parser.add_argument("--video_height", type=int, default=720)
++parser.add_argument("--video_frames_dir", type=Path)
++parser.add_argument("--video_seed", type=int, default=-1)
++parser.add_argument("--video_checkpoint_label", type=str, default="")
++parser.add_argument("--video_codec", choices=("libx264", "mjpeg"), default="libx264")
++parser.add_argument(
++    "--video_follow_camera",
++    action=argparse.BooleanOptionalAction,
++    default=False,
++    help=(
++        "Smoothly track the robot/obstacle midpoint for development replay video only. "
++        "Disabled by default because repeated set_camera_view calls can invalidate the "
++        "offscreen render product on this Isaac Sim installation."
++    ),
++)
++parser.add_argument("--heartbeat_path", type=Path)
+ AppLauncher.add_app_launcher_args(parser)
+ args = parser.parse_args()
+ if args.video_path is not None and not args.enable_cameras:
+@@ -51,6 +68,10 @@
+     parser.error("--video_path requires an exact --scenario_id")
+ if args.video_stride <= 0 or not math.isfinite(args.video_fps) or args.video_fps <= 0.0:
+     parser.error("video stride and FPS must be positive")
++if args.video_width <= 0 or args.video_height <= 0:
++    parser.error("video width and height must be positive")
++if args.video_frames_dir is not None and args.video_path is None:
++    parser.error("--video_frames_dir requires --video_path")
+ app = AppLauncher(args).app
+ 
+ import gymnasium as gym
+@@ -205,7 +226,47 @@
+     raw_env = None
+     env = None
+     video_writer = None
++    video_path = None
++    video_frames_dir = None
++    video_frame_count = 0
++    encoded_frame_count = 0
++    video_encoding_error = None
++    consecutive_black_video_frames = 0
++    heartbeat_path = args.heartbeat_path.resolve() if args.heartbeat_path else None
++
++    def write_heartbeat(state: str, simulation_time_s: float = 0.0) -> None:
++        if heartbeat_path is None:
++            return
++        heartbeat_path.parent.mkdir(parents=True, exist_ok=True)
++        temporary = heartbeat_path.with_suffix(heartbeat_path.suffix + ".tmp")
++        temporary.write_text(
++            json.dumps(
++                {
++                    "state": state,
++                    "updated_unix": time.time(),
++                    "simulation_time_s": float(simulation_time_s),
++                    "frame_count": int(video_frame_count),
++                    "encoded_frame_count": int(encoded_frame_count),
++                },
++                sort_keys=True,
++            )
++            + "\n",
++            encoding="utf-8",
++        )
++        # On Windows the supervisor can momentarily hold the destination while
++        # decoding it.  Heartbeat observability must never abort physics.
++        for attempt in range(5):
++            try:
++                temporary.replace(heartbeat_path)
++                break
++            except PermissionError:
++                if attempt == 4:
++                    temporary.unlink(missing_ok=True)
++                    break
++                time.sleep(0.01)
++
+     try:
++        write_heartbeat("STARTING")
+         manifest = args.manifest.resolve()
+         if args.require_locked_hash:
+             actual = sha256_file(manifest)
+@@ -609,7 +670,7 @@
+         }
+         cfg.seed = int(metadata.get("seed", 0))
+         if args.video_path is not None:
+-            cfg.viewer.resolution = (960, 540)
++            cfg.viewer.resolution = (int(args.video_width), int(args.video_height))
+         if getattr(args, "device", None):
+             cfg.sim.device = args.device
+         raw_env = WLRResidualRLEnv(
+@@ -618,9 +679,15 @@
+         )
+         if args.video_path is not None:
+             raw_env.sim.set_camera_view(
+-                eye=(1.15, -2.35, 0.95),
+-                target=(1.15, 0.0, 0.24),
+-            )
++                eye=(-0.05, -2.30, 1.00),
++                target=(0.60, 0.0, 0.24),
++            )
++            # Prime the offscreen render product before the first recorded
++            # controller frame.  On Isaac Sim 5.1 the first RGB read after a
++            # camera pose change can otherwise be an all-black initialization
++            # frame even though subsequent reads are valid.
++            for _ in range(3):
++                raw_env.sim.render()
+         env = SkrlVecEnvWrapper(raw_env, ml_framework="torch")
+         observation, _ = env.reset()
+         _settle_nominal_standing(raw_env, args.initial_settle_physics_steps)
+@@ -634,7 +701,7 @@
+             "episode_clock_starts_after_settle": True,
+         }
+         video_path = args.video_path.resolve() if args.video_path else None
+-        video_frame_count = 0
++        camera_anchor_x = 0.60
+         if video_path is not None:
+             if video_path.parent != output_dir:
+                 raise ValueError(
+@@ -642,15 +709,31 @@
+                 )
+             if video_path.exists():
+                 raise FileExistsError(f"Refusing to overwrite video: {video_path}")
++            video_frames_dir = (
++                args.video_frames_dir.resolve()
++                if args.video_frames_dir is not None
++                else None
++            )
++            if video_frames_dir is not None:
++                if output_dir not in video_frames_dir.parents:
++                    raise ValueError("Video frames directory must be inside the new evaluation output directory")
++                video_frames_dir.mkdir(parents=True, exist_ok=False)
+             import imageio.v2 as imageio
+ 
+-            video_writer = imageio.get_writer(
+-                video_path,
+-                fps=float(args.video_fps),
+-                codec="libx264",
+-                quality=8,
+-                macro_block_size=None,
+-            )
++            try:
++                video_writer = imageio.get_writer(
++                    video_path,
++                    fps=float(args.video_fps),
++                    codec=args.video_codec,
++                    quality=8,
++                    macro_block_size=None,
++                )
++            except Exception as exc:
++                video_encoding_error = f"{type(exc).__name__}: {exc}"
++                video_writer = None
++                if video_frames_dir is None:
++                    video_frames_dir = output_dir / "frames_encode_failure"
++                    video_frames_dir.mkdir(parents=True, exist_ok=True)
+             result["video_replay"] = {
+                 "path": str(video_path),
+                 "scenario_id": args.scenario_id,
+@@ -658,11 +741,13 @@
+                 "locked_outcome_label": args.video_outcome_label,
+                 "frame_stride_control_steps": int(args.video_stride),
+                 "fps": float(args.video_fps),
+-                "resolution": [960, 540],
+-                "camera_eye_w": [1.15, -2.35, 0.95],
+-                "camera_target_w": [1.15, 0.0, 0.24],
++                "resolution": [int(args.video_width), int(args.video_height)],
++                "camera_eye_offset": [-0.65, -2.30, 0.76],
++                "camera_target_initial_w": [0.60, 0.0, 0.24],
++                "smooth_follow": bool(args.video_follow_camera),
+                 "overlay_is_diagnostic_only": True,
+             }
++        write_heartbeat("RUNNING", 0.0)
+         agent = _make_agent(env, checkpoint) if checkpoint else None
+ 
+         count = len(scenarios)
+@@ -983,29 +1068,66 @@
+             )
+             final_base_x = torch.where(active, root_x, final_base_x)
+             if (
+-                video_writer is not None
++                video_path is not None
+                 and step % int(args.video_stride) == 0
+                 and bool(active[0].item())
+                 and not bool(done[0].item())
+             ):
+-                frame = raw_env.render()
+-                if frame is None or frame.size == 0:
+-                    raise RuntimeError("RGB renderer returned no video frame")
++                if args.video_follow_camera:
++                    desired_anchor_x = (
++                        0.55 * float(root_x[0].item())
++                        + 0.45 * float(scenarios[0]["obstacle_front_x_m"])
++                    )
++                    camera_anchor_x = 0.88 * camera_anchor_x + 0.12 * desired_anchor_x
++                    raw_env.sim.set_camera_view(
++                        eye=(camera_anchor_x - 0.65, -2.30, 1.00),
++                        target=(camera_anchor_x, 0.0, 0.24),
++                    )
+                 import cv2
+ 
+-                frame = np.ascontiguousarray(frame)
++                # The Isaac Lab rgb_array annotator on this Isaac Sim 5.1 build
++                # can alternate an empty buffer and a valid buffer. Re-render at
++                # the same physics state up to three times and only record a valid
++                # scene. This changes neither simulation time nor controller steps.
++                for render_attempt in range(3):
++                    frame = raw_env.render()
++                    if frame is None or frame.size == 0:
++                        render_mean = 0.0
++                        render_std = 0.0
++                    else:
++                        frame = np.ascontiguousarray(frame)
++                        render_mean = float(np.mean(frame))
++                        render_std = float(np.std(frame))
++                    if render_mean >= 2.0 and render_std >= 2.0:
++                        consecutive_black_video_frames = 0
++                        break
++                    consecutive_black_video_frames += 1
++                else:
++                    raise RuntimeError(
++                        "RGB renderer returned three blank retry frames at one physics state "
++                        f"(mean={render_mean:.4f}, std={render_std:.4f})"
++                    )
++                controller_label = {
++                    "fsm": "Frozen FSM",
++                    "B": "Method B",
++                    "C": "Method C",
++                }[args.controller]
++                checkpoint_label = args.video_checkpoint_label or (
++                    checkpoint.name if checkpoint is not None else "none"
++                )
+                 overlay = [
+                     (
+-                        f"method={args.controller} height={args.height_mm}mm "
+-                        f"scenario={args.scenario_id}"
++                        f"Controller: {controller_label}  Seed: "
++                        f"{'n/a' if args.video_seed < 0 else args.video_seed}  Height: {args.height_mm} mm"
+                     ),
+                     (
+-                        f"category={args.video_category or 'unspecified'} "
+-                        f"locked_outcome={args.video_outcome_label or 'unspecified'}"
++                        f"Checkpoint: {checkpoint_label}  Scenario: {args.scenario_id}"
+                     ),
+                     (
+-                        f"t={step * float(raw_env.step_dt):7.2f}s "
+-                        f"phase={int(phase[0].item())} "
++                        f"Simulation time: {step * float(raw_env.step_dt):7.2f} s  "
++                        f"FSM phase: {int(phase[0].item())}  Outcome: RUNNING"
++                    ),
++                    (
+                         f"pitch={float(pitch[0].item()):+.4f}rad "
+                         f"pitch_rate={float(pitch_rate[0].item()):+.4f}rad/s"
+                     ),
+@@ -1045,8 +1167,28 @@
+                         1,
+                         cv2.LINE_AA,
+                     )
+-                video_writer.append_data(frame)
++                if video_frames_dir is not None:
++                    frame_path = video_frames_dir / f"frame_{video_frame_count:06d}.png"
++                    if not cv2.imwrite(str(frame_path), cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)):
++                        raise RuntimeError(f"Failed to save raw PNG frame: {frame_path}")
++                if video_writer is not None:
++                    try:
++                        video_writer.append_data(frame)
++                        encoded_frame_count += 1
++                    except Exception as exc:
++                        video_encoding_error = f"{type(exc).__name__}: {exc}"
++                        try:
++                            video_writer.close()
++                        except Exception:
++                            pass
++                        video_writer = None
++                        if video_frames_dir is None:
++                            video_frames_dir = output_dir / "frames_encode_failure"
++                            video_frames_dir.mkdir(parents=True, exist_ok=True)
++                            frame_path = video_frames_dir / f"frame_{video_frame_count:06d}.png"
++                            cv2.imwrite(str(frame_path), cv2.cvtColor(frame, cv2.COLOR_RGB2BGR))
+                 video_frame_count += 1
++                write_heartbeat("RUNNING", step * float(raw_env.step_dt))
+             if step % max(1, args.record_stride) == 0:
+                 for env_id in active.nonzero(as_tuple=False).flatten().detach().cpu().tolist():
+                     rows.append(
+@@ -1581,15 +1723,21 @@
+         if video_writer is not None:
+             video_writer.close()
+             video_writer = None
+-            if video_frame_count <= 0 or video_path is None or not video_path.is_file():
+-                raise RuntimeError("Video replay produced no encoded frames")
++        if video_path is not None:
++            if video_frame_count <= 0:
++                raise RuntimeError("Video replay produced no captured frames")
+             result["video_replay"]["frame_count"] = video_frame_count
++            result["video_replay"]["encoded_frame_count"] = encoded_frame_count
+             result["video_replay"]["duration_s"] = (
+                 video_frame_count / float(args.video_fps)
+             )
+-            result["video_replay"]["sha256"] = sha256_file(video_path)
+-            result["artifacts"]["video"] = str(video_path)
+-            result["artifacts"]["video_sha256"] = sha256_file(video_path)
++            result["video_replay"]["encoding_error"] = video_encoding_error
++            if video_frames_dir is not None:
++                result["artifacts"]["video_frames"] = str(video_frames_dir)
++            if video_path.is_file() and video_path.stat().st_size > 0 and video_encoding_error is None:
++                result["video_replay"]["sha256"] = sha256_file(video_path)
++                result["artifacts"]["video"] = str(video_path)
++                result["artifacts"]["video_sha256"] = sha256_file(video_path)
+         result["passed_execution"] = True
+     except Exception as exc:
+         result["failures"].append(f"{type(exc).__name__}: {exc}")
+@@ -1598,12 +1746,17 @@
+         if video_writer is not None:
+             video_writer.close()
+         result["finished_unix"] = time.time()
++        write_heartbeat("FINISHED", float(result.get("video_replay", {}).get("duration_s", 0.0)))
+         result_path.write_text(json.dumps(result, indent=2, sort_keys=True, allow_nan=False) + "\n", encoding="utf-8")
+         if env is not None:
+             env.close()
+         elif raw_env is not None:
+             raw_env.close()
+-        app.close()
++        # Isaac Sim 5.1 can wait indefinitely for a Replicator workflow during
++        # graceful shutdown even though this evaluator uses an independent
++        # imageio writer.  Do not wait for Replicator; all capture artifacts are
++        # closed above before application teardown.
++        app.close(wait_for_replicator=False)
+     print(json.dumps({"result": str(result_path), "passed_execution": result["passed_execution"], "failures": result["failures"]}, indent=2))
+     return 0 if result["passed_execution"] else 1
+ 

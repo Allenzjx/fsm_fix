@@ -1,0 +1,7 @@
+height_mm,failure_reason,count,final_phase,mean_episode_time_s,evidence
+50,BODY_OR_LINK_COLLISION,6,REAR_OR_REMAINING_WHEEL_PLACE,,runs\fsm\development_50mm_current_config_attempt043\episodes.jsonl
+50,BODY_OR_LINK_COLLISION,1,DRIVE_CLEAR,,runs\fsm\development_50mm_current_config_attempt043\episodes.jsonl
+50,FSM_PHASE_TIMEOUT,1,RECOVER,,runs\fsm\development_50mm_current_config_attempt043\episodes.jsonl
+75,TIMEOUT,13,DRIVE_CLEAR,,runs\fsm\development_75mm_formal_full_attempt042\episodes.jsonl
+100,BODY_OR_LINK_COLLISION,7,REAR_OR_REMAINING_WHEEL_PLACE,,runs\fsm\development_100mm_current_config_attempt044\episodes.jsonl
+100,TIMEOUT,6,DRIVE_CLEAR,,runs\fsm\development_100mm_current_config_attempt044\episodes.jsonl

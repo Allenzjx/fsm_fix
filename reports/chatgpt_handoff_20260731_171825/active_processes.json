@@ -1,0 +1,149 @@
+{
+    "schema":  "resume_validation.read_only_process_audit.v1",
+    "generated_utc":  "2026-07-31T22:13:02.4682427Z",
+    "project":  "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo",
+    "safe_to_start_gui_or_diagnostic":  false,
+    "safety_reason":  "Externally owned training and supervisor processes are active. Do not interrupt; inspection commands must remain DryRun.",
+    "destructive_actions_taken":  [
+
+                                  ],
+    "new_training_or_evaluation_started_by_audit":  false,
+    "locked_test_contents_read":  false,
+    "initial_snapshot":  {
+                             "observed_utc":  "2026-07-31T21:19:12Z",
+                             "stage":  "development_evaluation",
+                             "controller":  "B",
+                             "seed":  47,
+                             "height_mm":  100,
+                             "checkpoint":  "final_agent.pt",
+                             "local_timestep":  76800,
+                             "heartbeat_path":  "runs\\\\ppo_without_com\\\\formal_v34_recovery_attempt002_heartbeat.json",
+                             "heartbeat_hang_detected":  false,
+                             "note":  "Initial process check found the externally owned final Method-B development evaluation. It was not interrupted.",
+                             "principal_pids":  [
+                                                    117916,
+                                                    162424,
+                                                    151916,
+                                                    32684,
+                                                    104544,
+                                                    153208,
+                                                    19548,
+                                                    146256
+                                                ]
+                         },
+    "final_snapshot":  {
+                           "observed_utc":  "2026-07-31T22:13:02.4682427Z",
+                           "supervisor":  {
+                                              "path":  "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\orchestration\\full_pipeline_supervisor_attempt003.json",
+                                              "attempt":  3,
+                                              "status":  "RUNNING_PIPELINE",
+                                              "updated_utc":  "2026-07-31T22:12:42.4494450Z",
+                                              "live_training_pids":  [
+                                                                         27820
+                                                                     ]
+                                          },
+                           "training":  {
+                                            "stage":  "training",
+                                            "method":  "C",
+                                            "seed":  11,
+                                            "height_mm":  50,
+                                            "status":  "RUNNING",
+                                            "run_dir":  "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_with_com\\training\\method-C-v34_seed-11_stage-50mm_attempt001",
+                                            "result_path":  "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_with_com\\training\\method-C-v34_seed-11_stage-50mm_attempt001\\training_result.json",
+                                            "recorded_pid":  27820,
+                                            "observed_local_timestep":  19136,
+                                            "requested_local_timesteps":  76800,
+                                            "checkpoint_count":  12,
+                                            "development_gate_exists":  false,
+                                            "event_file":  "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_with_com\\training\\method-C-v34_seed-11_stage-50mm_attempt001\\events.out.tfevents.1785533561.Allenzjx.27820.0",
+                                            "event_file_bytes":  218199,
+                                            "event_file_last_write_utc":  "2026-07-31T22:12:55.9588030Z",
+                                            "last_update_utc":  "2026-07-31T22:12:55.9588030Z",
+                                            "heartbeat_path":  "",
+                                            "hang_flag":  null,
+                                            "heartbeat_note":  "No Method-C heartbeat file exists; progress was read from the growing TensorBoard event file and live PID, so hang status is not inferred."
+                                        },
+                           "processes":  [
+                                             {
+                                                 "pid":  61792,
+                                                 "parent_pid":  43916,
+                                                 "name":  "powershell.exe",
+                                                 "creation_utc":  "2026-07-31T21:32:26.0132430Z",
+                                                 "cpu_seconds":  4.515625,
+                                                 "working_set_bytes":  149389312,
+                                                 "responding":  true,
+                                                 "command_line":  "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -File C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\scripts\\full_pipeline_supervisor.ps1 -Attempt 3 -PollSeconds 30 -RuntimeVersion v34 -ValidationAttempt 1 -VideoSmokeAttempt 1 -LockedAttempt 1 -VideoAttempt 1 "
+                                             },
+                                             {
+                                                 "pid":  138404,
+                                                 "parent_pid":  43916,
+                                                 "name":  "powershell.exe",
+                                                 "creation_utc":  "2026-07-31T21:32:26.0439950Z",
+                                                 "cpu_seconds":  1.859375,
+                                                 "working_set_bytes":  92418048,
+                                                 "responding":  true,
+                                                 "command_line":  "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -File C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\scripts\\pipeline_keep_awake.ps1 -SupervisorPid 61792 -Attempt 4 -PollSeconds 30 "
+                                             },
+                                             {
+                                                 "pid":  60564,
+                                                 "parent_pid":  61792,
+                                                 "name":  "powershell.exe",
+                                                 "creation_utc":  "2026-07-31T21:32:27.5603500Z",
+                                                 "cpu_seconds":  0.828125,
+                                                 "working_set_bytes":  97697792,
+                                                 "responding":  true,
+                                                 "command_line":  "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -File C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\scripts\\run_until_success.ps1 -RuntimeVersion v34 -ValidationAttempt 1 -VideoSmokeAttempt 1 -LockedAttempt 1 -VideoAttempt 1 "
+                                             },
+                                             {
+                                                 "pid":  89240,
+                                                 "parent_pid":  60564,
+                                                 "name":  "powershell.exe",
+                                                 "creation_utc":  "2026-07-31T21:32:28.1793390Z",
+                                                 "cpu_seconds":  0.28125,
+                                                 "working_set_bytes":  79151104,
+                                                 "responding":  true,
+                                                 "command_line":  "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -NoProfile -ExecutionPolicy Bypass -File C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\scripts\\06_train_C.ps1 -Attempt 1 -RuntimeVersion v34 -StartSeed 11 -StartHeight 50 -ContinueAfterFailedGate"
+                                             },
+                                             {
+                                                 "pid":  98680,
+                                                 "parent_pid":  89240,
+                                                 "name":  "cmd.exe",
+                                                 "creation_utc":  "2026-07-31T21:32:28.4159090Z",
+                                                 "cpu_seconds":  0,
+                                                 "working_set_bytes":  9404416,
+                                                 "responding":  true,
+                                                 "command_line":  "C:\\WINDOWS\\system32\\cmd.exe /c \"\"C:\\Users\\kskzz\\miniconda3\\Library\\bin\\conda.bat\" run --no-capture-output -n env_isaaclab .\\isaaclab.bat -p C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\train_residual_ppo.py --method C --seed 11 --height_mm 50 --iterations 1200 --num_envs 64 --rollouts 64 --randomization_level full --run_name method-C-v34_seed-11_stage-50mm_attempt001 --output_root C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_with_com\\training --headless\""
+                                             },
+                                             {
+                                                 "pid":  127120,
+                                                 "parent_pid":  98680,
+                                                 "name":  "conda.exe",
+                                                 "creation_utc":  "2026-07-31T21:32:28.4541850Z",
+                                                 "cpu_seconds":  0,
+                                                 "working_set_bytes":  8585216,
+                                                 "responding":  true,
+                                                 "command_line":  "\"C:\\Users\\kskzz\\miniconda3\\Scripts\\conda.exe\"    run --no-capture-output -n env_isaaclab .\\isaaclab.bat -p C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\train_residual_ppo.py --method C --seed 11 --height_mm 50 --iterations 1200 --num_envs 64 --rollouts 64 --randomization_level full --run_name method-C-v34_seed-11_stage-50mm_attempt001 --output_root C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_with_com\\training --headless"
+                                             },
+                                             {
+                                                 "pid":  42768,
+                                                 "parent_pid":  127120,
+                                                 "name":  "python.exe",
+                                                 "creation_utc":  "2026-07-31T21:32:28.4713840Z",
+                                                 "cpu_seconds":  0.65625,
+                                                 "working_set_bytes":  77873152,
+                                                 "responding":  true,
+                                                 "command_line":  "C:\\Users\\kskzz\\miniconda3\\python.exe C:\\Users\\kskzz\\miniconda3\\Scripts\\conda-script.py run --no-capture-output -n env_isaaclab .\\isaaclab.bat -p C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\train_residual_ppo.py --method C --seed 11 --height_mm 50 --iterations 1200 --num_envs 64 --rollouts 64 --randomization_level full --run_name method-C-v34_seed-11_stage-50mm_attempt001 --output_root C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_with_com\\training --headless"
+                                             },
+                                             {
+                                                 "pid":  27820,
+                                                 "parent_pid":  6428,
+                                                 "name":  "python.exe",
+                                                 "creation_utc":  "2026-07-31T21:32:30.3758130Z",
+                                                 "cpu_seconds":  2505.09375,
+                                                 "working_set_bytes":  3931287552,
+                                                 "responding":  true,
+                                                 "command_line":  "C:\\Users\\kskzz\\miniconda3\\envs\\env_isaaclab\\python.exe  C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\train_residual_ppo.py --method C --seed 11 --height_mm 50 --iterations 1200 --num_envs 64 --rollouts 64 --randomization_level full --run_name method-C-v34_seed-11_stage-50mm_attempt001 --output_root C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\ppo_with_com\\training --headless"
+                                             }
+                                         ]
+                       }
+}

@@ -1,0 +1,14 @@
+{
+  "completed_frames": 120,
+  "enable_cameras": true,
+  "failures": [],
+  "finished_at": 1785550039.538119,
+  "first_mean": 110.98210033275463,
+  "headless": true,
+  "last_mean": 101.22390118634259,
+  "mean_absolute_change": 12.047564742476851,
+  "passed": true,
+  "requested_frames": 120,
+  "schema": "resume_validation.isaac_startup_smoke.v1",
+  "started_at": 1785550034.696473
+}

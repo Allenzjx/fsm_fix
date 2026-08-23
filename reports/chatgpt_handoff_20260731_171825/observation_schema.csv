@@ -1,0 +1,36 @@
+consumer,slice,name,unit,normalization,clip/encoding,privileged,source
+actor,0,obstacle_height/0.10,normalized,/0.10,"noise; network clip [-20,20]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,1,obstacle_front_x - base_x,m,none,"noise; network clip [-20,20]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,2,-base_y/0.5,normalized,/0.5,"noise; network clip [-20,20]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,3,(obstacle_top_z-base_z)/0.20,normalized,/0.20,"noise; network clip [-20,20]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,4,obstacle_detection_valid,bool,none,always 1 in current sim,false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,5,obstacle_detection_age,s,none,always 0 in current sim,false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,6:18,FSM phase one-hot (13),bool,none,"network clip [-20,20]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,19,FSM phase progress,0..1,none,"[0,1]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,20,elapsed/reference duration,0..1,none,"[0,1]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,21:28,FSM reference wheel centers x/z (4x2),m,/0.35,"network clip [-20,20]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,29:32,FSM reference wheel speeds,rad/s,/wheel_max,"network clip [-20,20]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,33:35,projected gravity in body frame,unit vector,none,"network clip [-20,20]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,36:37,"roll, pitch",rad,none,"network clip [-20,20]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,38:40,body angular velocity,rad/s,/5,"network clip [-20,20]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,41:43,body linear velocity,m/s,/2,"network clip [-20,20]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,44:46,finite-difference body acceleration,m/s^2,/20,"pre-clipped [-5,5]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,47,base height,m,/0.5,"network clip [-20,20]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,48:55,servo joint position within safe range,normalized,center/half-range,"network clip [-20,20]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,56:63,servo joint velocity,rad/s,/5,"network clip [-20,20]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,64:67,wheel joint velocity,rad/s,/wheel_max,"network clip [-20,20]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,68:79,previous raw PPO action,normalized,none,"delayed action already clipped [-1,1]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,80:87,servo target tracking error,normalized,/joint half-range,"network clip [-20,20]",false,src\resume_validation\residual_rl_env.py:1721-1832
+actor,88:95,distance to nearest servo safe limit,normalized,/joint half-range,"network clip [-20,20]",false,src\resume_validation\residual_rl_env.py:1721-1832
+critic,96,true obstacle height,m,none,"network clip [-20,20]",true,src\resume_validation\residual_rl_env.py:1721-1832
+critic,97:112,wheel contact class one-hot (4x4),bool,none,"network clip [-20,20]",true,src\resume_validation\residual_rl_env.py:1721-1832
+critic,113:116,wheel contact force magnitude,N,/50,"network clip [-20,20]",true,src\resume_validation\residual_rl_env.py:1721-1832
+critic,117:128,wheel positions relative to base (4x3),m,none,"network clip [-20,20]",true,src\resume_validation\residual_rl_env.py:1721-1832
+critic,129:131,CoM x/y relative to base plus zero z placeholder,m,none,"network clip [-20,20]",true,src\resume_validation\residual_rl_env.py:1721-1832
+critic,132,longitudinal support margin,m,none,invalid encoded 0,true,src\resume_validation\residual_rl_env.py:1721-1832
+critic,133,support margin valid,bool,none,"network clip [-20,20]",true,src\resume_validation\residual_rl_env.py:1721-1832
+critic,134:139,world root velocity,"m/s,rad/s",/5,"network clip [-20,20]",true,src\resume_validation\residual_rl_env.py:1721-1832
+critic,140,friction,coefficient,none,"network clip [-20,20]",true,src\resume_validation\residual_rl_env.py:1721-1832
+critic,141,action delay,steps,/2,"network clip [-20,20]",true,src\resume_validation\residual_rl_env.py:1721-1832
+critic,142,constant validity flag,bool,none,always 1,true,src\resume_validation\residual_rl_env.py:1721-1832
+critic,143:145,"obstacle front x, zero y, height",m,none,"network clip [-20,20]",true,src\resume_validation\residual_rl_env.py:1721-1832

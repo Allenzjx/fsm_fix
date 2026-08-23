@@ -1,0 +1,11 @@
+{
+  "completed_frames": 120,
+  "enable_cameras": false,
+  "failures": [],
+  "finished_at": 1785576559.3657959,
+  "headless": true,
+  "passed": true,
+  "requested_frames": 120,
+  "schema": "resume_validation.isaac_startup_smoke.v1",
+  "started_at": 1785576558.256901
+}

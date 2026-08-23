@@ -1,0 +1,11 @@
+{
+  "schema": "resume_validation.chatgpt_handoff_audit.v1",
+  "generated_utc": "2026-07-31T22:14:55.054814+00:00",
+  "project": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo",
+  "report": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\chatgpt_handoff_20260731_171825",
+  "locked_test_contents_read": false,
+  "new_training_started": false,
+  "new_evaluation_started": false,
+  "canonical_method_b_strata": 9,
+  "method_c_artifact_count": 17
+}

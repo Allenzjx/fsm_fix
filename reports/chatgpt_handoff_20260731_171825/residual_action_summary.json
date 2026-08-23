@@ -1,0 +1,30 @@
+{
+  "B-final-75mm": {
+    "mean_executed_norm": 0.0,
+    "max_executed_norm": 0.0,
+    "mean_executed_nonzero_fraction": 0.0,
+    "mean_policy_norm": 0.05070353062540954,
+    "mean_policy_clip_fraction": 0.0
+  },
+  "FSM-zero-residual-75mm": {
+    "mean_executed_norm": 0.0,
+    "max_executed_norm": 0.0,
+    "mean_executed_nonzero_fraction": 0.0,
+    "mean_policy_norm": 0.0,
+    "mean_policy_clip_fraction": 0.0
+  },
+  "B-final-100mm": {
+    "mean_executed_norm": 0.0,
+    "max_executed_norm": 0.0,
+    "mean_executed_nonzero_fraction": 0.0,
+    "mean_policy_norm": 0.0939826648884825,
+    "mean_policy_clip_fraction": 0.0
+  },
+  "FSM-zero-residual-100mm": {
+    "mean_executed_norm": 0.0,
+    "max_executed_norm": 0.0,
+    "mean_executed_nonzero_fraction": 0.0,
+    "mean_policy_norm": 0.0,
+    "mean_policy_clip_fraction": 0.0
+  }
+}
