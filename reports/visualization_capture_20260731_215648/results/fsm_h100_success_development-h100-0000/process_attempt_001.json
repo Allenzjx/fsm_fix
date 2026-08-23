@@ -1,0 +1,21 @@
+{
+  "checkpoint_sha256": "",
+  "child_pid": 162068,
+  "command": "C:\\Users\\kskzz\\miniconda3\\Scripts\\conda.exe run --no-capture-output -n env_isaaclab C:\\robotics_sim\\IsaacLab\\isaaclab.bat -p C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\tools\\visualization\\launch_existing_evaluator.py --controller fsm --manifest C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\data\\scenario_manifests\\development_v2.json --height_mm 100 --output_dir C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\results\\fsm_h100_success_development-h100-0000\\sim_attempt_001 --scenario_id development-h100-0000 --record_stride 3 --video_path C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\results\\fsm_h100_success_development-h100-0000\\sim_attempt_001\\raw.avi --video_stride 30 --video_fps 2 --video_width 1280 --video_height 720 --video_category development-visualization --video_outcome_label success --video_seed -1 --video_checkpoint_label none --video_codec mjpeg --no-video_follow_camera --heartbeat_path C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\results\\fsm_h100_success_development-h100-0000\\sim_attempt_001\\heartbeat.json --enable_cameras --headless",
+  "descendant_pids": [
+    156696,
+    98232,
+    168572
+  ],
+  "duration_s": 1675.1853153705597,
+  "ended_at": 1785563722.0361037,
+  "exit_code": 0,
+  "forced_shutdown_after_result": false,
+  "kit_log_path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\logs\\fsm_h100_success_development-h100-0000_attempt001_kit_20260801_012728.log",
+  "owned_pids_stopped": [],
+  "parent_pid": 109464,
+  "started_at": 1785562046.8507884,
+  "stderr_path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\logs\\fsm_h100_success_development-h100-0000_attempt001.stderr.log",
+  "stdout_path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\reports\\visualization_capture_20260731_215648\\logs\\fsm_h100_success_development-h100-0000_attempt001.stdout.log",
+  "working_directory": "C:\\robotics_sim\\IsaacLab"
+}
