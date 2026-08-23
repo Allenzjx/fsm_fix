@@ -1,0 +1,89 @@
+{
+  "artifacts": {
+    "commands_csv": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\replay\\replay_100mm_direct_attempt001\\commands.csv",
+    "commands_sha256": "8c4963576475c100aa5ecc1513c01d8363c9d9e433f4c948d342e437bbf74944",
+    "contacts_jsonl": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\replay\\replay_100mm_direct_attempt001\\contacts.jsonl",
+    "contacts_sha256": "7cc94af25908a1aabc004b418da4c5a8d99237cc4363f517bbfc8832b9d9b246",
+    "telemetry_jsonl": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\replay\\replay_100mm_direct_attempt001\\telemetry.jsonl",
+    "telemetry_sha256": "817d80a245f08fdf4f42f5b424a4ab11799a7ea7dddc0fdb2a80c1868bfa7bd6"
+  },
+  "asset": {
+    "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\assets\\converted\\wlr_robot_validation.usd",
+    "sha256": "98103315e8ad456881a28a9b3dc77f7aaa8bc9a5200e40c435bea8002c4f81dd"
+  },
+  "checks": {
+    "all_commands_dispatched": true,
+    "all_events_dispatched": true,
+    "contact_sensor_rows_present": true,
+    "no_body_or_link_collision": true,
+    "no_command_limit_violation": true,
+    "no_fall": true,
+    "no_joint_limit_violation": true,
+    "no_numerical_error": true,
+    "not_diagnostic_truncation": true,
+    "stable_success_dwell_observed": false
+  },
+  "failures": [
+    "stable_success_dwell_observed"
+  ],
+  "finished_unix": 1785140672.2025614,
+  "geometry": {
+    "back_x_m": 2.5786877987786525,
+    "front_x_m": 0.5213122012213478,
+    "obstacle_height_m": 0.1,
+    "obstacle_length_m": 2.0573755975573045,
+    "obstacle_width_m": 0.882200685486094,
+    "obstacle_x_m": 1.55
+  },
+  "height_mm": 100,
+  "implementation": {
+    "actuator_config_sha256": "56a2144743e2d5b377b5e96c91355924f27cb1bafe5d50c96a1d9fb571dd195f",
+    "metrics_config_sha256": "8f603da796fe4624b7534452d7d90182ee49425d8b5b9f805686813b4d1d52c0",
+    "runner_path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\src\\resume_validation\\replay_direct_validation.py",
+    "runner_sha256": "4fa27562104d075f561c9f823a6706b40ed9d04c1ff62d5b79376a8d0601ea89",
+    "telemetry_config_sha256": "ac0ccf48a36be1b25296206770a9f5a554edf1e79a0ed4c226f74f5ac0cfe1dd"
+  },
+  "metrics": {
+    "commands_dispatched": 101,
+    "control_dt_s": 0.016666666666666666,
+    "control_metric_sample_count": 7499,
+    "episode_min_longitudinal_support_margin_m": -0.3060328960418701,
+    "events_dispatched": 68,
+    "final_base_x_m": 0.7595416307449341,
+    "forward_progress_m": 0.758307158946991,
+    "initial_base_x_m": 0.0012344717979431152,
+    "invalid_margin_samples": 1563,
+    "max_abs_pitch_rad": 0.18823827803134918,
+    "max_abs_roll_rad": 0.10144247114658356,
+    "max_dispatch_jitter_s": 0.01633333334078202,
+    "pitch_rate_rms_rad_s": 0.054614832894739215,
+    "sample_count": 2500,
+    "termination_control_step": null
+  },
+  "passed": false,
+  "schema": "resume_validation.direct_replay.v1",
+  "seed": 20260727,
+  "source_replay": {
+    "dispatched_command_count": 101,
+    "event_count": 68,
+    "max_idle_gap_s": null,
+    "path": "C:\\robotics_sim\\wlr_robot\\height_based_obstacle_replay\\saved_height_steps\\height_10cm\\accepted_steps.jsonl",
+    "playback_duration_s": 121.95599999977276,
+    "playback_semantics": "dispatch expanded_commands when present, otherwise command; reconstruct post-event state",
+    "profile": "raw",
+    "raw_duration_s": 121.95599999977276,
+    "reference_playback_sha256": "b6b40d276dfb49e4dd181f65dbabab5e77a54cfb34b6e648b067d41433f2d836",
+    "reference_sequence_model_sha256": "af333f7c0db7ece943a919030b03bc294b1cd9ebc7dc2f10452b57975f399c68",
+    "sha256": "1132b160e4e6e937e060285344d1ae3608b2f749fc28dce24aae26def5f005f5",
+    "step_count": 18
+  },
+  "started_unix": 1785140130.2018416,
+  "telemetry_forced_on_safety_or_terminal_event": true,
+  "telemetry_nominal_stride_control_steps": 3,
+  "versions": {
+    "cuda": "12.8",
+    "isaaclab": "0.54.3",
+    "isaacsim": "5.1.0.0",
+    "torch": "2.7.0+cu128"
+  }
+}

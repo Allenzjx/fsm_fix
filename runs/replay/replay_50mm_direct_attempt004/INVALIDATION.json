@@ -1,0 +1,9 @@
+{
+  "schema": "resume_validation.run_invalidation.v1",
+  "valid_for_formal_results": false,
+  "run": "replay_50mm_direct_attempt004",
+  "reason": "Startup audit still reported DirectRLEnv seed unset. The run was stopped before useful replay progress and replaced with an explicitly seeded run.",
+  "process_scope": "Only the exact env_isaaclab Python PID whose command line contained replay_50mm_direct_attempt004 was terminated.",
+  "replacement": "replay_50mm_direct_attempt005",
+  "preservation_policy": "Startup artifacts are retained and excluded from metrics."
+}

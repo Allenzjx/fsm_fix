@@ -1,0 +1,9 @@
+{
+  "schema": "resume_validation.run_invalidation.v1",
+  "valid_for_formal_results": false,
+  "run": "replay_50mm_direct_attempt003",
+  "reason": "Operator-initiated restart after 20 s simulated time: safety predicates were correctly evaluated every control step, but JSON/contact serialization was also performed every step and reduced throughput unnecessarily.",
+  "process_scope": "Only the exact env_isaaclab Python PID whose command line contained replay_50mm_direct_attempt003 was terminated.",
+  "replacement": "replay_50mm_direct_attempt004",
+  "preservation_policy": "Partial telemetry is retained and excluded from all metrics."
+}

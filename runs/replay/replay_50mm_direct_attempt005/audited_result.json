@@ -1,0 +1,75 @@
+{
+  "artifacts": {
+    "commands.csv": {
+      "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\replay\\replay_50mm_direct_attempt005\\commands.csv",
+      "sha256": "8dfd7a3a89ff6780dce11c2a329c8aa118aa33fce9ffe8ac2605ff47a5e0b5a8"
+    },
+    "contacts.jsonl": {
+      "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\replay\\replay_50mm_direct_attempt005\\contacts.jsonl",
+      "sha256": "9d1170346ab8c9d8884bc009a44446f7bb10ed2ab7bea490c3eaf54b68242186"
+    },
+    "telemetry.jsonl": {
+      "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\replay\\replay_50mm_direct_attempt005\\telemetry.jsonl",
+      "sha256": "c1c258db0ad2ed5a66903d892f3f952a1ac28ea623087e9fb69271b2108baaf5"
+    }
+  },
+  "checks": {
+    "all_events_dispatched": true,
+    "command_rows_match_expected_events": true,
+    "dispatch_jitter_within_one_control_step": true,
+    "no_actual_nonwheel_contact_over_5N": true,
+    "no_command_limit_violation": true,
+    "no_fall": true,
+    "no_joint_limit_violation": true,
+    "no_numerical_error": true,
+    "real_contact_sensor_rows_present": true,
+    "stable_success_dwell_observed": true
+  },
+  "examples": {
+    "actual_nonwheel_contacts": [],
+    "command_limit_samples": [],
+    "fall_samples": [],
+    "joint_limit_samples": [],
+    "numerical_samples": []
+  },
+  "interpretation": "The post-audit uses actual ContactSensor non-wheel forces. Legacy geometry-only nonwheel counters are retained in telemetry but do not decide collision.",
+  "metrics": {
+    "actual_nonwheel_contact_count_over_5N": 0,
+    "command_row_count": 159,
+    "contact_row_count": 15019,
+    "dispatch_jitter_source": "derived_from_scheduler",
+    "episode_min_longitudinal_support_margin_m": -0.28727495670318604,
+    "events_dispatched": 159,
+    "events_expected": 159,
+    "final_base_x_m": 0.9429387450218201,
+    "final_wheel_contact_state": [
+      3,
+      3,
+      3,
+      3
+    ],
+    "forward_progress_m": 0.9417044036090374,
+    "initial_base_x_m": 0.001234341412782669,
+    "invalid_margin_samples": 1070,
+    "max_dispatch_jitter_s": 0.016666666247573403,
+    "pitch_rate_rms_rad_s": 0.04768281665831846,
+    "sample_count": 5662,
+    "stable_success_sample_count": 35,
+    "valid_margin_samples": 4592,
+    "wheel_state_counts": {
+      "0": 2177,
+      "1": 7117,
+      "2": 2392,
+      "3": 10962
+    }
+  },
+  "run_dir": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\replay\\replay_50mm_direct_attempt005",
+  "schema": "resume_validation.direct_replay_post_audit.v1",
+  "source_result": {
+    "original_failures": [],
+    "original_passed": true,
+    "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\replay\\replay_50mm_direct_attempt005\\result.json",
+    "sha256": "4e709df14b9fdecc6cb894c9a82dae9a9f3d6bea726caca81cd33906f0829093"
+  },
+  "success": true
+}

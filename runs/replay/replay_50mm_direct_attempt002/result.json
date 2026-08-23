@@ -1,0 +1,71 @@
+{
+  "artifacts": {
+    "commands_csv": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\replay\\replay_50mm_direct_attempt002\\commands.csv",
+    "commands_sha256": "8dfd7a3a89ff6780dce11c2a329c8aa118aa33fce9ffe8ac2605ff47a5e0b5a8",
+    "contacts_jsonl": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\replay\\replay_50mm_direct_attempt002\\contacts.jsonl",
+    "contacts_sha256": "3afbaf2080d5981ba8516a2214a0f48febb7671b9bd016902c58df45a68a04f5",
+    "telemetry_jsonl": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\runs\\replay\\replay_50mm_direct_attempt002\\telemetry.jsonl",
+    "telemetry_sha256": "366774ebb9f2c585672363a34adbba150cb030d78756fa71af306140043ced74"
+  },
+  "asset": {
+    "path": "C:\\robotics_sim\\wlr_robot\\resume_validation_fsm_residual_ppo\\assets\\converted\\wlr_robot_validation.usd",
+    "sha256": "98103315e8ad456881a28a9b3dc77f7aaa8bc9a5200e40c435bea8002c4f81dd"
+  },
+  "checks": {
+    "all_events_dispatched": true,
+    "contact_sensor_rows_present": true,
+    "no_body_or_link_collision": true,
+    "no_command_limit_violation": true,
+    "no_fall": true,
+    "no_joint_limit_violation": true,
+    "no_numerical_error": true,
+    "not_diagnostic_truncation": true,
+    "stable_success_dwell_observed": false
+  },
+  "failures": [
+    "stable_success_dwell_observed"
+  ],
+  "finished_unix": 1785137742.677575,
+  "geometry": {
+    "back_x_m": 2.5786877987786525,
+    "front_x_m": 0.5213122012213478,
+    "obstacle_height_m": 0.05,
+    "obstacle_length_m": 2.0573755975573045,
+    "obstacle_width_m": 0.882200685486094,
+    "obstacle_x_m": 1.55
+  },
+  "height_mm": 50,
+  "metrics": {
+    "control_dt_s": 0.016666666666666666,
+    "episode_min_longitudinal_support_margin_m": -0.28727495670318604,
+    "events_dispatched": 159,
+    "final_base_x_m": 0.942973792552948,
+    "forward_progress_m": 0.9417393207550049,
+    "initial_base_x_m": 0.0012344717979431152,
+    "invalid_margin_samples": 1070,
+    "max_abs_pitch_rad": 0.12445405125617981,
+    "max_abs_roll_rad": 0.16785591840744019,
+    "pitch_rate_rms_rad_s": 0.047869157729404095,
+    "sample_count": 5618,
+    "termination_control_step": null
+  },
+  "passed": false,
+  "schema": "resume_validation.direct_replay.v1",
+  "source_replay": {
+    "event_count": 159,
+    "path": "C:\\robotics_sim\\wlr_robot\\height_based_obstacle_replay\\saved_height_steps\\height_05cm\\accepted_steps.jsonl",
+    "playback_semantics": "dispatch expanded_commands when present, otherwise command; reconstruct post-event state",
+    "raw_duration_s": 278.8720000004396,
+    "reference_playback_sha256": "b6b40d276dfb49e4dd181f65dbabab5e77a54cfb34b6e648b067d41433f2d836",
+    "reference_sequence_model_sha256": "af333f7c0db7ece943a919030b03bc294b1cd9ebc7dc2f10452b57975f399c68",
+    "sha256": "66be488058660467810260cb42d86357736bee2ff408d0741956c31db30426f8",
+    "step_count": 35
+  },
+  "started_unix": 1785136701.612726,
+  "versions": {
+    "cuda": "12.8",
+    "isaaclab": "0.54.3",
+    "isaacsim": "5.1.0.0",
+    "torch": "2.7.0+cu128"
+  }
+}

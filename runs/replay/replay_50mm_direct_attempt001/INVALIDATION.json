@@ -1,0 +1,16 @@
+{
+  "schema": "resume_validation.run_invalidation.v1",
+  "valid_for_formal_results": false,
+  "run": "replay_50mm_direct_attempt001",
+  "reasons": [
+    "The run loaded servo/wheel targets from legacy event command_state_after snapshots. Some late ordinary UI events contain the pre-command snapshot, so targets were delayed by one event.",
+    "The process was launched before exact-replay termination was disabled. A terminal predicate triggered DirectRLEnv auto-reset, so the reported final pose is the reset pose rather than the final replay pose.",
+    "The process was launched before collision classification switched from the legacy geometry proxy to actual ContactSensor non-wheel force."
+  ],
+  "preservation_policy": "Artifacts are retained as a failed diagnostic and must not enter any formal baseline, success-rate, ablation, or statistical result.",
+  "corrected_by": {
+    "loader": "src/resume_validation/replay_loader.py reconstructs state by dispatching expanded_commands or command",
+    "runner": "src/resume_validation/replay_direct_validation.py disables episode termination while recording all failure predicates",
+    "collision": "formal collision uses ContactSensor non-wheel force above 5 N near the obstacle"
+  }
+}
